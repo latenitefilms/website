@@ -1,4 +1,5 @@
 ---
+title: Technology
 layout: default
 order: 5
 ---
