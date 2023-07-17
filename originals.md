@@ -20,7 +20,7 @@ order: 3
     <hr>
     <article>
       <ul class="projectlist">
-       {% for page in site.projects %}
+       {% for page in site.originals %}
         <li class="{{page.type}}"><a href="{{page.path}}"><img src="{{ relBase }}img/projects/{{ post.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>

@@ -19,3 +19,8 @@ permalink: /:categories/:title/
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 exclude: [vendor]
 future: true
+
+collections:
+  originals:
+  collaborations:
+  technology:
