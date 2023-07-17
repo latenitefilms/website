@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}"/>
 	<meta property="og:description" content="{% if page.customExcerpt %}{{page.customExcerpt}}{% elsif  page.excerpt%}{{page.excerpt | strip_html}} | {{ site.excerpt }}{% else %}{{site.tagline}} {% endif %}"/>
-	<meta property="og:image" content="{% if page.img %}{% if page.categories == 'projects' %}{{ relBase }}img/projects/{{page.img}}.jpg{% elsif page.categories == 'articles' %}{{ relBase }}img/articles/{{page.img}}.jpg{% else %}{{ relBase }}img/og/{{page.img}}.jpg{% endif %}{% else %}{{ relBase }}{{site.socialimg}}{% endif %}"/>
+	<meta property="og:image" content="{% if page.img %}{% if page.tags == 'projects' %}{{ relBase }}img/projects/{{page.img}}.jpg{% elsif page.categories == 'articles' %}{{ relBase }}img/articles/{{page.img}}.jpg{% else %}{{ relBase }}img/og/{{page.img}}.jpg{% endif %}{% else %}{{ relBase }}{{site.socialimg}}{% endif %}"/>
 	<meta property="og:url" content="{{ relBase }}{{page.url}}"/>
 	<meta property="og:site_name" content="{{ site.title }} "/>
 	
