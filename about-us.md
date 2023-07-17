@@ -16,7 +16,7 @@ order: 2
       </p>
       <table>
         <tr>
-          <td><img class="headshot" src="../img/headshot/nick.jpg"></td>
+          <td><img class="headshot" src="./img/headshot/nick.jpg"></td>
           <td>
             <h3>NICHOLAS COLLA / Director & Co-Founder</h3>
             <p>Nicholas Colla is a producer and director of film,
@@ -39,7 +39,7 @@ order: 2
           </td>
         </tr>
         <tr>
-          <td><img class="headshot" src="../img/headshot/nic.jpg"></td>
+          <td><img class="headshot" src="./img/headshot/nic.jpg"></td>
           <td>
             <h3>NICOLETTE MINSTER / Writer & Producer</h3>
             <p>Nicolette Minster is a Melbourne based comedian,
@@ -66,7 +66,7 @@ order: 2
           </td>
         </tr>
         <tr>
-          <td><img class="headshot" src="../img/headshot/chris.jpg"></td>
+          <td><img class="headshot" src="./img/headshot/chris.jpg"></td>
           <td>
             <h3>CHRIS HOCKING / Director & Co-Founder</h3>
             <p>Chris has been working in the entertainment industry for over two decades. Previously the Post Production Supervisor at Melbourne&#39;s award winning editing house The Butchery, and finishing house The Refinery, Chris has an incredibly strong and varied technical and business background, ensuring that each production makes use of the best and most relevant technology and workflows. He is the creator of the open source macOS application, CommandPost, which has been downloaded over 165K times - as well as a suite of Final Cut Pro tools on the macOS App Store. His producing credits include the SBS2 series The Wizards of Aus, the Fairy Tale unit on Foxtel mini series Lambs of God, and the ABC ME project The Legend of Burnout Barry. Chris is a member of SPA, ASE and is an Adobe Certified Expert.
@@ -74,7 +74,7 @@ order: 2
           </td>
         </tr>
         <tr>
-          <td><img class="headshot" src="../img/headshot/kevin.jpg"></td>
+          <td><img class="headshot" src="./img/headshot/kevin.jpg"></td>
           <td>
             <h3>KEVIN LUK / Editor</h3>
             <p>

@@ -1,0 +1,21 @@
+# Site settings
+title: LateNite
+tagline: "Nominated for Screen Producer Australia Best Emerging Production Company."
+url: "https://latenitefilms.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Social
+socialimg: /img/og/social.png # be sure to change this image
+#facebook: latenitefilms
+#twitter: latenitefilms
+
+# Contact
+email: "producers@latenitefilms.com" 
+permalink: /:categories/:title/
+
+# Use this for production
+#sass:
+#    style: compressed
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [vendor]
+future: true
