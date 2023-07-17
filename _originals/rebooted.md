@@ -1,8 +1,8 @@
 ---
 title: Rebooted
 layout: project-details
-img: rebooted.png
-subtitle: Short Film
+img: rebooted.jpg
+subtitle: Short
 type: filter_option1
 customExcerpt: "In an industry obsessed with the superficial, it's not easy being an aging movie star. It&#39;s even harder when you're also a stop-motion animated skeleton monster. "
 ---
@@ -13,11 +13,11 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="../../img/gallery/rebooted1.jpg" id="img1">
-        <img src="../../img/gallery/rebooted2.jpg" id="img2">
-        <img src="../../img/gallery/rebooted3.jpg" id="img3">
-        <img src="../../img/gallery/rebooted4.jpg" id="img4">
-        <img src="../../img/gallery/rebooted5.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/rebooted1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img5">
       </div>
     </div>
     <article><span id="main-detail">
@@ -27,97 +27,97 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
           <span class="festival">Flickerfest</span>
           <span class="award">Best Australian<br>Short Animation</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">St Kilda<br>Film Festival</span>
           <span class="award">Craft Award</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">St Kilda<br>Film Festival</span>
           <span class="award">Best Animation</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">St Kilda<br>Film Festival</span>
           <span class="award">Best Editing</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Vision Feast<br>New Zealand</span>
           <span class="award">Best Short Film</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Vision Feast<br>New Zealand</span>
           <span class="award">Visionary Project</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Vision Feast<br>New Zealand</span>
           <span class="award">Visionary Directing</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">ASE Awards</span>
           <span class="award">Best Editing in<br>Short Drama</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">AACTA Awards</span>
           <span class="award">Best Short film<br>Nominee</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">AACTA Awards</span>
           <span class="award">Short of the<br>Decade Nominee</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">ADG Awards</span>
           <span class="award">Best Directing in<br>a Short Film Nominee</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">SPA Awards</span>
           <span class="award">Short Film Production of<br>the Year Finalist</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Austin<br>Film Festival</span>
           <span class="award">Best Short Film Nominee</span>
           <span class="year">2019</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Annecy Film<br>Festival</span>
           <span class="award">Best Short Nominee</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Busan<br>International Short</span>
           <span class="award">Official Selection</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
         <div class="laurel">
           <span class="festival">Clermont-ferrand<br>Film Festival</span>
           <span class="award">Official Selection</span>
           <span class="year">2020</span>
-          <img src="../../img/laurel.svg">
+          <img src="{{ relBase }}img/laurel.svg">
         </div>
       </span>
       <sub>
@@ -171,7 +171,7 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <hr>
         Online
         <br><br>
-        <a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="../../img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="../../img/social/youtube.svg" class="youtube"></a>
+        <a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
     <div id="related">
@@ -179,18 +179,18 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
       Related Project
       <hr>
       <ul>
-        <li><a href="../the-legend-of-burnout-barry/"><img src="../../img/projects/barry.jpg">The Legend of Burnout
+        <li><a href="../the-legend-of-burnout-barry/"><img src="{{ relBase }}img/projects/barry.jpg">The Legend of Burnout
             Barry
             <hr><sub>Series</sub>
             <hr>
           </a>
         </li>
-        <li><a href="../the-future-of-everything/"><img src="../../img/projects/tfoe.jpg">The Future of Everything
+        <li><a href="../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
             <hr><sub>Short</sub>
             <hr>
           </a>
         </li>
-        <li><a href="../the-wizards-of-aus/"><img src="../../img/projects/wizards.jpg">The Wizards of Aus
+        <li><a href="../the-wizards-of-aus/"><img src="{{ relBase }}img/projects/wizards.jpg">The Wizards of Aus
             <hr><sub>Series</sub>
             <hr>
           </a>

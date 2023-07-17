@@ -1,7 +1,7 @@
 ---
 title: Goblin Spoon
 layout: project-details
-img: goblin-spoon.png
+img: goblin-spoon.jpg
 subtitle: Television
 type: filter_option2 filter_option3
 customExcerpt: "In a fantastical world of magic and monsters, saving the world is just another day at the office. There's dragons to slay, dungeons to crawl, or a princess to smooch - not to mention a whole mess of goblins to kill along the way!"
