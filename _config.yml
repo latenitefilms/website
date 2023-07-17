@@ -22,5 +22,7 @@ future: true
 
 collections:
   originals:
+    output: true
   collaborations:
+    output: true
   technology:

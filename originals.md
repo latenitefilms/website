@@ -22,33 +22,12 @@ order: 3
     <article>
       <ul class="projectlist">
        {% for page in site.originals %}
-        <li class="{{page.type}}"><a href="{{ relBase }}{{page.url}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
+        <li class="{{page.type}}"><a href="{{page.url}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
           <hr></a>
         </li>
         {% endfor %}
-        <li class="filter_option2 filter_option3"><a href="the-legend-of-burnout-barry/"><img
-              src="../img/projects/barry.jpg">
-            <h4>The Legend of Burnout Barry</h4>
-            <hr><sub>TELEVISION</sub>
-            <hr>
-          </a></li>
-        <li class="filter_option1"><a href="rebooted/"><img src="../img/projects/rebooted.jpg">
-          <h4>Rebooted</h4>
-          <hr><sub>Short</sub>
-          <hr></a>
-        </li>
-        <li class="filter_option1"><a href="goblin-spoon/"><img src="../img/projects/goblinspoon.jpg">
-          <h4>Goblin Spoon</h4>
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
-        <li class="filter_option2"><a href="the-wizards-of-aus/"><img src="../img/projects/wizards.jpg">
-          <h4>The Wizards of Aus</h4>
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
       </ul>
     </article>
   </section>
