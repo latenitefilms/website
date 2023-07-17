@@ -52,3 +52,4 @@ order: 3
     </article>
   </section>
   {% include filter.html %}
+  {% include header.html %}
