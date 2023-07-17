@@ -51,5 +51,31 @@ order: 3
       </ul>
     </article>
   </section>
-  {% include filter.html %}
-  {% include header.html %}
+    <script>
+
+    let checkbox = document.getElementsByClassName("filter_checkbox");
+    for (let i = 0; i < checkbox.length; i++) {
+      checkbox[i].addEventListener("change", () => { filterall(); });
+    }
+
+    window.onload = (event) => {
+      //console.log('page is fully loaded');
+      filterall();
+    };
+
+    function filterall() {
+      var x = 0;
+      for (let i = 0; i < checkbox.length; i++) {
+        if (checkbox[i].checked == false)
+          x++;
+      }
+      //console.log(checkbox.length);
+      //console.log(x);
+      if (x == checkbox.length) {
+        document.getElementById("filter").classList.add('showall');
+      }
+      else {
+        document.getElementById("filter").classList.remove('showall');
+      }
+    }
+  </script>
