@@ -1,9 +1,9 @@
 ---
-title: The Legend of Burnout Barry
+title: The Future of Everything
 layout: project-details
-img: barry.jpg
-subtitle: Television
-type: filter_option2 filter_option3
+img: tfoe.jpg
+subtitle: Series
+type: filter_option1
 tags: projects
 customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
 ---

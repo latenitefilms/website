@@ -1,60 +1,53 @@
 ---
-title: The Future of Everything
+title: The Legend of Burnout Barry
 layout: project-details
-img: tfoe.jpg
-subtitle: Series
-type: filter_option1
+img: barry.jpg
+subtitle: Television
+type: filter_option2 filter_option3
 tags: projects
-customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
+customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what's possible. When speed demon and record holder Josh "Wheely" Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.
 ---
 {% include relBase.html %}
- <section id="details">
+  <section id="details">
     <div id="carousel">
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/tfoe1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/tfoe2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/tfoe3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/tfoe4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/tfoe5.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/tfoe6.jpg" id="img6">
+        <img src="{{ relBase }}img/gallery/barry1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/barry3.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/barry4.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/barry5.jpg" id="img4">
       </div>
     </div>
 
 
     <article><span id="main-detail">
-      <h1>THE FUTURE OF EVERYTHING</h1>
-      <p> In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded 
-        Earth, what if they came for our jet-skis? And what would happen if it was discovered that the 
-        fabric of reality could be hacked to spawn infinite ducks?</p>
-        <p>
-          The Future of Everything is a series of animated shorts based off the popular instagram comics 
-          of writer/director Mike Greaney. In an anthology of five short animations, a cast of dynamic 
-          weirdos challenge toxic masculinity, housing affordability, online radicalisation and internet 
-          dependency through a deliciously satirical lens. It&#39;s like Black Mirror, if Black Mirror was animated 
-          and featured rock-climbing aliens, super-mutant love scenes, fascist ducks, and a dude who 
-          wanted to fist-fight God.</p>
-</span>   <sub>
+      <h1>The Legend of Burnout Barry</h1><p>Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what&#39;s possible. When speed demon and record holder Josh &quot;Wheely&quot; Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.</p></span>
+      <sub>
         <hr>CAST
-        <hr>
-        <table><tr><td>NARRATED BY<br>
-          VARIOUS</td><td>Uncle Jack Charles<br>Vidya Rajan<br>Tony Armstrong<br>Dane Simpson<br>Niki Aken<br>Luke McGregor<br>Luke Heggie<br>Sammy J<br>Andrea Powell<br>Nath Valvo<br>Celia Pacquola<br>Maria Angelico<br>Sarah Walker<br>
-        </td></tr><tr><td colspan="2"><br><hr>CREW
-          <hr></td></tr><tr><td>Writer/Director</td><td>Michael Greaney</td></tr><tr><td>
-        Producers</td><td>Nicholas Colla<br>Nicolette Minster</td></tr><tr><td>
-          Executive Producer</td><td>Chris Hocking</td></tr><tr><td>
-          Designer</td><td>Evie Hilliar<br>Milo Gluth</td></tr><tr><td>
-          Animators</td><td>Namira Primandari<br>Lucas Cappy</td></tr><tr><td>
-            Sound Designer</td><td>Ryan Granger</td></tr></table><br>
-        <hr>GENRE
-        <hr>
-        Animation<br>
+        <hr class="margin_bottom">
+        <table>
+          <tr><td>Josh &quot;Wheely&quot; Wilson</td><td>Oli Pizzey-Stratford</td></tr>
+          <tr><td>Shay</td><td>Jade Knight</td></tr>
+          <tr><td>Brent</td><td>Basil Firea</td></tr>
+          <tr><td>Barry</td><td>Keith Robinson</td></tr>
+          <tr><td colspan="2"><br><hr>CREW
+            <hr></td></tr><tr><td>
+        Writer</td><td>Nicolette Minster</td></tr><tr><td>
+        Director</td><td>Isaac Elliott</td></tr><tr><td>
+        Executive Producer</td><td>Jan Stradling</td></tr><tr><td>
+        Producers</td><td>Nicholas Colla<br>Tom Davies</td></tr><tr><td>
+        Director Of Photography</td><td>Liam Gilmour</td></tr><tr><td>
+        Composer</td><td>Andrew Callaghan</td></tr><tr><td>
+        Production Designer</td><td>Nathan Wentworth<br></td></tr></table>
+        <br><hr>GENRE
+        <hr class="margin_bottom">
+        Children&#39;s<br>
         <br>
         <hr>BROADCASTER
-        <hr>
-        Grouse House<br><br>
-        <a href="https://www.imdb.com/title/tt23863806/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=E0c20UVV-MI&list=PLoO7Ckc824zsM3cpF3eXM1g9unl0hkJT0&index=2" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
+        <hr class="margin_bottom">
+        ABC<br><br>
+        <a href="https://www.imdb.com/title/tt11147376/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://vimeo.com/416291138" target="_blank"><img src="{{ relBase }}img/social/vimeo.svg" class="vimeo"></a>
       </sub>
     </article>
 
@@ -63,8 +56,8 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
       Related Project
       <hr>
       <ul>
-        <li><a href= "../the-legend-of-burnout-barry/"><img src="{{ relBase }}img/projects/barry.jpg">The Legend of Burnout Barry
-          <hr><sub>Television</sub>
+        <li><a href= "../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
+          <hr><sub>Series</sub>
           <hr></a>
         </li>
         <li><a href= "../rebooted/"><img src="{{ relBase }}img/projects/rebooted.jpg">Rebooted
@@ -78,5 +71,7 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
       </ul>
     </div>
   </section>
+
+
 
   <div id="gradient"></div>
