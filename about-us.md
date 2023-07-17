@@ -91,6 +91,5 @@ order: 2
           </td>
         </tr>
       </table>
-      </table>
     </article>
   </section>

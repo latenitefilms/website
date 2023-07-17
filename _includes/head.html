@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Plain Description -->
-	<title>{{ site.title }} - {{ page.title }}</title>
+	<title>{% if page.img %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}</title>
 	<meta name="description" content="{% if page.customExcerpt %}{{page.customExcerpt}}{% elsif  page.excerpt%}{{page.excerpt | strip_html}} | {{ site.excerpt }}{% else %}{{site.tagline}} {% endif %}">
 	<link rel="icon" type="image/png" href="{{ relBase }}/favicon.png">
 	
