@@ -3,7 +3,6 @@ title: The Future of Everything
 layout: project-details
 img: tfoe.jpg
 subtitle: Series
-order: 1
 type: filter_option1
 customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
 ---

@@ -19,12 +19,10 @@ order: 3
       <li><label for="filter_option3" class="filter_option3">Kids</label></li>
     </ul>
     <hr>
-    <article>
+       <article>
       <ul class="projectlist">
-       <!--{% assign sorted_page = (page.order | sort) %}-->
-       {% assign sorted_page = site.originals | sort: 'order'  %}
-       {% for page in sorted_page %}
-        <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
+       {% for page in site.originals %}
+              <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
           <hr></a>

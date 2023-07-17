@@ -3,7 +3,6 @@ title: The Legend of Burnout Barry
 layout: project-details
 img: barry.jpg
 subtitle: Television
-order: 2
 type: filter_option2 filter_option3
 customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
 ---
