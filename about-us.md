@@ -61,7 +61,7 @@ order: 2
               Australia. As a producer, Nicolette&#39;s latest project,
               the animated comedy series The Future of Everything,
               premiered in competition at both Adelaide and Austin
-              Film Festivals before being released on Grouse House TV.</p>
+              Film Festivals before being released on Grouse House TV.
             </p>
           </td>
         </tr>
