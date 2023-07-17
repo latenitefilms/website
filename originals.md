@@ -21,42 +21,15 @@ order: 3
     <hr>
     <article>
       <ul class="projectlist">
+       <!--{% assign sorted_page = (page.order | sort) %}-->
+       {% assign page = site.originals | sort: 'order'  %}
        {% for page in site.originals %}
-       {% assign sorted_page = (page.order | sort) %}
-        <li class="{{sorted_page.type}}"><a href="{{ relBase }}{{sorted_page.id}}"><img src="{{ relBase }}img/projects/{{ sorted_page.img }}">
-          <h4>{{sorted_page.title}}</h4>
-          <hr><sub>{{sorted_page.subtitle}}</sub>
+        <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
+          <h4>{{page.title}}</h4>
+          <hr><sub>{{page.subtitle}}</sub>
           <hr></a>
         </li>
         {% endfor %}
       </ul>
     </article>
   </section>
-    <script>
-
-    let checkbox = document.getElementsByClassName("filter_checkbox");
-    for (let i = 0; i < checkbox.length; i++) {
-      checkbox[i].addEventListener("change", () => { filterall(); });
-    }
-
-    window.onload = (event) => {
-      //console.log('page is fully loaded');
-      filterall();
-    };
-
-    function filterall() {
-      var x = 0;
-      for (let i = 0; i < checkbox.length; i++) {
-        if (checkbox[i].checked == false)
-          x++;
-      }
-      //console.log(checkbox.length);
-      //console.log(x);
-      if (x == checkbox.length) {
-        document.getElementById("filter").classList.add('showall');
-      }
-      else {
-        document.getElementById("filter").classList.remove('showall');
-      }
-    }
-  </script>
