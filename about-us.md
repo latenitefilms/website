@@ -4,7 +4,7 @@ layout: default
 img: about.png
 order: 2
 ---
-
+{% include relBase.html %}
 <section>
     <article id="about-us">
       <p class="header-text" style="margin-bottom:0;margin-top:0;">
