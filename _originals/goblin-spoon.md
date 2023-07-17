@@ -4,6 +4,7 @@ layout: project-details
 img: goblinspoon.jpg
 subtitle: Television
 type: filter_option1
+tags: projects
 customExcerpt: "In a fantastical world of magic and monsters, saving the world is just another day at the office. There's dragons to slay, dungeons to crawl, or a princess to smooch - not to mention a whole mess of goblins to kill along the way!"
 ---
 {% include relBase.html %}

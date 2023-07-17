@@ -1,13 +1,11 @@
----
-layout: default
----
-<link rel="stylesheet" href="/css/project-details.css" />
-
-<article>
-    <section style="max-width:70em;margin:auto;">
-
-{{ content }}
-
-
-</section>
-</article>
+<!DOCTYPE html>
+{% include relBase.html %}
+{% include head.html %}
+	
+	<body class="projects">
+        {% include header.html %}
+                {{ content }}
+		{% include footer.html %}
+  <script type="text/javascript" src="{{ relBase }}js/carousel.js"></script>
+	</body>
+</html>
