@@ -22,8 +22,8 @@ order: 3
     <article>
       <ul class="projectlist">
        <!--{% assign sorted_page = (page.order | sort) %}-->
-       {% assign page = site.originals | sort: 'order'  %}
-       {% for page in site.originals %}
+       {% assign sorted_page = site.originals | sort: 'order'  %}
+       {% for page in sorted_page %}
         <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
