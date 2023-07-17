@@ -15,6 +15,7 @@ order: 6
                 <a href="mailto:{{site.email}}">{{site.email}}</a>
                 </p> <sub>Branding</sub>
                 <p>You can download our <a href="latenite-logos.zip">logo here.</a></p></td>
+                </tr>
         </table>
     </article>
 </section>
