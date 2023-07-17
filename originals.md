@@ -3,6 +3,7 @@ title: Originals
 layout: filter
 order: 3
 ---
+{% include relBase.html %}
 <section>
 <hr>
     <div id="filter"><label for="filter_options">Filter</label><label for="filter_options">+</label></div>
@@ -21,7 +22,7 @@ order: 3
     <article>
       <ul class="projectlist">
        {% for page in site.originals %}
-        <li class="{{page.type}}"><a href="{{page.path}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
+        <li class="{{page.type}}"><a href="{{page.url}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
           <hr></a>
