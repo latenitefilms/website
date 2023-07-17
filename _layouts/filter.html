@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% include relBase.html %}
+{% include head.html %}
+	
+	<body class="projects">
+        {% include header.html %}
+                {{ content }}
+		{% include footer.html %}
+        <script>
+            let checkbox = document.getElementsByClassName("filter_checkbox");
+            for (let i = 0; i < checkbox.length; i++) {
+              checkbox[i].addEventListener("change", () => { filterall(); });
+            }
+        
+            window.onload = (event) => {
+              //console.log('page is fully loaded');
+              filterall();
+            };
+        
+            function filterall() {
+              var x = 0;
+              for (let i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].checked == false)
+                  x++;
+              }
+              //console.log(checkbox.length);
+              //console.log(x);
+              if (x == checkbox.length) {
+                document.getElementById("filter").classList.add('showall');
+              }
+              else {
+                document.getElementById("filter").classList.remove('showall');
+              }
+            }
+          </script>
+	</body>
+</html>

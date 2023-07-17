@@ -1,6 +1,6 @@
 ---
 title: Originals
-layout: default
+layout: filter
 order: 3
 ---
 <section>
