@@ -22,7 +22,7 @@ order: 3
     <article>
       <ul class="projectlist">
        {% for page in site.originals %}
-       {% assign sorted_page = page[1] | sort: 'order'  %}
+       {% assign sorted_page = (page.order | sort) %}
         <li class="{{sorted_page.type}}"><a href="{{ relBase }}{{sorted_page.id}}"><img src="{{ relBase }}img/projects/{{ sorted_page.img }}">
           <h4>{{sorted_page.title}}</h4>
           <hr><sub>{{sorted_page.subtitle}}</sub>
