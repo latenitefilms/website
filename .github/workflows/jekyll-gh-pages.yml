@@ -86,3 +86,4 @@ jobs:
           username: github@latenitefilms.com
           password: ${{ secrets.ftp_password }}
           server-dir: /kevin.latenitefilms.com/
+          protocol: ftps
