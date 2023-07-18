@@ -1,0 +1,29 @@
+name: Build and deploy jekyll site
+
+on:
+  push:
+    branches:
+      - gh-pages
+      # - source
+      # It is highly recommended that you only run this action on push to a
+      # specific branch, eg. master or source (if on *.github.io repo)
+
+  workflow_dispatch: # Allows a run of this workflow to be triggerred manually from the Actions tab
+
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 43.250.142.14
+        username: github@latenitefilms.com
+        password: ${{ secrets.ftp_password }}
+        server-dir: /kevin.latenitefilms.com/
+        protocol: ftps
