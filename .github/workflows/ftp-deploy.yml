@@ -1,4 +1,4 @@
-name: Build and deploy jekyll site
+name: 🚀 Deploy website on push
 
 on:
   push:
@@ -10,7 +10,6 @@ on:
 
   workflow_dispatch: # Allows a run of this workflow to be triggerred manually from the Actions tab
 
-name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
