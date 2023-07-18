@@ -80,9 +80,9 @@ jobs:
           # publish_branch: master
 
       - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: 43.250.142.14
-        username: github@latenitefilms.com
-        password: ${{ secrets.ftp_password }}
-        server-dir: /kevin.latenitefilms.com/
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: 43.250.142.14
+          username: github@latenitefilms.com
+          password: ${{ secrets.ftp_password }}
+          server-dir: /kevin.latenitefilms.com/
