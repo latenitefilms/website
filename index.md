@@ -1,5 +1,7 @@
 ---
 layout: index
+img: tfoe.jpg
+tags: projects
 ---
 
 <div id="slider">
