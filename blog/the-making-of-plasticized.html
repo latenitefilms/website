@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-2427 type-post status-publish format-standard has-post-thumbnail hentry category-documentary category-guest-bloggers" id="post-2427">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../the-making-of-plasticized/" rel="bookmark">The Making of PLASTICIZED</a></h2>
+<aside class="meta">
+Jul 29, 2013				    <i class="icon-dot"></i> Posted By Guest Blogger</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/documentary/">Documentary</a>, <a href="./../category/guest-bloggers/">Guest Bloggers</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><em>Mike Lutman is a great friend and collaborator, who we&#8217;ve worked closely since 2010 when he washed up on our shores from San Francisco. He&#8217;s currently working full time as a commercial editor at Melbourne&#8217;s award-winning boutique editorial company <a href="http://thebutchery.com.au/?page=about" target="_blank">The Butchery</a>, however as an extremely talented filmmaker in his own right, and a passionate advocate of lessening our footprint on the environment &#8211; Mike&#8217;s real passion is in creating films that inspire change and highlight environment and social issues that aren&#8217;t actively discussed nearly enough. In this blog entry we give Mike the stage to chat about his latest project, PLASTICIZED. Enjoy!</em></p>
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/dfcRW7sIrPI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>Earlier this year, I gave my film PLASTICIZED away, free for all on the wild wild web. Free to encourage changes in habit, free to spark environmental movements, free to do anything, which includes being free to be forgotten about in the archives of some imaginary cloud. And, if lucky enough to not be forgotten, it is certainly free to be slammed by a fair few presumptuous and merciless YouTube critics who feel oceanic plastic pollution is a joke. I killed myself to make this slightly zealous independent documentary; a not quite feature length film about crossing the South Atlantic Ocean on a 22 metre sail boat (when I had never sailed a day in my life) with 11 strangers lead by a gung-ho scientist obsessed with our global plastic waste. There was a month spent shamelessly asking for Kickstarter cash, a month at sea filming, minus the exorbitant amount of time lost puking overboard, and another 7 months of moonlight cutting terabytes of footage after long days of&#8230; well&#8230; cutting terabytes of other peoples work. The project was my first crack at something big, something that I had complete creative freedom, and also something with a certain significance, it had a cause. To give it away sort of felt like accepting the film was not a success, or unaccomplished. Throwing in the towel is not my sort of style. I guess I was just very nervous about the thought of letting go, but I knew I had to. I had done the best I could in spite of what some might considered rational goals. All that mattered after failing to sell it, after all the trial and error, the slow going, the mulling over and over, was giving it the unsure opportunity an over saturated online market provided. Then, hoping all that time spent, all the money given and used, might somehow be validated.</p>
+<p>Thinking back to a little over 2 years ago, before I had to make such a decision, I remember the overwhelming excitement I felt in the muggy Sao Paolo airport. Equipped with a tiny mouth full of broken Portuguese phrases no one understood, and a set of bags overloaded with gear so heavy the seams ripped and grew with every laboured step, I was making my first &#8216;official&#8217; film, only without crew! While I may have had crazier ideas before, no one had ever given me the cash to chase them. A bit surprisingly, I raised money begging friends, family, and strangers alike, to scratch up a budget just big enough to embark on this ambitious endeavour that landed me there in Brazil. I expressed all the concern and all the importance such an ecological disaster held in my own mind to whomever would listen, in person and online. I do not think many suspected I would take such interest. So, based on a pitch and a plea, a fair few were keen to see, keen to hear more about this ecological disaster; and I owed them, big time.</p>
+<p><img loading="lazy" alt="" src="../../images/07-01-590x393.png" width="590" height="393"></p>
+<p>Although the faith others had in me created a lot of pressure, from years of freelancing as a cameraman and editor, I was confident I had what it took to document this plastic pollution expedition in a captivating way that could snatch a wider audience than my friendly financial backers. But in hindsight, I was quite green. Not in the environmental sense, a little bit in one-man-production sense, but most significantly, I had a lot to learn about distributing a film (and, still do for that matter!). Furthermore, most of the toughest challenges and biggest disappointments probably stemmed from the pitfalls of inexperience, exacerbated by being completely unknown. Believing in an assumption that told me the topic was strong and important enough that my documentary would find legs of it own carrying it out of obscurity was a gross misconception. While it is widely understood, in this growing independent market where everyone has the professional tools, films need to be extremely well made, as well as include truly fascinating material, but also having a bit of luck to pop out of nowhere is an often overlooked obstacle. Sitting outside looking in, thinking my good fortune had come with PLASTICIZED&#8217;s meagre budget, I unabashedly reached for commercial success. Without a clear marketing strategy, it was kind of like reaching for the stars at the bottom of the ocean.</p>
+<p>This ambition came from a simple enough place, a place where many lofty ideas come from, a pub. After a couple of fiery philosophical pints with a tree loving friend, in a grotty old Irish joint tucked away in the financial district of San Francisco, she told me about a plastic island in the Pacific that was supposedly twice the size of Texas. The thought vigorously captivated my imagination. The idea that something so disgustingly vast could have accumulated without the general populations knowledge actually, astounded me! To make a film about it seemed beyond possibility, so disconnected I was, that initially, it never even entered my mind. Little did I suspect, about a year after that memorable conversation, a time in which I had since moved 12,648.53km across the globe to sunny Melbourne, my friend’s relentless pursuit to get involved in that plastic pollution movement would lead to my own invitation to jump on board the 5 Gyres Institutes&#8217; pioneering research mission to film this oceanic plastic disaster myself.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2429" alt="02" src="../../images/07-02-590x391.jpg" width="590" height="391"></p>
+<p>The 5 Gyres wanted the trip documented visually as well as statistically. The invite to join sounded to good to be true as hungry filmmaker in love with the idea of adventure. But, I also saw the imminent importance of telling their story. This is what gave me the audacity to plead for those filmic funds securing my place on their commissioned racing-yacht-turned-research-vessel, sailing from Angra Dos Reis, Brazil to Cape Town, South Africa, camera in hand. As romantic as that sounds, I quickly found I was in over my head as sole logistics producer/cinematographer/sound-recordist/director/what have you &#8211; it was all or nothing on that leaky boat, delicate gear and myself. The whole thing before the edit, was about as independent as it gets. And, to make it even more interesting, once we did set sail, the ship felt like a toy boat in the bathtub of an angry toddler&#8217;s tantrum when a storm pelted us so hard we stopped sailing two days just to ride it out. Stuffed full of fruit that quickly rotted and mixed with the stench of human humidity exponentially increasing the further we went across the South Atlantic. I threw up countless times the first 10 days at sea. My main camera quit working after a blindside mini-tsunami. The sound recorder had picked up a crackle from the salt water soaking through its case. Everything was damp, including my spirit. I weighed the value of jumping over board during a squall that ripped our main sail in two as positive alternative to carrying on. Maybe I should have realised 13 total passengers was a bad sign. It might been a good idea to have ballooned my credit card debt to bring a sound recordist, if only to make it an even 14 for the superstitious. They could have helped when I was dying of seasickness or joined me in my hell. A sound recordist is my favourite idea in retrospect. Nonetheless, I was privileged enough to have squeezed onboard the first expedition of its kind in the South Atlantic, something part of a larger study that growing in a global momentum. There was no turning back, this was no return trip. I had to make do.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2430" alt="03" src="../../images/07-03-590x389.jpg" width="590" height="389"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2431" alt="04" src="../../images/07-04-590x391.jpg" width="590" height="391"></p>
+<p>To be honest, even after a fair bit of research prior to departure, the trip revealed how much I actually understood about oceanic plastic pollution. I had read that plastic fragments were the real concern and still, media hype and carefully chosen pictures led me to entertain the thought we could start an new colony on one of these &#8216;islands.&#8217; This misconception became one of strongest motivations to make the film I made. Not only was there a lack of awareness to the issue, there was a gross misunderstanding that came from this news sensationalism. While I was at first concerned there wasn&#8217;t much of a story without seeing the larger chunks of plastic, after the initial samples drawn from the ocean, then repetition and the relentlessness of what followed, I began to comprehend the ocean had a sort of invisible synthetic virus. Something that nearly everyone had overlooked, something far less shocking without consideration, but far more invasive and insidious than we might fathom. What became important to telling this story was how to present an issue that was akin to a doctor telling you to watch your diet when you feel fine. Then one day, your heart stops and it is too late.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2432" alt="05" src="../../images/07-05-590x440.jpg" width="590" height="440"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2433" alt="06" src="../../images/07-06-590x329.jpg" width="590" height="329"></p>
+<p>When I returned home to edit &#8211; bearded, salted and sun burnt &#8211; I was still quite unsure what would be the best way to tell a motivating story, one that encourages rather than condemns. I had accomplished the 31 days across a moody sea but what did I have in the can? There was plenty shots of blue and grey water or the crew sitting on watch. Those first 10 days of which were really thin too, riddled with incomplete moments without context, and lots of wind smothered audio, as seasickness was my un-welcomed priority. There wasn&#8217;t exactly an apparent path to assemble a full-length documentary out of that wave of footage! And, since my budget pretty much dried up with costly 30-hour flights and purchasing production gear (only to have the sea ravaged it), I went back to paying work as a full-time editor before I had even finished transcoding the lot. It was double duty for months. With eyes soured and a mind taxed, it was hard to suss out a story, let alone find a groove or gain ground, when the last thing I wanted to do was look at another computer screen for innumerable hours more. From that obscure beginning with unlimited ambition, I&#8217;d circled the globe by air, sailed and survived an entire ocean, and now at the finish line, I was nauseous with a feeling of being overwhelmed. Finally, my expectations were being grounded. I needed help.</p>
+<p>Benjamin (Hall) Halkin was the co-editing lifesaver that appeared from the heavens. Looking for a project of passion, he kept the film rolling as an objective outsider, offering much needed perspective (we&#8217;d never met before LateNite introduced us). I was too close it and too tired. Ben helped fuel the finishing. All those days of footage, to chase a story out of subtitle details felt crushing before he came along. And, despite both of us usually working on properly paying commercial gigs by day, there was a tremendous new energy. We hit it in the head. We built scenes by days, culled the crap, devised an intro/outro and squeezed all we could out of the sparse catalogue of mini-moments giving the film a thematic backbone of sound-bites and character vignettes. Then, on some random day in the month of May, something coherent was found. The edit to this point had already took nearly six months of stop-starting, scene mixing and matching, and a fair few sleepless nights. Yet despite a working structure, the film didn&#8217;t feel done, even after a month of fine-tune fidgeting. I was struggling to let go. Could this be the end? Was it what it could be? With what we had, would it even be received well? I guess my preproduction high hopes were lingering like a naysayer, skewing my view. Truth was, I had a lot more to do to reach the finish; I wasn&#8217;t done done.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2434" alt="07" src="../../images/07-07-590x394.jpg" width="590" height="394"></p>
+<p>With this unsure feeling pressing my mind, I drag my feet into the polishing. The grade was a go, the score was in the works, and with the online waiting, I constantly tweaked this and that, but moreover, it was my voiceover that haunted me. It was the last thorn in my side and unfortunately necessary to bridge the story gaps as a sort of filmic glue &#8211; I hated it. This was just another hang up. I despised hearing my unsuited voice, not for its sound like most of us feel, but for its lack of filmic tone or style, and my journal I kept at sea that it was based on was at times, delusional scribbles. There had been far too many years of listening to the God-like tones of Attenborough, Morgan Freeman, and so on, to believe I had narration career ahead of me! Being so hypercritical, a blessing as much as a curse, and using whatever imperfection as an excuse to stave off uncertainty, I would have gone on forever. I just wanted to make a film worthy of the cause, and in a way, it was my first impression as a filmmaker too. I was making myself go insane with self-imposed pressure and expectations. So, allowing myself to be distracted a bit and take a step back, I went away with Jacqui Hocking to help shoot <a href="./../portfolio/spinning-dreams-cambodia/" target="_blank">Spinning Dreams Cambodia</a>. During those few weeks away, like a Godsend, an email came that gave me the hard deadline I couldn&#8217;t give myself, <em>&#8220;We heard about your plastic pollution documentary and think it might be a good fit for our festival. Please send us your film by July 1st for consideration&#8221;</em>.</p>
+<p>The Environmental Film Festival of Melbourne was a world premiere sellout! It was a stand out actually, filling the seats faster than the rest and I only heard a multitude of positive responses. That, and a three-Stars write up in The Age newspaper, <em>&#8220;A very good, slightly frightening documentary&#8221;</em> lifted my hopes high once again. I entered PLASTICIZED into about 2 dozens festivals worldwide, spending thousands of dollars to do so, hours of forms and post offices, DVD after DVD, sent away only to wait a long wait. It took 3 months before the first festival response came. And, since the film was premiere status everywhere but Australia, I had to sit on the film during this time until those responses finally came. Nearly a year had passed now since the trip and only one crowd had seen it! In the months after the glowing premiere faded in memory, the steady stream of &#8216;thanks for your entry but&#8230;&#8217; festival notifications began to arrive. At first it was understood, you can&#8217;t get win &#8217;em all, and some were admittedly aimed really high, but then the realisation I wasn&#8217;t getting into any of them dropped heavy and slow. Old doubt creeped back. I questioned my film&#8217;s merit relentlessly. Maybe it was lacking impact or it was too languid and boring? Did my stubborn decision to make the film I wanted, and to stick with its 48-minute length, sabotage its chances for being too long for the short categories and too short for the feature slots? What happened to the promising start? I was uncertain of its shortcomings. With nearly all festival responses there is little to no feedback. Somewhere in the middle of my festival effort, I became completely disheartened. Every detail I had focused on, all the story telling methods I had chose, were they off the mark?</p>
+<p>It took awhile, but now I realise PLASTICIZED was all in a place and time, doing the best you can with what comes your way sort of thing. Of course there are a million things I could have and would like to have done differently in hindsight and, I will do next time! I have learned the agonising way, chasing something ridiculous you believe in, is a great idea. Pouring my heart into the film has opened up unexpected opportunities, introduced me to amazing people, and took me to places I have only seen in &#8216;the movies&#8217; or read about in monotone, black and white textbooks. And, whether I wanted to or not, with enforced patience, my film found an afterlife. In Australia in particular, there have been over 15 grassroots screenings and counting, little community gatherings, non-profit organisation, as much as 100 or more strong, that have supported big eco movements and influenced change such as a successful plastic bag ban in Fremantle, Western Australia. Not only that, support has come from a range of unexpected places from around the globe, Facebook fans, Tweeters followers, etc., which has led to stranger volunteers translating the film into Portuguese, German, and even Russian for free! Festival Voces has a Spanish subtitled copy traveling to remote towns and villages in South America to screen it to increase awareness in areas the topic might otherwise be missed. It is to screen in this November in Paris, in yet another language. I even was commissioned to direct a short film after speaking at one of my screenings. The online festival <a href="http://www.cultureunplugged.com/documentary/watch-online/play/12387/Plasticized" target="_blank">Green Unplugged</a> has selected it, sighting its merit of its ability to help the &#8216;regeneration of the environment.&#8217; And, by the time this retrospect rant is finished, with the help of <a href="http://topdocumentaryfilms.com/plasticized/" target="_blank">Top Documentaries</a> embedding my awkwardly timed 48-minute film onto their site, the YouTube views will have passed the lucky number of 13,000, defying the online crowds&#8217; typically short form attention spans with solid 100 to 1 like ratio.</p>
+<p>It is strange. Making the film has been an obsession, destroying as well as educational. It became better than imagined and less than expected. It gave me so much and asked for more and more. I love it. I hate it. It carries on. I am the plastics guy. As I sat alone under my own imagined acrobatic elephant&#8217;s spinning top of pressure, a revelation came, bring another sucker to share the weight next time &#8211; i.e. multiple producers! So, despite not reaching illustrious and illusive acclaim, I am proud to have simply completed the beast of a project. And as a filmmaker, with competition high and the capricious viewers&#8217; time precious, I am also so grateful to have had anyone come to any one of the PLASTICIZED screenings. I know it is not a perfect film, but it reassuring seeing it live this second life of sorts, floating around internet clouds, free for perusal, and it feels very worthwhile to prod enviro-discussions globally and plant seeds in the grassroots galore. What better way, or more fortunate way, to do so than through film?</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2435" alt="08" src="../../images/07-08-590x391.jpg" width="590" height="391"></p>
+<p><strong>Special Thanks to:</strong><br>
+Ben Halkin @ <a href="http://bushrangerproductions.com.au/" target="_blank">Bush Ranger Productions</a><br>
+Chris Stone, Holly Downes, Graham McCloud @ <a href="http://www.thestringcontingent.com" target="_blank">The String Contingent</a><br>
+<a href="https://vimeo.com/38759846" target="_blank">Roslyn Di Sisto</a> @ <a href="http://www.methodstudios.com.au" target="_blank">Method Studios</a><br>
+Eugene Richards @ <a href="http://therefinery.net.au" target="_blank">The Refinery</a><br>
+Chris Hocking @ LateNite Films</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2437" alt="09" src="../../images/07-09-590x392.jpg" width="590" height="392"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2438" alt="10" src="../../images/07-10-590x390.jpg" width="590" height="390"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2439" alt="11" src="../../images/07-11-590x391.jpg" width="590" height="391"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2440" alt="12" src="../../images/07-12-590x393.jpg" width="590" height="393"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2441" alt="13" src="../../images/07-13-590x391.jpg" width="590" height="391"></p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

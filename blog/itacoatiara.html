@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-2846 type-post status-publish format-standard has-post-thumbnail hentry category-documentary" id="post-2846">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../itacoatiara/" rel="bookmark">Itacoatiara</a></h2>
+<aside class="meta">
+Dec 17, 2013				    <i class="icon-dot"></i> Posted By Jacqui Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/documentary/">Documentary</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/2gYUaKDnck4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>Way back in March this year, I once again had the privilege of filming for the Swiss non-profit organisation <a href="http://www.myclimate.org" target="_blank">myclimate</a>. The more I work with this energetic team, the more respect and admiration I have for their projects.</p>
+<p>This time, the destination was <a href="http://en.wikipedia.org/wiki/Itacoatiara" target="_blank">Itacoatiara</a>, which resides by the famous Amazon River. I was being sent to film another carbon-offset project, this time a biomass energy plant. The plant, BK Energia, is situated in the heart of the Amazon Rainforest of Brazil.</p>
+<p>Win.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2847" alt="brazil" src="../../images/12-brazil.jpg" width="850" height="840" srcset="../../images/12-brazil.jpg 850w, ../../images/12-brazil-300x296.jpg 300w, ../../images/12-brazil-768x758.jpg 768w, ../../images/12-brazil-480x474.jpg 480w, ../../images/12-brazil-60x60.jpg 60w, ../../images/12-brazil-346x341.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>To get there, I had to fly from LA to Miami, where I met the project partner Martin from myclimate, who had just landed from Switzerland. We travelled together from Miami into the Brazilian Amazonas city of Manaus.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2848" alt="01" src="../../images/12-01.jpg" width="850" height="635" srcset="../../images/12-01.jpg 850w, ../../images/12-01-300x224.jpg 300w, ../../images/12-01-768x573.jpg 768w, ../../images/12-01-480x358.jpg 480w, ../../images/12-01-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>The moment we stepped out of the aeroplane it hit us &#8211; even though I spend much of my year in the tropics of Singapore, the thick, hot, humid air here in the Amazon was unlike anything I had ever experienced. The sensation was both incredibly welcoming and borderline suffocating! It was like you had to physically push yourself to walk through it, and it took my lungs a few moments of confusion to realise I was actually breathing &#8211; even though each breath felt filled with vapour. Our hostel had arranged a driver to collect us, and as we sat down in his car, the expression on our face must have summoned his first words to us; &#8220;Yes. WELCOME TO THE JUNGLE!&#8221;</p>
+<p>Similar to the project I filmed in Africa, this was again a &#8220;shoot-edit-deliver&#8221; turnaround, so I didn&#8217;t bring too much gear to worry about, making transport relatively easy. We arrived at a hostel in Manaus later that afternoon &amp; crashed relatively early. Waking up in the tropical air the next day felt awesome, the air still hot &amp; humid. We were served local coffee &amp; fresh fruit from the tropics which was a great start to the day!</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2849" alt="02" src="../../images/12-02.jpg" width="850" height="635" srcset="../../images/12-02.jpg 850w, ../../images/12-02-300x224.jpg 300w, ../../images/12-02-768x573.jpg 768w, ../../images/12-02-480x358.jpg 480w, ../../images/12-02-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Itacoatiara is about a 7 hour journey from the main city of Manaus. So we didn&#8217;t have much time to check out the city, instead we hired a car and got moving. I was super keen to get deeper into the &#8220;jungle&#8221; and was getting even more intrigued about the project I was preparing to film.</p>
+<p>The drive up was interesting, it was my first visit to the Amazon, and we stopped a couple of times to chat to some locals with what little Spanish we knew (sadly neither of us spoke much Portuguese!). We thought we must have misunderstood one friend selling oranges on the side of the road, when he said &#8220;can I show you my pet?&#8221;. 5 minutes later he returned with a python he found in the forest wrapped around his forearm! But eventually we arrived in the colonial-style town of Itacoatiara.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2850" alt="03" src="../../images/12-03.jpg" width="850" height="567" srcset="../../images/12-03.jpg 850w, ../../images/12-03-300x200.jpg 300w, ../../images/12-03-768x512.jpg 768w, ../../images/12-03-480x320.jpg 480w, ../../images/12-03-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2851" alt="04" src="../../images/12-04.jpg" width="850" height="635" srcset="../../images/12-04.jpg 850w, ../../images/12-04-300x224.jpg 300w, ../../images/12-04-768x573.jpg 768w, ../../images/12-04-480x358.jpg 480w, ../../images/12-04-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>As always apon arrival &#8211; I unpack everything. I make sure everything is charged or charging, drives and cards are formatted, lens&#8217;s are clean &amp; the initial script is finalised in my head. I re-fit everything to fit into an easy-access side bag, so I can carry my entire kit around my neck &amp; waist. The rest I still carry with me, but in a back-pack I can leave with security at the project base. Hard-drives of course stay with my passport, always by my side.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2852" alt="05" src="../../images/12-05.jpg" width="850" height="635" srcset="../../images/12-05.jpg 850w, ../../images/12-05-300x224.jpg 300w, ../../images/12-05-768x573.jpg 768w, ../../images/12-05-480x358.jpg 480w, ../../images/12-05-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Our schedule was tight &#8211; we arrived Sunday, would meet the project the following day, film &amp; edit Tues-Wed, finalise on Thursday, travel &amp; fly out again on Friday.</p>
+<p>Monday night we got rained out which was pretty stressful, with such a tight deadline &amp; shooting schedule, I needed to be filming every moment I had. Luckily the weather subsided and I managed to miss most of the downpour on the first shooting day as we made our way from the hotel to &#8220;BK Energia Power Plant&#8221;.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2853" alt="07" src="../../images/12-07.jpg" width="850" height="566" srcset="../../images/12-07.jpg 850w, ../../images/12-07-300x199.jpg 300w, ../../images/12-07-768x511.jpg 768w, ../../images/12-07-480x319.jpg 480w, ../../images/12-07-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2854" alt="08" src="../../images/12-08.jpg" width="850" height="567" srcset="../../images/12-08.jpg 850w, ../../images/12-08-300x200.jpg 300w, ../../images/12-08-768x512.jpg 768w, ../../images/12-08-480x320.jpg 480w, ../../images/12-08-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Before the power plant was installed &#8211; the city of Itacoatiara relied on diesel to power the city. Not anymore.</p>
+<p>BK Energia is a power plant that is fuelled entirely by sustainably managed biomass from an FSC (Forest Stewardship Council) certified saw mill located right next door. Before the power-plant utilised the waste from the mill (turning it into electricity), it was simply left to rot in stockpiles creating polluting methane. By using the waste, over 45,000 tons of CO2 is reduced from entering the atmosphere every year.</p>
+<p>The saw, called &#8220;Precious Woods&#8221; is the worlds best example for sustainable forest management. The mill is even approved by Greenpeace, which does audits once a year flying over their managed-forest area.</p>
+<p>Although the focus was on the generation of electricity (BK Energia) &#8211; we still wanted to film and capture the entire process right from the rainforest. We drove with the CEO of Precious Woods into an area which in 1997 had been harvested. I braced myself, as any form of forest harvesting I thought would be heartbreaking. But I couldn&#8217;t believe it.</p>
+<p>It was hard to see any evidence of human activity &#8211; the forest area had regenerated incredibly and was lush with life. I was amazed to find out that actually the forest growth is faster in the managed areas. For monitoring purposes though, Precious Woods still keeps large sections of the forest completely untouched &#8211; to have a comparison &amp; study of their managed areas. They want to make sure nothing they do is detrimental to the eco-system or wildlife, and therefore carefully assess the progress of their work. When harvesting an area, they will only select specific trees &amp; species to harvest &#8211; keeping as much of the remaining forest intact as possible. They keep a comprehensive catalog of EVERY TREE in their area, including the age &amp; growth rate.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2855" alt="11b" src="../../images/12-11b.jpg" width="850" height="1133" srcset="../../images/12-11b.jpg 850w, ../../images/12-11b-225x300.jpg 225w, ../../images/12-11b-768x1023.jpg 768w, ../../images/12-11b-480x639.jpg 480w, ../../images/12-11b-346x461.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2856" alt="10" src="../../images/12-10.jpg" width="850" height="478" srcset="../../images/12-10.jpg 850w, ../../images/12-10-300x168.jpg 300w, ../../images/12-10-768x431.jpg 768w, ../../images/12-10-480x269.jpg 480w, ../../images/12-10-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2857" alt="11" src="../../images/12-11.jpg" width="850" height="478" srcset="../../images/12-11.jpg 850w, ../../images/12-11-300x168.jpg 300w, ../../images/12-11-768x431.jpg 768w, ../../images/12-11-480x269.jpg 480w, ../../images/12-11-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2858" alt="09" src="../../images/12-09.jpg" width="850" height="567" srcset="../../images/12-09.jpg 850w, ../../images/12-09-300x200.jpg 300w, ../../images/12-09-768x512.jpg 768w, ../../images/12-09-480x320.jpg 480w, ../../images/12-09-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>There are over 60 different species of trees in the forest there, all with unique &amp; beautiful textures, colours &amp; traits, which they export as precious commodity. But because they only export the best quality, there&#8217;s a lot of extra waste and &#8220;scraps&#8221; created during the milling process. These are then dropped into a conveyor belt which connects directly to the energy plant next door.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2859" alt="12" src="../../images/12-12.jpg" width="850" height="478" srcset="../../images/12-12.jpg 850w, ../../images/12-12-300x168.jpg 300w, ../../images/12-12-768x431.jpg 768w, ../../images/12-12-480x269.jpg 480w, ../../images/12-12-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2860" alt="13" src="../../images/12-13.jpg" width="850" height="478" srcset="../../images/12-13.jpg 850w, ../../images/12-13-300x168.jpg 300w, ../../images/12-13-768x431.jpg 768w, ../../images/12-13-480x269.jpg 480w, ../../images/12-13-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>It was the first time I had visited a biomass energy plant, and I was impressed by all the stories we found.</p>
+<blockquote><p>The project replaces several diesel generators and supplies the approximately 80,000 inhabitants of the city with climate-friendly power. Thanks to the power plant, the local population benefits from lower energy prices and a more stable energy supply (less failures and transport losses). Other benefits are the creation of local jobs as well as a better income distribution in the region. The local municipality benefits from lower expenditures as it no longer needs to import diesel or electricity from other regions. These funds can therefore be spent in other critical areas such as health and education. The plant produces annually up to 56,000 mWh of electricity, for which otherwise around 5 million litres of diesel would be consumed.</p></blockquote>
+<p>I was especially shocked to see how impressive the filtering process was of the air which is released into the atmosphere after the thermal processing. Check it out:</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2861" alt="14" src="../../images/12-14.jpg" width="850" height="567" srcset="../../images/12-14.jpg 850w, ../../images/12-14-300x200.jpg 300w, ../../images/12-14-768x512.jpg 768w, ../../images/12-14-480x320.jpg 480w, ../../images/12-14-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>On the Wednesday night, I did most of the data wrangling and consolidation of script &amp; story. It was information overload in a way, with the FSC managed forest information, the saw mill process, the production of energy &#8211; all content that needed to be clear &amp; coherent in a short (3-6minute) delivery. Also, all the interviews were in Portuguese. A quick translation was done on site, although that was also not completely easy to do (on one of the days, I was working closely with an Italien employee of Precious Woods, speaking German, translating Portuguese into English… epic!)</p>
+<p>Martin from my climate was awesome, and we spent the evening going over the script and actually recording some voiceover using a Sennheisser lapel into a handy little H4N, just to make sure we had all our bases covered.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2862" alt="15" src="../../images/12-15.jpg" width="850" height="635" srcset="../../images/12-15.jpg 850w, ../../images/12-15-300x224.jpg 300w, ../../images/12-15-768x573.jpg 768w, ../../images/12-15-480x358.jpg 480w, ../../images/12-15-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>I had the sync &amp; rough-assemble complete by the end of the shoot, and sent off the longer interviews that needed a more thorough translation. My favourite story was an interview I made with one of the precious woods female employees;</p>
+<blockquote><p>I&#8217;m proud, very proud to work for this company. It&#8217;s an honour to have a company like this working in the amazon.</p></blockquote>
+<p>Well, it was certainly my honour to film such a great example for the rest of the world on how to protect our most precious resource &#8211; our rainforests. It is only with this type of sustainable collaboration &amp; social enterprise that local communities &amp; our natural environment can survive.</p>
+<p>To everyone in the myclimate team &amp; BK Energia Project, thank you for your precious contribution to our planet.</p>
+<p>You can learn more about the project <a href="http://www.myclimate.org/nc/carbon-offset-projects/international-projects/detail/mycproject/10/?tx_myclimateprojects_pi2%5Bplayvideo%5D=1" target="_blank">here</a>.</p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

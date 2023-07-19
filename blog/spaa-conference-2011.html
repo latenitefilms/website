@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-1345 type-post status-publish format-standard has-post-thumbnail hentry category-conferences-and-events tag-spaa" id="post-1345">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../spaa-conference-2011/" rel="bookmark">SPAA Conference 2011</a></h2>
+<aside class="meta">
+Nov 18, 2011				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/conferences-and-events/">Conferences &amp; Events</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="size-medium wp-image-1346 alignnone" title="SPAA" src="../../images/11-spaa-590x590.jpg" alt="" width="590" height="590"></p>
+<p>What an absolutely exciting and intense few days it&#8217;s been!</p>
+<p>For those that don&#8217;t know, I was fortunate enough to be excepted into the <a href="http://conference.spaa.org.au/displaycommon.cfm?an=1&amp;subarticlenbr=2" target="_blank">Emerging Producers Scheme</a>, allowing me to attend the <a href="http://conference.spaa.org.au/" target="_blank">SPAA Conference</a> in Sydney, which has literally just wrapped.</p>
+<p>The Scheme is designed to subsidise and assist newer members of the industry to attend and participate in the Conference by offering a carefully selected group of producers the opportunity to attend the festival at a reduced rate of $770, as well as giving participants the &#8220;tools&#8221; they need to best &#8220;work&#8221; the conference.</p>
+<p>We were extremely lucky to be provided with two INCREDIBLE mentors &#8211; <a href="http://www.imdb.com/name/nm0177707/" target="_blank">Melanie Coombs</a> and <a href="http://www.imdb.com/name/nm2035673/" target="_blank">John L Simpson</a>.</p>
+<p>Melanie has produced award winning shorts, animation, documentaries and features since 1999. <a href="http://www.harviekrumpet.com/" target="_blank">Harvie Krumpet</a> won the 2003 Academy Award for Best Short Animation and <a href="http://www.maryandmax.com/" target="_blank">Mary and Max</a> opened the 2009 Sundance Film Festival. Melanie was awarded  the SPAA Feature Film Producer of Year in 2009 &#8211; so we really couldn&#8217;t have had someone with more experience and enthusiasm to show us the ropes!</p>
+<p>John is an award winning creative producer with over twenty five years’ experience working in the performing arts arena. His film productions have been screened all across the globe, from Rotterdam and Warsaw to Copenhagen, Montreal, Palm Springs, London and Algarve. He was one of the producers of <a href="http://www.imdb.com/title/tt0493160/" target="_blank">Razzle Dazzle</a> and was co-creator of the powerful Australian film, <a href="http://www.mensgroupthemovie.com/" target="_blank">Men’s Group</a> &#8211; a winner of the Digispaa Spaartan Award, and also winner of Best Film, Best Actor and Best Script at the 2008 Inside Film Awards. Through his distribution company, <a href="http://www.titanview.com/" target="_blank">TITAN VIEW</a>, John distributed <a href="http://www.thejammed.com/" target="_blank">The Jammed</a>, which is still the highest grossing independent Australian film on screen average ever, during it&#8217;s opening two weeks. The Jammed went on to win Best Film, Best Script and Best Score at the Inside Films Awards 2007 and the following year was selected by the United Nations to be screened at international conferences on human trafficking in Vienna, Geneva and New York. Needless to say &#8211; John is an absolute expert of the industry, who has probably forgotten more about the business than I will ever know &#8211; so it was an incredible opportunity to have him guiding us through the conference floor.</p>
+<p>There were thirty one emerging producers in total &#8211; from the ACT, NSW, South Australia, Victoria, WA and one International Guest from China:</p>
+<ul>
+<li>Yve Laffey (ACT)</li>
+<li><a href="http://www.cinemaiden.com/" target="_blank">Brianna O&#8217;Donohue (ACT)</a></li>
+<li>Justene Taylor-Cannon (ACT)</li>
+<li><a href="http://www.daponte.com.au/" target="_blank">Daniel Aponte Prypchan (NSW)</a></li>
+<li><a href="http://www.dvaustralia.com" target="_blank">Che Baker (NSW)</a></li>
+<li><a href="http://www.sequence-films.com" target="_blank">Jimmy Carr (NSW)</a></li>
+<li><a href="https://www.facebook.com/pages/Musclecar-The-Movie/145414272227063" target="_blank">Aaran Creece (NSW)</a></li>
+<li><a href="http://www.cuttingedge.com.au/bec-cubitt" target="_blank">Bec Cubitt (NSW)</a></li>
+<li><a href="http://www.mediafarm.com.au" target="_blank">Rami Fischler (NSW)</a></li>
+<li><a href="http://www.juliangalea.net/" target="_blank">Julian Galea (NSW)</a></li>
+<li><a href="http://www.imdb.com/name/nm2405447/" target="_blank">Michelle Hardy (NSW)</a></li>
+<li><a href="http://littlescreenbigscreen.com/" target="_blank">Angelique Papadelias (NSW)</a></li>
+<li><a href="http://www.jungleboys.com.au/" target="_blank">Chloe Rickard (NSW)</a></li>
+<li><a href="http://www.redzand.com/" target="_blank">Susan Schmidt (NSW)</a></li>
+<li><a href="http://www.imdb.com/name/nm3028319/" target="_blank">Courtney Wise (NSW)</a></li>
+<li><a href="http://www.shortfocusfilms.com" target="_blank">Megan Huitema (SA)</a></li>
+<li><a href="http://www.projectorfilms.com.au/" target="_blank">Daniel Joyce (SA)</a></li>
+<li><a href="http://www.shortfocusfilms.com" target="_blank">Brendon Skinner (SA)</a></li>
+<li><a href="http://www.daylightbreaks.com.au/" target="_blank">Tim Standing (SA)</a></li>
+<li><a href="http://www.epicfilms.com.au/" target="_blank">Kirsty Stark (SA)</a></li>
+<li><a href="http://www.shortfocusfilms.com" target="_blank">Simon Williams (SA)</a></li>
+<li>Juliette Buxton (VIC)</li>
+<li><a href="https://www.facebook.com/thesaltmaiden" target="_blank">Beverley Callow (VIC)</a></li>
+<li><a href="http://www.naluproductions.com/" target="_blank">Wes Greene (VIC)</a></li>
+<li>Jess Leslie (VIC)</li>
+<li><a href="http://www.matthewswood.com" target="_blank">Lee Mathews (VIC)</a></li>
+<li><a href="http://4nanasinacarproductions.com" target="_blank">Clare McGrath (VIC)</a></li>
+<li><a href="http://www.imdb.com/name/nm2685232/" target="_blank">Nic McRobbie (WA)</a></li>
+<li><a href="http://corefilms.com.au/" target="_blank">Kelrick Martin (WA)</a></li>
+</ul>
+<p>So what does being an emerging producer actually involve? Well, let&#8217;s start at the very beginning, a very good place to start.</p>
+<p>To apply for the scheme you basically just needed to fill out an online form &#8211; assuming you conformed to the basic terms and conditions (you must be a SPAA Associate Member, it must be your first time to the conference, you must have at least one production credit, you must demonstrate an interest in pursuing a career as a producer, and you can&#8217;t have worked extensively as a producer in long-form or television). Apart from providing a CV and basic contact details, the only real thing they ask you is: &#8220;why would you like to attend the SPAA Conference (related to your professional development including details of your proven interest as a producer)&#8221;. Then once you submitted the form &#8211; you just played the waiting game.</p>
+<p>Luckily for me and the thirty people above &#8211; we were all selected. The next thing to do was book flights and accommodation. My only suggestion is to book early &#8211; as hotels book out quickly, and it&#8217;s really hard to find cheap accommodation (at least it was in Sydney &#8211; as this years conference was at The Hilton). I ended up staying at the <a href="http://www.travelodge.com.au/travelodge-phillip-street-sydney-city-hotel/home" target="_blank">Travellodge on Phillip Street</a>, which was actually quite good. It&#8217;s wasn&#8217;t stupidly expensive, it was walking distance to the venue, the rooms were simple but nice &#8211; it&#8217;s quite, the shower is good and the best is comfortable. Flights were fairly expensive &#8211; but that&#8217;s to be expected. I ended up flying with Qantas, as they offered the cheapest flights &#8211; although that has meant I had to fly quite early on Sunday morning, and at 3ish on a Thursday to return home, which is not ideal. However, as a broke emerging producer &#8211; cheap is more important than sleep!</p>
+<p>I want to give a big shout-out and thanks to the incredible <a href="http://meltingpot.spaa.org.au/people/katie-fagan" target="_blank">Katie Fagan</a> from SPAA &#8211; who really looked after us and made sure that all our questions were answered before and during the conference. She&#8217;s the membership manager at SPAA, so if you ever have any questions about membership, she&#8217;s your girl.</p>
+<p>The fun all started on Sunday afternoon. To start things off &#8211; all the emerging producers met at The Hilton for an introductory session with John and Melanie, as well as pitch mentors <a href="http://www.imdb.com/name/nm2087511/" target="_blank">Joan Lofts</a> and <a href="http://www.imdb.com/name/nm1051637/" target="_blank">Diana Manson</a> (thanks to the ABC). As predicted, each member of the group needed to &#8220;stand up&#8221; and explain who they were, what they do, and what they want to get out of the conference &#8211; and I must say, even at this stage, I was realising just how lucky I was to be surrounded by such an amazing group of young and inspired, talented filmmakers. After everyone introduced themselves, Melanie and John offered up 20 tips for a successful SPAA. I won&#8217;t list all of them here, but the general gist was:</p>
+<ul>
+<li>Producing is NOT cool. You will be humiliated at some stage in your career &#8211; but at the same time, don&#8217;t pitch unless asked to do so (although you will be humiliated at some stage &#8211; it&#8217;s still best to be avoided!).</li>
+<li>Producing is NOT a competition. You need to play nice with your peers so that everyone can succeed.</li>
+<li>Be a good person. Don&#8217;t lie, don&#8217;t exaggerate, don&#8217;t slag anyone off, and just be nice.</li>
+<li>Be fun and have fun.</li>
+</ul>
+<p>And with advice (along with a whole collection of funny stories) &#8211; it was off to the first official SPAA event &#8211; Welcome drinks at <a href="http://www.theloftsydney.com/" target="_blank">The Loft</a>. There&#8217;s not really much I can say about this &#8211; apart from it was a really great start to the conference. Basically, all thirty emerging producers were thrown in a bar jam-packed with other much more experienced producers, and left to our own devices &#8211; to network, and make new contacts, but with the safety net of having thirty of &#8220;our own kind&#8221; to always go back to if conversations dry up. For me personally &#8211; I spent most of the night getting to know the emerging producers in the group, but also ran into a <a href="http://adie.com.au/" target="_blank">good friend</a> who I worked with on my first ever properly paid gig, and haven&#8217;t seen for years, which was a very nice surprise &#8211; who also introduced me to some good people to know. It wasn&#8217;t a late night &#8211; which was good, as this was going to be a big few days anyway (and I also needed to tweak some things on our new website).</p>
+<p>And then&#8230; it was day one. First up, everyone from the conference (I would imagine there was about 2000 people), met in the Grand Ballroom at The Hilton, for the Plenary Speech from Geoff Brown (Executive Director of SPAA) and Brian Rosen (President of SPAA). Having never heard either of these people speak before, I have to say that I was quite impressed. Geoff Brown just oozes with intelligent and wit, however Brian&#8217;s talk was especially powerful, and right on the money (at least in my opinion) in terms of some of the issues that the industry faces, and possibly ways we could work around them. Next up was the Hector Crawford Memorial Lecture &#8211; which was basically a history lecture, much as you would experience in University &#8211; taken by industry veteran, and previous Australian of the Year, Nigel Dick. During a long and distinguished career Nigel has worked at the highest levels of the Australian television industry as a former chairman of HSV 7, Southern Cross Communications and chief executive of GTV 9, TCN 9 and the Broadcasting Corporation of New Zealand. Now, at the age of 83, he is writing a PhD thesis in the history department of Melbourne University. It just goes to show &#8211; once a hard worker, always a hard worker! The general gist of his talk was that history is basically repeating itself, and a lot of the mistakes from the past, can be used a lessons for the future. You can read the complete lecture on <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40576" target="_blank">Screen Hub</a> &#8211; which I highly recommend.</p>
+<p>After the lecture, and a few other house keeping talks, it was time for morning tea. Let me know just take the opportunity to say that the food throughout the whole conference was absolutely incredible. Lunches and morning tea at the Hilton, dinners at the various events and nibbles throughout the conference were all first class. The waiting staff at the Hilton were also fantastic, and always on the ball. Having worked on many high-profile conferences over the years in both Australia and overseas (as a lighting operator) &#8211; I can honestly say that this once of the best conferences I&#8217;ve been to in terms of food and hospitality.</p>
+<p>After a coffee, cookie and party pie &#8211; it was time to head to the first Breakout Session.</p>
+<p>But first, to give you a rough idea of how the conference is organised, there are basically a few different elements:</p>
+<ul>
+<li>There are several <strong>Breakout Sessions</strong> throughout the day, split into different rooms for 360 (i.e. New Media), Television, Feature Films, and Kids.</li>
+<li>There are <strong>Roundtables</strong> throughout the day, which give delegates an interactive opportunity to meet informally with speakers, industry decisions makers and financiers in a relaxed environment amongst a small group (a maximum of nine people) of their peers. Bookings are made on a first come, first serve basis and is a great way to just have a chat with experts in the industry.</li>
+<li>There are a few <strong>Heavyweights Half Hour</strong> sessions &#8211; which are basically just industry leaders giving a much more focussed session explaining who they are, what they do, the commitment level of their company, how they partner with Australia, and what they are looking for.</li>
+<li>
+<strong>SPAAmart</strong> is a market place full of projects chosen by the quality of submission. Project teams meet with local and international investors (co-producers, financiers, sales agents and distributors) appropriate to their financing needs in pre-arranged mettings with the aim of establishing relationships, building upon past relationships and deal-making for the benefit of their project.</li>
+<li>
+<strong>Scriptworks Feature Scriptclinic </strong>is one-to-one sessions that allow you to discuss your feature film project with a team of experienced script editors, writers, directors, agency readers and general project trouble shooters.</li>
+<li>There are also a number of <strong>Pitching Opportunities</strong>, such as a closed-door pitch with Disney, the Holding Redlich Pitching Competition, 360 Market (an opportunity to meet executives who are active in the digital space) and Ready Steady Pitch (which allows you to pitch your project to a network executive in 5 minutes with feedback given afterwards).</li>
+</ul>
+<p>My first Breakout Session was <strong>Rockstars of the Internet</strong>. Basically it was a &#8220;meet the filmmakers&#8221; sessions with three inspiring filmmakers who have made their mark on the Internet.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/bzn1V5l74qU?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>For anyone who knows anything about YouTube, <strong>Natalie Tran</strong> really needs no introduction.</p>
+<p>As of March 2011, Tran has 273 videos available on her YouTube channel and is the most-subscribed user of all time in Australia, the 26th most subscribed of all time on YouTube, and the 7th-most subscribed director worldwide. She also manages the 58th most viewed channel on YouTube of all time. Tran has more than 920,000 subscribers and more than 350 million views. Needless to say &#8211; her videos are extremely popular, and she&#8217;s making quite a nice living off doing something that she just honestly really loves. She basically does everything in her videos herself &#8211; she acts in them, films them, edits them as posts them. The production quality isn&#8217;t great &#8211; but audiences just love her humour and her clever skits.</p>
+<p>After giving us a summary of what she does, and what she&#8217;s all about she did give some words of wisdom:</p>
+<ul>
+<li>Having a loyal audience is incredibly important, because it means if you start a new venture, you don&#8217;t have to start from scratch &#8211; the audience will follow you.</li>
+<li>You can accumulate views over time. Don&#8217;t worry too much if you don&#8217;t start with a bang, as consistency is much more important.</li>
+<li>Respect your audience! Don&#8217;t treat them like idiots, don&#8217;t try to trick them.</li>
+<li>You must build a relationship with your audience &#8211; but it needs to be a legitimate and honest relationship. Just having a Facebook page and Twitter feed is not enough. You need to start a conversation with your fans &#8211; but don&#8217;t start that conversation for no reason. Noise is bad.</li>
+<li>Familiarity is the most important thing for people like Natalie. What she does is basically the same as FM radio. Despite the fact that there are several drive time radio shows that all basically have the same format &#8211; they each have their own style, which attracts different audience members. In the online world &#8211; this is exactly the same. You need to be unique, and create a platform that people want to connect with.</li>
+</ul>
+<p>Natalie was a great speaker, with a really great sense of humour. She&#8217;s a dork &#8211; but she loves what she does, and has made a really great place for herself. Given that her videos don&#8217;t cost a cent to make &#8211; the fact that she&#8217;s pulling in way over $100,000 a year in advertising revenue really says something.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/0Z09bNgSeMI?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p><strong>Dario Russo</strong> was one of the creators of the incredibly funny, and massively successful <a href="http://www.youtube.com/watch?v=UhHhXukovMU" target="_blank">Italian Spiderman</a>, a film parody of Italian action-adventure films of the 60s and 70s.</p>
+<p>The project began as a trailer for a non-existent film, produced as a student film at Flinders University by Dario for his final year Screen Production project. The &#8220;trailer&#8221; was shot, over the course of one day, on 16 mm film using an older style camera to achieve an authentic look for the films of that era.</p>
+<p>Publicized as an actual lost Italian action film from the late 1960s, the film was later uploaded onto YouTube on 8 November 2007 where it has gained a massive cult following with over 3.2 million hits as of August 2010. With some of mainstream media taking interest in the film, this led to the South Australian Film Corporation giving the filmmakers funding for ten more short films. The first installment of the &#8220;feature film&#8221; premiered across the Internet on 22 May 2008, and further installments followed on a weekly basis. The series was well-received, but ended on a cliffhanger. And then, like so many projects &#8211; it all fell to shit, for reasons Dario couldn&#8217;t go into &#8211; but reading between the lines, basically he had a massive falling out with other members of his team.</p>
+<p>But despite the fact that they basically had to abandon Italian Spiderman, and were never able to make any money off the film, SBS were still very interested in investing in the filmmakers &#8211; and so three years after the Italian Spiderman debacle, a new company <a href="http://www.dinosaurworldwide.com/" target="_blank">Dinosaur</a>, and new project, <a href="http://www.sbs.com.au/danger5/" target="_blank">Danger 5</a> evolved. Set in a bizarre 1960&#8217;s inspired version of World War II, this action comedy series follows a team of five spies on a mission to kill Hitler. The concept will start as a 5 part web-series, and then continue on as a 6 part television show on SBS.</p>
+<p>Dario is a character &#8211; and I have to say his talk was probably the most entertaining and funniest of the conference. He&#8217;s words of wisdom? Just keep at it. Despite the stuff-up that his first project brought with it &#8211; he just kept bashing along, and now Danger 5 looks to be another cult classic.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/SEVU-YLpM8A?rel=0" frameborder="0" width="590" height="430"></iframe></p>
+<p><strong>Joe Brumm</strong> has 14 years experience as a director and animator and a passion for making things move around the screen. A strong background in traditional animation informs all his work and his love of translating complex ideas into pictures is the driving force behind his directorial roles. He has done stints on many successful children&#8217;s series, including the multiple Bafta winning Charlie And Lola, Little Kingdom, Little Princess, I Am Not An Animal and Tinga Tinga Tales. His independent shorts have screened at numerous international animation festivals, including Annecy, the New York Animation Festival, and Animadrid, and his more offbeat creations have a spread around the Internet like a virus.</p>
+<p>His latest venture is called <strong>Dan The Man</strong> &#8211; which is taking the Internet by storm, already, despite the fact that he hasn&#8217;t actually launched the web-series yet. Joe has always had a great love for computer games &#8211; so when he had a great idea for a web-series based on computer game characters, he just knew he had to make it. After approaching various people, and getting rejected, he decided to do it himself, with all his good friends from his hometown of Brisbane. When he released the first episode on YouTube, within one month the video got a million hits &#8211; so he knew he was on to something. But it wasn&#8217;t an instant success. You can&#8217;t just upload something and instantly receive a million hits. What he did was post his video around on other sites &#8211; such as animation sites, and spread the word that way. Once the animation and gaming community found out about the short &#8211; word spread fast &#8211; very fast!</p>
+<p>Now that he had some street cred, after discussions with a Brisbane-based game developer &#8211; finally he had the backing to turn his idea into a full-blown series.</p>
+<p>Founded in 2001, <a href="http://www.halfbrick.com/" target="_blank">Halfbrick</a> has been on the forefront of the Australian game development industry for many years. Recently, after many years of developing licensed titles for platforms such as GBA, DS and PSP, Halfbrick has begun expanding its portfolio with a range of independently released games for downloadable platforms. With the success of Fruit Ninja on iPhone and iPad, Halfbrick has catapulted to become one of the most well known indie developers in the world, proving that a little dev down under has the world class skills needed to make a big splash on the global market.</p>
+<p>Joe and Halfbrick decided that Dan The Man needed to be made, and so the game developer funded the project, and they have just finished production of seven episodes, which will be released in January next year. However, the twist is, that the last episode of the web series will be a cliff-hanger, and you won&#8217;t be able to find out what happens without downloading a iPhone app, which will allow you to &#8220;play out&#8221; the ending. Given the success of Fruit Ninja &#8211; it&#8217;s safe to assume that Dan The Man is going to kick some serious butt as well. The iPhone game will be released in February after the end of the web-series.</p>
+<p>What advice does Joe have?  You need to have a hook &#8211; something that instantly grabs the audiences attention. For Joe it was having a show that looks and SOUNDS like the old 8-bit games that a lot of people grew up with. Audiences have an INCREDIBLY short attention span on the Internet &#8211; so you really need to grab their attention straight away. The first few seconds of your video are VITAL to really grab your viewers attention.</p>
+<p><iframe loading="lazy" src="https://docs.google.com/present/embed?id=dgd69vh3_0fnmsf5gk&amp;size=m" frameborder="0" width="590" height="479"></iframe></p>
+<p>The final speaker of the day was Richard North from YouTube. Everyone knows what YouTube is, how popular it is, and most people understand the <a href="http://www.youtube.com/partners" target="_blank">partnership</a> arrangement. However, here are some tips he shared that may be of some interest:</p>
+<ul>
+<li>Understand your audience and where they hang out.</li>
+<li>Beware of online habits.</li>
+<li>Connect with your community &#8211; make them feel empowered.</li>
+<li>Understand all the different ways to monetise. Don&#8217;t just rely on YouTube &#8211; there are plenty of other services out there that may compliment YouTube&#8217;s offerings.</li>
+<li>Don&#8217;t be naive! Work hard!</li>
+<li>The first 15sec of your video is absolutely vital to get right. Get straight into your content &#8211; don&#8217;t have a boring introductory video or anything.</li>
+<li>Make your content discoverable. Use sensible naming and tagging.</li>
+<li>Work hard to give users what they want.</li>
+</ul>
+<p>By this time, I was getting hungry &#8211; so luckily it was time to eat! Over lunch was the Holding Redlich Pitching competition held by <a href="http://www.imdb.com/name/nm0611761/" target="_blank">Rhys Muldoon</a>. The three finalists were:</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/24546796?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="590" height="332"></iframe></p>
+<p><strong>Claire Evans</strong> and her project <strong>Crime Plays</strong> &#8211; an locative game.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/31824049?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="590" height="443"></iframe></p>
+<p><strong>Claire Marshall</strong> and her project, <strong>Book Jumpers</strong> &#8211; a children/teen adventure <a href="http://clairefmarshall.com/2011/11/10/the-story-so-far/" target="_blank">TV series</a>.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/-eD2JzkFnaM?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p><strong>Marisa Martin</strong> and her project, <strong>The Della Morte Sisters</strong> &#8211; a young adult <a href="http://www.dellamortesisters.com/" target="_blank">TV series</a>.</p>
+<p>Then after a delicious lunch it was back to another breakout session.</p>
+<p>The next session I went to was <strong>It&#8217;s All Foreign to Me: Casting Across Borders</strong>. Although an extremely interesting, entertaining and intense session &#8211; rather than recreating the wheel, I recommend that you check out the summary on <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40594" target="_blank">Screen Hub</a> for all the details, as they have done a much better summary of the event than what I could have. The generally summary though is that producers are VERY unhappy with the <a href="http://www.alliance.org.au/" target="_blank">MEAA</a>, and the fact that no one from the MEAA wanted to come along to SPAA just threw more fuel on the fire.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/31435344?color=ff000d" frameborder="0" width="590" height="251"></iframe></p>
+<p>After morning tea, all the emerging producers had a up-close-and-personal presentation from the Screen Australia marketing team. Here are some highlights of some of the things that were discussed:</p>
+<ul>
+<li>There will be a co-production deal with India in 2012 and a deal with Korea to happen in the not-so-distant future.</li>
+<li>Check out the new Screen Australia campaign &#8211; <a href="http://celebrateaustralianstories.com/" target="_blank">Celebrate Australian Stories</a>.</li>
+<li>Screen Australia has released a whole collection of extremely useful <a href="http://www.screenaustralia.gov.au/marketing/guides.aspx" target="_blank">Marketing Guides</a>.</li>
+<li>&#8220;Australia is the New China&#8221; according to <a href="http://www.imdb.com/name/nm0585334/" target="_blank">Charlotte Mickie</a>.</li>
+<li>What&#8217;s Selling:</li>
+</ul>
+<ul>
+<li>Romantic Comedies</li>
+<li>Cast Driven Projects</li>
+<li>Genre Films with a Twist</li>
+<li>Exceptional Drama</li>
+<li>Docos with Universal Appeal</li>
+</ul>
+<li>Sales commissions are generally 15-25% in Australia</li>
+<li>Marketing Material should be idiot proof.</li>
+<li>Things to think about in regards to your project:</li>
+<ul>
+<li>Audience?</li>
+<li>Purpose?</li>
+<li>Budget?</li>
+<li>Local Plans?</li>
+<li>International Strategy?</li>
+</ul>
+<li>Animal Kingdom and Mary &amp; Max made the most money in France.</li>
+<p>After that it was up to the Grand Ballroom again for two Plenary talks &#8211; <strong>The Future is Digital &amp; The Future is Now</strong>, and <strong>Politics, Policy &amp; Profit: The 3 P&#8217;s of Convergence</strong>. <a href="http://www.optus.com.au/aboutoptus/About+Optus/SingTel+%26+Optus/Executive+Profiles/Director+Optus+Digital+Media" target="_blank">Austin Bryan</a> talked about the changing consumer habits and the explosion of digital devices and platforms, and how they have affected the way we all consume content. You can download the complete speech <a href="http://www.optus.com.au/dafiles/OCA/AboutOptus/MediaCentre/SharedStaticFiles/SharedDocuments/11.11.14_SPAA_Austin%20Bryan_FINAL.pdf" target="_blank">here</a>.</p>
+<p>Next up <strong>Stephen Carter</strong> spoke about our industry from the perspective of someone who runs one of the world&#8217;s largest telecommunications systems and solutions providers.</p>
+<p>With all the formal talks out of the way &#8211; the night brought with it the <strong>SPAA Conference Dinner &amp; Independent Producers Awards </strong>at Doltone House on Jones Bay Wharf &#8211; which we travelled to and fro via bus from The Hilton. It was a really great night with fantastic food &#8211; a few funny speeches, and lots of great people to chat to. You can find a list of all the winners of the Independent Producers Awards <a href="http://if.com.au/1970/01/01/article/SPAA-Independent-Producer-Awards-and-Screen-Music-Awards-winners-announced/NWGXWSLMUY/" target="_blank">here</a>. We were extremely happy to see Enzo Tedeschi up there collecting his award for the work done on <a href="http://www.thetunnelmovie.net/" target="_blank">The Tunnel Movie</a> &#8211; as we are massive fans of everything they&#8217;ve done. After a really great night, it was time to go to bed and get some well deserved rest!</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/2M3moEeErr8?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p>Day Two opened with a really fantastic Plenary talk with <a href="http://www.carnivalfilms.co.uk/team/team.asp?id=2" target="_blank">Gareth Neame</a> in the Grand Ballroom. Gareth is Managing Director of NBCUniversal’s TV production in the UK, expanding on his previous role as Managing Director of Carnival Films, the independent production company Neame sold to NBCUniversal in 2008. He now oversees all UK television production initiatives in Drama, Comedy and Entertainment. He is tasked with increasing NBCUniversal’s presence in the UK, building on the significant success of Carnival. Again, you can read all about the conversation on <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40603" target="_blank">Screen Hub</a>. One thing worth mentioning though, is that the BBC normally spends 12 days per episode for something like Spooks at around 3/4 million per episode &#8211; which seems like a lot compared to the shoot schedules in Australia!</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/-LkWKvMCzqA?rel=0" frameborder="0" width="590" height="430"></iframe></p>
+<p>After morning tea in the Digital Pictures Lounge Ballroom Lobby (on a side note the talented fokes at <a href="http://www.digitalpictures.com.au/">DP</a> did all the amazing SPAA artwork and animations &#8211; great work!), it was off to another 360 breakout session &#8211; first up <strong>Your Underground Audience</strong>.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/6YScoXn31Mg?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>Moderated by <a href="http://www.imdb.com/name/nm0281588/" target="_blank">Lori Flekser</a>, the managing director fo the Motion Pictures Distributors Association of Australia (MPDA) &#8211; this session focussed primarily on piracy. The speakers were Neil Gane, from the <a href="http://www.afact.org.au/" target="_blank">Australian Federation Against Copyright Theft</a> (AFACT), <a href="http://www.imdb.com/name/nm0493824/" target="_blank">Mark Lazarus</a>, Producer of <a href="http://www.imdb.com/title/tt1316536/" target="_blank">The Loved Ones</a>, and Anton Andreacchio, from <a href="http://www.convergen.com.au/" target="_blank">Convergen</a> &#8211; which offer a pipeline of services to try and prevent online piracy, as well as provide extensive tracking services. This was a really interesting session &#8211; as it very much seemed to be the audience (i.e. producers) against the panel (or at least against the views of AFACT). Again, <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40613" target="_blank">Screen Hub</a> have done a great job of covering this session, so check there write-up out, as well as <a href="http://www.theaustralian.com.au/media/the-slap-sees-closure-of-piracy-website/story-e6frg996-1226195147139" target="_blank">this article</a> on The Slap. One thing though that I found really funny, was Lori&#8217;s closing remarks &#8211; &#8220;It&#8217;s better to download than buy Plastic&#8221;. Another useful fact was that in Australia 49% of all cinemas are now Digital.</p>
+<p>During lunch, all the emerging producers split up into their various states, and members of their state funding bodies sat at their tables. For us, we had one lady from <a href="http://film.vic.gov.au/" target="_blank">Film Victoria</a> &#8211; who gave us some information and advice on the various functions and services they can provide. To be perfectly honest &#8211; I was a little disappointed. I would have loved to have more than one person from the funding body at the table, as there were six emerging producers from our state. Also, there are very little services and support for EMERGING producers when interacting with Film Victoria. All feature film funding requires an ESTABLISHED director or producer attached to the project &#8211; which is very annoying, for us, as we would much prefer to tackle the project ourselves, with the ASSISTANCE of Film Victoria. However, despite my person complaints about the way Film Victoria operates (especially compared to other State funding bodies) &#8211; lunch was great, and the woman on our table was very nice and supportive.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/u47cTpo70EE?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>After lunch, it was over to my most anticipated session &#8211; <strong>Sharing The Distribution Love</strong>. For those that have been following our <a href="http://www.twitter.com/latenitefilms" target="_blank">Twitter</a> feed for a while, you would have noticed that we are massive fans of <a href="http://www.thetunnelmovie.net/" target="_blank">The Tunnel Movie</a>, so I was personally really excited to see what Enzo and Julian had to say about distribution. Moderated by Seph McKenna (the head of Australia Production at <a href="https://www.facebook.com/roadshowfilms" target="_blank">Roadshow Films</a>), also on the panel was <a href="http://www.imdb.com/name/nm0907543/" target="_blank">Bart Walker</a> one of the founders of <a href="http://www.cineticmedia.com/" target="_blank">Cinetic Media</a> in the US, and <a href="http://www.imdb.com/name/nm0239277/" target="_blank">Daniel Dubiecki</a>, one of the producers of <a href="http://www.imdb.com/title/tt0467406/" target="_blank">Juno</a>, and <a href="http://www.imdb.com/title/tt0427944/" target="_blank">Thank You For Smoking</a>. As usual, <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40624" target="_blank">Screen Hub</a> have done some great coverage of this session &#8211; so it&#8217;s well worth checking out. However, here are some notes:</p>
+<ul>
+<li>The six major US studios are only making tent-pole films</li>
+<li>There are lots of opportunities for mid-level films, as studios aren&#8217;t making them</li>
+<li>
+<a href="http://www.ironsky.net/" target="_blank">Iron Sky</a> is a great example of using crowd sourcing to fund your movie. We have already signed up for the <a href="http://www.ironsky.net/sneakpeek/" target="_blank">Sneak Peak</a> feature &#8211; and we highly recommend you do the same. There&#8217;s some great content in there!</li>
+<li>
+<a href="http://www.imdb.com/title/tt0467406/" target="_blank">Juno</a> did 300 college screenings prior to it&#8217;s official release to create buzz, as well as releasing a collection of funny animations based on the script &#8211; but released them as fan-artwork (not even the filmmakers knew that they were created as a publicity stunt!)</li>
+<li>The challenge with independent films is always MARKETING</li>
+<li>The Tunnel Movie used the yet-to-be-released <a href="http://www.getmopix.com/" target="_blank">MoFix</a> to power their iPad App. The exact figures haven&#8217;t been released yet &#8211; but it&#8217;s estimated to cost around $5-6 grand to build your own iPad App for your film using their service (as opposed to $20-30K for a custom built iPad App)</li>
+<li>It&#8217;s sometimes better to aim for a small audience in LOTS of different places, as opposed to just focussing on one screening point</li>
+<li>The 135K brand is something that The Tunnel guys plan to use again for another film</li>
+<li>Check out <a href="http://www.audiencerepublic.com/" target="_blank">The Audience Republic</a> &#8211; it has some really great resources for filmmakers looking to move into the digital world</li>
+</ul>
+<p>After that fantastic session I went to a round table discussion with <a href="http://conference.spaa.org.au/displaycommon.cfm?an=1&amp;subarticlenbr=564" target="_blank">Wynston Alberts</a> from Google/YouTube. I basically just asked a whole lot of specific questions that about the Partnership program &#8211; so you can find out more about the YouTube Partnership program <a href="http://www.youtube.com/partners" target="_blank">here</a>. One of the big questions from the other people on the table was about the new 100 funded channels program that is happening in the US &#8211; so it&#8217;s worth reading <a href="http://www.guardian.co.uk/technology/2011/oct/31/youtube-to-launch-tv-channels" target="_blank">this</a> as well. And after a few casual drinks at the very expensive bar &#8211; it was another day wrapped!</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/GTExiWzvJlo?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p>Almost as quick as it all began &#8211; it was already the last day of the conference. First up in the Grand Ballroom, was the Plenary &#8211; <strong>Working Like a Dog to be King of the Castle</strong>. We were fortunate enough to have two of the biggest names in Australian producing at the conference, <a href="http://www.imdb.com/name/nm0792431/" target="_blank">Emile Sherman</a> (producer of <a href="http://www.imdb.com/title/tt1504320/" target="_blank">The Kings Speech</a>), and <a href="http://www.imdb.com/name/nm0941837/" target="_blank">Nelson Woss</a> (producer of <a href="http://www.imdb.com/title/tt0803061/" target="_blank">Red Dog</a>).</p>
+<p><img loading="lazy" class="size-medium wp-image-1364 alignnone" title="Koko On Stage @ SPAA" src="../../images/11-reddog-koko-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Moderated by Sandy George from <a href="http://screendaily.com" target="_blank">Screendaily.com</a>, this was an absolutely fantastic talk discussing how both films came to be, the troubles they faced, the lessons learnt and what&#8217;s planned for the future. You can read a great article about the talk on <a href="http://if.com.au/2011/11/17/article/SPAA-Conference-Nelson-Woss-and-Emile-Sherman/ARLZOGYNDX/" target="_blank">Inside Film</a>. Here are some random points I picked up:</p>
+<ul>
+<li>Despite the fact that it was always planned as a commercial studio film &#8211; Red Dog has had a really great festival run</li>
+<li>Make a pre-sellable film &#8211; that way you can return money to investors on pre-sales</li>
+<li>
+<a href="http://www.wearefilmnation.com/" target="_blank">Film Nation</a> was the sales agent for The Kings Speech</li>
+<li>Red Dog took 8 years to make, and was a follow up to Ned Kelly</li>
+<li>None of the originally planned Cast in Red Dog ended up in the final film</li>
+<li>Nelson was on a &#8220;mission from dog&#8221;</li>
+<li>It costs between $20-40 million for P+A in the US for release</li>
+<li>Red Dog had no target audience &#8211; because 7 to 70 year olds all loved it!</li>
+<li>One of the big investors on The Kings Speech (a bank) feel through a week before shooting</li>
+<li>Emile is a big fan of the &#8220;French system&#8221; &#8211; where every dollar from your box office goes towards your next film.</li>
+<li>The Red Dog crew had to have random drug tests throughout the whole shoot, given that they were shooting on a mining operation</li>
+<li>Emile aims to make 1-2 feature films a year with his company <a href="http://see-saw-films.com/" target="_blank">See-Saw-Films</a>.</li>
+</ul>
+<p>Koko was up on stage as well &#8211; and I have to say, he was a very well behaved dog!</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/24445871?byline=0&amp;portrait=0&amp;color=C60000" frameborder="0" width="590" height="332"></iframe></p>
+<p>Next up was a breakout session titled &#8211; <strong>Don&#8217;t be a Bull in the China Shop</strong> &#8211; which focussed on the new co-production treaty between Australia and China. As usual, <a href="http://www.screenhub.com.au/news/shownewsarticleG.php?newsID=40623" target="_blank">Screen Hub</a> did a great job of covering it &#8211; so I highly recommend you go and have a read of their views. Personally, I don&#8217;t plan to do a co-production with China anytime in the immediate future &#8211; however this was an incredibly interesting discussion, especially I was in China only last year. Here are some notes that I took away:</p>
+<ul>
+<li>Check out the <a href="http://www.chinalawblog.com" target="_blank">China Law Blog</a>
+</li>
+<li>Unlike the West, contracts are only the STARTING POINT for negotiations, and are not considered binding.</li>
+<li>China made 600 films this year, up 526 from last year</li>
+<li>There are 8819 screen in China &#8211; 7411 are Digital, 4751 are 3D and there are 50 IMAX screens</li>
+<li>China allows 20 films per year to be imported into their country (co-productions are not included)</li>
+<li>There is a 13:87 revenue share (vs 40:60)</li>
+<li>Co-Production Rules:</li>
+</ul>
+<ul>
+<li>1/3 Cast Must be Chinese</li>
+<li>50% of the crew must be Chinese</li>
+<li>There are strict censors and regulators on both the Script &amp; Finished Film</li>
+</ul>
+<li>Karate Kid:</li>
+<ul>
+<li>$358 million box office world wide</li>
+<li>$7 million box office in China</li>
+<li>$40 million dollar budget</li>
+</ul>
+<li>Challenges with Co-Productions:</li>
+<ul>
+<li>Application process is extremely slow, and not transparent</li>
+<li>Script approvals are highly subjective</li>
+</ul>
+<li>China/Australia Co-Productions:</li>
+<ul>
+<li><a href="http://33postcardsthemovie.com/" target="_blank">33 Post Cards</a></li>
+<li><a href="http://www.imdb.com/title/tt1708534/" target="_blank">The Dragon Pearl</a></li>
+</ul>
+<li>Co-Production Tip: Commit to the budget and story &#8211; but develop the actual script in China to avoid major re-writes and approvals nightmares in the pre-production stages. You can ONLY obtain a filming permit once you&#8217;re in pre-production.</li>
+<li>In China, Co-productions ARE Joint Ventures as far as the Chinese Government is concerned.</li>
+<li>There are no collection agencies or managers in China</li>
+<li>There is a lack of clarity in accounting</li>
+<li>You need to satisfy multiple levels of approval:</li>
+<ul>
+<li>Chinese Government</li>
+<li>Australian Government</li>
+<li>Chinese Market</li>
+<li>Australian Market</li>
+<li>International Market</li>
+</ul>
+<p>The general outcome from the discussion was that doing an co-production with China is not easy, and there are a lot of cultural differences &#8211; HOWEVER, the benefits can be fantastic.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/aXMpv6vYYdI?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p>During another wonderful lunch &#8211; we were shown a film as part of the <strong>Showtime Movie Channels Talent Assist Scheme</strong>, called <a href="http://www.peekaboothemovie.com/" target="_blank">Peek-a-boo</a>, a short film written and directed by Damien Power produced by Joe Weatherstone. It was an extremely powerful, and if you get a chance to watch it at festivals, I highly recommend it.</p>
+<p>And almost as quickly as it began, it was time for the last breakout session of the conference &#8211; <strong>The Yellow Brick Road</strong>. Moderated by the inspiring and passionate <strong>Jennifer Wilson</strong> from <a href="http://www.theprojectfactory.com/" target="_blank">The Project Factory</a> &#8211; this was the perfect end to the conference.</p>
+<p><strong>Sam Smith</strong> from <a href="http://www.redlever.com.au/" target="_blank">Red Lever</a> spoke about his company, and the kinds of projects he does, like <a href="http://www.thegreenwayup.com/" target="_blank">The Green Way Up</a>. Quite controversially he stated that the &#8220;creative agency is a dying breed&#8221;.</p>
+<p><strong>Ricky Sutton</strong>, the head of video at Fairfax Digital spoke about their online media offerings, such as <a href="http://www.smh.com.au/tv" target="_blank">smh.tv</a>. They offer a 50/50 revenue share with all content providers, on a non-exclusive deal. There are two pre-roll ads, and an ad break every 8 minutes &#8211; so the longer your content, the better. These guys are really thinking outside the box &#8211; and when they first started, they trawled through Bit Torrent to find what content audiences are looking for, bought licenses to that content, offered it on their own site, then advertised their offerings on Bit Torrent! Now that&#8217;s clever thinking from an older style media company! There have been 23 years worth of video watched on the site since it&#8217;s launch four months ago &#8211; which is quite impressive!</p>
+<p><strong>David MacDonald </strong>from <a href="http://www.youtube.com" target="_blank">YouTube</a> spoke about their offerings. It&#8217;s worth checking out their new <a href="http://www.youtube.com/leanback" target="_blank">Lean Back</a> service &#8211; which looks great on a TV screen. Although he couldn&#8217;t release exact figures, it&#8217;s estimated that a million views = about $1000 in revenue.</p>
+<p><strong>Nick Love</strong> from <a href="http://www.shineaustralia.com.au/shine-360" target="_blank">Shine 360</a> spoke about his company as an &#8220;integrated brand business&#8221; and explained that a lot of brands are now going direct to his company, as opposed to through a traditional agency.</p>
+<p>I think it&#8217;s safe to say that digital media is going to play a massive role in the future of our industry, so it was great to get an update on what all the different &#8220;players&#8221; are doing.</p>
+<p><img loading="lazy" class="size-medium wp-image-1368 alignnone" title="Emerging Producers" src="../../images/11-emerging-producers-590x442.jpg" alt="" width="590" height="442"></p>
+<p>And with the last session of the conference complete, it was off to the Zeta Bar for some final networking, goodbye&#8217;s and a conference wrap. All the emerging producers had a group hug &#8211; which was a great way to end the conference.</p>
+<p>Overall, my experience at the conference was amazing. I had such a great time &#8211; and it was such an honour to be able to &#8220;hang out&#8221; with so many amazing emerging and established producers. Not only did I learn a huge amount &#8211; but I have also walked away with a new collection of like-minded friends, who just really want to make films &#8211; which is very exciting.</p>
+<p>Once again, a MASSIVE thank you to Melanie, John and Katie for all their hard work and support.</p>
+<p>If you ever need mentoring or consultant producing services &#8211; please get in touch with <a href="http://optimismfilm.com/" target="_blank">Optimism</a>! Melanie is an absolutely wonderful human being &#8211; with such much incredible knowledge of our industry, and how to make films happen. She&#8217;s experienced &#8211; but most importantly &#8211; she&#8217;s really honest and open. She doesn&#8217;t bullshit you &#8211; she gives you advice that&#8217;s relevant, and actually helpful to achieving your goals. Have a look at her credit list, then have a chat to her on the phone, and I guarantee you&#8217;ll be sold.</p>
+<p>The SPAA experience was wonderful. I can&#8217;t wait to do it all again next year &#8211; as an EMERGED producer!</p>
+<p>Onwards &amp; Upwards!</p>
+<p>Best Regards, Chris!</p>
+</div>
+<aside class="blogtags">
+<a href="./../tag/spaa/" class="taglink">SPAA</a></aside>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

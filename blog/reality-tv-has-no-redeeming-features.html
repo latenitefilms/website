@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-205 type-post status-publish format-standard hentry category-creative-discussions" id="post-205">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../reality-tv-has-no-redeeming-features/" rel="bookmark">Reality TV has no redeeming features&#8230;</a></h2>
+<aside class="meta">
+Jun 5, 2006				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/creative-discussions/">Creative Discussions</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><!--[if gte mso 9]><xml> Normal   0         false   false   false                             MicrosoftInternetExplorer4 </xml>< ![endif]--><!--[if gte mso 9]><xml> </xml>< ![endif]--><!--[if !mso]><span class="mceItemObject"   classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></span> <mce:style>< !  st1:*{behavior:url(#ieooui) } --> <!--[endif]--><!--  --><!--[if gte mso 10]> </mce:style><mce:style>< !   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0cm 5.4pt 0cm 5.4pt; 	mso-para-margin:0cm; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>When inventor <em>Paul Nipkow </em>completed his &#8220;electric telescope&#8221; in 1884, he could not have predicted the impact it would later make on the world. Nipkow&#8217;s device, which allowed the sending of images over wires, inspired others to build upon this exciting new technology (Wikipedia 2006).  In 1900, the term &#8220;television&#8221; was coined by Russian <em>Constantin Perskyi</em>. Thirty years later, the first television commercial was transmitted, and the <em>British Broadcasting Commission</em> began regular broadcasting (Bellis 2005). &#8220;Television&#8221; was now a recognized term. By 1948 over one million homes in the United States alone had television sets, allowing them to tune into shows such as Allen Funt&#8217;s <em>Candid Camera, </em>a show where ordinary people were caught on film during embarrassing staged pranks (Murray &amp; Ouellette 2004, p.3). The post-World War II Americans of the 1950s were content with this type of good humoured show. Funt suggested that its success was due to its presentation of &#8220;<em>people caught in the act of being themselves</em>&#8221; (Balkin 2003). Even though participants might have been briefly embarrassed, their privacy and dignity were ultimately protected, plus no one was actually hurt (Balkin 2003). With the advent of network television, a new genre of programming had arrived: reality TV.</p>
+<p>As society progressed, and television technology continued to develop, so did this fresh genre. The 1960s brought with it a rise in social revolution, human rights movements, civil rights movements, and anti-War movements (Wikipedia 2006). Although this decade affected all corners of the globe, in western societies particularly, more people started to protested, riot and reject their conformist lifestyle. By the time Neil Armstrong first set foot on the moon, society was more sexually open and violent in their actions. Television had no option but to follow suit.</p>
+<p>By the 1970s viewers, who were now accustomed to watching confronting Vietnam War footage as they sat around the dinner table, were finally ready for watching programs that displayed even more reality and further invasiveness (Balkin 2003). Non-profit station PBS responded in 1973 by broadcasting a weekly unscripted and unrehearsed show called <em>An American Family</em> which followed the real life travails of the Loud family (IMDb 2006). Reality TV was getting cruder, but it was not yet purely a money-making venture.</p>
+<p>Eighteen years later, MTV&#8217;s <em>The Real World</em> had drifted further away from its predecessors, focussing on entertaining a younger audience with a cast specifically chosen to ignite conflict (Murray &amp; Ouellette 2004, p.3). During the early years of the 21<sup>st</sup> century, reality programs continued along this path. Viewers by the millions were tuning in to watch participants argue, fight, dine on rats and other grotesque creatures, lie to one another and reveal their most intimate personal details to a potentially worldwide audience. Reality television had transformed from a good humoured source of entertainment into a contest where participants competed against one another for love or money. Unlike those of the past, shows like <em>Survivor</em>, preyed on people who were willing to risk everything to win a sizeable cheque. Reality television had invaded the small screen. As president of CBS stated: &#8220;the world as we knew it is over&#8221; (Murray &amp; Ouellette 2004, p.4).</p>
+<p>These new breeds of reality television programs share a common characteristic in that they exploit vulnerable social groups. Shows like that of <em>Idol, Pop Stars</em> and <em>X-factor</em> franchises have proven time and time again that people will do just about anything to be on television and claim their five minutes of fame. These programs target young and naïve people who are tempted by the remote possibility that they might end up strutting down red carpets amongst their favourite celebrities. The <em>reality</em> is that only a few people out of the thousands of participants will actually get to a point in the competition where anyone will start taking them seriously. It is also important to understand that reality television is a dangerous mix of reality and fantasy. Unlike fictionalised drama, where only <strong>characters</strong> get hurt, in reality television programs, <strong>real</strong> inexperienced teenagers can be emotionally damaged when, for example, <em>Ian Dickson</em> tells them that their voice &#8220;should come with a government health warning&#8221; (IMDb 2006). The ironic thing is that some of the worst performers, such as <em>William Hung</em>, sometimes end up with the most success because they are exploited and marketed for comedy value.</p>
+<p><em>Big Brother </em>is another example of networks exploiting vulnerable social groups, but instead of just focussing on young and naïve participants, they take advantage of those that do not have permanent fulltime employment and therefore have the ability to take several months off at a time. By offering a substantial sum of money to the winner of the competition, television networks lour in individuals who are struggling to pay the bills all at the cost of their self-respect and privacy. For most housemates, <em>Big Brother</em> is just another &#8220;get rich quick&#8221; scheme.</p>
+<p>Even shows such as <em>Survivor</em> take advantage of a specific type of individual, although not one that you would usually associate with being exploitable. Unlike those that feature in <em>Big Brother</em> or <em>Idol</em>, these candidates do not necessarily have to be youthful, but instead must have the drive to do whatever it takes to win the competition. <em>Survivor</em> targets those who are experienced, ruthless and competitive. Where <em>Idol</em> has students and musicians, <em>Big Brother</em> tradesman and fish &amp; chip shop employees, <em>Survivor</em> has lawyers and ex-Navy seal operatives. This variety of show also has a genuine element of risk. Despite the fantasy situations, participants, who are <strong>real people</strong>, can get physically harmed as they perform various stunts. During production, the stakes are heightened even further when viewers grow bored of the show and the producers are forced to increase the danger in an attempt to increase viewers, and with them, advertising revenue.</p>
+<p><em>Jerry Springer </em>is another obvious example of producers taking advantage of the vulnerabilities of people, specifically, unstable working class types with serious personal and relationship issues that can&#8217;t afford to get assistance through counselling or other expensive means. Audience&#8217;s world-wide tune into this program, and laugh at these peoples expense; much like the freak shows of yesteryear. <em>Funniest Home Videos</em> is just as immoral as it catches parents shamelessly exploiting their injured children and costumed pets for the chance of winning a hefty cash price (Rowen 2000).</p>
+<p>The harsh truth is that, like every business, reality television programs exist purely to make money. In the late 1980s television networks found themselves in financial troubles as they started failing to raise enough money to survive. This, and the other factors, such a labour instability, forced the television industry to re-evaluate their programming tactics (Murray &amp; Ouellette 2004, p.7). It did not take long for networks to realise that reality television was the ideal solution. Because reality television shows are unscripted, networks would no longer have to be dependent on hiring unionised writers and actors (Murray &amp; Ouellette 2004, p.7). Where it can take as much as four million dollars Australian to produce a sitcom or drama, an episode for a reality television program will generally cost around a third of that price (Balkin 2003). Because of this, many public television stations, particularly in Europe embraced reality programming. It had been transformed from a form of entertainment into a financial survival mechanism (Murray &amp; Ouellette 2004, p.7).</p>
+<p>One of the key differences between reality television of the past, and that of the likes of <em>Big Brother</em> and <em>Idol </em>is that by utilising new technology such as SMS and The Internet, viewers can interact with the show, voting people they like to &#8220;play on&#8221; and evict those they do not. At first this may seem like a logical step to expanding upon television as an entertainment and information medium, but once profits gained are taken into consideration, it becomes clear that it is just another method for the networks to make money. There are sponsorship deals for the naming rights to <em>bigbrother</em> web site domains. These websites are covered in advertising banners. In Australia, by placing the <em>Big Brother </em>house in the theme park <em>Dreamworld</em>, all parties benefit as each can promote the others respective businesses and products. It is also worth noting that <em>Dreamworld</em> is owned by the <em>Macquarie Leisure Trust</em>, which also owns and operates AMF bowling, a sponsor of the Australian show. These are all examples confirming that television stations have chosen profit over entertainment value. Instead of allocating funds to developing new dramas or sitcoms, they are exploiting specific demographics so they can output content at the minimum of costs.</p>
+<p>It is not only new technology that has helped networks satisfy advertisers. Producers also have taken advantage of more traditional advertising means to increase their cash flow. <em>Big Brother </em>is again a most appropriate example. All the items inserted into the house have been placed there through sponsorship deals. In Australia, all of the food products within the house come from specific food companies that have commercial agreements with the show&#8217;s production company. Any food products that are not covered by a contract have their labels removed (Wikipedia 2006). The Australian <em>Big Brother</em> has affiliations and sponsorship agreements with paint suppliers, alcohol brewers, car manufactures, building supplies, home automation fitters, fitness organisations and even carpet companies. More obvious forms of traditional advertising can be found during eviction shows, where walls are covered in signs and banners much like that of football ovals.</p>
+<p>When shows such as <em>An American Family</em> were being aired in the 1970s, reality television was just another harmless form of entertainment. But as society progressed, and &#8220;making a profit&#8221; became more important, programs like MTV&#8217;s <em>Cops </em>emerged to keep networks afloat. By the new millennium reality television no longer had any redeeming features; it was all about making a profit. Television networks started to exploit a wide variety of social groups to help achieve this aim. They started to use new technology to increase their cash flow. Product placement techniques started to become common place, keeping advertisers happy. Reality television demonstrates that civilisation has put ethics and morals aside, so that corporations can make money. It will be interesting to see what networks will do next when people become bored of the current reality television format, forcing producers to formulate new ways of keeping advertisers satisfied.</p>
+<p><strong><br>
+Bibliography/References</strong>:</p>
+<ul>
+<li>Balkin, K 2003, <em>Reality TV: introduction</em>, Greenhaven Press, viewed 22 May 2006, <a href="http://www.enotes.com/reality-tv-article/39483" target="_blank">http://www.enotes.com/reality-tv-article/39483</a>
+</li>
+<li>Bellis, M 2005, <em>History of television timeline</em>, About, viewed 22 May 2006, <a href="http://inventors.about.com/library/inventors/bl_television_timeline.htm" target="_blank">http://inventors.about.com/library/inventors/bl_television_timeline.htm</a>
+</li>
+<li>
+<em>Big Brother Suppliers 2006</em>, Endemol Southern Star, viewed 22 May 2006, <a href="http://bigbrother.3mobile.com.au/bigbrother/suppliers.asp" target="_blank">http://bigbrother.3mobile.com.au/bigbrother/suppliers.asp</a>
+</li>
+<li>Cline, A 2005, <em>Ethics and reality TV</em>, About, viewed 22 May 2006, <a href="http://atheism.about.com/library/FAQs/phil/blphil_eth_realitytv.htm" target="_blank">http://atheism.about.com/library/FAQs/phil/blphil_eth_realitytv.htm</a>
+</li>
+<li>Friedman, J 2002, <em>Reality squared: televisual discourse on the real</em>, Rutgers University Press, New Jersey.</li>
+<li>Grindstaff, L 2002, <em>The money shot: trash, class and the making of TV talk shows</em>, University of Chicago Press, Chicago.</li>
+<li>Hendershot, H 2005, <em>The boob tube,</em> Flow, viewed 22 May 2006, <a href="http://jot.communication.utexas.edu/flow/?jot=view&amp;id=513" target="_blank">http://jot.communication.utexas.edu/flow/?jot=view&amp;id=513</a>
+</li>
+<li>Internet Movie Database Incorporated, <em>An American family</em>, Amazon, viewed 22 May 2006,  <a href="http://www.imdb.com/title/tt0211195/" target="_blank">http://www.imdb.com/title/tt0211195/</a>
+</li>
+<li>Internet Movie Database Incorporated, <em>Candid Camera</em>, Amazon, viewed 22 May 2006, <a href="http://www.imdb.com/title/tt0045376/ " target="_blank">http://www.imdb.com/title/tt0045376/ </a>
+</li>
+<li>Internet Movie Database Incorporated, <em>Memorable Quotes from “Australian Idol”</em>, Amazon, viewed 22 May 2006, <a href="http://www.imdb.com/title/tt0382400/quotes" target="_blank">http://www.imdb.com/title/tt0382400/quotes</a>
+</li>
+<li>Internet Movie Database Incorporated, <em>The real world</em>, Amazon, viewed 22 May 2006, <a href="http://www.imdb.com/title/tt0103520/ " target="_blank">http://www.imdb.com/title/tt0103520/ </a>
+</li>
+<li>Murray, S &amp; Ouellette L 2004, <em>Reality TV: remaking television culture</em>, University Press, New York.</li>
+<li>Reality TV history summary 2005, <em>BookRags</em>, viewed 22 May 2006, <a href="http://www.bookrags.com/history/popculture/reality-tv-bbbb-05/" target="_blank">http://www.bookrags.com/history/popculture/reality-tv-bbbb-05/</a>
+</li>
+<li>Roscoe, J 2002, <em>Interview with Peter Abbott</em>, Carfax Publishing, Australia.</li>
+<li>Rowen, B 2000, <em>History of Reality TV</em>, infoplease, viewed 22 May 2006, <a href="http://www.infoplease.com/spot/realitytv1/" target="_blank">http://www.infoplease.com/spot/realitytv1/</a>
+</li>
+<li>Wikipedia contributors 2006, <em>1960s</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=1960s&amp;oldid=54505672" target="_blank">http://en.wikipedia.org/w/index.php?title=1960s&amp;oldid=54505672</a>
+</li>
+<li>Wikipedia contributors 2006, <em>Big Brother (Australian TV series)</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=Big_Brother_%28Australian_TV_series%29&amp;oldid=54496067" target="_blank">http://en.wikipedia.org/w/index.php?title=Big_Brother_%28Australian_TV_series%29&amp;oldid=54496067</a>
+</li>
+<li>Wikipedia contributors 2006, <em>History of television</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=History_of_television&amp;oldid=53947080" target="_blank">http://en.wikipedia.org/w/index.php?title=History_of_television&amp;oldid=53947080</a>
+</li>
+<li>Wikipedia contributors 2006, <em>Jerry Springer</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=Jerry_Springer&amp;oldid=54143409" target="_blank">http://en.wikipedia.org/w/index.php?title=Jerry_Springer&amp;oldid=54143409</a>
+</li>
+<li>Wikipedia contributors 2006, <em>Paul Gottlieb Nipkow</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=Paul_Gottlieb_Nipkow&amp;oldid=52700591" target="_blank">http://en.wikipedia.org/w/index.php?title=Paul_Gottlieb_Nipkow&amp;oldid=52700591</a>
+</li>
+<li>Wikipedia contributors 2006, <em>Reality television</em>, Wikipedia, viewed 22 May 2006, <a href="http://en.wikipedia.org/w/index.php?title=Reality_television&amp;oldid=53948497" target="_blank">http://en.wikipedia.org/w/index.php?title=Reality_television&amp;oldid=53948497</a>
+</li>
+<li>
+<em>William Hung 2006</em>, Intermix Network, viewed 22 May 2006, <a href="http://www.williamhung.net/" target="_blank">http://www.williamhung.net/</a>
+</li>
+</ul>
+<p></p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

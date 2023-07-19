@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-170 type-post status-publish format-standard hentry category-sakooz" id="post-170">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../post-production-workflow/" rel="bookmark">Post Production Workflow</a></h2>
+<aside class="meta">
+Dec 23, 2008				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/sakooz/">Film Project - SAKOOZ</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>When we first started thinking about the best way to put together the Sakooz trailer, we originally thought that Super 16mm and a film scan route would be the most appropriate option given our budget, and the &#8220;Hollywood trailer&#8221; look that we were after. However, after various camera tests (we&#8217;ll post some further information on these tests another time), and a bit of number crunching, it became clear pretty quickly that shooting on the RED ONE was going to achieve better results, cost less and make the post production just that little bit easier (at least in theory) by keeping everything digital. And so, after getting in touch with Cail &amp; Pete from <a title="Inspiration Studios" href="http://www.inspirationstudios.com.au" target="_blank">Inspiration Studios</a>, and doing some tests with their brand new toy camera &#8211; we decided to shoot the Sakooz trailer on RED.</p>
+<p>In terms of Principle Photography, everything pretty much ran exactly the same as if we were shooting on film. We lit it exactly the same way, and Ben (our DOP) still had his light meter by his side. Because we needed to shoot so much very quickly (time wasn&#8217;t on our side), I decided against setting up a &#8220;video village&#8221; and even a directors monitor &#8211; preferring to be there in the action, behind Ben, peaking over his shoulder to watch the on-camera LCD. This worked really well.</p>
+<p>Although the plan was always to shoot to card for safety reasons (we&#8217;ve all got disaster stories to tell about Firestore&#8217;s dying and hard drives being dropped!) &#8211; we decided to gamble and record straight to the RED-DRIVE (a special drive designed for the camera which can store 320GB in a RAID 0 configuration). Not only that &#8211; but we decided to leave the dumping to the end of the day. This was a HUGE risk, because if the drive died at the end of the day, we&#8217;d potentially loose a whole days worth of shooting. However, we didn&#8217;t have the crew available to have a dedicated &#8220;data technician&#8221;, nor did we have the hardware to dump the cards on a regular basis. This may seem really silly (I mean seriously &#8211; all you need is a Mac laptop and a card reader!), but we had neither of those things at the time, and it was just easier to use what we had available. Luckily &#8211; nothing went wrong, and the RED-DRIVE was faultless &#8211; it never dropped a single frame! However, to anyone else planning to shoot on RED &#8211; I strongly recommend you do the complete opposite to what we did! Record to CF card and dump as soon as the card is full.</p>
+<p>Although in the end we didn&#8217;t end up using any of the sync audio &#8211; we recorded audio separately to a Sound Devices 744T, which was synced to a Smart Slate. Originally we had planned to sync the camera to the 744T as well, but for some reason we couldn&#8217;t get it to work on the first day of shooting, so we gave up. I believe the problem has since been fixed with one of the RED ONE Firmware Updates. We only had one microphone on set &#8211; a Sennheiser 416 on a boom. We basically just recorded sound to use as a guide track for when it came to adding sound effects later on.</p>
+<p>At the end of each shooting day we dumped the RED-DRIVE and the 744T to two seperate 1TB SATAII drives. For the duration of the shoot we managed to borrow a brand new MacPro Tower from Julian at <a title="Eidolon Creative" href="http://www.eidoloncreative.com" target="_blank">Eidolon Creative</a> and used this machine to do all the dumping as well as the transcoding. We put the two 1TB drives directly into the MacPro. We ended up with 508.34GB of camera footage, and a couple of GB of audio. We ended up purchasing two additional 500GB SATAII drives to make another backup of all of the R3D files &#8211; which we then stored at two separate locations away from our master edit suite, just in case. We called the drives Pinky (Master Edit), Bluey (Backup of Master Edit), Tumbles (R3D Master) and Splash (backup of R3D Master), because that&#8217;s what the names of the Sakooz creatures are called. Anyway&#8230; Now normally, on a &#8220;proper&#8221; production, you would have RAIDs and RAID 5 protection, etc. But unfortunately, we simply didn&#8217;t have the money for that, so we just had to make do with what we had. We had to manually copy and paste the files for backup purposes &#8211; we basically did this at the end of each day. We also kept a copy of the Final Cut Pro project on two USB thumbdrives just in case. Just for laughs, here&#8217;s a photo of some of the drives from our rather odd-ball collection. The top right one is Pinky. We ended up taking the covers off the enclosures as we found they got too hot when in use all day and night long.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-173" title="Harddrive Collection" src="../../images/2008-12-harddrives_01.jpg" alt="" width="441" height="331"></p>
+<p>After principle photography was wrapped we set the MacPro to work trancoding the R3D files using REDrushes (a free application which can be downloaded from the <a title="RED" href="http://www.red.com" target="_blank">RED</a> site). We were transcoding the R3D files to Apple ProRes 422 HQ files at 1920&#215;1080. We were using the full debayer quality, and REDSpace for both the Colour &amp; Gamma spaces. This took a HUGE amount of time (almost two weeks of none stop processing), but at the end of the day we ended up with some terrific Quicktime files that we could throw into Final Cut Pro and start editing, plus we could also send these clips to the visual effects kids so that they could start playing. We did run into one slight problem after we THOUGHT that everything was done. On inspection of the transcoded files, we realised that all the Quicktimes for Day Two of shooting were EXACTLY the same as Day Four. I&#8217;m still not sure whether that was human error or REDrushes being annoying &#8211; but either way we had to re-transcode all of the day four footage. Unfortunately at this stage we had to give back the MacPro, so we had to do all of this on a stock standard first generation MacBook. It wasn&#8217;t quite as fast as the MacPro, but it got the job done. Eventually.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-171" title="Red Rushes Screenshot" src="../../images/2008-12-redrushes_01.jpg" alt="" width="441" height="275"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-172" title="Quicktime Player Inspector" src="../../images/2008-12-quicktime_01.jpg" alt="" width="441" height="399"></p>
+<p>Offlining using such high quality media may seem a little silly &#8211; I mean, really, we could have done a quarter res transcode to DV, and save a huge amount of time and disk space. Also, considering we were doing the offline on a bunch of eMac&#8217;s over Firewire 400 drives (that&#8217;s right&#8230; really old school eMac&#8217;s!), it would have also made the whole editing process a lot more fluid. However! By editing at such a great quality, it meant that whenever we did test screenings or had to show potential investors or sponsors, we could easily burn off a high-quality 1920&#215;1080 Quicktime Movie that looks simply gorgeous even before grading. Here is a photo of our main editing machine.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-174" title="The Master eMac" src="../../images/2008-12-emac_01.jpg" alt="" width="441" height="331"></p>
+<p>&#8230;and the other babies:</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-175" title="eMac" src="../../images/2008-12-emac_02.jpg" alt="" width="441" height="331"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-177" title="eMac" src="../../images/2008-12-emac_03.jpg" alt="" width="441" height="331"></p>
+<p>I&#8217;m not even sure how this is possible, but we were able to play one video track of 1920&#215;1080 ProRes on the eMac over Firewire 400 in realtime without any issues. And so, we basically edited away for several weeks in Final Cut Pro 6. We ended up doing a very rough grade using the 3-way Colour Corrector just so that when we showed other people to get opinions, they were looking at something that looked half decent. We tried a huge amount of different things in terms of the edit &#8211; we used a lot of different music as guide tracks. We even copied the audio from other big Hollywood trailers (such as the Dark Knight) and cut our footage to their soundtrack just to see what we could come up with. It was a very painful, long, but fun and creative process that I certainly won&#8217;t forget any time soon!</p>
+<p>Whilst I was trying to lock down the picture, others were playing around with the visual effects. Initially, tests and trials were done by the various VFX artists using the ProRes Quicktime files. However, once we had locked down the trailer in terms of the edit, we used REDCINE to export out 4K TIFF sequences and 2K/1K DPX sequences for the visual effects people to work on. Ashley Smart (who did the effects for the Shed Explosion Sequence) was using 4K TIFF Sequences in After Effects on a laptop (which is quite incredible). James Otter used 1K DPX sequences in Nuke, and After Effects to achieve a lot of the effects shots, on a PC. And I used a good old MacBook, running After Effects and Shake to do the remaining shots. I ended up using After Effect&#8217;s own tracker for most of the tracking work, although I did use PFTrack for one of the shots. I also used Syntheyes on an old Dell Laptop for a small section of another shot. For Pinky eyes, I ended up brining in 4K DPX sequences into After Effects &#8211; which was fairly interesting on the poor old MacBook! But it worked, and the shots came out OK considering&#8230;</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-179" title="MacBook" src="../../images/2008-12-macbook_01.jpg" alt="" width="441" height="331"></p>
+<p>We ended up with 16 visual effects in total (including graphics). Once a visual effect shot was completed it was exported as a 1920&#215;1080 DPX sequence ready for grading. For your viewing pleasure, here are some photos of After Effects genius James Otter, working away! I have no idea what the cardboard cartons are for, or where he got them. Needless to say, these photos were taken at some ridiculous early hour of the morning, after James and I had been stuck at uni for AT LEAST forty hours STRAIGHT!</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-184" title="James Otter" src="../../images/2008-12-james_otter_01.jpg" alt="" width="441" height="331"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-185" title="James Otter" src="../../images/2008-12-james_otter_02.jpg" alt="" width="441" height="308"></p>
+<p>Once the offline edit was complete, we tidied up the timeline so that everything was on the one track (where possible) and printed off an EDL. This then became our bible. At this stage, all the audio had been done in Final Cut Pro, with the occasional effect being done in Protools LE and Soundtrack Pro, and then exported out as an AIFF. We were still using guide track music.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-181" title="EDL" src="../../images/2008-12-edl_01.jpg" alt="" width="441" height="604"></p>
+<p>By printing off the EDL we now had a hard copy of the trailer&#8217;s edit &#8211; which is always a good thing! But more importantly, it allowed us to easily track and manage everything. Because we couldn&#8217;t afford to purchase software such as Crimson Workflow, and we didn&#8217;t have time to write up our own proprietary software, we ended up doing a lot of things manually. For instance, we ended up going down the EDL line by line, and exporting a 1920&#215;1080 DPX sequence from REDCINE. We made minor adjustments in REDCINE to get the most clean image and exported away. We put each shot in a different folder based on the EDL number assigned to the shot. For example, the first shot in the trailer was called 001_000001.DPX. This kept things nice and simple. Once every shot was exported out of REDCINE as DPX sequence (which took a night), it was ready for grading!</p>
+<p>Originally we had planned to do the grade at one of the major post houses in Melbourne, but due to a lack of time and money, we ended up getting a very talented film school graduate called Nick Reid to do the grade in Apple&#8217;s Color. Getting the DPX files into Color proved to be a bit more tricky than anticipated! We ended up purchasing yet another 1TB SATAII drive (called Gizmo) for the colour grade.</p>
+<p>What we ended up doing was wrapping all the DPX files as Quicktimes manually using <a title="AJA" href="http://www.aja.com/" target="_blank">AJA&#8217;s</a> free DPXtoQTTranslator utility. Once all of the DPX&#8217;s were wrapped (including all the visual effects), we manually re-created the Final Cut Pro timeline based on the printed EDL using the newly wrapped Quicktime files. We then exported out a XML file from Final Cut Pro. This XML file was brought into Color and grading could commence. Nick took a couple of days to do the grade, and once completed, he handed back Gizmo, ready for the final stages!</p>
+<p>With the grade now completed, we exported out AJA 10-bit Uncompressed RGB Quicktimes. We then used the AJA QTtoDPXTranslator to unwrap the Quicktime Files back to DPX files. As the AJA tool simply &#8220;wraps&#8221; the files &#8211; it doesn&#8217;t transcode them or anything like that, this process is really fast, although you do have to do it manually. For me, that means I have to do everything 69 times which isn&#8217;t too bad. The only annoying thing is that you have to rename all the clips again, as Color names everything sequentially, and we wanted everything named as per the bible (i.e. the EDL).</p>
+<p>Now with a whole heap of beautifully graded DPX sequences, it was time to do the online. I ended up doing this at University on a nice and speedy MacPro in After Effects CS3. I imported all of the DPX sequences, and then manually put them all in the correct places based on the printed EDL. Once that was complete I simply rendered out a Quicktime File using the Animation Codec. Here is a photo taken at about four o&#8217;clock in the morning after I&#8217;d been at uni for about fourty hours STRAIGHT working on Sakooz. You can see the insanity in my eyes.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-183" title="Chris Hocking working on Sakooz" src="../../images/2008-12-chris_at_uni_01.jpg" alt="" width="441" height="331"></p>
+<p>The only thing left to do was sound! Once Frank (our composer) finished, he simply gave us a 24-Bit 48KHz Broadcast Wave File, which we threw into Final Cut Pro. After a bit of tweaking &#8211; adjusting the sound effect levels to suit the new score, the sound was ready to rock and roll! Originally we had planned to do a quite complex 5.1 mix just for fun &#8211; but at the end of the day, no one was ever going to listen to it in surround sound anyway, so we decided to skip on that idea (for now at least). Once the sound was done, we exported an AIFF and then merged the Animation Codec video and AIFF together to create the Final Quicktime Master!</p>
+<p>From that Quicktime master we than could do any DVD, web, Blu-ray, etc. encodes using Compressor.</p>
+<p>And that is the workflow we decided to use for Sakooz! At the moment we are just archiving all the project files to DVD, and keeping all the media on the SATAII drives. At some stage we will eventually put everything to LTO drives as a final backup &#8211; but we don&#8217;t have the money at the moment.</p>
+<p>This wasn&#8217;t exactly the quickest workflow in the world (we did a lot of things manually that could have been easily avoided by using software such as Crimson Workflow, plus we used extremely old Mac&#8217;s and PC&#8217;s in a lot of cases), but a lot of it came down to money vs time. In some cases money won out, but more often than not, we decided to save money and do things the manual way. To be perfectly honest, it actually felt really nice to have a printed out EDL on which to direct everything! It felt much the same as the good old days with film!</p>
+<p>If you have any questions about the workflow or how we did anything, feel free to post a comment. At some stage in the future we also hope to post some more detailed information on the various visual effects that featured in the trailer, so stay tuned!</p>
+<p>Chris!</p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

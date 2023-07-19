@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-1461 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1461">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../2011-summary-part-one/" rel="bookmark">2011 Summary (Part One)</a></h2>
+<aside class="meta">
+Dec 24, 2011				    <i class="icon-dot"></i> Posted By Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="size-medium wp-image-1462 alignnone" title="48hour-team-leaders" src="../../images/12-48hour-team-leaders-590x393.jpg" alt="" width="590" height="393"></p>
+<p>And what a bloody busy year it has been at LateNite HQ! As the year comes to a close, we here at LateNite feel like it&#8217;s important to reflect on an incredibly tough but ultimately rewarding 2011. To complement our stories of sex, drugs and rock ‘n’ roll (hardly) I have decided to throw in some of the great films that were released over the last 12 months. All of which have my personal seal of approval &#8211; which is all you need really!</p>
+<h2 style="padding-bottom: 10px;">January</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/71l-kIhJ5j8?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>The beginning of the year was a fight indeed with the LateNite team having to start the year by “fighting” for some funds to get them over to Miami to watch their multi award winning film, <a href="./../portfolio/fallout/">Fallout</a> compete in the <a href="http://www.miamifilmfestival.com/" target="_blank">Miami International Film Festival</a> for a spot at <a href="http://www.festival-cannes.fr/" target="_blank">Cannes</a>. Nick took charge of the art-show campaign with the very talented Thom Holt looking after the band night. Meanwhile, Chris was left to continue post production for our first feature film <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah and the Hasbian</a>.</p>
+<p>The ever hard working Hocking actually took away all the Hannah footage that we shot over 3 days in December and began transcoding the RED footage whilst he was away on holidays! If that’s not commitment I don’t know what is.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1466" title="hath-holiday-render" src="../../images/12-hath-holiday-render-590x440.jpg" alt="" width="590" height="440"></p>
+<p>The craziness of the new year swept all the way through January with press releases for Miami, Jacqui and Paula having a mad “tweet off” at the <a href="http://www.youtube.com/watch?v=ALIGWpUZ8T4&amp;feature=player_embedded" target="_blank">Virgin Mobile - Rolling Stone Awards</a> and (possibly the biggest announcement of all) our very good friend <a href="http://www.imdb.com/name/nm2553987/" target="_blank">Liam McIntyre</a> working his little ass off to land the lead in the hugely popular Starz drama series <a href="http://www.starz.com/originals/spartacus" target="_blank">Spartacus</a>. The beautiful man currently has his face plastered all over Times Square.</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/GObQ_VCGu6w?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>The prep was in full swing too for our Feb March to Miami party with bands being booked, art being collected, venues being locked down and booze being sourced for a typical LateNite blow out - we really do go too far sometimes&#8230;</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1463" title="march-to-miami" src="../../images/12-march-to-miami-590x391.jpg" alt="" width="590" height="391"></p>
+<h2 style="padding-bottom: 10px;">February</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/OlhLOWTnVoQ?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>We did all but cut our own arm off to get this warehouse screening/party off the ground and boy did it go off like a frog in a sock. A big thank you must go out to all the bands that played, the talented artists that donated their amazing art work to be sold and of course all the people whose hard work made these two events what they were. It was very humbling to know that there are people out there who were willing to take a punt on us and who truly believe in what we’re doing. The venue was jam packed both nights, the bar was fully stocked with all kinds of wonderful drinks (although the home brew didn&#8217;t quite make it after a minor explosive accident), the slightly-too-big-for-the-venue PA was pumping with some incredible local bands, DJs and comedians &#8211; it truly was a EPIC and amazing weekend, with plenty of sore heads on Sunday morning!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1464" title="march-to-miami-poster" src="../../images/12-march-to-miami-poster-427x590.jpg" alt="" width="427" height="590"></p>
+<p>Enough money was made to get Chris, myself and Thom to Miami for the screening so we were absolutely stoked and had so much fun putting it all together. Definitely one for the memory bank.</p>
+<p>But of course not everything was fun and games with our very own Jacqui Hocking also working hard to orchestrate her own screening with the Australian Premiere of her very successful doco <a href="./../portfolio/spinning-dreams-timor-leste/" target="_blank">Spinning Dreams</a>. A massive thank you to everyone at <a href="http://www.openchannel.org.au/" target="_blank">Open Channel</a> for allowing us to use Shed4 for the screening. With over 200 attendees, and thousands of dollars raised for Timor Aid, we couldn’t be happier.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/17031393?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" width="590" height="332"></iframe></p>
+<p>Jacqui had a very busy month as not only did she have her screening to organise, she went to East Timor to film footage for the <a href="http://www.worldvision.com.au/40hourfamine.aspx" target="_blank">World Vision 48 Hour Famine</a> campaign, filmed at the <a href="http://festival.slf.org.au/festival-main-event-program" target="_blank">Sustainable Living Festival</a>, started working with the incredibly talented team at <a href="http://www.inspire9.com.au/" target="_blank">Inspire9</a>, attended the <a href="http://aidc.com.au/" target="_blank">Australian International Documentary Conference</a>, was a guest at the <a href="http://www.goethe.de/ins/au/lp/prj/fia/ffg/enindex.htm" target="_blank">Audi German Film Festival</a>, helped out on the warehouse party AND had an exhibition set up at Federation Square during the weekend of the Tropfest screening in Melbourne. As with everything that Jacqui does, all went off incredibly successfully and the world had its first glimpse of the Spinning Dreams series.</p>
+<p>But of course it’s not only our shenanigans that we like to keep track of and plug. We love a good community and there is no better company that we love working with than <a href="http://www.inspirationstudios.com.au" target="_blank">Inspiration Studios</a> who used the month of February to launch their very own unique web series Sensible Digital Cinema.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/20040143?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" width="590" height="332"></iframe></p>
+<h2 style="padding-bottom: 10px;">March</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/ava0Rn8nrVs?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>The trailer above is for an incredibly powerful film that the LateNite boys managed to catch at the Miami International Film Festival. Not only did they get to see this amazing film (it won the Best Foreign Film Academy Award) but they were lucky enough to sit in on a Q &amp; A with the Director <a href="http://www.imdb.com/name/nm0081540/" target="_blank">Susanne Bier</a>.</p>
+<p>There were movies a plenty during our time at the festival so for a more thorough look at what we saw and what we thought you can check out our previous blog posts <a href="./../category/film-review/" target="_blank">here</a>.</p>
+<p>Anyway it was an incredible month away for us but one which was too EPIC to put into a short month long blog summary so instead I’m gonna give you some dot points:</p>
+<ul>
+<li>Our filmed screening as part of the International Competition for the 48 Hr Film Fest. Unfortunately our screening (as well as the Sydney teams) was riddled with technical issues so needless to say we weren’t the happiest filmmakers in the cinema.</li>
+<li>The boys spent their days at the movies and their nights networking. Met some inspirational filmmakers from all around the world including a Mexican indie filmmaker who made his film on 10,000 with only himself and his actor in the back of a truck. Amazing Stuff.</li>
+<li>The winning film from the 48 Hr was SHIT HOT and starred the ever amazing <a href="http://www.imdb.com/name/nm0293509/" target="_blank">Martin Freeman</a> (trailer below). The filmmakers were a great bunch of blokes to boot which made us happy.</li>
+<li>Nick &amp; Thom discovered a Cuban way of drinking Corona’s. Roll the top of the bottle in salt and drop in a touch of tabasco - Massive Win.</li>
+<li>Seeing Chris’ little face at Disneyland - he’ll always be a kid at heart!</li>
+<li>And of course, there was the day trip to incredible <a href="http://www.sixflags.com" target="_blank">6 Flags</a> with our good friends Damien Csehi and Jared Daperis!</li>
+</ul>
+<p>The winner of the International 48 Hr Film Festival:</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/21020105?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" width="590" height="332"></iframe></p>
+<p>After such an epic month we thought we might get some downtime over April until&#8230;</p>
+<h2 style="padding-bottom: 10px;">April</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/KdHUQtnJsyQ?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>&#8230;we found out our feature Hannah and the Hasbian had been accepted into a massive Film Fest in San Francisco called <a href="http://www.frameline.org/index.aspx" target="_blank">Frameline</a> for it’s big World Premiere.</p>
+<p>Unfortunately for us the copy submitted in was an incredibly rough cut of the movie so now it was up to Post Master Hocking to get the film rollicking along so that it was ready for its June screening. Chris and Jacqui locked themselves away with Director Gordon Napier to really push out the film and make it the best it could be with the little money and time we had available to us.</p>
+<p>We were lucky enough to have the support of <a href="http://www.thebutchery.com.au" target="_blank">The Butchery</a>, the sleepless and unstoppable Eugene Richards at <a href="http://www.therefinery.net.au" target="_blank">The Refinery</a>, the incredible and beautiful <a href="http://e-nidhi.com/" target="_blank">Nidhi Chanani</a>, Justin Viney, all our bands and of course the always amazing <a href="http://craigjansson.com/" target="_blank">Craig Jansson</a> at The Magic Sound Company &#8211; who personally went above and beyond what I ever thought was humanely possible.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1465" title="hath-and-refinery" src="../../images/12-hath-and-refinery-590x441.png" alt="" width="590" height="441"></p>
+<p>April wasn’t all fun and games though as we were all very sad to hear of the passing of <a href="http://www.tvtonight.com.au/2011/04/vale-john-bowring/" target="_blank">John Bowring</a> ACS, the founder of <a href="http://lemac.com.au/" target="_blank">LEMAC</a>. John did a hell of a lot for the Australian film industry and his passing was a sad day for film in Australia.</p>
+<h2 style="padding-bottom: 10px;">May</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/fvu_tBQgZyI?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p>What better way to kick off our May summary than with a solid Australian film from 2011. Snowtown was as brutal as it was tense, obviously not a film for the light hearted, it was really made for me by the solid, often frightening performances of its lead actors <a href="http://www.imdb.com/name/nm2989873/" target="_blank">Daniel Henshall</a> and <a href="http://www.imdb.com/name/nm4235904/" target="_blank">Lucas Pittaway</a>.</p>
+<p>Anyway it was another crazy busy month with lots of exciting announcements and more projects in the pipeline. Our first few announcements were that we were moving into our shiny new office at the much lauded <a href="http://www.16thstreet.com.au/" target="_blank">16th St Acting Studio</a>, a place which has been our home ever since. And also that a film that we supported and were quite heavily involved with called <a href="./../portfolio/there’s-a-hippopotamus-on-our-roof-eating-cake/" target="_blank">There’s A Hippopotamus on the Roof Eating Cake</a> by <a href="http://www.pocketbonfire.com/" target="_blank">Jamie Snyder</a> and <a href="http://www.fineark.net/" target="_blank">Joel Sharpe</a> was to screen at the very prestigious <a href="http://www.stkildafilmfestival.com.au/" target="_blank">St Kilda Film Festival</a> during May. Very exciting stuff.</p>
+<p>Jacqui was busy preparing for the next month, whilst at the same time filming events such as the <a href="http://thisismindful.com/" target="_blank">Mindful Conference</a>.</p>
+<p>We continued to push through with post on <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah</a>, spending more and more time with Craig and Eugene - trying to get the sound and grade locked down before the end of May. It was go go go for most of the month but we pulled through with shining colours. Despite Craig&#8217;s unfortunate altercation with a roof, <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah</a> was in the mail and off to San Francisco&#8230;</p>
+<h2 style="padding-bottom: 10px;">June</h2>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/nsUEd2cUIqo?rel=0&amp;hd=1" frameborder="0" width="590" height="330"></iframe></p>
+<p>Another month another couple of international festivals to be had.</p>
+<p>Not only did Nick, Director Gordon Napier and the <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah</a> cast head over to San Francisco for the World Premiere of our feature film Hannah and the Hasbian. But our good friends over at <a href="http://www.pocketbonfire.com" target="_blank">Pocket Bonfire Productions</a>, Joel Sharpe and Jamie Snyder, made the long trip to Edinburgh to see their film <a href="./../portfolio/there’s-a-hippopotamus-on-our-roof-eating-cake/" target="_blank">There’s a A Hippopotamous on the Roof Eating Cake</a> in the <a href="http://www.edfilmfest.org.uk/" target="_blank">Edinburgh International Film Festival</a>.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/9576401?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" width="590" height="266"></iframe></p>
+<p>For us though the month was all about <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah</a>.</p>
+<p>The Frameline Film Festival was an incredibly successful trip with the film playing to a near sold out audience at the famous Roxy Theatre in San Francisco. We got great reviews and some very interested distributers to boot so we were all smiles.</p>
+<p>By all accounts the <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah</a> team had the time of their lives and with the excitement and buzz behind the film, were all ready to send it off around the world.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1476" title="hath-at-roxie" src="../../images/12-hath-at-roxie-590x442.jpg" alt="" width="590" height="442"></p>
+<p>Although, while Chris &amp; Nick were busy with <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah &amp; The Hasbian</a> &#8211; Jacqui was off to Cambodia with the amazing <a href="http://www.lutmanfilms.com" target="_blank">Michael Lutman</a> for the second instalment of Spinning Dreams.</p>
+<p>So that was the first 6 months &#8211; you’ll have to wait till after Christmas to hear about the second 6 before we launch into a New Year. But what the hey, we may as well give you a little treat while you wait over the next few days.</p>
+<p>So here my friends is LateNite Films Music Video for Melbourne based band <a href="http://julydays.com.au/" target="_blank">July Days</a>&#8230;</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/34096314?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" width="590" height="332"></iframe></p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

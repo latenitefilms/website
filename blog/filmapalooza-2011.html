@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-1525 type-post status-publish format-standard has-post-thumbnail hentry category-conferences-and-events" id="post-1525">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../filmapalooza-2011/" rel="bookmark">Filmapalooza 2011</a></h2>
+<aside class="meta">
+Mar 8, 2012				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/conferences-and-events/">Conferences &amp; Events</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-medium wp-image-1526" title="filmapalooza-01" src="../../images/03-filmapalooza-01-590x440.jpg" alt="" width="590" height="440"></p>
+<p>First up&#8230; some people are a tad confused as to why I&#8217;ve called this blog post Filmapalooza <strong>2011</strong>, and not 2012. No, I haven&#8217;t forgotten what year it is (surprisingly!) &#8211; it&#8217;s just that the competition is for films we all did LAST YEAR. Given that our film was shot and competed in the 2011 national competition, it made sense to label the blog post 2011. Hope that makes sense! Now&#8230; on to the blog&#8230;</p>
+<p>What a fantastic and exciting few days it&#8217;s been! I have literally just flown back from the beautiful New Mexico town of <a href="http://en.wikipedia.org/wiki/Taos,_New_Mexico" target="_blank">Taos</a> &#8211; in which we were attending the <a title="48 Hour Film Project" href="http://www.48hourfilm.com/filmapalooza/" target="_blank">48 Hour Film Project International Competition</a> - strangely named <em>Filmapalooza &#8211;</em> in which our film, <a href="./../portfolio/the-script-machine/" target="_blank">The Script Machine</a> was competing.</p>
+<p>We were fortunate enough to win best film in the <a href="http://www.48melbourne.com.au/" target="_blank">2010 Melbourne 48 Hour Film Project</a> competition, and got to head over to Miami for the screening (you can read all about it <a href="./../2011/03/14/filmapalooza-2010/" target="_blank">here</a>) &#8211; so it was such an honour and a privilege to be able to attend once again. We had a few technical hiccups in Miami, but I&#8217;m very pleased to say that this year everything went <strong>exceptionally</strong> smooth &#8211; and we had such a great time just hanging out with like-minded filmmakers from all over the world. Although we had a terrific time in Miami, I have to say, our experience in Taos far exceeded our expectations. It&#8217;s a beautiful town &#8211; and all of the filmmakers seemed a lot more relaxed and friendly this time round.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1527" title="filmapalooza-02" src="../../images/03-filmapalooza-02-590x440.jpg" alt="" width="590" height="440"></p>
+<p><strong>Taos</strong> is a beautiful little town, in the north-central region of New Mexico, with around 4700 people living there. Just up the road is Taos Pueblo, a Native American Village and tribe, from which it takes it&#8217;s name. When we first discovered we would be heading over to New Mexico, we didn&#8217;t really know what to expect. Based on comments on Facebook, we knew it was snowing &#8211; but that&#8217;s about it.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1528" title="filmapalooza-03" src="../../images/03-filmapalooza-03-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Newcomer to LateNite, Michael Shanks and I (Chris Hocking) &#8211; flew to LA from Melbourne last Thursday. After a fairly painless flight &#8211; we then took another much, much smaller aircraft from LA to <a href="http://en.wikipedia.org/wiki/Santa_Fe_Municipal_Airport" target="_blank">Santa Fe</a>. It was only once we were in the air that we realised, our pre-arrange airport pickups were actually scheduled to be from <a href="http://en.wikipedia.org/wiki/Albuquerque,_New_Mexico" target="_blank">Albuquerque</a> &#8211; so as soon as we got off the plane &#8211; we quickly did a shout out to the other passengers to see how exactly we get to Taos. Luckily &#8211; someone was able to call up someone, and get a shuttle bus to pick us up. This was our first experience of just how friendly and helpful the locals were. Two hours or so later we were in Taos.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1544" title="filmapalooza-13" src="../../images/03-filmapalooza-13-440x590.jpg" alt="" width="440" height="590"></p>
+<p>The township of Taos itself is just jam-packed with shops and galleries selling all kinds of artwork, a few museums, beautiful restaurants and pubs, and well &#8211; that&#8217;s really about it. It&#8217;s a real artist community &#8211; with a real multicultural feel. The town itself is stunning &#8211; with some really unique architecture. The best way I can describe  it, is that it looks like of like Egypt &#8211; most of the buildings have a sand-look and texture, with completely flat roofs &#8211; but with snow. At first I thought that everything had a <a href="http://en.wikipedia.org/wiki/Pueblo_Revival_Style_architecture" target="_blank">Pueblo Revival style</a>, but upon <a href="http://taosarchitecture.blogspot.com.au/p/taos-architecture-lesson-1-pueblo-style/" target="_blank">further investigation</a>, it seems that the buildings in Taos are really made up of all different types of architectural styles. Surrounding the town is stunning snow-covered mountains.</p>
+<p>Almost as soon as we arrived, after checking in to the lovely <a href="http://kachinalodge.com/" target="_blank">Kachina Lodge</a>, we headed to the 7pm screening on the <a href="http://www.taosshortz.com/" target="_blank">Taos Shortz</a> program.</p>
+<p>Our of the ten films that screened, here are our favourite films:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Name</th>
+<th>City</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eso Te Pasa Por Barraco</td>
+<td>Spain</td>
+<td>Animation</td>
+<td>A hungry guy prepares a nice romatic dinner for himself and chooses the worst possible menu.</td>
+</tr>
+<tr>
+<td>La Mujer Del Hatillo Gris</td>
+<td>Spain</td>
+<td>Dramatic Fiction</td>
+<td>A woman walks with a grey bundle on an emotional journey to her prisoner husband.</td>
+</tr>
+<tr>
+<td>Sunshire</td>
+<td>USA</td>
+<td>Documentary</td>
+<td>An American commercial producer travels to China to make a TV Commercial</td>
+</tr>
+<tr>
+<td>46 Miles</td>
+<td>USA</td>
+<td>Comedy Fiction</td>
+<td>You would be surprised how many things 2 men have in common on a lonley desert highway.</td>
+</tr>
+</tbody>
+</table>
+<p>Unfortunately that was the one and only Taos Shortz screening we could fit in &#8211; as the 48 Hour screenings clashed with everything else.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1532" title="bear" src="../../images/03-bear-590x238.jpg" alt="" width="590" height="238"></p>
+<p>You can find out who won the Taos Shortz awards on <a href="http://www.taosshortz.com/" target="_blank">their website</a> &#8211; however, we do want to do a massive shout-out and congratulations to <a href="http://bluetonguefilms.com/" target="_blank">Blue Tongue Films</a>, for winning Best Comedy with their amazing short film, <a href="http://taosshortz.festivalgenius.com/2012/films/bear_nashedgerton_taosshortz2012" target="_blank">Bear</a> &#8211; the sequel to their equally amazing film, <a href="http://www.youtube.com/watch?v=Jmbv8kevQ-E" target="_blank">Spider</a>. These guys are kicking butt internationally &#8211; which is pretty exciting, and they are almost single handedly revitalising the Australian film industry! We&#8217;re big fans!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1547" title="filmapalooza-16" src="../../images/03-filmapalooza-16-590x440.jpg" alt="" width="590" height="440"></p>
+<p>There were a <strong>100 films</strong> from all over the world attending at this years competition &#8211; and first up, I must say I am so impressed with all the hard work everyone put in. Last years films were pretty amazing &#8211; however, I feel like the bar has certainly been raised. There were more films with television level production quality, more films with complex crane and dolly movies, more films with powerful and emotional soundtracks, more films with crazy visual effects. We didn&#8217;t win anything &#8211; however that&#8217;s not really much of a surprise &#8211; as our film was completely an utterly mental, as I&#8217;m sure you&#8217;ll agree once you see it.</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/29676217?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="590" height="332"></iframe></p>
+<p>Before I list any of the winners &#8211; and list our own picks, here&#8217;s some geeky film stats of what the city winners used in terms of cameras and post software.</p>
+<p><strong>Cameras Used:<br>
+</strong>56 x Canon DSLR<br>
+12 x Panasonic<br>
+9 x Sony<br>
+2 x Red camera (FYI: we shot on a RED ONE, as did <em>Little Rock</em>)<br>
+1 x Nikon DSLR<br>
+1 x Go Pro</p>
+<p><strong>Edited With:<br>
+</strong>63 x Final Cut Pro<br>
+10 x Adobe Premiere<br>
+4 x Sony Vegas<br>
+4 x Avid<br>
+1 x iMovie<br>
+1 x Final Cut Express<br>
+1 x Final Cut Pro X</p>
+<p>It&#8217;s pretty clear that most people, regardless of where they are in the world are using Canon DSLRs and FCP!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1534" title="filmapalooza-05" src="../../images/03-filmapalooza-05-590x440.jpg" alt="" width="590" height="440"></p>
+<p>And, with the geek facts aside, here are the official winners from this years Filmapalooza Competition.</p>
+<p><strong>The Judges Criteria:</strong><br>
+45% &#8211; Artistic Merit (e.g., Story, Creativity, Entertainment Value)<br>
+30% &#8211; Technical Merit<br>
+25% &#8211; Adherence to the Assignment</p>
+<p>&#8230;and the winners are:</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/27946483?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="590" height="332"></iframe></p>
+<p><strong>Best Film</strong><br>
+<strong>Honorable Mention for Directing</strong><br>
+<strong>Best Editing</strong><br>
+<strong>Best Special Effects</strong><br>
+&#8220;In Captivity&#8221; by <a href="http://jpixx.com/" target="_blank">Jpixx Films</a> from Hampton Roads (VA)</p>
+<p><strong>Runner Up for Best Film</strong><br>
+<strong>Best Directing</strong><br>
+<strong>Best Writing</strong><br>
+<strong>Best Use of Line</strong><br>
+<a href="http://www.youtube.com/watch?v=nS2uSVJEzJw&amp;feature=youtu.be" target="_blank"> &#8220;My Darling, I&#8217;m So Sorry&#8221;</a> by <a href="http://www.so36portraits.de/" target="_blank">so36portraits</a> from Berlin</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/SjZMhtcEVPY?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p><strong>Best Cinematography</strong><br>
+<strong>Best Graphics</strong><br>
+&#8220;Page 23&#8221; by Arts, Houben &amp; Van Den Boogaard from Utrecht</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/FbIw2rKZGiU?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p><strong>Second Runner Up for Best Film</strong><br>
+<strong>Honorable Mention for Writing</strong><br>
+&#8220;Canh Ba Ba&#8221; by Yeti from Ho Chi Minh City</p>
+<p><iframe loading="lazy" src="http://www.dailymotion.com/embed/video/xp568c?logo=0&amp;hideInfos=1" frameborder="0" width="590" height="332"></iframe></p>
+<p><strong>Best Acting &#8211; Ensemble</strong><br>
+&#8220;Casse geule&#8221; by Collectif 109 from Paris</p>
+<p><iframe loading="lazy" src="//player.vimeo.com/video/30298053?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="590" height="332"></iframe></p>
+<p><strong>Best Acting &#8211; Individual</strong><br>
+<a href="http://vimeo.com/user6401967" target="_blank"> Jason Perini</a> in &#8220;A Little Bit Behind&#8221; by The Magnificent from New South Wales (Australia)</p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/N0UkfRF7Bc4?rel=0" frameborder="0" width="590" height="330"></iframe></p>
+<p><strong>Best Song</strong><br>
+&#8220;Oh Drama&#8221; by White Poison Industries from Des Moines</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1548" title="filmapalooza-17" src="../../images/03-filmapalooza-17-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Congratulations to everyone listed above! As with every festival &#8211; at the end of the day, everyone has a different view on which film they like best &#8211; and it&#8217;s a huge job to pick a standout film from 100 unique films from all over the world. We certainly don&#8217;t envy the judges job at all! However, for your viewing pleasure &#8211; for those that weren&#8217;t following our <a href="https://twitter.com/#!/latenite48" target="_blank">48 Hour Twitter Feed</a> &#8211; we made some notes as to which films we liked best from each screening, and thought we&#8217;d share them with you. How did we come up with these picks? We rated each and every film a score out of 10. Every film starts with a 5, and then if the sound is horrible, we minus two points instantly. For every good quality (i.e. cinematography, graphics, performance, etc.) we add points, for every bad quality we remove points. Not exactly scientific &#8211; but it works for me!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1535" title="filmapalooza-06" src="../../images/03-filmapalooza-06-590x440.jpg" alt="" width="590" height="440"></p>
+<p>In order of preference, here are our picks from <strong>Screening One</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bird Watching</td>
+<td>Philadelphia</td>
+<td>Alpaca Pictures</td>
+</tr>
+<tr>
+<td>48 Horas Despues</td>
+<td>Granada</td>
+<td>The Leg Breakers</td>
+</tr>
+<tr>
+<td>Catharis</td>
+<td>Lisbon</td>
+<td>Marafados</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1536" title="filmapalooza-07" src="../../images/03-filmapalooza-07-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Two</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/26838813" target="_blank">The Auctioneer</a></td>
+<td>Baltimore</td>
+<td>Ping Kong King Pong</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=9w-JQvb7rI0&amp;feature=youtu.be" target="_blank">I M. Sing</a></td>
+<td>Mumbia</td>
+<td>Aapan Yaana Paahilaat Kaa</td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/25783683" target="_blank">No Record</a></td>
+<td>Austin</td>
+<td>Invenio</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=7mJoD0eYvAY&amp;feature=youtu.be" target="_blank">The Vis It</a></td>
+<td>Amsterdam</td>
+<td>Hazazah</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1538" title="filmapalooza-08" src="../../images/03-filmapalooza-08-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Three</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/32908512" target="_blank">Sexy Tuesdays</a></td>
+<td>London</td>
+<td><a href="http://www.wilderfilms.co.uk/" target="_blank">Wilder Films</a></td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/23173802" target="_blank">Prey</a></td>
+<td>Singapore</td>
+<td><a href="http://waesome.com/" target="_blank">Waesome Productions</a></td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/27800149" target="_blank">Storytime Time</a></td>
+<td>Louisville</td>
+<td>Team Team!</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=iuhMzhXOVfw&amp;feature=youtu.be" target="_blank">Baden Krunk</a></td>
+<td>Madison</td>
+<td>Smoking Monkey</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1539" title="filmapalooza-09" src="../../images/03-filmapalooza-09-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Four</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=wgIPoRguYzA&amp;feature=youtu.be" target="_blank">The Jigsaw</a></td>
+<td>Glasgow</td>
+<td>LifeUp!</td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/25065318" target="_blank">Nanny Cam</a></td>
+<td>New York</td>
+<td><a href="http://www.magnettheater.com/" target="_blank">Magnet Digital Media Engine</a></td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=1fo88tAS_pw&amp;feature=youtu.be" target="_blank">No Country for Young Men</a></td>
+<td>Prague</td>
+<td>BulvarART</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1540" title="filmapalooza-10" src="../../images/03-filmapalooza-10-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Five</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/28683070" target="_blank">Jack&#8217;s Last Fandago</a></td>
+<td>New Orleans</td>
+<td>King Cake</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=XtDfY68Fpmk&amp;feature=youtu.be" target="_blank">Summer League</a></td>
+<td>Richmond</td>
+<td><a href="https://www.facebook.com/final.revised" target="_blank">final.revised</a></td>
+</tr>
+<tr>
+<td>Pakkuri-san</td>
+<td>Osaka</td>
+<td><em>Something in Japanese</em></td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1541" title="filmapalooza-11" src="../../images/03-filmapalooza-11-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Six</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/24921399" target="_blank">Cold War</a></td>
+<td>Houston</td>
+<td><a href="http://www.moonlitefilmwerks.com/" target="_blank">Moonlite Filmwerks</a></td>
+</tr>
+<tr>
+<td>The Labyrinth</td>
+<td>National Film Challenge Audience Award</td>
+<td>Clockwork</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=vM-7zegNMLM&amp;feature=youtu.be" target="_blank">Wrong Taco Shop</a></td>
+<td>Las Vegas</td>
+<td><a href="http://www.lightforgestudios.com/" target="_blank">Light Forge Studios</a></td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=ctwSz1BPXUY" target="_blank">Doutora</a></td>
+<td>Sao Paulo</td>
+<td>PLOT</td>
+</tr>
+<tr>
+<td>How The Spot Was One</td>
+<td>San Francisco</td>
+<td>Chinese Takeout</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=I76v3vlACvw&amp;feature=youtu.be" target="_blank">True to Life</a></td>
+<td>Israel</td>
+<td><a href="http://toplessproductions.com/" target="_blank">Top Less Productions</a></td>
+</tr>
+<tr>
+<td><a href="http://www.dailymotion.com/video/xp568c_casse-gueule-du-collectif-109-english-subtitles_shortfilms" target="_blank">Casse gueule</a></td>
+<td>Paris</td>
+<td><a href="https://www.facebook.com/pages/Collectif-109/225449314184668" target="_blank">Collectif 109</a></td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1542" title="filmapalooza-12" src="../../images/03-filmapalooza-12-590x440.jpg" alt="" width="590" height="440"></p>
+<p>Here are our picks from <strong>Screening Seven</strong>:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/35505812" target="_blank">Click. Flash.</a></td>
+<td>National Film Challenge Winner</td>
+<td>Trifecta / HeatStroke</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=L-km07G0w-I" target="_blank">The Prince&#8217;s Perfect Party</a></td>
+<td>Atlanta</td>
+<td><a href="http://www.whiteflamestudios.com/" target="_blank">White Flame Studios</a></td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/30298053" target="_blank">A Little Bit Behind</a></td>
+<td>Sydney</td>
+<td>The Magnificent</td>
+</tr>
+</tbody>
+</table>
+<p>So what was our favourite film? That&#8217;s a really tough question! Our favourites were:</p>
+<table class="easy-table-creator tablesorter" style="width: 100%;">
+<thead>
+<tr>
+<th>Film</th>
+<th>City</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://vimeo.com/32908512" target="_blank">Sexy Tuesdays</a></td>
+<td>London</td>
+<td><a href="http://www.wilderfilms.co.uk/" target="_blank">Wilder Films</a></td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/28683070" target="_blank">Jack&#8217;s Last Fandago</a></td>
+<td>New Orleans</td>
+<td>King Cake</td>
+</tr>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=XtDfY68Fpmk&amp;feature=youtu.be" target="_blank">Summer League</a></td>
+<td>Richmond</td>
+<td>final.revised</td>
+</tr>
+<tr>
+<td><a href="http://vimeo.com/24921399" target="_blank">Cold War</a></td>
+<td>Houston</td>
+<td><a href="http://www.moonlitefilmwerks.com/" target="_blank">Moonlite Filmwerks</a></td>
+</tr>
+</tbody>
+</table>
+<p>And I think, after much deliberation, I would have to go with the <strong>London</strong> entry for my personal best film. It&#8217;s slick, has great production values, and is incredibly funny. However, my travelling partner Mike &#8211; personally would give the award to the <strong>Sydney</strong> team (which did end up picking Best Actor). I&#8217;m sure you all have your favourites!</p>
+<p>You can find all the other films that screened on the <a href="http://www.48hourfilm.com/tour/2011.php" target="_blank">official website</a> or via this handy <a href="https://docs.google.com/spreadsheet/ccc?key=0Avdd21nHiGyudHdSUjdpMnoyc2VrcVQ5VHROSkVJaGc" target="_blank">Google Docs Spreadsheet</a>. It&#8217;s also worth checking out the <a href="https://www.facebook.com/groups/221395664607521/" target="_blank">Filmapalooza 2012 Facebook Group</a>.</p>
+<p><span style="text-decoration: underline;"><strong>UPDATE March 2012:</strong></span> Also, here is a list of all the films that are fortunate enough to make it to NAB and Cannes! Congratulations everyone!</p>
+<p><strong>Cannes Film Festival &#8211; Short Film Corner &#8211; May 2012<br>
+</strong>Atlanta &#8220;The Prince&#8217;s Perfect Party&#8221;<br>
+Berlin &#8220;My Darling, I&#8217;m So Sorry&#8221;<br>
+Boston &#8220;One Step Forward&#8221;<br>
+Hampton Roads &#8220;In Captivity&#8221;<br>
+Ho Chi Minh City &#8220;Canh Ba Ba&#8221;<br>
+Houston &#8220;Cold War&#8221;<br>
+Johannesburg &#8220;Child&#8221;<br>
+Las Vegas &#8220;The Last Taco Shop&#8221;<br>
+New South Wales &#8220;A Little Bit Behind&#8221;<br>
+Paris &#8220;Casse Gueule&#8221;<br>
+San Francisco &#8220;How the Spot Was Won&#8221;<br>
+Richmond &#8220;Summer League&#8221;<br>
+Utrecht &#8220;Page 23&#8221;<br>
+&#8220;Bliss&#8221; Australia 2011 48 Green Hours Winning Film</p>
+<p><strong>NABShow in Las Vegas &#8211; Thursday, April 19<br>
+</strong>Berlin &#8220;My Darling, I&#8217;m So Sorry&#8221;<br>
+Des Moines &#8220;Oh Drama&#8221;<br>
+Denver &#8220;Unfurnished&#8221;<br>
+Hampton Roads &#8220;In Captivity&#8221;<br>
+Ho Chi Minh City &#8220;Canh Ba Ba&#8221;<br>
+Louisville &#8220;Storytime Time&#8221;<br>
+Madison &#8220;Baden Krunk&#8221;<br>
+Paris &#8220;Casse Gueule&#8221;<br>
+Portland, OR &#8220;271&#8221;<br>
+Prague &#8220;No Country For Young Men&#8221;<br>
+Shanghai &#8220;The Model&#8221;<br>
+Tel Aviv &#8220;True to Life&#8221;<br>
+Utrecht &#8220;Page 23&#8221;<br>
+Washington, DC &#8220;Relative&#8221;</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1546" title="filmapalooza-15" src="../../images/03-filmapalooza-15-590x440.jpg" alt="" width="590" height="440"></p>
+<p>After a hugely successful seven screenings &#8211; it was time for the official after party in a beautiful Taos triple story gallery. It was a very classy occasion, with free food and alcohol on offer &#8211; and a great final chance for all the filmmakers to mingle and exchange stories.</p>
+<p>Once Filmapalooza wrapped &#8211; Mike and I spent a final day in Taos to explore the town a bit more, and do some tourist shopping. And then, almost as quickly as it started &#8211; it was time to go home.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1545" title="filmapalooza-14" src="../../images/03-filmapalooza-14-440x590.jpg" alt="" width="440" height="590"></p>
+<p>We wanted to take this opportunity to thank everyone who helped make <em>Filmapalooza</em> happen &#8211; especially Nicole Haddock, for ensuring all the technical elements of the screenings ran smoothly. Big thanks also to the Taos Shortz staff for making our stay so enjoyable.</p>
+<p>We also wanted to thank EVERYONE who helped us with our own film, <strong>The Script Machine</strong>. We couldn&#8217;t have asked for a more talented and dedicated team of professionals. We will release the film very soon on our website &#8211; so stay tuned!</p>
+<p>If all goes to plan, we&#8217;re going to try and tackle the Sydney, New Zealand and Melbourne competitions this year &#8211; as the challenge to complete a film in 48 hours is just too appealing! Follow our <a href="http://twitter.com/latenite48" target="_blank">Twitter</a> feed for details. Until next time&#8230;</p>
+<p>Onwards &amp; Upwards!</p>
+<p><em>Chris!</em></p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

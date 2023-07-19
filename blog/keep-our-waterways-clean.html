@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-2866 type-post status-publish format-standard has-post-thumbnail hentry category-documentary" id="post-2866">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../keep-our-waterways-clean/" rel="bookmark">Keep Our Waterways Clean</a></h2>
+<aside class="meta">
+Dec 18, 2013				    <i class="icon-dot"></i> Posted By Jacqui Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/documentary/">Documentary</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-full wp-image-2868" alt="001" src="../../images/12-001.jpg" width="850" height="549" srcset="../../images/12-001.jpg 850w, ../../images/12-001-300x193.jpg 300w, ../../images/12-001-768x496.jpg 768w, ../../images/12-001-480x310.jpg 480w, ../../images/12-001-346x223.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Since our Spinning Dreams (in Timor-Leste) Film in 2010 &#8211; Ashwin and I have worked together tirelessly together to create important Documentaries which inspire others. Four massive projects later in 4 countries around Asia, and over SG$100,000 raised for our causes, we created our first community message specifically directed to speak to the heart of local Singaporeans.</p>
+<p>It was a wonderful idea: try encourage all Singaporeans to &#8220;Keep Singapore Clean&#8221; &#8211; very simple. To do this, we wanted to show the different landscapes and beautiful waterways of Singapore, and the affect that rubbish has on the environment.</p>
+<p>We could have done this through traditional advertising techniques, using actors or well spoken citizens. Instead, we spoke to local fisherman, school children, kayakers &#8211; people that use the waterways every day.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2869" alt="002" src="../../images/12-002.jpg" width="850" height="635" srcset="../../images/12-002.jpg 850w, ../../images/12-002-300x224.jpg 300w, ../../images/12-002-768x573.jpg 768w, ../../images/12-002-480x358.jpg 480w, ../../images/12-002-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>It&#8217;s funny when people ask me about Singapore. They are often surprised when I tell them it&#8217;s my favourite city in the world, and without a doubt, it really is.</p>
+<p>Firstly, I love the tropics. Singapore certainly is a tropical paradise. It is stunningly beautiful and lush with wildlife and flora. There&#8217;s no allusion that humankind has taken over the planet. Even in the most remote &amp; protected places in the world, such as Cocos Island National Park (Costa Rica) where we filmed earlier this year:</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2870" alt="003" src="../../images/12-003.jpg" width="850" height="452" srcset="../../images/12-003.jpg 850w, ../../images/12-003-300x159.jpg 300w, ../../images/12-003-768x408.jpg 768w, ../../images/12-003-480x255.jpg 480w, ../../images/12-003-346x183.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2871" alt="004" src="../../images/12-004.jpg" width="850" height="638" srcset="../../images/12-004.jpg 850w, ../../images/12-004-300x225.jpg 300w, ../../images/12-004-768x576.jpg 768w, ../../images/12-004-480x360.jpg 480w, ../../images/12-004-346x259.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2872" alt="005" src="../../images/12-005.jpg" width="850" height="536" srcset="../../images/12-005.jpg 850w, ../../images/12-005-300x189.jpg 300w, ../../images/12-005-768x484.jpg 768w, ../../images/12-005-480x302.jpg 480w, ../../images/12-005-346x218.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>&#8230;is at risk from severe environmental destruction from plastic pollution such as old fishing lines.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2873" alt="006" src="../../images/12-006.jpg" width="850" height="1278" srcset="../../images/12-006.jpg 850w, ../../images/12-006-199x300.jpg 199w, ../../images/12-006-681x1024.jpg 681w, ../../images/12-006-768x1154.jpg 768w, ../../images/12-006-480x721.jpg 480w, ../../images/12-006-346x520.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Therefore, the only way forward, I see, is through <b>urban national parks.</b> Environments where humans and wildlife can not only live but <i>thrive</i> in harmony. People overseas often think Singapore is nothing but a corporate megalopolis. They couldn&#8217;t be more wrong. Anyone who thinks like this should go visit my friends at the <a href="https://www.facebook.com/groundupinitiative/info" target="_blank">Ground Up Initiative</a>, to do some gardening &amp; help &#8220;Forge A Beautiful Connection with the Earth and the Community&#8221;.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2874" alt="007" src="../../images/12-007.jpg" width="850" height="638" srcset="../../images/12-007.jpg 850w, ../../images/12-007-300x225.jpg 300w, ../../images/12-007-768x576.jpg 768w, ../../images/12-007-480x360.jpg 480w, ../../images/12-007-346x259.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2875" alt="008" src="../../images/12-008.jpg" width="850" height="478" srcset="../../images/12-008.jpg 850w, ../../images/12-008-300x168.jpg 300w, ../../images/12-008-768x431.jpg 768w, ../../images/12-008-480x269.jpg 480w, ../../images/12-008-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2876" alt="009" src="../../images/12-009.jpg" width="850" height="565" srcset="../../images/12-009.jpg 850w, ../../images/12-009-300x199.jpg 300w, ../../images/12-009-768x510.jpg 768w, ../../images/12-009-480x319.jpg 480w, ../../images/12-009-346x229.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>As Singapore government promotes, Singapore really is &#8220;A City in our Garden&#8221;.</p>
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/X7SGHa6q2VA" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>There are so many places of environmental beauty in Singapore, it&#8217;s impossible to ignore. I love the jungle &#8211; but my favourite example of sustainable innovation is Bishan Park. It was once nothing but a concrete drain in a low socio-economic area…</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2877" alt="010" src="../../images/12-010.jpg" width="850" height="447" srcset="../../images/12-010.jpg 850w, ../../images/12-010-300x157.jpg 300w, ../../images/12-010-768x403.jpg 768w, ../../images/12-010-480x252.jpg 480w, ../../images/12-010-346x181.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>&#8230;what it is now, gives me hope for the future.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2878" alt="011" src="../../images/12-011.jpg" width="850" height="545" srcset="../../images/12-011.jpg 850w, ../../images/12-011-300x192.jpg 300w, ../../images/12-011-768x492.jpg 768w, ../../images/12-011-480x307.jpg 480w, ../../images/12-011-346x221.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2879" alt="012" src="../../images/12-012.jpg" width="850" height="462" srcset="../../images/12-012.jpg 850w, ../../images/12-012-300x163.jpg 300w, ../../images/12-012-768x417.jpg 768w, ../../images/12-012-480x260.jpg 480w, ../../images/12-012-346x188.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>You can read more about this incredible project <a href="http://www.asce.org/CEmagazine/Article.aspx?id=23622322977#.Uqq_zmQW1L4" target="_blank">here</a>.</p>
+<p>But it takes more than bio-engineering and sustainable architecture to create an environmentally friendly eco-system. You need the community to take pride in their environment, and not take the clean fresh grass to roll on for granted.</p>
+<p>The National Environment Agency had concerns that some locals were not aware of the severe impact plastic and littering had on our environment. They wanted to create a community message to educate the masses, evoke a sense of pride and congratulate those who are already dedicating their life to Keeping Singapore Clean.</p>
+<p>One of those heroes &#8211; is Eugene.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2880" alt="014" src="../../images/12-014.jpg" width="850" height="477" srcset="../../images/12-014.jpg 850w, ../../images/12-014-300x168.jpg 300w, ../../images/12-014-768x430.jpg 768w, ../../images/12-014-480x269.jpg 480w, ../../images/12-014-346x194.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>Eugene runs an incredible organisation called the &#8220;Waterways Watch Society&#8221;, which is basically just a group of volunteers and a couple of full time staff, which patrol different areas of Singapore picking up rubbish.</p>
+<p>There are volunteers of all ages that go in groups either cycling, kayaking or boating along the waterways to collect rubbish. I was in awe of his commitment and love for Kallang Waterways &#8211; the most popular waterway for activities such as dragon boating.</p>
+<p>We joined Eugene and his group, and met many young inspiring people who dedicated their weekends to cleaning their environment, instead of spending time at shopping malls.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2881" alt="015" src="../../images/12-015.jpg" width="850" height="635" srcset="../../images/12-015.jpg 850w, ../../images/12-015-300x224.jpg 300w, ../../images/12-015-768x573.jpg 768w, ../../images/12-015-480x358.jpg 480w, ../../images/12-015-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>We also filmed groups of school children who volunteer to clean the plastic from East Coast Park, and met all kinds of people who use the waterways every day.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2882" alt="016" src="../../images/12-016.jpg" width="850" height="567" srcset="../../images/12-016.jpg 850w, ../../images/12-016-300x200.jpg 300w, ../../images/12-016-768x512.jpg 768w, ../../images/12-016-480x320.jpg 480w, ../../images/12-016-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"><img loading="lazy" class="alignnone size-full wp-image-2883" alt="017" src="../../images/12-017.jpg" width="850" height="567" srcset="../../images/12-017.jpg 850w, ../../images/12-017-300x200.jpg 300w, ../../images/12-017-768x512.jpg 768w, ../../images/12-017-480x320.jpg 480w, ../../images/12-017-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"><img loading="lazy" class="alignnone size-full wp-image-2884" alt="018" src="../../images/12-018.jpg" width="850" height="567" srcset="../../images/12-018.jpg 850w, ../../images/12-018-300x200.jpg 300w, ../../images/12-018-768x512.jpg 768w, ../../images/12-018-480x320.jpg 480w, ../../images/12-018-346x230.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>The scope of the film project was large, so it was a great chance to work with some different freelancers to make the film. The artistic and creative talent in Singapore is unbelievable &#8211; raw and terribly exciting to be apart of. SG truly is the hub of Asia, not only geographically, but an important hub for creative and innovative people from all over the world!</p>
+<p>The style of Art, Music and Film Singapore creates has strong influences from all over the world, but with a VERY unique Singaporean story to tell.</p>
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/ISovsVvX8Bg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>But it&#8217;s not only the content, but the ways in which this content is being viewed &amp; shared is being innovated here: <a href="https://www.viddsee.com/" target="_blank">Viddsee</a> and <a href="http://ourbetterworld.org/" target="_blank">OurBetterWorld</a> being a perfect inspiring example.</p>
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/645GjisI-nA" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>We sourced our film crew through two inspiring enterprises which support this growing creative movement in Singapore: <a href="http://www.creativesatwork.me/" target="_blank">Creatives@Work</a> and <a href="http://www.sixdegrees.asia/welcome" target="_blank">sixdegrees</a>.</p>
+<p>Through the help of the lovely Jayce from Creatives@Work, we connected with the incredible talented Anuj Gulati (Cinematographer) and Nizlan (Sound Recordist), and through our friends from &#8220;Our Better World&#8221; we met Anshul (Cinematographer &amp; Editor).</p>
+<p>The shoot was made even more rewarding working with such fun and talented crew, and despite heavy (sporadic) rain on two of the shoots days, we still worked through it all!</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2885" alt="020" src="../../images/12-020.jpg" width="850" height="635" srcset="../../images/12-020.jpg 850w, ../../images/12-020-300x224.jpg 300w, ../../images/12-020-768x573.jpg 768w, ../../images/12-020-480x358.jpg 480w, ../../images/12-020-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"><img loading="lazy" class="alignnone size-full wp-image-2886" alt="021" src="../../images/12-021.jpg" width="850" height="635" srcset="../../images/12-021.jpg 850w, ../../images/12-021-300x224.jpg 300w, ../../images/12-021-768x573.jpg 768w, ../../images/12-021-480x358.jpg 480w, ../../images/12-021-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"><img loading="lazy" class="alignnone size-full wp-image-2887" alt="022" src="../../images/12-022.jpg" width="850" height="635" srcset="../../images/12-022.jpg 850w, ../../images/12-022-300x224.jpg 300w, ../../images/12-022-768x573.jpg 768w, ../../images/12-022-480x358.jpg 480w, ../../images/12-022-346x258.jpg 346w" sizes="(max-width: 850px) 100vw, 850px"></p>
+<p>I couldn&#8217;t be more excited to be officially moving to Singapore next year, to continue my work in the Asian region with Ash &amp; the <a href="http://www.goneadventurin.com" target="_blank">Gone Adventurin&#8217;</a> crew. There are lots of exciting Documentary projects coming up, which are all part of my personal life-long mission to continue finding positive solutions and inspiration to protect and nurture our beautiful planet! And like always, doing this through the spirit of Adventure!</p>
+<p>What I know so far &#8211; is that I will be in Indonesia this Dec sourcing ideas for sustainability, in the Swiss Alps all of Jan fighting climate change &#8211; and travelling across the world from March to raise funds for research and awareness of Breast Cancer, with two incredible Surgeons from Singapore!</p>
+<p>Updates coming soon!</p>
+<p>(You can always keep up to date with our projects or get in touch via my Twitter feed <a href="https://twitter.com/Jacqui_Hocking" target="_blank">@Jacqui_Hocking</a>).</p>
+<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/M8o-aYIGNNU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

@@ -1,0 +1,2962 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="/about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="/originals/">
+          <li>Originals</li>
+        </a>
+        <a href="/technology/">
+          <li>Technology</li>
+        </a>
+        <a href="/collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="/contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-2207 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-2207">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../tropfest-the-rock-show-of-film-festivals/" rel="bookmark">Tropfest: The Rock Show of Film Festivals</a></h2>
+<aside class="meta">
+Feb 20, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A couple of days after spending a few glorious hours in the sunshine at the Sidney Myer Music Bowl watching short films and drinking glorious cider, I read an article in the paper that referred to Tropfest (the World’s largest short film competition as we are often told) as the ‘rock show’ of short film&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2186 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-2186">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../hansel-gretel-witchhunters/" rel="bookmark">Hansel &#038; Gretel: Witchhunters</a></h2>
+<aside class="meta">
+Feb 15, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Now let’s not beat around the bush here. When you go and see a movie titled Hansel &amp; Gretel: Witchhunters, you clearly aren’t expecting a film that is going to have a clean sweep come awards season. What you are expecting though is a great, bad movie. A movie with such a ridiculous concept (and&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1861 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1861">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../sightseers/" rel="bookmark">Sightseers</a></h2>
+<aside class="meta">
+Aug 16, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Admittedly I didn&#8217;t really know anything about this film going in. I was told that one of my hero&#8217;s, the amazing Edgar Wright executive produced it (which basically was the big selling point for me!) &#8211; but apart from that all I knew is that it was &#8220;bloody&#8221; and I assumed it was going to be a&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1853 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1853">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../hail/" rel="bookmark">HAIL</a></h2>
+<aside class="meta">
+Aug 12, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;ve been waiting to see this film for a very, very, very long time. Admittedly, it&#8217;s not the kind of film I would normally seek out to see &#8211; as I&#8217;m not the biggest fan of drug use and graphic violence up there on the big screen &#8211; in fact watching people injecting themselves really freaks me&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1833 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1833">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-day-i-remembered-my-childhood/" rel="bookmark">The Day I Remembered My Childhood.</a></h2>
+<aside class="meta">
+Aug 8, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>MIFF Day 6. What can you say about Wes Anderson that hasn’t already been said. The man has made a career of making films that are, on viewing, unmistakably his own. Everything from his storybook like cinematography, to his bold production design, to his beautifully crafted soundtracks, to the performance style he enforces on his&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1822 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1822">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../from-little-things-big-things-grow/" rel="bookmark">From Little Things. Big Things Grow.</a></h2>
+<aside class="meta">
+Aug 8, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>MIFF Weekend #1 So after a cracking start to the festival it was time to indulge in my first weekend at MIFF which usually results in five to eight films spanned across two very long days. I was a little bit excited for this first weekend however as one of the films that I had&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1808 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1808">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../australias-ron-howard/" rel="bookmark">Australia’s Ron Howard</a></h2>
+<aside class="meta">
+Aug 5, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>&#8230;or Why Our Safety Is Not Guaranteed. The great thing about growing up in the world in which you want to work is that as you get older you start to see friends and people you have worked with in your past start to break through. It’s such a warm feeling to have as in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1799 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1799">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../soul-sister-brown-sugar/" rel="bookmark">Soul Sister, Brown Sugar.</a></h2>
+<aside class="meta">
+Aug 5, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>MIFF Opening Night. Best in Years. So it’s probably no surprise for you to all hear that I love the Melbourne International Film Festival. Every year I get super excited when the festival comes around cause it literally allows me to go nuts and watch 50 odd movies in just 19 short days. Some might&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1599 type-post status-publish format-standard has-post-thumbnail hentry category-film-reviews" id="post-1599">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2012-best-year-in-movies-since-sliced-bread/" rel="bookmark">2012. Best Year In Movies since&#8230; sliced bread?</a></h2>
+<aside class="meta">
+Jun 9, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Ok so it’s been a while since I’ve written a blog entry. I’d like to blame the fact that I’ve been extraordinarily busy with projects (which is no lie, I totally have) but really there is no excuse for not taking 10min to write a cute little blog post. Anyway this week inspired me to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-818 type-post status-publish format-standard hentry category-film-reviews" id="post-818">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-hollywood-complex/" rel="bookmark">The Hollywood Complex</a></h2>
+<aside class="meta">
+Jul 26, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>What would be a more fitting way for a former child actor to officially start his festival than with a documentary about child actors trying to break through in the states.  The Hollywood Complex follows a dozen or so child actors and their families who are staying at a complex called Oakwood during the 3-4&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-813 type-post status-publish format-standard hentry category-film-reviews" id="post-813">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-fairy/" rel="bookmark">The Fairy</a></h2>
+<aside class="meta">
+Jul 26, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>With last year’s tragic The Wedding Party opening last years festival, I think that it’s fair to say that my bar had been significantly lowered in terms of what I was expecting.  Luckily I was pleasantly surprised with Belgian/French film The Fairy, a film that was also written and directed by its three lead actors. &#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-810 type-post status-publish format-standard hentry category-film-reviews" id="post-810">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../melbourne-international-film-festival-2011-2/" rel="bookmark">Melbourne International Film Festival 2011</a></h2>
+<aside class="meta">
+Jul 26, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I would like to firstly apologise to all our teamsters out there who have been disappointed with our lack of blogging in recent times.  It has been a busy one for the whole team so we have unfortunately been snowed under with work. Also, for those of you have been long time followers of this&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-798 type-post status-publish format-standard hentry category-film-reviews" id="post-798">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../sound-of-noise/" rel="bookmark">Sound of Noise</a></h2>
+<aside class="meta">
+Mar 15, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>We didn&#8217;t really plan to go and see this film &#8211; we were supposed to head to another film on the other side of Miami, however the large taxi ride didn&#8217;t really seem that appealing. So instead, we decided to stay at the same theatre, and just see whatever was up next. I misread the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-793 type-post status-publish format-standard hentry category-film-reviews" id="post-793">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../mamma-gogo/" rel="bookmark">Mamma Gogo</a></h2>
+<aside class="meta">
+Mar 15, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Unfortunately, due to horrible traffic in South Beach, Miami, I missed the start of this film &#8211; which is a real shame, as I&#8217;m sure I missed some really important set-ups and character development. I also ended up having to sit in the aisle of the theatre, as it was completely sold out, which wasn&#8217;t tremendously comfortable&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-778 type-post status-publish format-standard hentry category-film-reviews" id="post-778">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../project-nim/" rel="bookmark">Project Nim</a></h2>
+<aside class="meta">
+Mar 11, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>After seeing the movie poster and promotional stills for this film &#8211; who wouldn&#8217;t want to go and see it? Nim is just so darn cute! Project Nim was the name of a Columbia University experiment led by psychologist Herbert Terrace seeking to discover how much chimpanzees and humans could communicate through sign language. This documentary&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-770 type-post status-publish format-standard hentry category-film-reviews" id="post-770">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../elite-squad-2-the-enemy-within/" rel="bookmark">Elite Squad 2: The Enemy Within</a></h2>
+<aside class="meta">
+Mar 11, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>We have seen a lot of documentaries and low-budget films so far at this years festival &#8211; however Elite Squad 2: The Enemy Within is certainly at the other end of the spectrum. Having already enjoyed public and critical acclaim, Elite Squad 2 is the current all-time largest box office ticket seller and highest-grossing film in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-761 type-post status-publish format-standard hentry category-film-reviews" id="post-761">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-greatest-movie-ever-sold/" rel="bookmark">The Greatest Movie Ever Sold</a></h2>
+<aside class="meta">
+Mar 10, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>One thing that has really surprised me thus far at the festival is just how many fantastic documentaries have been on show! Boundary-pushing Oscar-nominated Morgan Spurlock is a true expert in his field. With profitable and Internationally successful films like Super Size Me and Where in the World is Osama Bin Laden? under his belt, I had quite&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-753 type-post status-publish format-standard hentry category-film-reviews" id="post-753">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../page-one-a-year-inside-the-new-york-times/" rel="bookmark">Page One: A Year Inside The New York Times</a></h2>
+<aside class="meta">
+Mar 9, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Despite the occasional dodgy film, we have been so lucky to see so many quality films so far at the festival. Page One: A Year Inside The New Work Times, for me now however has definitely been a highlight. This is a serious slick, fun, enthralling and inspiring documentary that has been skilfully been put together with an incredible attention to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-746 type-post status-publish format-standard hentry category-film-reviews" id="post-746">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../818/" rel="bookmark">(818)</a></h2>
+<aside class="meta">
+Mar 9, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>As I&#8217;m sure you know if you&#8217;re read our website, or some of the past film reviews on this blog, that I am currently travelling with two other people with vastly different tastes in films than myself. However, despite this fact &#8211; we all categorically hated this film. I feel really bad saying this &#8211;&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-739 type-post status-publish format-standard hentry category-film-reviews" id="post-739">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-quiet-life/" rel="bookmark">A Quiet Life</a></h2>
+<aside class="meta">
+Mar 9, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A Quiet Life is the story of an Italian expatriate Rosario who runs a quiet, yet successful roadside restaurant and hotel with the help of  his beautiful younger business driven wife, Renate. Rosario is the head chef in his kitchen, and pushes the boundaries of what&#8217;s normally on the German menu by dishing out wild boar and crabs&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-735 type-post status-publish format-standard hentry category-film-reviews" id="post-735">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../in-a-better-world/" rel="bookmark">In A Better World</a></h2>
+<aside class="meta">
+Mar 8, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>At the Academy Awards this year, the beautiful and incredibly intelligent Susanne Bier picked up the Best Foreign-Language Film award, so the expectations for this film were obviously fairly high when we walked into the cinema. After an insightful question and answer session, we were straight into this extraordinary and exceptional work of art. In A Better World takes&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-730 type-post status-publish format-standard hentry category-film-reviews" id="post-730">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../freedom-riders/" rel="bookmark">Freedom Riders</a></h2>
+<aside class="meta">
+Mar 8, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Every now and again you come across a documentary that is slick, sophisticated, and really makes you think. Freedom Riders has got to be one of the most professional, and thought provoking films I have come across in recent years. Almost one hundred years after United States President Abraham Lincoln issued Emancipation Proclamation, formally abolished slavery, and despite the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-725 type-post status-publish format-standard hentry category-film-reviews" id="post-725">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../marimbas-from-hell/" rel="bookmark">Marimbas From Hell</a></h2>
+<aside class="meta">
+Mar 8, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I am currently travelling with two other LateNite Films people at MIFF, and we all went and saw this film, titled Marimbas From Hell. One person thought it was a complete and utter waste of his time, another thought it was seriously funny &#8211; so hilarious that he kept on giggling like a school girl all the way&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-720 type-post status-publish format-standard hentry category-film-reviews" id="post-720">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../armadillo/" rel="bookmark">Armadillo</a></h2>
+<aside class="meta">
+Mar 7, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>At film festivals, there are always a few war documentaries thrown into the mix. Normally they are either very anti-war, or very pro-solider. One of the reasons I really loved this film is that it wasn&#8217;t forcefully pushing an opinion either way &#8211; although there were definitely moments where it showed war in a very&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-713 type-post status-publish format-standard hentry category-film-reviews" id="post-713">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../potiche/" rel="bookmark">Potiche</a></h2>
+<aside class="meta">
+Mar 7, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Potiche (slang for &#8220;trophy wife&#8221;) is one of the funniest films that I have seen in a long time! From the opening Disney-like scene where the Madame Pujol is prancing around the woods in a tracksuit and hair curlers, listening to cheerful birds, and surrounded by friendly deer and a playful squirrel, only to come&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-704 type-post status-publish format-standard hentry category-film-reviews" id="post-704">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../you-are-here/" rel="bookmark">You Are Here</a></h2>
+<aside class="meta">
+Mar 7, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Daniel Cockburn&#8217;s debut feature film, You Are Here is a bizarre and mindstraining experimental film (despite what the director claimed in the Q&amp;A session) that follows a woman investigating several documents and seemingly random objects that continue to reappear as she keeps filing and archiving them away. The film opens with what looks like handy-cam&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-699 type-post status-publish format-standard hentry category-film-reviews" id="post-699">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../chico-rita/" rel="bookmark">Chico &#038; Rita</a></h2>
+<aside class="meta">
+Mar 6, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Over the next few weeks I will be uploading as many brief reviews as I can manage, from films that I come across at the Miami International Film Festival. I&#8217;m going to be writing them on an iPad, and uploading them whenever I come across free Wi-Fi, so please excuse any poor grammar and spelling mistakes!&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-627 type-post status-publish format-standard hentry category-film-reviews" id="post-627">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-disappearance-of-alice-creed/" rel="bookmark">The Disappearance of Alice Creed</a></h2>
+<aside class="meta">
+Jul 26, 2010				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Well it&#8217;s that time of year again &#8211; MIFF time! Apologies for the lack of blog posts recently. For those of you that have been keeping an eye on the site, you&#8217;ll know that I&#8217;ve been overseas since February and have only just arrived back (you can see some photos of my travels here). But now I&#8217;m&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-599 type-post status-publish format-standard hentry category-film-reviews" id="post-599">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../knowing/" rel="bookmark">Knowing</a></h2>
+<aside class="meta">
+Mar 30, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m inspired. I want to swear a lot. In a positive way. But I won&#8217;t. At least not at the moment. I&#8217;ve literally just got back from the cinema after watching Alex Proyas&#8217; latest film, Knowing. All I can say is&#8230; Wow. I&#8217;ve been looking forward to watching this film for a long time. There&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-585 type-post status-publish format-standard hentry category-film-reviews" id="post-585">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../zhan-gu-the-drummer/" rel="bookmark">Zhan. Gu / The Drummer</a></h2>
+<aside class="meta">
+May 8, 2008				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Not to be confused with Yang Chuan&#8217;s 1980 film, also set in Hong Kong and as of the same English translation, Kenneth Bi&#8217;s &#8220;Zhan. Gu (The Drummer)&#8221; is his third feature film (despite popular belief, as his first feature film, &#8220;A Small Miracle&#8221; only received a straight to video release). Nominated for the Sundance Grand&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-584 type-post status-publish format-standard hentry category-film-reviews" id="post-584">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../ladri-di-biciclette/" rel="bookmark">Ladri di biciclette</a></h2>
+<aside class="meta">
+Oct 4, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Vittorio De Sica&#8217;s ninth film as director, Ladri di biciclette, has been widely cited as one of the finest films ever made and has helped cement the Italian-born actor/writer/director, as one of the world&#8217;s most influential and remarkable filmmakers of all time. Released in 1948, The Bicycle Thief, as it was titled in the US&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-592 type-post status-publish format-standard hentry category-film-reviews" id="post-592">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../run/" rel="bookmark">Run</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great short New Zealand film about a brother and sister, who live in fear of their overly protective father. They mother is no longer in their lives for some unspecified reason, and as a result the father focuses all of his attention on making sure his children are the best they can&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-591 type-post status-publish format-standard hentry category-film-reviews" id="post-591">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../4-months-3-weeks-and-2-days/" rel="bookmark">4 Months, 3 Weeks and 2 Days</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I must have completely zoned out when I read the description of this film. If I had consciously known it was about an abortion, there is no way in hell I would have gone and seen it. I must have also tuned out when people were talking about this film they&#8217;ve seen with a drawn&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-590 type-post status-publish format-standard hentry category-film-reviews" id="post-590">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../watching-it-rain/" rel="bookmark">Watching it Rain</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a beautiful and very well acted short film about two teenagers living in a small Mexican town. Sofia, a beautiful young lady, hates her life and the fact that her mother sleeps around, and doesn&#8217;t seem to care about her in the slightest. Jonas on the other hand, has a lovely mother, who&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-589 type-post status-publish format-standard hentry category-film-reviews" id="post-589">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../alexandra/" rel="bookmark">Alexandra</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very simple, very real, and very gritty tale about a woman who visits her grandson at his army base in war-torn Chechnya. There is no visible fighting or battles during this film, as it&#8217;s purely a point of view of the grandmother as she reunites with her grandson, and chats to the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-588 type-post status-publish format-standard hentry category-film-reviews" id="post-588">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../mister-lonely/" rel="bookmark">Mister Lonely</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very odd, yet surprisingly entertainment and perplexing film about a young American who barely makes a living as a Michael Jackson impersonator in Paris. He loves &#8220;being&#8221; Michael &#8211; but he&#8217;s obviously unhappy with his life as it currently stands. Things take a turn for the better when a fake Marilyn Monroe&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-587 type-post status-publish format-standard hentry category-film-reviews" id="post-587">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../severance-2/" rel="bookmark">Severance</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is one of the best slasher/horror/comedy film&#8217;s I&#8217;ve ever seen. Completely sick, absolutely hilarious, and extremely terrifying &#8211; this film really had it all. A team of sales executives from an international arms company head to a corporate retreat in the forests of Hungary for a morale-building exercise. But when the come across a&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-586 type-post status-publish format-standard hentry category-film-reviews" id="post-586">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-walk-into-the-sea-danny-williams-and-the-warhol-factory/" rel="bookmark">A Walk into the Sea: Danny Williams and the Warhol Factory</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a documentary about the mystery disappearance of the Warhol Factory&#8217;s Danny Williams in 1966. Williams was in love with the art of lighting and film making, but was also heavily experimenting with drugs, sleeping with his male boss, Andy Warhol, and falling in and out with the other artists. It&#8217;s a film that&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-456 type-post status-publish format-standard hentry category-film-reviews" id="post-456">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../boxing-day/" rel="bookmark">Boxing Day</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very simple film about a person living alone on home detention (after obviously coming out of jail recently), preparing for a Christmas lunch for his teenage niece, sister in law accompanied by her latest boyfriend. But things quickly turn sour when an old friend reveals a disturbing truth about the new boyfriend&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-454 type-post status-publish format-standard hentry category-film-reviews" id="post-454">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../inland-empire/" rel="bookmark">Inland Empire</a></h2>
+<aside class="meta">
+Aug 28, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>What a complete and utter load of shit. I remember watching an interview with David Lynch a couple of months back and thinking, &#8220;this guy is an idiot&#8221;. He completely ignored the intelligent Italian interviewer, claiming he couldn&#8217;t understand him, despite the fact that the TV host spoke better English than Lynch. This movie was&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-452 type-post status-publish format-standard hentry category-film-reviews" id="post-452">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-few-days-in-september/" rel="bookmark">A Few Days in September</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fantastic action/adventure film about a sexy and cunning secret service agent, who is put in charge of looking after a former co-worker&#8217;s teenage children before he heads permanently underground. As she tries to protect these children, and reunite them with their father one last time, an unusual game of cat and mouse&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-450 type-post status-publish format-standard hentry category-film-reviews" id="post-450">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../i-served-the-king-of-england/" rel="bookmark">I served the King of England</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a seriously funny and very peculiar film about an old man reminiscing about how, from a very young age, all he wanted in life was to become a millionaire. Over four decades, we watch him transform from a cunning hot dog vendor, to a man of great fortune and eventually a hermit, in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-448 type-post status-publish format-standard hentry category-film-reviews" id="post-448">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-experimental-conceptual-shorts-programme/" rel="bookmark">MIFF 2007 Experimental &#038; Conceptual Shorts Programme</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>When you walk into this programme, you know you&#8217;re going to witness some pretty abstract and crazy things. This was no exception. From strobing dots to 20 minutes of naked stop frame animation, to random lost film footage, to sped up and reversed footage of wheels rolling down hills &#8211; this collection had it all&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-447 type-post status-publish format-standard hentry category-film-reviews" id="post-447">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../radiant-city/" rel="bookmark">Radiant City</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m not quite sure if you can call it a documentary, as it seriously pushes the boundaries of the genre, so I&#8217;ll just call it a film about suburbs. In documentary style, it examines the attraction and the bleak realities of suburban living. Focussing mainly on a typical suburban family going through their daily life,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-445 type-post status-publish format-standard hentry category-film-reviews" id="post-445">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../cages/" rel="bookmark">Cages</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I went into this film, just purely out of luck. I had a space free, and this film seemed the best out of the bunch in that timeslot. Luck was on my side this time, as Cages is a truly fantastic Belgium film, and is up there in my list of favourite films so far&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-443 type-post status-publish format-standard hentry category-film-reviews" id="post-443">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../falkenberg-farewell/" rel="bookmark">Falkenberg Farewell</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This film is a snapshot into a lives of several young people holed up in a small town called Falkenberg. It&#8217;s not a traditional narrative &#8211; but more a mood piece, trying to capture what it&#8217;s like growing up in that seemingly boring environment, and how these people deal with crossing over from adolescence to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-442 type-post status-publish format-standard hentry category-film-reviews" id="post-442">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../rescue-dawn/" rel="bookmark">Rescue Dawn</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>At the time, I really enjoyed this film. It was exciting, it was interested, and I actually cared for the characters. I thought the opening special effects were a bit suss, but apart from that, I thought it was a good fun, and dramatic movie. But, in retrospect, I have a lot of issues with&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-441 type-post status-publish format-standard hentry category-film-reviews" id="post-441">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../you-the-living/" rel="bookmark">You, the Living</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is one of the more bizarre films I&#8217;ve seen at the festival. I&#8217;m not exactly sure what it was about. It wasn&#8217;t your traditional narrative. It was basically just a whole lot of beautifully crafted, and precisely framed long-takes of awkward, although mostly humorous, encounters involving a series of equally strange characters. The look&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-439 type-post status-publish format-standard hentry category-film-reviews" id="post-439">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../forbidden-lie/" rel="bookmark">Forbidden Lie$</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is probably on of the greatest documentaries I&#8217;ve ever had the pleasure of watching. What&#8217;s even better is that it&#8217;s Australian! It&#8217;s the story of Norma Khouri, the author of a best-selling book, Forbidden Love. After the book sold millions right around the globe, and Norma achieved fame and fortune, people started to do&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-437 type-post status-publish format-standard hentry category-film-reviews" id="post-437">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../wolfsbergen/" rel="bookmark">Wolfsbergen</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>What are the chances? The film I hated the most has been the only film with projection problems, forcing the screening to run for even longer. I think the projectionist fell asleep. I don&#8217;t know what it was about this film, but it was incredibly boring. It opened with a five minute wide shot of&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-435 type-post status-publish format-standard hentry category-film-reviews" id="post-435">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-boss-of-it-all/" rel="bookmark">The Boss of it All</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very funny and essentially harmless film about the owner of an IT company that decides to sell up and move on, forcing to wheel out the CEO to sign on the dotted line, sealing the deal. Trouble is the supposed America-based CEO doesn&#8217;t really exist. He&#8217;s basically just an e-mail address that&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-434 type-post status-publish format-standard hentry category-film-reviews" id="post-434">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../manufacturing-dissent-michael-moore-and-the-media/" rel="bookmark">Manufacturing Dissent: Michael Moore and the Media</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Documentary filmmakers Debbie Melnyck and Rick Caine set out to make a relatively simple and straightforward documentary about their hero Michael Moore, but as they start filming and putting together the film, they soon discover that the Mr Moore isn&#8217;t all he&#8217;s cracked up to be. Just like Moore&#8217;s own film, Roger &amp; Me, this&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-433 type-post status-publish format-standard hentry category-film-reviews" id="post-433">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../soft-words/" rel="bookmark">Soft Words</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Soft Words is a very political film about how John Howard and the government misuse the English language for political gain. Mixing interviews with archive footage, as well as text overlay quotes; this is a very powerful short film that pushes its point incredibly well.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-431 type-post status-publish format-standard hentry category-film-reviews" id="post-431">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-documentary-shorts-programme-2/" rel="bookmark">MIFF 2007 Documentary Shorts Programme 2</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I Want to Be a Pilot, is a depressing and eye-opening film about a 12-year-old boy who lives in the slums of East Africa, and only has one dream in life &#8211; to become a pilot, so that he can escape the world he&#8217;s grown up in, and fly away to see his parents. The&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-429 type-post status-publish format-standard hentry category-film-reviews" id="post-429">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../forever-never-anywhere/" rel="bookmark">Forever Never Anywhere</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This film has a very strange beginning in retrospect. It opens with a comedy performer getting lost in the backstage maze of corridors, as he tries to find the stage door. I have absolutely no idea what relevance this has to anything. The comedian eventually finds the stage, and performs his work to a very&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-428 type-post status-publish format-standard hentry category-film-reviews" id="post-428">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-signal/" rel="bookmark">The Signal</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very low budget independent film &#8211; but in the best possible way. Full of blood and guts &#8211; this is a film, split into three parts by three different filmmakers, about a mysterious signal that gets sent out around an American city, taking over every electronic device, and wreaking psychological pandemonium. All&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-426 type-post status-publish format-standard hentry category-film-reviews" id="post-426">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../red-road/" rel="bookmark">Red Road</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Red Road is a dark thriller about Jackie, a surveillance camera officer, who watches over the dangerous streets of Glasgow on a matrix of television screens. One day, she recognises a man whose past collides traumatically with her own. She begins to stalk him. After following him under the security of closed circuit surveillance cameras,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-424 type-post status-publish format-standard hentry category-film-reviews" id="post-424">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../everythings-gone-green/" rel="bookmark">Everything’s Gone Green</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I actually stumbled into this film by accident, as the many days of movie watching finally took a toll on my brain and logical thinking. However, it was a great mistake to make as Everything&#8217;s Gone Green is a really good film. This is a very Garden State-like film about a guy called Ryan. In&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-422 type-post status-publish format-standard hentry category-film-reviews" id="post-422">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../men-at-work/" rel="bookmark">Men at Work</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Nothing really beats a film about some good old fashion rock rolling. As four men drive home after a failed skiing trip, they make a quick toilet stop along the way. This is where they discover the rock &#8211; a lanky bolder sitting on the edge of a cliff just waiting to be pushed over&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-420 type-post status-publish format-standard hentry category-film-reviews" id="post-420">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../shahram-and-abbas/" rel="bookmark">Shahram and Abbas</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This witty yet tragic longish short film is about two Iranian refugees &#8211; a journalist in his 40s and an adventurous yet lonely man in his late 20s &#8211; who pretend to be a gay couple in order to obtain asylum. What starts off as a relatively straight forward plan becomes slightly more complicated when&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-418 type-post status-publish format-standard hentry category-film-reviews" id="post-418">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../day-watch/" rel="bookmark">Day Watch</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;ve never seen the first instalment of this Russian trilogy before, so maybe I&#8217;ve missed a lot of the back story to the Matrix-like film, Day Watch. Essentially, it&#8217;s a film about an age old battle between good vs. evil &#8211; light vs. dark. Anton (from the light side) wrestles with his loyalty to his&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-417 type-post status-publish format-standard hentry category-film-reviews" id="post-417">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-hottest-state/" rel="bookmark">The Hottest State</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is without a doubt, my favourite film of the festival so far. It tells the story of William, an aspiring actor, who meets and falls quickly and madly in love with Sara, a seductive singer/songwriter, just a few days before his 21st birthday. William convinces Sara to come away with him to Mexico, while&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-415 type-post status-publish format-standard hentry category-film-reviews" id="post-415">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../exterminating-angels/" rel="bookmark">Exterminating Angels</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Walking into the theatre, I really didn&#8217;t know what to expect from this film. Featuring in the &#8220;Forbidden Pleasures&#8221; section of the festival, I was sure that I was going to get a fair bit of nudity and adult themes. Hell, to be perfectly honest, I was even expecting to see a fair bit of&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-413 type-post status-publish format-standard hentry category-film-reviews" id="post-413">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-world-fiction-shorts-programme-2/" rel="bookmark">MIFF 2007 World Fiction Shorts - Programme 2</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Once again, the short film sessions at MIFF this year have all been extremely impressive. Caught, is a short and simple one gag film about a man who sleeps over at a woman&#8217;s house, and is unfortunately greeted by a not-so-impressed boyfriend as he tries to leave. The film is beautifully acted and directed, and&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-411 type-post status-publish format-standard hentry category-film-reviews" id="post-411">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../bug/" rel="bookmark">Bug</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Set mainly in a single location, Bug is an American horror/thriller essentially about two people who believe bugs are invading their home and their bodies. An exceptionally strange, yet pleasant man is brought along to a woman&#8217;s hotel room, and despite all odds, the two quickly become friends. Basically, the woman is lonely, and this&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-409 type-post status-publish format-standard hentry category-film-reviews" id="post-409">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-short-local/" rel="bookmark">MIFF 2007 Short &#038; Local</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I was really impressed with the Short &amp; Local films this year. It opened with Sian Davies film, Poetry, a beautiful, yet shadowy film about two teenage girls struggling with the complexities of the schoolyard, relationships and growing up. The acting in this film was spot on &#8211; you really felt for and believed these&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-407 type-post status-publish format-standard hentry category-film-reviews" id="post-407">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../how-is-your-fish-today/" rel="bookmark">How Is Your Fish Today?</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very strange and unconventional film about a screenwriter who is trying to write a screenplay about a young man who is on the run after he murdered his lover. The film constantly switches between fantasy and reality, as we move from the screenwriters world into the world of his character. The journey&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-406 type-post status-publish format-standard hentry category-film-reviews" id="post-406">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-bet-collector/" rel="bookmark">The Bet Collector</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>The Bet Collector, a Philippines film, follows the life of Amy, an uncanny saleswoman who runs around town convincing people to part with their hard earned cast by placing bets on the illegal game of Jueteng, or by collecting money for the families of recently deceased locals to cover the funeral costs. This film had&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-404 type-post status-publish format-standard hentry category-film-reviews" id="post-404">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../maborosi/" rel="bookmark">Maborosi</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Directed by Tokyo born Hirokazu Kore-eda, Maborosi is an extremely slow, yet visually pleasing film about a young women&#8217;s struggle to get on with life after her husband commits suicide by jumping in front of a train &#8211; leaving their child fatherless. After her husband&#8217;s death, she is &#8220;set up&#8221; with another man who lives&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-402 type-post status-publish format-standard hentry category-film-reviews" id="post-402">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-waimate-conspiracy/" rel="bookmark">The Waimate Conspiracy</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is an extremely entertaining and obviously no-budget mockumentary about a fictional land rights claim in the town of Waimate, New Zealand. The Maori locals have been fighting for decades to regain their land, which they believe they were forcefully removed from in a bloody battle back in 1866. Unfortunately, when they take their views&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-401 type-post status-publish format-standard hentry category-film-reviews" id="post-401">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../exit/" rel="bookmark">Exit</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Exit, a Swedish film directed by Peter Lindmark, is probably one of the most thrilling and exciting films I&#8217;ve seen at MIFF so far. Thomas is a successful venture capitalist, with a beautiful wife and daughter, and a high-flying business that is making a tonne of cash. Everything is travelling along perfectly until on the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-399 type-post status-publish format-standard hentry category-film-reviews" id="post-399">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-australian-short-stories/" rel="bookmark">MIFF 2007 Australian Short Stories</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Australian Short Stories is a collection of Australian Indigenous films of all different shapes and sizes. It opened with Hush &#8211; a fantastic and very funny little film about a mother who works as a phone sex person during the night, and is eventually found out by her outraged daughter. Backseat, is a moving film&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-397 type-post status-publish format-standard hentry category-film-reviews" id="post-397">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../miff-2007-animation-shorts-programme/" rel="bookmark">MIFF 2007 Animation Shorts Programme</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This year&#8217;s animation shorts programme offered a great deal of variety. Norbot, an Australian short animation, told the story of a child that was born with huge ears, and his fight to find his place in the world. This was a very funny film, with some very cute animations. Horn OK Please, a UK animation,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-396 type-post status-publish format-standard hentry category-film-reviews" id="post-396">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../vengeance-is-mine/" rel="bookmark">Vengeance Is Mine</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Shohei Imamura&#8217;s 1979 film, Vengeance Is Mine, tells the story of a 78-day crime spree by a serial killer who is constantly evading police in Japan. The film constantly jumps too and fro in time; one moment the killer is locked up, the next we are seeing the crimes he has committed in the past&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-395 type-post status-publish format-standard hentry category-film-reviews" id="post-395">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../black-sheep/" rel="bookmark">Black Sheep</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Essentially this is a New Zealand film about a whole lot of mutant sheep that go on a rampage to try and kill everyone, due to a generic engineering experiment going horribly wrong. It&#8217;s tremendously funny, and gives the audience exactly what they want &#8211; sheep killing people. The visual effects are fantastic, and are&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-394 type-post status-publish format-standard hentry category-film-reviews" id="post-394">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../snow-angels/" rel="bookmark">Snow Angels</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Snow Angels is a naturalistic Canadian film that explores several different relationships that all interconnect in one way or another. Arthur is a trombonist for the high school, who is exploring his first real relationship with a new girl to the school, a photographer named Lila, while his parents are battling their way through a&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-392 type-post status-publish format-standard hentry category-film-reviews" id="post-392">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../mapantsula/" rel="bookmark">Mapantsula</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Released in 1988, Mapantsula was filmed in Soweto (South Africa) and tells the story of Panic, a petty gangster who spends his days stealing from unsuspecting Whites and brawling with rivals in Black bars, as well as a little police informing on the side. Whilst he is busy doing his thing, everyone else in Soweto&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-391 type-post status-publish format-standard hentry category-film-reviews" id="post-391">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../katoomba/" rel="bookmark">Katoomba</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a marvellous short film about two ladies, who live in the small country town of Katoomba, and both want to get out and travel the world. Everything looks as if it&#8217;s going to plan until one of the girl&#8217;s falls quickly and deeply in love with a new man to the town. This&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-389 type-post status-publish format-standard hentry category-film-reviews" id="post-389">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../fast-lane/" rel="bookmark">Fast Lane</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Fast Lane is a suburb Australian short film about a boy who returns home from a party one night clammy and pale. His mum knows that something is wrong, but Ash doesn&#8217;t want to reveal that he may have killed someone by throwing a rock onto a busy freeway. This is an excellent moving story&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-387 type-post status-publish format-standard hentry category-film-reviews" id="post-387">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../crossbow/" rel="bookmark">Crossbow</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fantastic Australian film narrated by a teenager who tells a story from the past, about his neighbours &#8211; a similarly aged boy, with a Bogan father and a sexy mother that everyone wants to sleep with (especially the narrator himself). Told from the perspective of the narrator, this is a story of&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-386 type-post status-publish format-standard hentry category-film-reviews" id="post-386">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../catch-fish/" rel="bookmark">catch fish</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film about a reclusive Chinese harp player who purchases a dead fish from a sexy lady at a seafood market, places it in his bath and lets his imagination run wild. This is a typical VCA film &#8211; very arty, with a rather unclear message. The cinematography and sound design are good&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-384 type-post status-publish format-standard hentry category-film-reviews" id="post-384">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../advantage/" rel="bookmark">Advantage</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a truly fantastic short film about a man and women who stumble home drunk, after an obviously fun and alcohol filled night. Everything is going to plan for the two, as they enter an unlocked tennis court (after taking of their shoes as per the sign) and start making out passionately, until the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-383 type-post status-publish format-standard hentry category-film-reviews" id="post-383">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../clean-linen/" rel="bookmark">Clean Linen</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A New Zealand film, Clean Linen is a peculiar film about two children who spend their days doing chores around the house and secretly watching their father&#8217;s pornography video collection. When they are caught by their mother, things are a bit heated in the house. Despite the fact that this was an interesting film to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-381 type-post status-publish format-standard hentry category-film-reviews" id="post-381">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../spider/" rel="bookmark">Spider</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Spider is an absolutely fantastic short film about Jack &#8211; a man who loves to play practical jokes on his girlfriend &#8211; and what happens when things don&#8217;t go exactly to plan. Opening with a quote, &#8220;it&#8217;s all fun and games until someone loses an eye &#8211; mum&#8221;, this film is a very simple idea,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-379 type-post status-publish format-standard hentry category-film-reviews" id="post-379">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-mourning-forest/" rel="bookmark">The Mourning Forest</a></h2>
+<aside class="meta">
+Aug 21, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Directed by Naomi Kawase, The Mourning Forest is a visually and emotionally beautiful film about a young lady called Machiko, who works at a retirement home nearby a vast forest. Shigeki, a retiree at the home forms a strong connection with Machiko, as she reminds him greatly of his deceased wife. Although the relationship starts&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-577 type-post status-publish format-standard hentry category-film-reviews" id="post-577">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../severance/" rel="bookmark">Severance</a></h2>
+<aside class="meta">
+Aug 15, 2007				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    			  	    			  	    </span>
+</aside>
+</header>
+<div class="post-content">
+<p>Another Bloody Office Outing. The Company Is Making Cutbacks. If you put The Office (2001) and The Hills Have Eyes (2006) in a blender, the end result would be something quite similar to writer/director Christopher Smith&#8217;s second feature film, Severance (2006). Moving onward and upward from his first feature, Creep (2004), Smith has decided to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-217 type-post status-publish format-standard hentry category-film-reviews" id="post-217">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../its-a-wonderful-life/" rel="bookmark">It&#8217;s a Wonderful Life&#8230;</a></h2>
+<aside class="meta">
+Oct 29, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This film truly takes you on an emotional rollercoaster. It&#8217;ll make you laugh and it will [almost] bring a tear to your eye. But what I really liked about this film was that it was surprisingly unpredictable. I was absolutely sure that Potter was going to &#8220;do the right thing&#8221; and give back the money&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-233 type-post status-publish format-standard hentry category-film-reviews" id="post-233">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../eternal-sunshine-of-the-spotless-mind/" rel="bookmark">Eternal Sunshine of the Spotless Mind</a></h2>
+<aside class="meta">
+Oct 24, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>How happy is the blameless Vestal&#8217;s lot! The world forgetting, by the world forgot. Eternal sunshine of the spotless mind! Each pray&#8217;r accepted, and each wish resign&#8217;d. Alexander Pope Every once in a while you sit down on your couch, fire up the DVD player and watch something that completely blows you away. It doesn&#8217;t&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-225 type-post status-publish format-standard hentry category-film-reviews" id="post-225">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../elephant/" rel="bookmark">Elephant</a></h2>
+<aside class="meta">
+Sep 9, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I have just realised that after half a year of studying film and television, my whole perspective of what makes a fantastic movie has changed. Last year, I would have said it has to entertain me and absorb me in its world. That&#8217;s still true &#8211; a good movie still must do this. However, I&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-243 type-post status-publish format-standard hentry category-film-reviews" id="post-243">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../in-god-we-trust/" rel="bookmark">In God We Trust</a></h2>
+<aside class="meta">
+Aug 22, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>As Robert stands in the middle of a street contemplating the text written on a coin, he is suddenly hit by a SUV and instantly killed. In the waiting room of the afterlife, Robert soon is told by a clerk that he&#8217;s destined for Hell. All the little bad things that Robert has done in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-241 type-post status-publish format-standard hentry category-film-reviews" id="post-241">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../summer-04/" rel="bookmark">Summer 04</a></h2>
+<aside class="meta">
+Aug 22, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>15-year-old Nils invites his 12-year-old girlfriend Livia to spend the holidays with him and his mother and father at their summer home. One day whilst sailing, Nils returns home without Livia, much to his families shock. Silvia returns home later that day, with Bill, a much older man who took her sailing. When the brazenly&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-239 type-post status-publish format-standard hentry category-film-reviews" id="post-239">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../237/" rel="bookmark">2:37</a></h2>
+<aside class="meta">
+Aug 22, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>2:37 was the opening night film at MIFF 2006&#8230; Set in a South Australian High School, 2:37 opens with a scene of blood oozing out of a janitors closet. When the door is finally opened, although we don&#8217;t see it, you know that someone has died. The film then backtracks to show the events leading&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-237 type-post status-publish format-standard hentry category-film-reviews" id="post-237">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-piano-tuner-of-earthquakes/" rel="bookmark">The Piano Tuner of Earthquakes</a></h2>
+<aside class="meta">
+Aug 22, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>One of the worst things about attending any film festival is that unfortunately, you will, at least once (although probably more often than not), be trapped in a jammed packed theatre and forced to witness some of the worst footage ever projected onto the big screen. It&#8217;s simply a matter of common courtesy not to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-235 type-post status-publish format-standard hentry category-film-reviews" id="post-235">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../like-minds/" rel="bookmark">Like Minds</a></h2>
+<aside class="meta">
+Aug 22, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>It truly is an amazingly uplifting sensation, when you leave a cinema knowing that you&#8217;ve just witnessed a cinematic masterpiece. It feels even better when the film has been produced by people from your own home country. Like Minds is a refreshingly new and unique Australian film (despite the fact that it is set in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-576 type-post status-publish format-standard hentry category-film-reviews" id="post-576">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../suburban-mayhem/" rel="bookmark">Suburban Mayhem</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m sure this film is going to get a lot of mixed reviews, much like the opening night film, 2:37. It&#8217;s very, well, different, and very controversial. 19-year-old Katrina is stuck in boring suburbia, still living at home with her divorced father and for her toddler daughter, although her devoted stoner boyfriend looks after the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-575 type-post status-publish format-standard hentry category-film-reviews" id="post-575">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../unfolding-florence-the-many-lives-of-florence-broadhurst/" rel="bookmark">Unfolding Florence: The Many Lives of Florence Broadhurst</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a unique documentary that gives a detailed insight into the life of an extremely colourful and gutsy Australian design innovator and artist, Florence Broadhurst. She was found murdered in her wallpaper design studio in 1977, a crime which is still unsolved. This film explores Florence&#8217;s life, leading up to this tragic event. Using&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-574 type-post status-publish format-standard hentry category-film-reviews" id="post-574">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-book-of-revelation/" rel="bookmark">The Book of Revelation</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I honestly believe this film has really changed me as a person. I&#8217;ve learnt a lot from it. Daniel, a talented male dancer is abducted by three hooded women, raped and tortured for twelve days, then dumped in the middle of no where with no clues to his attackers&#8217; identity (other than one girl&#8217;s hair&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-573 type-post status-publish format-standard hentry category-film-reviews" id="post-573">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../tv-junkie/" rel="bookmark">TV Junkie</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Despite the fact that everyone who saw this movie with me hated it, I thought it was really intriguing. It&#8217;s a feature length documentary that is made up of home video footage captured by American television personality Rick Kirkham, over his lifetime. When he was fourteen he got a video camera, and basically has been&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-572 type-post status-publish format-standard hentry category-film-reviews" id="post-572">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../last-train-to-freo/" rel="bookmark">Last Train to Freo</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I really liked this movie. It still amazes me that people can come up with such fantastic scripts, which only feature one location and a couple of actors. This is a film about two dodgy looking ex-criminals that are travelling on the last night train to Fremantle; basically your stereotypical loud drinking train bogans. One&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-362 type-post status-publish format-standard hentry category-film-reviews" id="post-362">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../we-the-living/" rel="bookmark">We the Living</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a very well made New Zealand short film about a young woman who stumbles across a man that has hung himself just outside of the campsite she is staying at. Completely overwhelmed, she visits a young male friend who is also camping at the same site. In the safety of his tent, he&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-360 type-post status-publish format-standard hentry category-film-reviews" id="post-360">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../bamako/" rel="bookmark">Bamako</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m not exactly sure what was going on a lot of the time in this movie. It seemed quite random. Set in Bamako in Africa, from what I could gather a trial was taking place between the African people and the World Bank, in someone&#8217;s courtyard. The actual trial was really interesting, as the &#8220;witnesses&#8221;&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-359 type-post status-publish format-standard hentry category-film-reviews" id="post-359">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../opal-dream/" rel="bookmark">Opal Dream</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m a really big fan of this movie. Set in Coober Pedy, a young girl called Kellyanne, spends all her time playing with her two make-believe friends Pobby and Dingan. She is completely adamant that these two people exist, which is driving her mother, father and older brother completely crazy. When Kellyanne&#8217;s Dad takes her&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-358 type-post status-publish format-standard hentry category-film-reviews" id="post-358">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../unrequited-love/" rel="bookmark">Unrequited Love</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I really hated this film. It explores stalking, but it does so in a very unique and bizarre manner. Personally, I hated every thing about this film. It used a lot of video footage that was supposed to look like security camera footage. This gave the film a very cheap documentary feel to it. It&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-356 type-post status-publish format-standard hentry category-film-reviews" id="post-356">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../natures-way/" rel="bookmark">Nature’s Way</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really great, yet very creepy New Zealand short film about a man who murders a young girl in a rain forest, and is later haunted by her in the most frightening of ways. Basically, nature fights back! This is one of the most professionally looking short films I&#8217;ve ever seen. Watching it&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-354 type-post status-publish format-standard hentry category-film-reviews" id="post-354">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../gambler/" rel="bookmark">Gambler</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really fantastic and insightful documentary about the Danish filmmaker Nicholas Winding Refn&#8217;s struggle to pay off his debts after the box-office flop of his latest film, Fear X, despite the fact that his debut film, Pusher, was a huge success. He decides the only way to get out of debt is to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-353 type-post status-publish format-standard hentry category-film-reviews" id="post-353">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../detour-de-france/" rel="bookmark">Detour De France</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fascinating documentary about a group of journalists who have travelled to France, to cover and report on the 2005 Tour de France cycling race. Offering a very uniquely Australian perspective into the massive sporting event, this film has some great interviews with all kinds of people involved in the event, from cyclists,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-352 type-post status-publish format-standard hentry category-film-reviews" id="post-352">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../raul-the-terrible/" rel="bookmark">Raul the Terrible</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is an amazing insightful documentary that takes an extremely close look into the world of Raul Castells, an Argentinean man who is fighting for the rights of the poor people in his country. You are right there with him, as he organises peaceful and non-violent protests against the corrupt government. Raul is non-religious, big&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-350 type-post status-publish format-standard hentry category-film-reviews" id="post-350">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../small-boxes/" rel="bookmark">Small Boxes</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really great short film about a young Latino-Australian man, who lives with his loving mother and grandmother at home and works night shifts at a produce market. He decides one day that he&#8217;s sick of his current job, and wants to apply for a job at a shoe shop. This film basically&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-348 type-post status-publish format-standard hentry category-film-reviews" id="post-348">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-host/" rel="bookmark">The Host</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This may well be my favourite film so far! I have never seen such a fantastic audience reaction and participation, as I have with this film. It starts with an US Army officer, who orders the dumping of litres of nasty looking chemicals into the sink, which consequentially, runs out into the main river of&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-346 type-post status-publish format-standard hentry category-film-reviews" id="post-346">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-prairie-home-companion/" rel="bookmark">A Prairie Home Companion</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really bizarre and comical film about the last performance of a fictitious radio variety show; before a Texas Company turns the old theatre venue they use into a multi-story car park. Full of singing, dancing, seriously bizarre and eccentric characters, and even an Angle from above, this film is really entertaining. The&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-344 type-post status-publish format-standard hentry category-film-reviews" id="post-344">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../longing/" rel="bookmark">Longing</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Markus lives in a small German village, with his adoring wife, working as a metal worker, and a part time fireman. After saving the life of someone who attempts to commit suicide, he goes on a weekend training session with the fire brigade. On the first night, he gets blind drunk and wakes up in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-342 type-post status-publish format-standard hentry category-film-reviews" id="post-342">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../love-this-time/" rel="bookmark">Love This Time</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Without being bias, as Rhys is one of my teachers at Uni, this is truly a fantastic short film. It tells the story of Nouria, as she deals with trying to keep a family together after the death of her mother. Her father won&#8217;t get out of bed, and she is left to look after&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-340 type-post status-publish format-standard hentry category-film-reviews" id="post-340">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../twelve-and-holding/" rel="bookmark">Twelve and Holding</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Rudy and Jacob are twin brothers who are best friends, yet totally different. Jacob is quiet, shy and has a nasty birthmark on his face (which obviously doesn&#8217;t help), whereas his striking brother is oozing with confidence and bravery. They are both friends with Malee, an intelligent and pretty only-child of a single mother, and&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-339 type-post status-publish format-standard hentry category-film-reviews" id="post-339">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../champions/" rel="bookmark">Champions</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is unique film about three dysfunctional men, who decide to leave their troubled city lives, and head out to the country to work on a farm, run by one of the men&#8217;s eccentric uncle. All the characters in this film are fantastic, from the crazy local cop to the attractive girl next door. What&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-338 type-post status-publish format-standard hentry category-film-reviews" id="post-338">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../seven-swords/" rel="bookmark">Seven Swords</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>After watching so many slow films over the past couple of days, it was a relief to see a non-stop action packed movie. Despite the fact that I&#8217;m really not a fan of sword fighting movies, I was definitely ready for this one. It&#8217;s an epic movie about a group of 17th century sword fighters&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-337 type-post status-publish format-standard hentry category-film-reviews" id="post-337">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../lovestruck-wrestlings-no1-fan/" rel="bookmark">Lovestruck: Wrestling’s No.1 Fan</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fascinating documentary about Sue, a woman who has devoted her whole life and energy to professional wrestling. Her house is covered in wresting photos and memorabilia; she has hundreds of hours of wresting footage on tape, and has travelled to the USA on several occasions just to see wrestling. What makes this&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-336 type-post status-publish format-standard hentry category-film-reviews" id="post-336">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-few-old-blokes/" rel="bookmark">A Few Old Blokes</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a short Australian documentary that focuses on the stories from a group of &#8220;old blokes&#8221; that live in a public high-rise building. The occupants tell us about their daily routines, their past and dreams. And that&#8217;s basically it. The filmmaker got a camera and filmed a group of old people as she asked&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-335 type-post status-publish format-standard hentry category-film-reviews" id="post-335">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../host-and-guest/" rel="bookmark">Host and Guest</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Despite its slow pacing, I really liked this film. It&#8217;s about a very improbable friendship between a miserable film teacher, and an overly friendly and understanding door-to-door religious educator who saves his life, after the film teacher is locked in his own bathroom. It explores their relationship as they discuss and fight about religion, politics,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-333 type-post status-publish format-standard hentry category-film-reviews" id="post-333">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../in-between-days/" rel="bookmark">In Between Days</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film about a Korean-born girl struggling through life with her mother in America &#8211; although, to be honest, I didn&#8217;t realise it was set in the US till after the movie! It explores the relationship between Aimie, and her only real friend, Tran. At first it seems Tran is looking to have&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-332 type-post status-publish format-standard hentry category-film-reviews" id="post-332">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-dance/" rel="bookmark">The Dance</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is very powerful Australian short film that gives a brief insight into the life of a seemingly depressed and troubled teenager in a typical suburban setting. Visually it&#8217;s most impressive, despite the obvious low budget, with some fantastic night footage. I&#8217;m a big fan of the use of red light to highlight the freeways&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-571 type-post status-publish format-standard hentry category-film-reviews" id="post-571">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../sud-express/" rel="bookmark">Sud Express</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a slightly boring film about six ordinary people whose lives are affected by their journeys on the Sud Express. Although all the character were unique and quite interesting (a racist taxi driver, his unfaithful wife, two old men who didn&#8217;t walk to one another, a African migrant who tries to find a life&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-329 type-post status-publish format-standard hentry category-film-reviews" id="post-329">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../mutual-appreciation/" rel="bookmark">Mutual Appreciation</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This film is basically exactly the same look and feel of &#8220;Funny Ha Ha&#8221; made two year before by the same team. Having seen &#8220;Funny Ha Ha&#8221; just a few days before this one, I&#8217;m not sure I was ready to watch this one just yet. However, despite that, I still enjoyed it, although I&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-327 type-post status-publish format-standard hentry category-film-reviews" id="post-327">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../frozen-city/" rel="bookmark">Frozen City</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a depressing film about an affable man, who is left to look after his three young children, as well as trying to keep up his demanding taxi driving work, when his wife runs off with another man for several months. When she returns, he is kicked out of his home as the couple&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-326 type-post status-publish format-standard hentry category-film-reviews" id="post-326">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../my-brother-vinnie/" rel="bookmark">My Brother Vinnie</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really magnificent observational documentary that explores the close relationship between two brothers. It crosses all cultural boundaries, capturing a loving relationship full of humour, wit and positive energy, whilst examining social issues, and Indigenous families. Although it has a very low-budget documentary feel to it, the people and content within the film&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-325 type-post status-publish format-standard hentry category-film-reviews" id="post-325">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../william/" rel="bookmark">William</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great little film about an Indigenous magician, who gets locked up for a crime he didn&#8217;t commit, after encountering an unwelcome passenger on a taxi ride home. This is a truly moving film that explores race, magic and memory. I was really impressed with this film. Unlike a lot of Aussie shorts,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-323 type-post status-publish format-standard hentry category-film-reviews" id="post-323">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../from-gold-to-grapes-the-story-of-landsborough/" rel="bookmark">From Gold to Grapes: The Story of Landsborough</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a short film made up of local children&#8217;s drawings turned into animations and local adults voice over&#8217;s, that tell the tale of living in Landsborough. Although it offered some laughs, this concept has been done to death (using kid&#8217;s drawings and adult voices), so it didn&#8217;t really grab me. Although it was slightly&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-322 type-post status-publish format-standard hentry category-film-reviews" id="post-322">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../paper-and-sand/" rel="bookmark">Paper and Sand</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film about a foreign couple who move to a Sydney beachside apartment to start a new life. However, their expectations and experiences of Australian urban life create a conflict between them. The characters in the film were great; very real. The story was good and kept you interested. The production values were&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-321 type-post status-publish format-standard hentry category-film-reviews" id="post-321">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../snow/" rel="bookmark">Snow</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really intriguing film about a father and son living in a remote snowing location. The son is doing some kind of weird experiment, burying rabbits in the snow. Despite the fact the footage originated from film, the quality was quite average and really grainy. The sound was fine; perfect realism. The story&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-319 type-post status-publish format-standard hentry category-film-reviews" id="post-319">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../anne-richard/" rel="bookmark">Anne &#038; Richard</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a short film based on Shakespeare&#8217;s Richard III, but set in present day Melbourne that explores the relationship between to people, murder, betrayal, emotional turmoil and seduction. To be perfectly honest, I can&#8217;t really remember if I found this film to be of really high production value or really low. Never-the-less, it was&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-570 type-post status-publish format-standard hentry category-film-reviews" id="post-570">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../brothers-of-the-head/" rel="bookmark">Brothers of the Head</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great little fake English documentary about Siamese twins, who are groomed into becoming commercial rocks stars. The script is really well done, and you seriously feel like you are watching history &#8211; not fiction. All the acting is great, and each character is unique and fits the story perfectly. If you&#8217;re in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-316 type-post status-publish format-standard hentry category-film-reviews" id="post-316">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../9-square-metres-for-two/" rel="bookmark">9 Square Metres for Two</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great experimental documentary, made up of a series of short clips filmed by actual inmates of Baumettes Prison in France. Basically, someone has given ten men a handheld video camera, some quick instructions on how to press record, and let the people do their thing. This is a really interesting film, as&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-314 type-post status-publish format-standard hentry category-film-reviews" id="post-314">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-nine-lives-of-korean-cinema/" rel="bookmark">The Nine Lives of Korean Cinema</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a broad documentary that explains the history of Korean Cinema. It tells the story of the countries cinematic history and shows interviews of artists who express their concerns, fears and aspirations. The production values were fairly average (with some really amateur sound), but the content was quite interesting for me, as I know&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-313 type-post status-publish format-standard hentry category-film-reviews" id="post-313">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../small-station/" rel="bookmark">Small Station</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a cute little film about a mother and her intellectually handicapped son, who visit a remote regional train station, so that they can sit around and watch the express trains zoom by. Despite the boring story line, the photography is amazing, with beautiful shots of the lush forest landscapes. This film has a&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-312 type-post status-publish format-standard hentry category-film-reviews" id="post-312">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../fantasma/" rel="bookmark">Fantasma</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really, really boring film that shows a group of people aimlessly walking around a theatre, and eventually watching a section of an equally boring film. But, despite the fact that the images on the screen put you to sleep, the soundtrack and music is truly amazing. The attention to detail is just&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-311 type-post status-publish format-standard hentry category-film-reviews" id="post-311">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-man/" rel="bookmark">A Man</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a short Portuguese film about a drinking and smoking man who harasses a woman in his apartment. It was kind of entertaining to watch, as you didn&#8217;t know how aggressive this man would get, or whether maybe the woman was a &#8220;villain&#8221;, but the end was very anticlimactic. The production values were also&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-309 type-post status-publish format-standard hentry category-film-reviews" id="post-309">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-fence/" rel="bookmark">The Fence</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is basically just twelve minutes of black and white grainy footage, of a group of boats catching giant tuna using a large net. It was more of an observational piece, but I just found it boring.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-307 type-post status-publish format-standard hentry category-film-reviews" id="post-307">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../last-men-standing/" rel="bookmark">Last Men Standing</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a documentary about a community of a former mining town, which is dealing with poverty and illegal drug use. It&#8217;s a compelling, yet chilling portrait, but unfortunately, I found it kind of dull.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-305 type-post status-publish format-standard hentry category-film-reviews" id="post-305">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-betel-tree/" rel="bookmark">The Betel Tree</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a cute film about two people who reflect on their betel-chewing, teeth-lacquering and their displaced past while creating future memories for their grandchildren. Although it offered an interesting insight into another culture from my own, I found the story rather boring, although there were some funny moments (such as when one of the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-303 type-post status-publish format-standard hentry category-film-reviews" id="post-303">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../sleep-city/" rel="bookmark">Sleep City</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Why was this film in the festival? It&#8217;s basically just a whole lot of random shots of an empty town. It&#8217;s just ten minutes of boring footage with a poor soundtrack. What a waste of my time!</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-569 type-post status-publish format-standard hentry category-film-reviews" id="post-569">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../troy/" rel="bookmark">Troy</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really eye opening and interesting documentary about a man called Troy Davies, an intense and passionate artist. He&#8217;s an anarchist with a vibrant and colourful life as a man, a women, performer, and musician, owner of a fashion label, a prostitute, and a person living with AIDS. He&#8217;s basically just a really&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-299 type-post status-publish format-standard hentry category-film-reviews" id="post-299">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../transformers-the-art-of-circuit-bending/" rel="bookmark">Transformers: The Art of Circuit Bending</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Although, I love the idea of this movie (documenting a group of people who mess with electronics to make &#8220;cool&#8221; sound effects), the filmmakers just didn&#8217;t pull it off. The quality of the footage was poor, as was the sound. I also really hated the animations/title sequence that was used. This is a great example&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-297 type-post status-publish format-standard hentry category-film-reviews" id="post-297">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../spitfire-944/" rel="bookmark">Spitfire 944</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fantastic moving and revealing glimpse into history, as an 83-year-old World War II pilot views 16mm film footage of his 1943 Spitfire crash for the first time. I especially loved the introduction to this film, as the director explains how the whole story came about, with the help of animation/motion effects. This&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-295 type-post status-publish format-standard hentry category-film-reviews" id="post-295">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../veiled-ambition/" rel="bookmark">Veiled Ambition</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a short documentary about Frida, an Australian Muslim who attempts to set up a Boutique clothing shop in Melbourne. It documents her highs and lows, as she tries to bring in a profit. The narration was good, and the story was interesting. The highlight for me personally, was learning that her husband worked&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-293 type-post status-publish format-standard hentry category-film-reviews" id="post-293">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../punks-not-dead/" rel="bookmark">Punk’s Not Dead</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really well structured documentary, exploring the history of Punk over the last 30 years. Mixing interviews with video clips, and animations, this is a really good film that sheds some really interesting and cool facts on a world I&#8217;ve never had anything to do with. It had some really funny moments, but&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-291 type-post status-publish format-standard hentry category-film-reviews" id="post-291">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../bye-bye-berlusconi/" rel="bookmark">Bye Bye Berlusconi</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great fake documentary, about a group of people who make a fictional film about a terrorist cell that captures infamous former Italian Prime Minister Silvio Berlusconi. It mixes footage of the making of the fictional no budget film shoot (as the character are harassed by the authorities), with footage of a finished&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-289 type-post status-publish format-standard hentry category-film-reviews" id="post-289">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-short-films-of-royston-tan/" rel="bookmark">The Short Films of Royston Tan</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Having never seen a Royston Tan film, I must say I was really impressed! Starting with D.I.Y, Royston explores the music found in everyday life. The footage in this film was really bold and beautiful with some great panning/dolly shots. His film, Cut, is a hilarious attack at the Singaporean film censors in the form&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-288 type-post status-publish format-standard hentry category-film-reviews" id="post-288">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../tideland/" rel="bookmark">Tideland</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I honestly don&#8217;t know what to make of this film. It&#8217;s really bizarre! It tells the story through the eyes of a highly imaginative young girl, the daughter of junkies, who&#8217;s taken to the country with her father after her mother dies. When her father dies as well, her world comes even wackier as she&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-568 type-post status-publish format-standard hentry category-film-reviews" id="post-568">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../in-the-pit/" rel="bookmark">In The Pit</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a documentary that follows a colourful construction crew over two years as they work on Mexico City&#8217;s Periferico Freeway, in an effort to cope with the ever expanding traffic. It shows the struggles and daily travails of building a freeway without the machinery expected in modern day construction. It has some fantastic tales&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-285 type-post status-publish format-standard hentry category-film-reviews" id="post-285">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../911-rio/" rel="bookmark">911 Rio</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is an experimental film that shows a whole heap of seemingly random images and sounds. I really like the look and feel of this film. The images looked fantastic and really kept you interested making you want to watch more. I especially loved the out of focus streams of coloured light. But what I&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-283 type-post status-publish format-standard hentry category-film-reviews" id="post-283">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../darkon/" rel="bookmark">Darkon</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Darkon is a fascinating and intriguing documentary about an endearingly bizarre live action role-playing game, whose hundreds of members dress up as wizards and warriors, and engage in simulated, un-choreographed medieval battles with homemade padded weaponry. It gives you a fantastic insight into a world that most would never even dream of entering. It tells&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-281 type-post status-publish format-standard hentry category-film-reviews" id="post-281">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../i-saw-ben-barka-get-killed/" rel="bookmark">I Saw Ben Barka Get Killed</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;ll start off by saying I wasn&#8217;t really a fan of this movie. I just couldn&#8217;t be bothered trying to keep up with it &#8211; I just found it boring. It&#8217;s basically a film about an ex-criminal who receives a strange commission from an illegal organisation to produce a documentary about decolonisation. I guess I&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-279 type-post status-publish format-standard hentry category-film-reviews" id="post-279">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../funny-ha-ha/" rel="bookmark">Funny Ha Ha</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film that explores the life of Marnie, a young lady who has just recently graduated from college, parties most nights, is looking for a good job and a boyfriend. It&#8217;s a film about someone who is stumbling and drifting into adulthood. She&#8217;s a slacker, keeps a notebook of self-improvement initiatives (such as&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-278 type-post status-publish format-standard hentry category-film-reviews" id="post-278">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../friday-or-another-day/" rel="bookmark">Friday or Another Day</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a fantastic film about an actor aboard a sailing ship that becomes shipwrecked on a deserted island. Phillippe de Nohan and the ships dog are the only survivors. However, they gather everything from the destroyed ship leaving him with plenty of provisions, supplies and a large collection of theatre bits and pieces. After&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-276 type-post status-publish format-standard hentry category-film-reviews" id="post-276">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../a-little-trip-to-heaven/" rel="bookmark">A Little Trip to Heaven</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>An insurance investigator is brought in to scrutinise a car accident in which a notorious scam artist has been allegedly burnt to a crisp. But as he digs deeper into the events leading up into the incident, the more complex everything becomes. It explores good versus evil; con artist versus insurance companies (both as unethical&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-274 type-post status-publish format-standard hentry category-film-reviews" id="post-274">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-last-farm/" rel="bookmark">The Last Farm</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a quite powerful short film about an elderly man who has lost his wife, and is about to loose his farm, independence and his dignity. In desperation, he finds a way to keep it all. The look of this film is quite beautiful, set in a wonderful remote snow covered landscape by the&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-272 type-post status-publish format-standard hentry category-film-reviews" id="post-272">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../northern-light/" rel="bookmark">Northern Light</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film about a kickboxing coach and his son&#8217;s struggle with life after losing their wife/mother and daughter/sister in a car crash two years previous. The father is a well respected and highly regarded kickboxing teacher, but his career is put in jeopardy after he hits his son in front of guests and&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-271 type-post status-publish format-standard hentry category-film-reviews" id="post-271">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../sniffer/" rel="bookmark">Sniffer</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I really loved this short film. It&#8217;s basically about a society that has the ability to fly, and yet, everyone is locked down by gravitation boots. One day, a simple man&#8217;s ungratifying humdrum routine is broken when a bird invades his workplace, inspiring him to escape his dull life. The look of the film is&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-269 type-post status-publish format-standard hentry category-film-reviews" id="post-269">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../tragic-story-with-happy-ending/" rel="bookmark">Tragic Story with Happy Ending</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a beautiful looking animation about a girl who struggles to feel comfortable in her own body. Although the images are truly breathtaking, the story is a bit weird, and doesn&#8217;t do the images justice.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-268 type-post status-publish format-standard hentry category-film-reviews" id="post-268">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../apple-pie/" rel="bookmark">Apple Pie</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A tale of a butcher, a baker, a hunter, a dog, a cat, an apple pie and a series of misunderstandings and unfortunate events! This is a funny little animation that doesn&#8217;t have any dialog. The colours and look of the film are great &#8211; very bold and modern. Although the story is a bit&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-267 type-post status-publish format-standard hentry category-film-reviews" id="post-267">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../guide-dog/" rel="bookmark">Guide Dog</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really funny short animation about an enthusiastic but unqualified dog that answers an advertisement for a guide dog position, but finds the task slightly more challenging than he could ever imagine. Nothing seems to go right for this poor dog! Again, this film shows that if you hurt a cute character, you&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-567 type-post status-publish format-standard hentry category-film-reviews" id="post-567">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-carnival-of-animals/" rel="bookmark">The Carnival of Animals</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A really strange and distinctive erotic fantasy of growing pains, imagined fetishes and ravished rabbits. This is truly a weird and wonderful animation that really makes you laugh and wonder what the hell you are doing watching it!</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-566 type-post status-publish format-standard hentry category-film-reviews" id="post-566">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../funny-pets-black-holephotography/" rel="bookmark">Funny Pets - Black Hole/Photography</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>These are funny little Japanese 3D computer animations about a cute girl and her two crazy pets. Although I&#8217;m not a fan of this kind of thing, it was quite refreshing to see something funny after watching a couple of emotionally draining films.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-262 type-post status-publish format-standard hentry category-film-reviews" id="post-262">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../yallourn-story/" rel="bookmark">Yallourn Story</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really cute animation, about the memories of some old Yallourn&#8217;s residents, brought to life with illustrations drawn by primary school kids. Listening to the voice over is quite interesting, and mixed with the unique drawings gives you a very interesting little insight into the past of the old town.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-260 type-post status-publish format-standard hentry category-film-reviews" id="post-260">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-wraith-of-cobble-hill/" rel="bookmark">The Wraith of Cobble Hill</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is an impressive animation about a Brooklyn teenager who is asked to look after a local store owner&#8217;s dog whilst he goes on holiday. Although the film is rather dark and depressing, the look of the film is quite incredible and overall it displays a powerful, yet tragic story.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-259 type-post status-publish format-standard hentry category-film-reviews" id="post-259">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-luminary/" rel="bookmark">The Luminary</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really nice animation about a grieving insect collector (with a light bulb for a head) and his search for understanding love and life. The look of this film is really fantastic, although the storyline is a bit too out there for me.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-257 type-post status-publish format-standard hentry category-film-reviews" id="post-257">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../mr-schwartz-mr-hazen-and-mr-horlocker/" rel="bookmark">Mr Schwartz, Mr Hazen and Mr Horlocker</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a contemporary fable on the butterfly effect, the stress of apartment living and the challenges of modern policing. I wasn&#8217;t a fan of this animation as I found it technically poor, and lacking of a good storyline.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-256 type-post status-publish format-standard hentry category-film-reviews" id="post-256">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../fumi-and-the-bad-luck-foot/" rel="bookmark">Fumi and the Bad Luck Foot</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a great little animation about Fumi and her cursed foot. After surviving a lighting strike, a hippopotamus attack and bank vaults falling on her foot, Fumi discovers a way of using her curse as a powerful tool to help others. This is a cute little animation that proves that cute little characters getting&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-254 type-post status-publish format-standard hentry category-film-reviews" id="post-254">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-way-i-spend-the-end-of-the-world/" rel="bookmark">The Way I Spend the End of the World</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a truly fantastic film about an attractive young woman called Eva that lives at her parent&#8217;s home with her brother and is coming to terms with adulthood and love. Eva blends the joys and confusions of growing up with the sadness and restriction of living in a country under brutal dictatorship (Romania). It&#8217;s&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-252 type-post status-publish format-standard hentry category-film-reviews" id="post-252">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../bubble/" rel="bookmark">Bubble</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a really simple and slow movie that shows the lives of two small town workers at the local doll factory. It shows Martha, a middle aged woman, and Kyle, a young man, going about their mundane day to day lives as they exchange their thoughts, dreams and experiences over bad coffee and cheap&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-250 type-post status-publish format-standard hentry category-film-reviews" id="post-250">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../red/" rel="bookmark">Red</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film about a young man who travels with his mother to a shopping centre after a really big night of heavy drinking. Whilst driving along, we watch and observe some really uncomfortable and depressing conversations between the two. This is a really simple film, that is mostly driven by powerful dialog, although&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-248 type-post status-publish format-standard hentry category-film-reviews" id="post-248">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../lost-found/" rel="bookmark">Lost &#038; Found</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a strange collection of different stories, and funny sequences. It begins with a story of a wedding party that waits in suspense for the bride and groom. It then tells the story of a shy young girl (and her turkey) who travel to visit her sick mother in hospital in an attempt to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-247 type-post status-publish format-standard hentry category-film-reviews" id="post-247">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../shooting-dogs/" rel="bookmark">Shooting Dogs</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This is a film based on a true story of a Catholic priest and a young idealistic English teacher who found themselves caught up in the 1994 Rwandan genocide. Filmed on location and employing actual survivors of the genocide, this is a deeply affecting and moving film that conveys a very important and powerful message&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-245 type-post status-publish format-standard hentry category-film-reviews" id="post-245">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../thank-you-for-smoking/" rel="bookmark">Thank You for Smoking</a></h2>
+<aside class="meta">
+Aug 21, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>This film follows the life of tobacco industry lobbyist Nick Naylor, as he promotes and defends cigarette smoking in a time when the health hazards have become too plain to ignore. Nick, a master of manipulation, who has the skill and flair to convince anyone of anything, can talk his way out of any situation&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-203 type-post status-publish format-standard hentry category-film-reviews" id="post-203">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../film-review-alien/" rel="bookmark">Alien</a></h2>
+<aside class="meta">
+Apr 19, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/film-reviews/">Film Reviews</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>You can tell a lot about a film by its opening titles. The first minutes of Alien gives a very accurate forecast of what you&#8217;re in for: dark, spine chilling and ominous. As seemingly random lines appear on the screen, building up to reveal the title of the movie, you can also predict it&#8217;s going&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39 current-cat">
+<a aria-current="page" href="./../../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>

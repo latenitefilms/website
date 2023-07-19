@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-839 type-post status-publish format-standard hentry category-educational" id="post-839">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../swinburne-lecture-august-2011/" rel="bookmark">Swinburne Lecture August 2011</a></h2>
+<aside class="meta">
+Sep 7, 2011				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/educational/">Educational</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-large wp-image-840" title="01" src="../../images/2011-08-011-441x248.jpg" alt="" width="441" height="248"></p>
+<p>Back in October last year, I was invited to speak to the 3rd and 4th year students at <a href="http://www.swinburne.edu.au/design/filmtv/" target="_blank">Swinburne University</a> about Post Production Workflows (if you haven&#8217;t already, you can read about everything I discussed last time <a href="./../2010/10/30/assistant-editor-lecture/">here</a>). A couple of weeks ago I was invited back again to cover the same sort of thing with a whole new bunch of 3rd year students.</p>
+<p>Not surprisingly, a fair bit has changed in the months between the lectures, so I thought it might be useful to document some of the new things I discussed on this blog. I&#8217;m obviously not going to go into as much detail as I did in the lecture, and in a lot of cases I will just provide links to other articles, rather than going through things step-by-step, but if you do have any questions, or if anything is unclear, just let me know!</p>
+<p>One question that lots of students had was, when you&#8217;re shooting with cameras such as the RED or ARRI Alexa that shoot such big files (and generally speaking people end up shooting a lot more footage with digital formats than if they were shooting with film &#8211; just because they can) &#8211; what&#8217;s the best way to store all this media when you&#8217;re a poor student filmmaker?</p>
+<p>Backing up and later ARCHIVING your media is incredibly important &#8211; as I&#8217;m sure everyone can appreciate. I know at least a handful of filmmakers who have COMPLETELY lost their films, simply because they didn&#8217;t have their files adequately backed up. One poor girl had two copies of the media stored in two completely separate locations &#8211; but purely due to bad luck (a house fire at her Mum&#8217;s house and a electrical storm at her Dad&#8217;s house), even that wasn&#8217;t enough. Gone are the days of having a tape backup of everything (so at least you can re-capture all your media if a drive dies) &#8211; now days almost everything is stored digitally on really cheap hard drives.</p>
+<p>Recently, Sony in the UK had a massive fire due to the recent riots, and their whole warehouse got burnt down, with thousands of DVD all going up in smoke (have a read of <a href="http://www.chrisjonesblog.com/2011/08/could-your-film-survive-the-sony-warehouse-fire/" target="_blank">Chris Jones blog</a> if you haven&#8217;t already). If you had your master stored at this facility &#8211; you&#8217;d be pretty worried right about now!</p>
+<p>Given these sorts of horror stories, we always recommend that you have THREE copies of your media, in TWO different locations (although, three would be better!), on at least TWO different formats. For example, in the professional world we normally have one or two LTO copies of all the camera originals for archiving purposes, and then also have it on three hard drives for easy access.</p>
+<p><img loading="lazy" title="03" src="../../images/2011-08-031-441x182.jpg" alt="" width="441" height="182"></p>
+<p>However, if you&#8217;re a poor film student, then archiving to LTO might not be a viable option.</p>
+<p>An blank LTO5 tape will cost you around AUD$115.00, which has a <a href="http://en.wikipedia.org/wiki/Native_capacity" target="_blank">native</a> data capacity of 1.5 TB. If you&#8217;re shooting a short film to RED, then you may be able to get all your R3D files onto the one LTO &#8211; which isn&#8217;t that much compared to a hard drive. So if you can hunt down a production house that has an LTO deck you can use for a few hours, then that might be a really viable option. LTO&#8217;s a great, because as they are tape based, you can store them on a shelf and not worry about having to check them every few months (like you have to do with a hard drive &#8211; which are designed to be &#8220;spun up&#8221; every now and again).</p>
+<p>If you were to buy an LTO deck for use on a MacPro it will cost you around:</p>
+<blockquote><p>ExpressSAS Card = $594.00<br>
+HP Ultrium 3000 SAS External Tape Drive LTO5 = $2,594.90<br>
+BRU PE Producers Edition for Mac OS X = $649.00<br>
+<strong>TOTAL:</strong> AUD$3837.00</p></blockquote>
+<p>Although not cheap &#8211; long term, it makes a lot of sense to archive to LTO as opposed to hard drives, so if you produce a lot of media, then it&#8217;s really worth the investment.</p>
+<p>If you haven&#8217;t already, I highly recommend you download and have a good read through <a href="https://silverado.cc/" target="_blank">Silverado&#8217;s</a> white paper on <a href="https://silverado.cc/shop/pages.php?pageid=30" target="_blank">Archiving for Indies</a>, as it covers this whole topic of LTO arching in great detail.</p>
+<p>But assuming you don&#8217;t have any friends that have an LTO deck you can use &#8211; what&#8217;s the next best thing that&#8217;s affordable for students?</p>
+<p>My suggestion would be to store all your CAMERA &amp; AUDIO ORIGINALS (i.e. the R3D files or ProRes 4444 files) on THREE separate drives, stored at THREE separate locations. In terms of a student film, I would give one drive to the editor, one to the director, and one to the producer (assuming they&#8217;re not all the same people). You might even be able to store a drive at your University, just for good measure &#8211; or maybe you just leave a drive at your grandparents house in a top cupboard for the duration of the post production process.</p>
+<p><img loading="lazy" class="alignnone size-large wp-image-841" title="02" src="../../images/2011-08-021-441x352.jpg" alt="" width="441" height="352"></p>
+<p>To keep things as cheap as possible, my suggestion would be to just use bare drives (i.e. drives without an enclosure). You can pick up a Seagate 500 GB drive for as little as $42.00, or a 1 TB drive for $59.00 &#8211; which is pretty incredibly cheap if you think back to how much drives costed only a few years ago. You can buy these drives from any computer reseller, however if you&#8217;re near the city &#8211; then somewhere like <a href="http://cpl.net.au/" target="_blank">Computer &amp; Parts Land (CPL)</a> in West Melbourne is a great option &#8211; as they&#8217;re cheap, open long hours and they normally have heaps of drives in stock. There are also plenty of online resellers that sell these kinds of drives really cheaply.</p>
+<p><img loading="lazy" class="alignnone size-large wp-image-844" title="04" src="../../images/2011-08-041-441x441.jpg" alt="" width="441" height="441"></p>
+<p>So how do you actually connect these drives to your computer? Luckily, there are heaps of different hard drive docking stations out there, so you have plenty of options &#8211; some that are really cheap, others that are built incredibly well, and cost a bit more money. For example, the product pictured above cost $29.00 from online reseller <a href="http://www.macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=739" target="_blank">MacFixIt</a>. There are plenty of options out there, including enclosures that have two bays (such as <a href="http://www.vantecusa.com/gl/product/view_detail/372" target="_blank">this</a> one &#8211; $65 from CPL) &#8211; so it&#8217;s worth just doing a bit of Googling to see which enclosure is right for you.</p>
+<p><img loading="lazy" class="alignnone size-large wp-image-845" title="06" src="../../images/2011-08-061-441x163.jpg" alt="" width="441" height="163"></p>
+<p>On this topic though &#8211; one very important thing to keep in mind BEFORE you purchase an enclosure is what kind of connection are you going to use? Given that you will be moving around very large chunks of data &#8211; the fastest connection you can get the better. If you&#8217;re lucky enough to have a new Apple laptop &#8211; then maybe a Thunderbolt drive is your best option. Thunderbolt I/O technology gives you two channels on the same connector with 10 Gbps of throughput in both directions meaning you can move data to and from peripherals up to 20 times faster than with USB 2.0 and up to 12 times faster than with FireWire 800. The only downside is that as the technology is new, only a few products exist on the market currently, and their expensive. The next best option is eSATA. If you have a MacPro, then you&#8217;ll either need to purchase a eSATA card ($65 from <a href="http://www.macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=1155" target="_blank">MacFixIt</a>), or you can get a cable that actually connects to the motherboard of the Mac ($25 from <a href="http://www.macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=556" target="_blank">MacFixIt</a>) &#8211; or if you&#8217;re on a 17&#8243; MacBook Pro, you can buy a ExpressCard with eSATA connections ($29 from CPL or <a href="http://www.macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=918" target="_blank">MacFixIt</a>). If you can&#8217;t afford to upgrade to eSATA &#8211; then you&#8217;re best bet is FireWire 800. FireWire 400 and USB are generally a bit too slow for throwing around lots of data &#8211; but if that&#8217;s all you&#8217;ve got then that&#8217;s all you&#8217;ve got. Basically &#8211; just go with the fastest option you can afford, and remember you&#8217;re only as fast as the weakest link (for example if you&#8217;re copying from a USB card reader to a Thunderbolt drive &#8211; the bottleneck will be the USB card reader).</p>
+<p>So now you should have all your camera originals stored on three separate drives in three separate locations. But that&#8217;s really just the start. You now have to make media files which you&#8217;ll actually use for the offline process. If you&#8217;re shooting on RED, you might use REDCINE-X to transcode all the R3D files to ProRes or DNxHD &#8211; or if you&#8217;re shooting Alexa, you may just be working with the native ProRes files directly off the camera. I would recommend having two copies of all the offline material &#8211; one kept with the director and one with the editor (again, assuming they&#8217;re not the same person) &#8211; that way if you accidentally drop your drive the day before you need to export EDLs or OMFs &#8211; you can just jump straight back onto the backup drive. In a perfect world, it would be great to work off a <a href="http://en.wikipedia.org/wiki/RAID" target="_blank">RAID</a>-protected (meaning, a Redundant Array of Independent or Inexpensive Disks) drive, as opposed to a standard drive for added protection. You can pick up two bay enclosures from as little as $149.00 from <a href="http://macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=1752" target="_blank">MacFixIt</a> that allow you to run what&#8217;s called a RAID 1 &#8211; which basically mirrors the content from one drive to another. If you&#8217;re working with a huge amount of footage, then maybe a <a href="http://macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=2001" target="_blank">four-bay</a> enclosure that supports RAID 5 (which means that if one of the four drives fails, then you can still re-build the information using the three other drives) would be a better option. If you want to learn more about how RAID protection works, there are plenty of resources out there on the Internet, such as <a href="http://videos.howstuffworks.com/labrats-tv/837-episode-8-raid-explained-video.htm" target="_blank">this video</a>.</p>
+<p>Backing up the offline media to hard drives is really the only viable option. However, backing up project files from Final Cut Pro or Avid is a completely different story, as the files sizes are so small. As an added precaution, I would always keep multiple backups of your actual edit &#8211; just in case. How you do this is really up to you &#8211; maybe you can just store all your backups on a fairly large USB Stick (4 GB for $14.95 at <a href="http://www.macfixit.com.au/shop/index.php?_a=viewProd&amp;productId=583" target="_blank">MacFixIt</a> &#8211; although sometimes you can buy even cheaper and bigger flash storage from places like <a href="http://www.officeworks.com.au/retail/content/Home" target="_blank">Office Works</a>), or you can backup your files to &#8220;the cloud&#8221; using services such as <a href="http://www.dropbox.com/" target="_blank">Dropbox</a>, or any of the other cheap/free online storage services out there (of which there are many). Most universities offer some kind of storage on their servers as well &#8211; so that&#8217;s another good option for student filmmakers.</p>
+<p>As usual &#8211; which workflow and backup procedure you use will come down to your budget. At the very least though, you should have three backups of your raw media ($59 x 3 = $177), and two copies of your offline material ($59 x 2 = $118) plus at least a couple of SATA docking stations ($65) &#8211; so you can really get everything working for under $400, which is a pretty good deal. Obviously storing your camera originals to LTO would be a much SAFER option &#8211; but when you&#8217;re a student, you have to work with what you can afford.</p>
+<p>Below are some useful links to various sites around the Internet that are worth checking out on the topic of backing things up. I&#8217;m sure there&#8217;s plenty of other great sites out there, so if you have any favourites please share them in the comments!</p>
+<p><strong>Useful Articles:</strong></p>
+<ul>
+<li><a href="http://provideocoalition.com/index.php/cmg_blogs/story/anything_worth_backing_up/" target="_blank">Anything worth backing up&#8230;</a></li>
+<li><a href="http://prophotocoalition.com/index.php/dcarr/story/my_personal_backup_routine/" target="_blank">My Personal Backup Routine</a></li>
+<li><a href="http://www.philiphodgetts.com/2011/03/how-disaster-proof-are-you/" target="_blank">How disaster proof are you?</a></li>
+<li><a href="http://lfhd.net/2011/03/17/archiving-dilemma/" target="_blank">Archiving Dilemma</a></li>
+<li><a href="http://lfhd.net/2011/04/22/inexpensive-archiving-for-tapeless-media/" target="_blank">Inexpensive Archiving for Tapeless Media</a></li>
+<li><a href="http://www.chrisjonesblog.com/2009/12/how-secure-is-your-data-do-film-makers-create-more-data-than-most-others/" target="_blank">How secure is your data? Do film makers create more data than most others…?</a></li>
+<li><a href="http://www.chrisjonesblog.com/2007/05/are-you-ready-for-a-crash/" target="_blank">Are you ready for a crash?</a></li>
+<li><a href="http://www.chrisjonesblog.com/2008/02/digital-disaster/" target="_blank">DIGITAL DISASTER!</a></li>
+<li><a href="http://www.dpbestflow.org/backup/backup-overview" target="_blank">Backup Overview</a></li>
+<li><a href="http://www.iomegadatarecovery.com/prevention-backup-strategies/" target="_blank">Backup Tips &#8211; Prevent data loss with a good backup strategy</a></li>
+</ul>
+<p>The other area that students wanted to learn more about what workflows for different digital formats.</p>
+<p><img loading="lazy" class="alignnone size-large wp-image-853" title="arri_alexa" src="../../images/2011-09-arri_alexa-441x267.jpg" alt="" width="441" height="267"></p>
+<p>Unlike previous years, a lot of students this year are shooting on the <strong>ARRI Alexa</strong> (mainly because Swinburne now owns one). The Alexa is great, as the camera generates direct-to-edit ProRes media with embedded timecode and reel IDs, allowing you to basically instantly have access to the footage on Final Cut Pro or Avid (using AMA). These are self-contained files without a folder hierarchy to mess you up, like with P2 or XDCAM &#8211; you simply drag the ProRes files into the Final Cut Pro browser and away you go! In theory anyway. There are really only two things you need to keep in mind with the Alexa. If you shoot ProRes 4444, the file sizes are quite massive, and depending on your hard drive, what connection you&#8217;re using (i.e. Firewire 400, Firewire 800 or eSATA), and also how complex your edit is &#8211; you might find you get stuttered playback, or require a lot of renders. The solution &#8211; simply transcode all your footage to another variety of ProRes (i.e. ProRes LT or Proxy) and away you go! If you use Final Cut Pro or Compressor, the timecode and tape name will come across, so you&#8217;re good to go!</p>
+<p>The other little gotcha is that you may be files are recorded using the ALEXA Log C profile (for more information on what Log C actually is check out <a href="http://digitalfilms.wordpress.com/2010/11/04/arri-alexa-post-part-1/" target="_blank">this post</a>). This yields a low-contrast, “flat” image designed to preserve dynamic range and offer optimum grading latitude. It’s a wonderful alternative to true camera raw recording, but adds a few considerations for post. A lot of editors won&#8217;t want to work with the low-contrast image, and although you could just apply a 3-way colour corrector to everything in the timeline in FCP &#8211; this is probably not the most fluid way of working (especially if you&#8217;re on a lower spec Mac). However &#8211; this is what we do in Avid &#8211; we just apply a colour corrector to the whole sequence, so that everything in the sequence has a &#8220;look&#8221; applied. But a much better (although more time consuming) option, is to &#8220;bake&#8221; the look in, so you don&#8217;t have to worry about long render times, as you add more effects to your edit. The easiest way to do this is <a href="http://digitalfilms.wordpress.com/2010/11/12/arri-alexa-post-part-2/" target="_blank">documented here</a>. Keep in mind though, that <a href="http://web.me.com/nickshawpost/Antler_Post/Plugins/" target="_blank">Nick Shaw&#8217;s plugin</a> is no longer free &#8211; so you can either purchase it (it&#8217;s only USD$30), purchase the much more expensive <a href="http://www.gluetools.com/products_arriraw/" target="_blank">Glue Tools</a> ($799 &#8211; which is what we use at The Butchery, as it can handle ARRI RAW as well) or just use the 3-way Colour Corrector or a third party tool such as <a href="http://www.redgiantsoftware.com/magicbulletcolorista/" target="_blank">Colorista</a>.</p>
+<p><img loading="lazy" class="alignnone size-large wp-image-854" title="redone" src="../../images/2011-09-redone-441x294.jpg" alt="" width="441" height="294"></p>
+<p>The RED One and EPIC have come along way in regards to post production workflows over the last few years. Although I personally never found the workflow too difficult, now-days you can basically just use the one application to transcode all your media for different NLEs. With the recent release of <a href="http://reduser.net/forum/showthread.php?62940-RCX-Pro-Build-2." target="_blank">RCX-Pro</a>, things are now even simpler, as the interface of REDCINE-X has basically just been &#8220;tweaked&#8221; to be much more user friendly and easy to manage. Basically, for Final Cut Pro, we recommend just converting everything to ProRes for the purposes of the offline edit. Later down the line, when you&#8217;re ready to grade &#8211; you can always go back to the original R3D files. Below is a really easy to follow video on how to convert all your RED rushes to ProRes using REDCINE-X:</p>
+<p><iframe loading="lazy" src="https://www.youtube.com/embed/o8ycz0YSA8Q?rel=0" frameborder="0" width="441" height="278"></iframe></p>
+<p>And of course, Canon DLSR&#8217;s have taken over film schools like the plague!</p>
+<p><img loading="lazy" title="canon5d" src="../../images/2011-09-canon5d-441x293.jpg" alt="" width="441" height="293"></p>
+<p>The Canon is great for low-budget filmmakers and students, because the gear is cheap enough that you can actually own it, the cameras are small so that you can put them in all kinds of wonderful places that a RED or Alexa could never reach, the image quality is incredible (considering the price and the compression used), plus you can make use of all the incredible stills lenses out there. But of course, there are gotchas &#8211; the camera records to H264, it doesn&#8217;t record timecode, amongst many other things (i.e. when recording for long periods, especially in warmer climates, increased video noise may occur due to CMOS overheating &#8211; but let&#8217;s just focus on post for now). If you&#8217;re just planning to edit and FINISH in Final Cut Pro, then you don&#8217;t need to worry too much &#8211; just transcode all your footage to ProRes and way you go. However, if you plan to do an offline/online workflow &#8211; then you are going to need reel names and timecode. Although there are a few different ways you can do this, the method we recommend is as follows:</p>
+<p>1. Duplicate all your camera originals as a safety (although you should already have three backups anyway!)<br>
+2. Use something like <a href="http://manytricks.com/namemangler/" target="_blank">Name Mangler</a> (US$10 on the App Store) to batch rename all your rushes to something a bit easier to keep track of (i.e. MVI_0021 becomes AD1R1S01 &#8211; A camera, day one, reel one, shot 1). This become really important if you&#8217;re shooting with multiple cameras over many days (i.e. documentaries), as you don&#8217;t really want duplicate file names, as it will just complicate things later down the line.<br>
+3. Once everything is named correctly, you can apply timecode to the clips. We use a program called <a href="http://www.videotoolshed.com/product/42/qtchange" target="_blank">QTChange</a> (US$24.95) to add new timecode and a reel name to each clip. Although there are a few different ways to tackle timecode (i.e. you could just use Time of Day &#8211; based off the date information from the camera) &#8211; but we just normally set the hour mark, to the shoot day (i.e. day one begins at 01:00:00:00, day two begins at 02:00:00:00, etc.).<br>
+4. Now that you have nicely named, timecoded masters, you can now create ProRes files! There are many different tools out there that allow you to do this, but just make sure you use a tool (i.e. Apple&#8217;s Compressor) that RETAINS all the timecode and reel information. However, if you do accidentally use a tool that doesn&#8217;t bring the timecode and reel information across, you can always use QTChange again.</p>
+<p>It&#8217;s also worth checking out 3rd party tools like <a href="http://www.redgiantsoftware.com/products/all/magic-bullet-grinder/" target="_blank">Magic Bullet Grinder</a> &#8211; although with Grinder, although it&#8217;s great for jobs where you are just finishing everything in Final Cut Pro, as it doesn&#8217;t add reel-names automatically to clips &#8211; so if you think you&#8217;ll need to export EDLs, then you would have to manually enter all the reel names within FCP, which can be a bit of a nightmare &#8211; or use QTChange. As with everything &#8211; make sure you do some workflow tests before you commit to a piece of software, as Grinder is constantly being updated and revised.</p>
+<p>Hope this helps! As always, if you have any further questions, or if any of the above is incorrect or unclear &#8211; just let me know!</p>
+<p>Onwards &amp; Upwards!</p>
+<p>Chris!</p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

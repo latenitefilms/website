@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-2114 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2114">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../2012-summary-part-one/" rel="bookmark">2012 Summary &#8211; Part One</a></h2>
+<aside class="meta">
+Dec 19, 2012				    <i class="icon-dot"></i> Posted By Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-medium wp-image-2115" src="../../images/12-01-590x393.jpg" alt="01" width="590" height="393"></p>
+<p>A little something that we started last year here at <b>LateNite</b> was to take a moment to reflect on the year that was. The projects, the people, the joy, the tears, the wins, the losses and of course the movies that made 2012. Instead of two enormous blogs though, this year we will be breaking it up into thirds for your reading pleasure and releasing one a week right up until 2013 ticks over, at which point we’ll be revealing some of our exciting new projects in the works.</p>
+<p>So here goes nothing&#8230;</p>
+<hr>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/CWHNXJ1K4yA" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<h2>JANUARY</h2>
+<p>It’s funny when you look back on a year and forget some of the films that kicked the year off. In a month where <a href="http://www.imdb.com/name/nm0000399/" target="_blank">Fincher</a> gave us a splendid Americanized <a href="http://www.imdb.com/title/tt1568346/" target="_blank">Girl with The Dragon Tattoo</a>, <a href="http://www.imdb.com/title/tt1204342/" target="_blank">The Muppets</a> made a comeback and the legend that is <a href="http://www.imdb.com/name/nm0000217/" target="_blank">Scorsese</a> dazzled us with his homage to cinema in 3D family flick <a href="http://www.imdb.com/title/tt0970179/" target="_blank">Hugo</a>, it was <a href="http://www.imdb.com/title/tt1033575/" target="_blank">The Descendants</a>, directed by one of my favourite directors in <a href="http://www.imdb.com/name/nm0668247/" target="_blank">Alexander Payne</a> that I fell in love with. It was as funny as it was sad and ultimately a heartwarming tale of heartbreak (work that one out).</p>
+<p>And so 2012 began. With <b>Nick,</b> ready and raring to go, <strong>Michael </strong><b>Shanks</b> becoming a newfound member of the team and <b>Jacqui</b> and <b>Chris</b> being the ever-excitable duo, projects came thick and fast in January.</p>
+<p><b>Michael</b> and <b>Nick</b> set about working on a music video for Melbourne based folk band <b>Huckleberry &amp; Me,</b> which was to be shot in the country and involve three very cute kids and some signature <b>Shanks</b> effects.</p>
+<p>Location scouts took them out to Woodend, Tarrdale, Kyneton and beyond to try and find the right place for the video.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2116" src="../../images/12-02-590x440.jpg" alt="02" width="590" height="440"></p>
+<p>Whilst working on the music video, <b>Nick</b> was also collaborating with our good friends at <a href="http://www.inspirationstudios.com.au/" target="_blank">Inspiration Studios</a> on a brand new web series called <a href="./../portfolio/train-in-motion/" target="_blank">Train-In Motion</a>. The series (still in post-production) is an off the wall look at workplace training with the first two episodes being written by comedian<b> Dylan Cole</b> and <b>Nick</b>. The first two shoot days took place at <a href="http://www.stagingconnections.com/" target="_blank">Staging Connections</a> thanks to Nick’s brilliant sister Marnie, and laughs a plenty were had. The first series of 4 episodes will be released early 2013.</p>
+<p>We also went ahead with the beginnings of our &#8220;no budget&#8221; shoot idea where we decided we wanted to try and shoot a no budget short every month for the whole year. Our first was <b>Alistair Marks</b>’ film <b>0-0</b> about a stoner who is summoned to build an ark to save the world. The film was shot over 2 days by the brilliant <b>Caitlin Dooley </b>and is currently just finishing up in post-production. More news on this one soon.</p>
+<p>January also brought us this:</p>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/F_-wWJITam4" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>From the twisted mind of <b>Michael Shanks</b> came his very first music video for his debut single <b>On The Border Line </b>which was recorded under the pseudonym <a href="http://roadgeekband.com/" target="_blank">Roadgeek</a>. This was a clip that <b>Michael</b> showed us the beginnings of when we finished up the previous year’s 48-hour film festival, so it’s fair to say it took a little while to come to fruition (understandably so).</p>
+<p>The one man (wo-man) machine that is <b>Jacqui Hocking</b> was meanwhile was filming in <a href="http://expedition.toptotop.org/archives/2012_01/" target="_blank">South Africa</a> as part of her ongoing <a href="http://www.toptotop.org/" target="_blank">TOPtoTOP</a> documentary. <b>Chris</b> and <b>Nick</b> have worked out if you ever want to hate on your current situation, just check out <b>Jacqui’s</b> photos - odds are she’s having a far better time than you are!</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2117" src="../../images/12-03.jpg" alt="03" width="590" height="437"></p>
+<hr>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/hTUvX_pYNBM" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<h2>FEBRUARY</h2>
+<p>Once again, being Oscar season, there were movies a plenty to choose from with the extraordinary silent film <a href="http://www.imdb.com/title/tt1655442/" target="_blank">The Artist</a>, the disturbing cult film <a href="http://www.imdb.com/title/tt1441326/" target="_blank">Martha Marcy May Marlene</a> (starring a new and far less annoying Olsen sister), the equally disturbing but brilliant <a href="http://www.imdb.com/title/tt1723811/" target="_blank">Shame</a> (starring <a href="http://www.imdb.com/name/nm1055413/" target="_blank">Michael Fassbender’s</a> penis), <a href="http://www.imdb.com/title/tt1372686/" target="_blank">Coriolanus</a>, <a href="http://www.imdb.com/title/tt1692486/" target="_blank">Carnage</a>, <a href="http://www.imdb.com/title/tt1706593/" target="_blank">Chronicle</a>&#8230;<b> </b>the list could go on and on.</p>
+<p>The film I have chosen for Feb though is the beautiful <a href="http://www.imdb.com/title/tt1758692/" target="_blank">Like Crazy</a><b><a href="http://www.imdb.com/title/tt1758692/" target="_blank">.</a> </b>A film that won a major drama prize at <b>Sundance</b> and was as sweet and touching as it was heart breaking. It’s also a bloody good trailer and features the vocal talent of the incredible <a href="http://www.ingridmichaelson.com/" target="_blank">Ingrid Michaelson</a>.</p>
+<p>February had some more exciting projects in store for us as the <b>LateNite</b> train continued to rollick on through the start of 2012.</p>
+<p>After all that location scouting in January and trying to work around <b>Michael&#8217;s</b> trip home to New Zealand, the clip for <a href="http://www.triplejunearthed.com.au/HuckleberryandMe">Huckleberry &amp; Me</a> FINALLY got under way, shooting in a weekend in early Feb. The results of which are below:</p>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/dp8H9JeH4mY" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Shortly after we wrapped on the music video, <b>Nick</b> decided to take some time out to perform on stage in <a href="http://www.mka.org.au/" target="_blank">MKA Theatre’s</a> <b>Hose</b> which was part of a double bill performing at <a href="http://www.theatreworks.org.au/" target="_blank">Theatreworks</a> under the direction of the amazing <b>Alister Smith</b>. <b>Chris</b> decided to take the opportunity of <b>Nick’s</b> absence to continue helping out on the film festival <a href="http://www.threeonesixoh.com/" target="_blank">Three One Six Oh!</a>, a festival run by our good friends at <a href="http://pocketbonfire.com/" target="_blank">Pocket Bonfire<b> </b></a>and one which we proudly sponsor. The outdoor festival completely sold out and was a huge success with people staying well into the night to enjoy the festivities.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2118" src="../../images/12-04-590x440.jpg" alt="04" width="590" height="440"></p>
+<p>In doco land,<b> Jacqui</b> was getting ready for her next big adventure &#8211; filming a documentary while sailing across the Atlantic Ocean! Luckily she had some camera assistants with her&#8230;</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2119" src="../../images/12-05.jpg" alt="05" width="590" height="440"></p>
+<p>February was an exciting month for not only us but also some friends of <b>LateNite</b> as well who were competing in a number of big competitions.</p>
+<p>Producer <a href="http://www.imdb.com/name/nm2630377/" target="_blank">Julian Costanzo</a> took out the main prize at <b>Tropfest</b> for his film <a href="http://aletheajones.com/lemonade-stand" target="_blank">Lemonade Stand</a>, directed by <a href="http://aletheajones.com/" target="_blank">Alethea Jones</a> and written by <a href="http://www.imdb.com/name/nm3650286/" target="_blank">Tim Potter</a>. For those abroad, <a href="http://tropfest.com/" target="_blank">Tropfest</a> is Australia’s richest short film festival and gets over 1,000 entries every year so this was a massive effort. You can watch the winning film below:</p>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/9JL82j-l6hM" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>We also had our friend <b>Hannah Moon</b> and her team in the finals of the <a href="http://www.mtv.com.au/shows/optus-one80project/" target="_blank">Optus180 Competition</a> with their TV series concept <b>Starfish</b>. The concept trailer starred <a href="http://www.16thstreet.com.au/" target="_blank">16<sup>th</sup> Street</a> actors <a href="http://www.imdb.com/name/nm4254556/" target="_blank">Shannon Glowacki</a> and <a href="http://www.imdb.com/name/nm1720228/" target="_blank">Emily Wheaton</a> in a cute little concept.</p>
+<p><iframe loading="lazy" width="590" height="332" src="//player.vimeo.com/video/34990006?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0f7491" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>One of <b>Chris’</b> acquaintances from the <a href="./../2011/11/18/spaa-conference-2011/" target="_blank">SPAA Emerging Producers Scheme</a> from the previous year, <b>Kirsty Stark</b>, had her project <a href="http://wastelanderpanda.com/" target="_blank">Wastelander Panda</a>, also competing in the same competition as <b>Starfish</b>. You can check out the EPIC trailer below:</p>
+<p><iframe loading="lazy" width="590" height="332" src="//player.vimeo.com/video/35546493?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0f7491" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<hr>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/-BoPM15t2zA" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<h2>MARCH</h2>
+<p>There must have been something in the air at the start of the year because it seems Nick was obsessed with tear jerking dramas. Either way, if you haven’t seen <a href="http://www.imdb.com/title/tt1306980/" target="_blank">50/50</a> I suggest you go out and see it, one of the most underrated/little known films of 2012.</p>
+<p>The start of March was met with the departure of <b>Michael</b> &amp; <b>Chris </b>to New Mexico to see our film <a href="./../portfolio/the-script-machine/" target="_blank">The Script Machine</a>, screen in competition at the <a href="http://www.taosshortz.com/" target="_blank">Taos Shortz Film Festival</a> which was acting as home for the <a href="http://www.48hourfilm.com/" target="_blank">International 48 Hour Film Festival Competition</a>. If you haven’t seen the film, it’s a little nuts but here tis’..</p>
+<p><iframe loading="lazy" width="590" height="332" src="//player.vimeo.com/video/39012967?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=0f7491" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>You can also read about the boys exploits <a href="./../2012/03/08/filmapalooza-2011/" target="_blank">here</a>.</p>
+<p>Whilst the boys were enjoying the New Mexican sunshine, <b>Nick</b> was busily shooting the next 2 installments of the <a href="./../portfolio/train-in-motion/" target="_blank">Train-In Motion</a> Web Series. The third and fourth episodes were written by <a href="http://www.imdb.com/name/nm2899893/" target="_blank">Ben Ridgwell</a> and the brilliant duo that is <a href="http://www.imdb.com/name/nm3182837/" target="_blank">Tegan Higginbotham</a> &amp; <a href="http://www.watsoncomedy.com/" target="_blank">Adam McKenzie</a>. Once again the series will be coming to you from the web in early 2013.</p>
+<p><b>Nick</b> was also lucky enough to take part in a day long producing workshop with the wonderful <a href="http://www.imdb.com/name/nm0177707/" target="_blank">Melanie Coombs</a> (Academy Award winning producer of <a href="http://www.imdb.com/title/tt0382734/" target="_blank">Harvey Krumpet</a> &amp; <a href="http://www.imdb.com/title/tt0978762/" target="_blank">Mary and Max</a>). A really interesting and insightful day that set Nick up for a great run at SPAA later in the year, but more on that later!</p>
+<p>Throughout March, in the true Spirit of Adventure, Jacqui got to discover one of the most unexplored places on earth &#8211; <a href="http://en.wikipedia.org/wiki/Saint_Helena" target="_blank">Saint Helena</a>!</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-2120" src="../../images/12-06.jpg" alt="06" width="590" height="393"></p>
+<p>Filming in Saint Helena was a massive highlight. Twas’ a magical place where land-line phone numbers are only 4 digits and there is NO mobile service at all (except for VHF radio). Thankfully, Jacqui managed to complete <a href="./../portfolio/an-emerald-gem-set-in-bronze/">a short documentary film</a> about the environment &amp; sustainability of the unique island, with an incredible soundtrack originally composed by our talented friends <b>Jordon Scotney</b> and <b>Hayden Schueler.</b></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2121" src="../../images/12-07-590x396.jpg" alt="07" width="590" height="396"></p>
+<p>But once again it wasn’t all about us, with some of the brilliantly talented friends of <b>LateNite</b> doing groundbreaking, amazing things.</p>
+<p>The boys at <a href="http://www.darkheartproductions.com/" target="_blank">Dark Heart Productions</a> raised an astonishing $73,000 dollars to complete the first EVER crowd funding campaign for a television series. Their series <a href="http://mobcaster.com/fundraise/the-weatherman/season-1" target="_blank">The Weatherman</a>, went into production in late 2012, you can watch the pilot below.</p>
+<p><iframe loading="lazy" width="590" height="332" src="//player.vimeo.com/video/22154806?portrait=0&amp;badge=0&amp;color=ff9933" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><a href="http://everydayloveart.com/" target="_blank">Nidhi Chanani</a>, the amazingly talented artist behind the illustrations in <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah &amp; The Hasbian</a>, was honoured at The White House by <b>Presdident Obama</b> as a &#8220;Champion of Change&#8221; for her work in the community as an artist. We love <b>Nidhi</b> and are all incredibly proud of all that she has achieved and can’t wait to see what she does next! Onwards &amp; Upwards!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2122" src="../../images/12-08-590x473.jpg" alt="08" width="590" height="473"></p>
+<hr>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/tY9DnBNJFTI" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<h2>APRIL</h2>
+<p>The decent run of films that we had at the start of the year dried up in April and there was little to get excited about. Amongst the few decent films were Australian film <a href="http://www.imdb.com/title/tt1684925/" target="_blank">Wish You Were Here</a>, by the <a href="http://bluetonguefilms.com/" target="_blank">Blue Tongue Films</a> boys and also the big budget Hollywood flick, <a href="http://www.imdb.com/title/tt0848228/" target="_blank">The Avengers</a>. I chose to show <a href="http://www.imdb.com/title/tt0848228/" target="_blank">The Avengers</a> trailer for no other reason but to break up the drama trend in the rest of the blog.</p>
+<p>The month of April was no different for us as the shooting dried up and we continued on with the development of some longer-term projects including our sitcom <a href="./../portfolio/the-ushers/" target="_blank">The Ushers</a> and feature concept <a href="./../portfolio/the-grey-between/" target="_blank">The Grey Between</a> (formerly Splinter).</p>
+<p>In April it was time for Jacqui to continue her journey from Saint Helena Island, sailing to South America!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2123" src="../../images/12-09-590x393.jpg" alt="09" width="590" height="393"></p>
+<p>After months at sea, Sail-yacht <a href="http://www.toptotop.org/globalexpedition/pachamama.php" target="_blank">Pachamama</a> finally arrived in <a href="http://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank">Rio De Janeiro</a>, Brazil just in time for the <a href="http://www.uncsd2012.org/" target="_blank">Rio 20+ Summit</a>. She bid the <a href="http://www.toptotop.org/" target="_blank">TOPtoTOP</a> family farewell, but before she head back to LateNite HQ, she made time to fly to <a href="http://en.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank">Sau Paulo</a> to meet  &amp; briefly film with another expedition &#8211; <a href="http://worldbycycle.info/" target="_blank">World By Cycle<b>!</b></a></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2124" src="../../images/12-10-590x393.jpg" alt="10" width="590" height="393"></p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-2125" src="../../images/12-11-590x393.jpg" alt="11" width="590" height="393"></p>
+<p>Kritina &amp; Nic from <a href="http://worldbycycle.info/" target="_blank">World By Cycle</a> then continued north to meet the <a href="http://www.toptotop.org/" target="_blank">TOPtoTOP</a> family, after Jacqui was back in Melbourne. Adventurers overload!</p>
+<p>Our friend and sometimes collaborator Mike Lutman also had his screening of his doco <a href="http://www.plasticizedthemovie.com/" target="_blank">Plasticized</a> at <a href="http://www.acmi.net.au/plasticized.aspx" target="_blank">ACMI</a>, which was a huge success and a great night was had by all (we&#8217;re currently helping Mike with distribution of the film &#8211; so stay tuned for details!).</p>
+<p>Oh yeah, and you know that <b>Shanks</b> kid?</p>
+<p>He did this:</p>
+<p><iframe loading="lazy" width="590" height="332" src="//www.youtube.com/embed/ALbQQzePzt4" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>As the year went on the projects began to pile up so stay tuned for the next four months&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

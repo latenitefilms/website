@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-681 type-post status-publish format-standard hentry category-technical-discussions" id="post-681">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../lightworks-day-one/" rel="bookmark">Lightworks &#8211; Day One</a></h2>
+<aside class="meta">
+Dec 1, 2010				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/technical-discussions/">Technical Discussions</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-full wp-image-683" title="Lightworks Screenshot" src="../../images/2010-12-lightworks2.jpg" alt="" width="441" height="248"></p>
+<p>At 3:30 in the morning today, I received an e-mail from <a title="Edit Share" href="http://www.editshare.com/" target="_blank">EditShare</a> announcing that the first public beta release of <strong>Lightworks 10.0</strong> was released into the wild. Unfortunately I&#8217;ve had quite a bit on today &#8211; however I have managed to do a couple of tests, and do a bit of mucking around. Over the next few months we will do a lot more detailed testing, and also cut together some actual projects on the system. However in the meantime, the amount of misinformation out there already is mind-blowing, so I thought I&#8217;d quickly run through some of the basic&#8217;s. Please be aware however, that I&#8217;m no expert &#8211; and this is really the first time I&#8217;ve ever had a good play with the Lightworks platform. I have known about them for years, and have read a lot about them &#8211; but never actually used one.</p>
+<p>If you haven&#8217;t done it already, you can download a copy of the free public beta <a title="Lightworks Public Beta" href="http://www.lightworksbeta.com/" target="_blank">here</a>. When the release was first announced the servers were hit pretty hard, and there were lots of reports of registration emails not getting through, however those issues have since been fixed so you should have no problem downloading a copy.</p>
+<p>To give you some background &#8211; Lightworks is not a new system. It&#8217;s been around since 1989, as was one of the very first and most advanced non-linear editing systems on the market, however it&#8217;s had a pretty rocky history despite the fact that it&#8217;s won Scientific and Technical <a title="Academy Awards" href="http://en.wikipedia.org/wiki/Academy_Awards" target="_blank">Academy Awards</a> and <a title="Emmy Awards" href="http://en.wikipedia.org/wiki/Emmy_Award" target="_blank">Emmy Awards</a>! Founded by Paul Bamborough, Nick Pollock and Neil Harris in 1994 it was sold to <a title="Tektronix" href="http://www.tektronix.com/" target="_blank">Tektronix</a> (a North American company best known for their test and measurement equipment such as logic analysers, oscilloscopes, and video/mobile test protocol equipment), who were never able to turn the technology into a highly profitable product. In the end they sold it on to <a title="Fairlight" href="http://www.fairlight.co.jp" target="_blank">Fairlight</a> in Japan, who set up a new company called Lightworks Inc in 1999. <a title="Gee Broadcast" href="http://en.wikipedia.org/wiki/Gee_Broadcast" target="_blank">Gee Broadcast</a> (who were initially set-up to provide a design and installation service for Broadcast Television Systems but expanded to equipment sales and distribution, including videographics and &#8220;engineering&#8221; products), then purchased Fairlight and the Lightworks technology in May 2004, and under new ownership, they released the <a title="Lightworks Touch" href="http://broadcastengineering.com/news/lightworks-touch-version-20041129/" target="_blank">Lightworks Touch</a> range, the <a title="Alacrity" href="http://www.interlab-net.com/Lwks_Alacrity.htm" target="_blank">Alacrity</a> range (an offline editing tool that incorporated the Lightworks job/shuttle console with analogue audio scrubbing, offered realtime effects with no rendering, SD and HD and was used to cut features like Evan Almighty), and the <a title="Softwares" href="http://www.interlab-net.com/docs/lightworks/lw_user%20doc/Softworks&amp;Alacrity_Manual_rev_4.pdf" target="_blank">Softworks</a> ranges (offering the Lightworks User Interface and toolset in a software only package for laptops or office workstations &#8211; keeping in mind at the time a Lightworks system was a complete package, not just sofware) for Standard Definition &amp; High Definition editing. Then in August 2009, the UK/US based <a title="EditShare" href="http://www.editshare.com/" target="_blank">EditShare</a> acquired the Lightworks software and video server system <a title="Geevs" href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=156&amp;Itemid=200" target="_blank">Geevs</a> (think big league TV video servers!).</p>
+<p>Step forward to April this year, at the <a title="NAB Show" href="http://www.nabshow.com" target="_blank">National Association of Broadcasters</a> (i.e. the NAB show), EditShare <a title="Lightworks Open Source Announced" href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=164&amp;Itemid=54" target="_blank">announced</a> that they were going to transform Lightworks into Lightworks <a title="Open Source" href="./../2006/09/13/philosophy-of-open-source/" target="_blank">Open Source</a> and run a <a title="Public Beta" href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=168&amp;Itemid=54" target="_blank">public beta</a> program. Then then <a title="IBC Announcement" href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=173&amp;Itemid=54" target="_blank">announced</a> and <a title="IBC Announcement" href="http://www.editshare.com/index.php?option=com_content&amp;task=view&amp;id=180&amp;Itemid=54" target="_blank">showed off</a> some of there work at <a title="IBC" href="http://www.ibc.org" target="_blank">IBC</a> in Amsterdam in September 2010 &#8211; but the software only has become publicly available TODAY.</p>
+<p>One of the big selling points of the system was (and still is) the console, which gives you all the controls you need at your fingertips (similar to the industry standard <a title="Steenbeck" href="http://en.wikipedia.org/wiki/Steenbeck" target="_blank">Steenbeck</a> controller):</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-685" title="Lightworks Console" src="../../images/2010-12-lightworks_console.jpg" alt="" width="441" height="248"></p>
+<p><img loading="lazy" class="alignnone size-full wp-image-695" title="Console Layout" src="../../images/2010-12-console2.jpg" alt="" width="441" height="356"></p>
+<p>It also had a number of (for its time) unique features, such as “sync slip”, synchronised varispeed playback with audio scrubbing, synchronised multi-channel playback, and an object-oriented user interface.</p>
+<p>There are lots of people around the world who have a soft spot for Lightworks including editors such as <a title="Chris Gill" href="http://www.imdb.com/name/nm0318639/">Chris Gill</a> (who cut films such as <a href="http://www.imdb.com/title/tt0289043/" target="_blank">28 Days Later</a> &#8211; but more recently used Lightworks on the highly-anticipated <a href="http://www.imdb.com/name/nm0551076/" target="_blank">Neil Marshall</a> thriller, <a href="http://www.imdb.com/title/tt1020558/" target="_blank">Centurion</a>) and multi Oscar-winning <a title="Thelma Schoonmaker" href="http://www.imdb.com/name/nm0774817/" target="_blank">Thelma Schoonmaker</a> (who cut films such as <a title="The Departed" href="http://www.imdb.com/title/tt0407887/" target="_blank">The Departed</a> &#8211; but more recently used Lightworks on the acclaimed <a href="http://www.imdb.com/name/nm0000217/" target="_blank">Martin Scorsese</a> thriller, <a title="Shutter Island" href="http://www.imdb.com/title/tt1130884/" target="_blank">Shutter Island</a>).</p>
+<p>Step forward to the present, and the new Lightworks software looks amazing on paper! Features like advanced real time effects, 2K native support with DPX and RED, multi-camera editing features (advanced multi-cam editing with unlimited sources and dual-SDI outputs, so you can simultaneously view your source angles in sync with your edit), a wide support of codecs (including AVI, QuickTime, MXF, DPX and RED R3D, DV, DVCPRO 50, DVCPRO HD, XDCAM HD, XDCAM EX, P2, AVC Intra, DNxHD, ProRes as well as EditShare&#8217;s Universal Media Files), plenty of 3rd party support (including support for Adobe After Effects, Boris, Combustion, Sapphire, etc.), real-time up and down-scaling from SD to 2K, and a really killer workflow in terms of collaboration &#8211; ignoring the fact that this current release is FREE &#8211; this is something to take notice of, and indeed everyone has!</p>
+<p>Already on the <a title="Forums" href="http://www.lightworksbeta.com/index.php?option=com_kunena&amp;view=listcat&amp;catid=0&amp;func=listcat&amp;Itemid=203" target="_blank">official forums</a>, there are 6231 members and 571 posts (and rising)! However, despite the buzz, there are a lot of people that are already unhappy with the system.</p>
+<p>Some of the complaints include:</p>
+<ul>
+<li>Couldn&#8217;t get it installed</li>
+<li>After I installed it, it wouldn&#8217;t load</li>
+<li>The interface is too confusing</li>
+<li>Where&#8217;s the source code?</li>
+<li>Why can&#8217;t I drag in DPX sequences?</li>
+<li>When&#8217;s the UNIX and MacOS versions being released?</li>
+<li>Nothing will import&#8230;</li>
+<li>Bla, bla, bla.</li>
+</ul>
+<p>First off &#8211; I have to say &#8211; GIVE THEM A BREAK! The software has only been out a few hours! It&#8217;s very publicly stated that it&#8217;s in beta, and that some of the functionality is still in the works. In fact, unlike some companies, they have actually given you a <a title="Road Map" href="http://www.lightworksbeta.com/index.php?option=com_content&amp;view=article&amp;id=112&amp;Itemid=246" target="_blank">Road Map</a>!</p>
+<p><strong>Q1 &amp; Q2 2011</strong></p>
+<ul>
+<li>Blackmagic support</li>
+<li>AJA support</li>
+<li>DVS support</li>
+<li>Stereoscopic adjustment toolset</li>
+<li>Export options for DVD and BluRay</li>
+<li>Titling tool</li>
+<li>Interoperability improvements with AAF and XML</li>
+</ul>
+<p><strong>Q3 2011</strong></p>
+<ul>
+<li>New effects such as image stabilisation</li>
+<li>Audio plugins</li>
+<li>File delivery</li>
+<li>Remote editing</li>
+</ul>
+<p><strong>2011-Q4</strong></p>
+<ul>
+<li>Full 64 bit version</li>
+<li>Linux &amp; OSX support</li>
+</ul>
+<p>Support for Blackmagic Design, AJA and DVS hardware devices is scheduled for early 2011, and they have also said that they will start <a title="Store" href="http://www.lightworksbeta.com/index.php?option=com_content&amp;view=article&amp;id=115&amp;Itemid=263" target="_blank">selling</a> addons which will allow you to edit the following formats in January:</p>
+<ul>
+<li>Avid DNxHD</li>
+<li>Apple ProRes</li>
+<li>AVC-Intra</li>
+<li>RED R3D</li>
+<li>DPX 10 bit and 16 bit</li>
+<li>Sony IMX</li>
+<li>Sony XDCAM HD</li>
+<li>Sony XDCAM EX</li>
+<li>Sony XDCAM HD422</li>
+</ul>
+<p>Regardless of all this, currently the system is definitely workable &#8211; assuming that your workflow isn&#8217;t based around any of the above formats (although you can always convert the files to something else prior to import anyway!). We have been testing it on a 2.66 GHz Quad-Core Intel Xeon, with 3GB of 1066 MHz DD3 RAM running Mac OS 10.6.2 and <a title="Parallels" href="http://www.parallels.com" target="_blank">Parallels Desktop</a> 6.o.11828 with Windows XP Service Pack 2 (allocated 1GB of RAM).</p>
+<p>First up, make sure you read through the <a title="Compadibility" href="http://www.lightworksbeta.com/index.php?option=com_content&amp;view=article&amp;id=111&amp;Itemid=245" target="_blank">system requirements</a> (which are pretty vague &#8211; so you should be fine!), are running the latest version of <a title="Quicktime" href="http://www.apple.com/quicktime/download/" target="_blank">Quicktime</a>, have all the latest updates for your operating system and have installed <a href="http://www.matrox.com/video/en/support/windows/vfw_software_codecs/downloads/softwares/version1.0/" target="_blank">Matrox VFW codecs</a>. When we first ran the program, it crashed after the loading screen. However, we soon realised (and this has since been very well documented on the forums), that you can get around the crash by running the &#8220;ntcardvt.exe&#8221; file first, exiting, then clicking the desktop icon again. The developers are aware of this installation issue, and will fix it in the next release.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-687" title="ntcardvt" src="../../images/2010-12-ntcardvt.jpg" alt="" width="441" height="248"></p>
+<p>When you first load the program, you are presented with the option to load Final Cut Pro or Avid keyboard shortcuts &#8211; really cool! Naturally, we elected for an Avid keyboard layout! You are then presented with a &#8220;Projects Browser&#8221; screen. This is were you can easily open old projects, or create new ones.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-689" title="projects" src="../../images/2010-12-projects.jpg" alt="" width="441" height="248"></p>
+<p>Once you create a new project, you are then presented with the really sexy and very clean interface. However, rather than bore you with all this &#8220;introduction&#8221; stuff that you can easily learn from the manual, or just from playing, here is what we have found so far!</p>
+<p>The program seems to work fine on a Mac with Parallels. We haven&#8217;t tried it with Bootcamp yet &#8211; but I imagine the performance results will be even better!</p>
+<p>We have tried dragging in a number of different formats and have gotten mixed results.</p>
+<ul>
+<li>DV-PAL (Quicktime Wrapper) = Works</li>
+<li>DVCPRO50 (Quicktime Wrapper) = Works</li>
+<li>HDV 1080i (Quicktime Wrapper) = Works</li>
+<li>RED R3D = Content Unknown (which is to be expected!)</li>
+<li>JPEG Image Sequence = Works</li>
+<li>DPX Image Sequence = Format Unlicensed (which is to be expected!)</li>
+<li>Phantom Cine File = Doesn&#8217;t Even Detect (which is to be expected!)</li>
+<li>Sony HDR-SR1 File = Doesn&#8217;t Even Detect (which is to be expected!)</li>
+</ul>
+<p>When we drag in a Canon 5D clip for example, we are given the option to &#8220;Create a Link&#8221; (i.e. link to the original file), &#8220;Copy Local&#8221; or &#8220;Transcode&#8221;.</p>
+<p>The transcoding options are as follows:</p>
+<ul>
+<li>DVCPRO100 (Quicktime Wrapper)</li>
+<li>AVCIntra100 (Quicktime Wrapper)</li>
+<li>DVCPRO 100 (MXF Wrapper)</li>
+<li>DVCPRO100 (AVI Wrapper)</li>
+<li>Lightworks RLE (AVI Wrapper)</li>
+<li>Uncompressed (AVI Wrapper)</li>
+<li>RGB32 (AVI Wrapper)</li>
+<li>MPEG I-Frame HD (AVI Wrapper &#8211; with custom Bit Rate Options)</li>
+</ul>
+<p>So far, all of these options seem to work fine. I haven&#8217;t got any scientific figures on transcoding times yet, but it seems to be pretty quick. I was getting some &#8220;low on memory&#8221; errors some of the time &#8211; but not once did the system crash or halt. A 1 minute 20 seconds 1920&#215;1080 30fps 5D clip took six and a half minutes to convert to a 1080i Lightworks RLE AVI if that&#8217;s of any interest.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-690" title="Low Memory" src="../../images/2010-12-lowmemory.jpg" alt="" width="441" height="248"></p>
+<p>I have also done a lot of &#8220;playing&#8221; with the timeline &#8211; but I really need to put a complete project into the system before I make any actual judgements. There are lots of cool things (the colour correction tool seems to work really well &#8211; the adjustments work really fast, especially considering I&#8217;m running the program on an emulated operating system!) &#8211; but there&#8217;s some basic&#8217;s I haven&#8217;t worked out yet (like how to resize an image).</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-693" title="Shark" src="../../images/2010-12-shark.jpg" alt="" width="441" height="248"></p>
+<p>One cool trick I did notice is that if you move the shark, he comes back! Drag him by holding down the right mouse button, and as soon as you let go, he comes back! Useless &#8211; but a good time waster!</p>
+<p>I have done some tests exporting media out of the application, and it seems to work fine. Here is an example of the Lightworks Export:</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-694" title="Export" src="../../images/2010-12-export.jpg" alt="" width="441" height="248"></p>
+<p>You can export:</p>
+<ul>
+<li>AAF</li>
+<li>EDL</li>
+<li>OMF</li>
+<li>3G</li>
+<li>Apple TV</li>
+<li>AVI</li>
+<li>DV Stream</li>
+<li>Geevs</li>
+<li>iPhone</li>
+<li>iPhone (Cellular)</li>
+<li>iPod</li>
+<li>MPEG-4</li>
+<li>MXF</li>
+<li>Quicktime Movie</li>
+<li>Image Sequence</li>
+<li>AIFF</li>
+<li>AU</li>
+<li>WAVE</li>
+</ul>
+<p>One really cool thing I noticed though, is that you have stereo 3D options on all exports &#8211; so you can easily export a iPhone Anaglyph with a click of a button!</p>
+<p>Really though&#8230; the only way to really test out the system is to cut an actual project on it! I don&#8217;t think we&#8217;ll risk cutting the 48 hour film festival entry on it, nor the Hannah &amp; the Hasbian feature &#8211; however, we might cut our next short film on it just to see how it goes.</p>
+<p>I&#8217;m also going to print off the 308 page manual and have a proper read tonight!</p>
+<p>So basically, I just wanted to give you all a heads up that this new piece of software is out there, and despite all the winging and crying for everyone, it does actually open, and you can start playing with it straight away. Keep in mind though that it&#8217;s VERY different to the interface of Avid and Final Cut Pro. The timeline and the way things work is COMPLETELY different. Not worse or better &#8211; just a different way of thinking. Avid and Final Cut Pro are very similar in the way they work &#8211; this software brings similar concepts to the table, but with new names (i.e. you store bins in racks).</p>
+<p>It&#8217;s obviously not perfect yet &#8211; and there is still lots of exciting things to come &#8211; but it&#8217;s worth checking out, even if you are a Mac user! It&#8217;s free after all! Just make sure you download the manual and have a flick through before you begin.</p>
+<p>Hopefully the forums will settle down and become more sane once the hype dies down, and the serious editors and post gurus start having a play over the Christmas break!</p>
+<p>Happy Cutting!</p>
+<p>Chris!</p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>

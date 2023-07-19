@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="/about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="/originals/">
+          <li>Originals</li>
+        </a>
+        <a href="/technology/">
+          <li>Technology</li>
+        </a>
+        <a href="/collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="/contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-3800 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-3800">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-in-review-2015-part-2/" rel="bookmark">Year in Review 2015 - Part 2</a></h2>
+<aside class="meta">
+Dec 30, 2015				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>If you haven&#8217;t already, check out Part 1 here. JULY So I’m gonna cheat a little bit here because I totally left this out of my May releases and it is close to being my favourite film of 2015. If you haven’t seen it then you should as it is one of the greatest dark&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-3784 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-3784">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-in-review-2015-part-1/" rel="bookmark">Year in Review 2015 - Part 1</a></h2>
+<aside class="meta">
+Dec 26, 2015				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>So this is pretty weird. I’m writing to you from the end of the year. THE GOD DAMN FUTURE. Well that’s what it feels like anyway. I swear I just wrote one of these end of year things only a few months back, but then I guess that’s the perfect way to describe this year&#8230;.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-3640 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-3640">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-review-2014-part-2/" rel="bookmark">Year in Review 2014 &#8211; Part 2</a></h2>
+<aside class="meta">
+Jan 1, 2015				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Sure the first half of the year seemed relatively quiet in comparison to previous years. But the second 6 months (ok 7 cause my mathematics when doing the last blog was way off) was when stuff got a little cray cray. Starting with a wee music video&#8230; JUNE June/July are traditionally known as blockbuster season&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-3626 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-3626">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-review-2014-part-1/" rel="bookmark">Year in Review 2014 &#8211; Part 1</a></h2>
+<aside class="meta">
+Dec 27, 2014				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Just the other day after purchasing a pork roll (no chirri) from my favourite Vietnamese pork roll emporium on Smith Street, I took a moment to think about the ridiculous year that 2014 had been. In a personal sense, a company sense and just a general world sense. With that in mind I hope you&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-3407 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-3407">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../introducing-sumah/" rel="bookmark">Introducing Sumah</a></h2>
+<aside class="meta">
+Aug 26, 2014				    <i class="icon-dot"></i> Posted By <a href="./../../author/sumah-hurley/" title="Posts by Sumah Hurley" rel="author">Sumah Hurley</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>After some deliberation and a few lacklustre attempts, I asked myself what exactly I was trying to do with this little corner of the Internet. Perhaps it’s best to start simple. Hello. My name is Sumah Hurley. I’ve had the good fortune to work for and with the brilliant minds behind LateNite Films and through&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2960 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2960">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-review-2013-part-3/" rel="bookmark">Year In Review 2013 &#8211; Part 3</a></h2>
+<aside class="meta">
+Dec 31, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>September Woody Allen’s possible “loose retelling” of A Streetcar Named Desire starring a perfect cast consisting of award worthy performances by Sally Hawkins and Cate Blanchett and featuring a strong support cast with the likes of Bobby Cannavale, Alec Baldwin and Louis CK? Yes please. Arguably one of Allen’s best of recent years &#8211; check&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2919 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2919">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-review-2013-part-2/" rel="bookmark">Year In Review 2013 &#8211; Part 2</a></h2>
+<aside class="meta">
+Dec 29, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>May There is no better place to learn about building a sustainable film and television industry than Denmark. Those clever Danish folk have continued to build and shape their industry over many years to a point where 30% of the box office share is coming from homegrown Danish cinema and their number #1 film for&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2910 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2910">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../year-review-2013-part-1/" rel="bookmark">Year in Review 2013 &#8211; Part 1</a></h2>
+<aside class="meta">
+Dec 26, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>For the past couple of years, Chris and I have had the same conversation when the end of the year rolls around. It starts with me pacing back and forth, stressing that we haven’t done anything and that we’ve wasted our year, and it ends with Chris shaking his head, somehow sending me an email&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2149 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2149">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2012-summary-part-three/" rel="bookmark">2012 Summary &#8211; Part Three</a></h2>
+<aside class="meta">
+Jan 2, 2013				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>SEPTEMBER And so we got into the final stretch of the year with the much-anticipated follow up to his debut film Brick from writer/director Rian Johnson with Looper. The film starred Bruce Willis and a heavily made up (to look like a younger Bruce Willis) Joseph Gordon-Levitt. Very impressive Sci Fi effort you should definitely&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2139 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2139">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2012-summary-part-two/" rel="bookmark">2012 Summary &#8211; Part Two</a></h2>
+<aside class="meta">
+Dec 26, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>MAY The month of May started off fairly disappointing in the theatres, with films such as The Dictator, Men In Black 3, Get The Gringo and my most hated film of 2012, Dark Shadows hitting the big screen. However, hope in the film industry was quickly recovered, with two fantastic yet very different films emerging, that&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-2114 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-2114">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2012-summary-part-one/" rel="bookmark">2012 Summary &#8211; Part One</a></h2>
+<aside class="meta">
+Dec 19, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>A little something that we started last year here at LateNite was to take a moment to reflect on the year that was. The projects, the people, the joy, the tears, the wins, the losses and of course the movies that made 2012. Instead of two enormous blogs though, this year we will be breaking&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1844 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1844">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../adventures-in-asia/" rel="bookmark">Adventures in Asia!</a></h2>
+<aside class="meta">
+Aug 10, 2012				    <i class="icon-dot"></i> Posted By <a href="./../../author/jacqui-hocking/" title="Posts by Jacqui Hocking" rel="author">Jacqui Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>In 2010, LateNite documentary film-maker Jacqui Hocking started working with social entrepreneur Ashwin Subramaniam, the young founder of the GoneAdventurin’ Social Enterprise. The partnership began when she filmed a documentary about his first project cycling in the Tour De Timor in Timor-Leste. The aim of GoneAdventurin is to “Inspire lives &amp; empower communities through the Spirit&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1482 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1482">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2011-summary-part-two/" rel="bookmark">2011 Summary (Part Two)</a></h2>
+<aside class="meta">
+Dec 27, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>So just before Christmas you heard about the first 6 months which were very exciting at LateNite HQ, so who would have thought the next 6 were going to be even busier&#8230; July It was a slow movie month in Australia. I’m assuming due to the fact that the juggernaut that is the Harry Potter&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1461 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1461">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2011-summary-part-one/" rel="bookmark">2011 Summary (Part One)</a></h2>
+<aside class="meta">
+Dec 24, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/nick-colla/" title="Posts by Nicholas Colla" rel="author">Nicholas Colla</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>And what a bloody busy year it has been at LateNite HQ! As the year comes to a close, we here at LateNite feel like it&#8217;s important to reflect on an incredibly tough but ultimately rewarding 2011. To complement our stories of sex, drugs and rock ‘n’ roll (hardly) I have decided to throw in&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1321 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1321">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-script-machine/" rel="bookmark">The Script Machine</a></h2>
+<aside class="meta">
+Nov 13, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>What an incredible weekend it&#8217;s been, and it&#8217;s only going to get more exciting as the days and months go on! For those that don&#8217;t know us &#8211; for the past three years we have entered into the 48 Hour Film Project competition in Melbourne. We absolutely love it &#8211; because it forces you to&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-345 type-post status-publish format-standard hentry category-news" id="post-345">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../so-close-no-matter-how-far/" rel="bookmark">So Close, No Matter How Far</a></h2>
+<aside class="meta">
+Apr 12, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/guest-blogger/" title="Posts by Guest Blogger" rel="author">Guest Blogger</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>SO. How are you? Good golly, miss molly, it has been some time since I posted any kind of update. Thanks for sticking by, and having a glance every now and then to see what&#8217;s going on. And although all may have seemed to come to somewhat of a stand still at SHOTGUN! HQ, we&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-1228 type-post status-publish format-standard has-post-thumbnail hentry category-news" id="post-1228">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../2010-summary/" rel="bookmark">2010 Summary</a></h2>
+<aside class="meta">
+Jan 1, 2011				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>What a crazy year 2010 was for everyone at LateNite Films! As we already start to get completely crazy busy in the new year, we thought we’d give you a quick summary of what’s been happening over the last several months: Working with the talented team at 16th Street Acting Studios, we put together two teasers&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-610 type-post status-publish format-standard hentry category-news" id="post-610">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../good-morning-vietnam/" rel="bookmark">Good Morning Vietnam!</a></h2>
+<aside class="meta">
+Mar 5, 2010				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I can&#8217;t believe that this is my first post for 2010! It seems as if I&#8217;ve been trying to put together this blog entry in my head for months now&#8230; and the fact of the matter is, I have! Lots of things have been happening, and I&#8217;ve got lots to tell&#8230; So from the offset&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-608 type-post status-publish format-standard hentry category-news" id="post-608">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../update-update/" rel="bookmark">Update! Update!</a></h2>
+<aside class="meta">
+Nov 19, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>It seems like ages since I last gave you all a progress report on the blog &#8211; and guess what, it has been! The last time I gave you a proper update was in June, and it&#8217;s now already November. How times flies! Well, as per usual, we&#8217;ve been busy. Very busy! On top of&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-605 type-post status-publish format-standard hentry category-news" id="post-605">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../happy-sundaes-hits-imdb-and-sakooz-hits-youtube/" rel="bookmark">Happy Sundaes hits IMDB and SAKOOZ hits YouTube!</a></h2>
+<aside class="meta">
+Jun 29, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>At long last, finally some of our hard work is hitting a little thing they call the world wide web! Due to various reasons, we have decided to release Happy Sundaes to the world, free of charge and have also put the SAKOOZ teaser/trailer up on YouTube. You can watch Happy Sundaes here: http://tr.im/happysundaes You&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-496 type-post status-publish format-standard hentry category-news" id="post-496">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../no-time-free-cake-and-lots-of-hits/" rel="bookmark">No time, free cake and lots of hits!</a></h2>
+<aside class="meta">
+Jun 14, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Hello everyone! Well, it really feels like it&#8217;s been a long time since I last posted any updates, and guess what&#8230; it has been! As always we&#8217;ve been incredibly busy behind the scenes with so many different things. As some of you may have noticed we launched a new blog run by Nick Colla, which&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-602 type-post status-publish format-standard hentry category-news" id="post-602">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../chris-hocking-featured-on-kaltura-developers-site/" rel="bookmark">Chris featured on Kaltura Developers Site!</a></h2>
+<aside class="meta">
+May 7, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Kaltura has just released it&#8217;s brand new Developers Community website, and I&#8217;ve actually been fortunate enough to feature in the developers spotlight! Below is a quick little video of all the people featured in the developers spotlight (powered by the Kaltura player) &#8211; you&#8217;ll have to skip forward a couple of people to see me&#8230;&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-600 type-post status-publish format-standard hentry category-news" id="post-600">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../dont-worry-were-not-dead-just-busy/" rel="bookmark">Don&#8217;t worry&#8230; We&#8217;re not dead! Just busy!</a></h2>
+<aside class="meta">
+May 4, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Apologies for keeping you all out of the loop last month. It was certainly never my intention &#8211; we&#8217;ve just been flat out as always! However, those that have been following us on twitter at least know we&#8217;re alive, as we&#8217;ve been regularly posting cool things we come across. I&#8217;m going to make this brief&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-598 type-post status-publish format-standard hentry category-news" id="post-598">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../the-problem-with-full-time-work/" rel="bookmark">The problem with full time work&#8230;</a></h2>
+<aside class="meta">
+Mar 30, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I&#8217;m extremely lucky to have landed a fantastic job a few weeks ago as an assistant editor full time this year at a amazing boutique edit house in Melbourne. At a time where job security is certainly not ensured, unemployment is high and the economy is in the toilet, it&#8217;s great to have a job,&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-200 type-post status-publish format-standard hentry category-news" id="post-200">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../so-many-things-to-do/" rel="bookmark">So many things to do!</a></h2>
+<aside class="meta">
+Feb 24, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>The last couple of weeks have been hectic, but unfortunately it&#8217;s been mainly projects outside of latenite. I&#8217;ve personally been interstate working on various live shows, and have also recently start working full time for a post house in Melbourne on top of lots of other ventures, so the Sakooz site has been put on&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-189 type-post status-publish format-standard hentry category-news" id="post-189">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../oh-look-its-2009/" rel="bookmark">Oh, look&#8230; It&#8217;s 2009!</a></h2>
+<aside class="meta">
+Jan 28, 2009				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>One minute it&#8217;s Christmas, then zap! Next minute, January is nearly over. How times flies! Hello everyone, and welcome to our very first entry for the new year &#8211; even if it is slightly late. I hope you all have a fantastic holiday break, and a terrific New Years Eve! And, if you&#8217;re in Australia&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-89 type-post status-publish format-standard hentry category-news" id="post-89">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../stay-tuned/" rel="bookmark">Stay Tuned!</a></h2>
+<aside class="meta">
+Aug 21, 2008				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>I know, I know&#8230; we&#8217;ve been really slack in terms of updating this blog! But I&#8217;ll tell you what, boy, oh boy, have we got some news to tell you! So many dramatic things have been happening since my last entry. So stay tuned! Once things settle down a little bit here, I will fill&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-578 type-post status-publish format-standard hentry category-news" id="post-578">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../lets-start-at-the-very-beginning/" rel="bookmark">Let&#8217;s start at the very beginning&#8230;</a></h2>
+<aside class="meta">
+Apr 26, 2008				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>Aren&#8217;t there already enough blogs on the web? I&#8217;m mean seriously, if you type the word &#8220;blog&#8221; into Google, you get well over two BILLION results. Why on earth would we want to start another one? There&#8217;s already thousands of film making blogs scattered around the place&#8230; So what&#8217;s the deal? Well firstly, I must&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+<article class="post post-227 type-post status-publish format-standard hentry category-news" id="post-227">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../../life-after-miff/" rel="bookmark">Life after MIFF&#8230;</a></h2>
+<aside class="meta">
+Aug 20, 2006				    <i class="icon-dot"></i> Posted By <a href="./../../author/chris-hocking/" title="Posts by Chris Hocking" rel="author">Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../../category/news/">News</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p>To be perfectly honest, I quite enjoyed complaining to people about having to attend MIFF. No sleep, no food, too many films, I would whinge. Although, I didn&#8217;t really care! It&#8217;s all part of the fun and adventure! I&#8217;m used to working in the entertainment industry, so my stomach is already minute, and I have&#8230;</p>
+</div>
+</div>
+</div>
+</article>
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92 current-cat">
+<a aria-current="page" href="./../../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>

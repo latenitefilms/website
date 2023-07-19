@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LateNite Legacy Blog</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="projects">
+  <input type="radio" id="lighton" name="lights" checked="checked" autocomplete="off" class="hidden" />
+  <input type="radio" id="lightoff" name="lights" autocomplete="off" class="hidden" />
+  <header>
+    <ul id="lightswitch" class="checkbox-circle desktoponly">
+      <li>
+        <label for="lighton" class="lighton">Lights On</label>
+      </li>
+      <li>/</li>
+      <li>
+        <label for="lightoff" class="lightoff">Lights Off</label>
+      </li>
+    </ul>
+    <div id="logo">
+      <a href="../../">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1360.63 287.06">
+          <path fill="#fff"
+            d="M993.56 80.27h-32.65v195.74h32.65V80.27zM8.92 276.01h144.36v-30.43H42.32V9.56H8.92v266.45zm294.47-51.95h-25.24c-2.23 17.44-13.36 26.72-36.74 26.72-23.38 0-31.91-7.79-31.91-25.98v-10.39c0-14.47 8.54-21.89 29.69-21.89h64.2v31.54zm0 51.95h32.65V149.46c0-46.02-30.06-71.25-75.33-71.25-42.3 0-74.96 25.98-81.64 69.39h33.4c1.48-33.03 12.24-40.45 47.13-40.45 33.77 0 43.79 7.79 43.79 40.45v17.44h-55.67c-44.16 0-73.48 23.38-73.48 55.29 0 33.4 25.24 59.38 61.6 59.38 22.27 0 40.82-10.39 52.7-28.2h14.84v24.5zm124.18-168.05h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96zm111.77 53.38v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83H539.34zm0 27.46h143.25v-13.73c0-54.55-38.22-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.34 96.86 92.4 96.86 36.37 0 73.48-26.72 86.47-63.46H644c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.55zm310.2 87.21h64.57V9.56h-30.8v236.76h-13.36L781.63 9.56h-67.54v266.45h30.43V39.25h16.7l88.32 236.76zM1002.1 32.57c0-14.84-10.76-25.23-24.86-25.23C962.76 7.33 952 17.72 952 32.57c0 14.47 10.76 25.24 25.24 25.24 14.1 0 24.86-10.77 24.86-25.24m313.24 128.77h-106.87v-4.08c0-34.88 17.81-50.1 56.41-50.1 36.74 0 50.47 14.47 50.47 49.35v4.83zm36.37 27.46v-13.73c0-54.55-38.23-96.85-87.21-96.85-52.7 0-92.4 46.02-92.4 104.65 0 56.78 39.33 96.86 92.4 96.86 36.37 0 73.48-26.72 86.46-63.46h-37.85c-2.97 24.12-17.44 34.52-48.62 34.52-39.34 0-56.04-15.59-56.04-53.44v-8.53h143.26zm-254.31-80.84h56.14v-27.7h-56.14V9.56h-32.94v70.7h-42.66v27.7h42.66V246.3h25.21v29.72h63.5V246.3h-55.78V107.96z" />
+        </svg></a>
+    </div>
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button" class="projects"><span></span></label>
+    <nav>
+      <ul>
+        <a href="../../about-us/">
+          <li>About Us</li>
+        </a>
+        <a href="../../originals/">
+          <li>Originals</li>
+        </a>
+        <a href="../../technology/">
+          <li>Technology</li>
+        </a>
+        <a href="../../collaborations/">
+          <li>Collaborations</li>
+        </a>
+        <a href="../../contact/">
+          <li>Contact</li>
+        </a>
+        <li class="mobileonly"><label for="lighton">Lights</label></li>
+      </ul>
+    </nav>
+    <label for="overlay-input" id="bgclose"></label>
+  </header>
+  <section>
+    <article  id="about-us">
+<div role="main">
+
+</div>
+
+</div>
+</div>
+<div class="row">
+<section class="blog nine columns">
+<article class="post post-1967 type-post status-publish format-standard has-post-thumbnail hentry category-technical-discussions" id="post-1967">
+<div class="row">
+<div class="twelve columns">
+<header class="post-title cf">
+<h2><a href="./../waiting-on-sound/" rel="bookmark">Waiting On Sound&#8230;</a></h2>
+<aside class="meta">
+Sep 16, 2012				    <i class="icon-dot"></i> Posted By Chris Hocking</a>				    			  	    			  	    <i class="icon-dot"></i> <a href="./../category/technical-discussions/">Technical Discussions</a>			  	    			  	    
+</aside>
+</header>
+<div class="post-content">
+<p><img loading="lazy" class="alignnone size-medium wp-image-1968" title="Sound 01" src="../../images/09-35189_450166244401_4257829_n-590x393.jpeg" alt="" width="590" height="393"></p>
+<p>After a solid <a href="http://prolost.com/og/" target="_blank">1,274</a> blog posts, one of my heros, <a href="http://prolost.com/about/" target="_blank">Stu Maschwitz</a> has finally taken the time to write a detailed article about the pain of getting good audio, titled <a href="http://prolost.com/audio" target="_blank">Production Audio is Ripe for Revolution</a>. Apart from a <a href="http://prolost.com/blog/2007/2/17/designing-a-movie-for-sound/" target="_blank">really tiny blog post</a> that links to an <a href="http://www.filmsound.org/articles/designing_for_sound.htm" target="_blank">external article</a> this is the first time that Stu has really even mentioned sound in any great detail &#8211; which is telling in itself. What&#8217;s really interesting though is the amount of <a href="http://prolost.com/blog/2012/9/10/production-audio-is-ripe-for-revolution/#comments" target="_blank">feedback</a> his post has gotten&#8230;</p>
+<p><a href="http://prolost.com/about/" target="_blank"><img loading="lazy" class="alignnone size-medium wp-image-1969" title="Stu Maschwitz" src="../../images/09-stuTERMX_02_600-590x344.jpeg" alt="" width="590" height="344"></a></p>
+<p>For those that don&#8217;t know, Stu Maschwitz is a director, visual effects genius, world renowned technologist. After graduating from <a href="http://calarts.edu/" target="_blank">CalArts School of Animation</a>, Stu spent four years at George Lucas’ <a href="http://www.ilm.com/" target="_blank">Industrial Light &amp; Magic</a> (leading the <a href="http://prolost.com/blog/2011/10/12/the-misfits-the-rebels-the-troublemakers/" target="_blank">Rebel Mac Unit</a>) before co-founding the legendary visual effects firm, <a href="http://en.wikipedia.org/wiki/The_Orphanage_(company)" target="_blank">The Orphanage</a> in 1999 (which after many years of creating <a href="http://www.studiodaily.com/2007/03/the-orphanages-transpacific-creature-effects-for-the-host/" target="_blank">INCREDIBLE</a> visual effects, sadly <a href="http://www.digitalartsonline.co.uk/news/?NewsID=12133" target="_blank">closed down</a> in 2009).</p>
+<p>Despite his visual effects background and love of filmmaking technologies, Stu always places an emphasis on performance, emotion, and most importantly story. He was hailed by <a href="http://www.shootonline.com/" target="_blank">Shoot Magazine</a> as one of the &#8220;Ten Commercial Directors To Watch&#8221;, and has gained a solid reputation as a director who can pull off amazing and visually complex imagery, but always with his signature wry sense of humour &#8211; which definitely also comes across in his blogs.</p>
+<p>But the reason I have so much respect and love for a man I&#8217;ve never met, is because he&#8217;s the champion of &#8220;accessible filmmaking&#8221; &#8211; and wrote one of my favourite and most useful books of all time, <a href="http://www.amazon.com/exec/obidos/ASIN/0321413644/prolost-20" target="_blank">The DV Rebel’s Guide: An All-Digital Approach to Making Killer Action Movies on the Cheap</a> &#8211; which is basically the bible for no-budget independent filmmakers. If you haven&#8217;t read this book and you&#8217;re into independent low-budget epic filmmaking &#8211; go buy it now. Included with the book is a DVD which contains a 20min short film Stu did called <a href="http://prolost.com/blog/2006/11/9/the-last-birthday-card/" target="_blank">The Last Birthday Card</a> which he did back in 1999. It&#8217;s not a master piece, but it&#8217;s very entertaining, and incredibly impressive for a no-budget short, especially for the era. It was also the first film in the world to make use of Stu&#8217;s amazing technology, Magic Bullet &#8211; which allows you to grade your footage to give it a real cinematic look.</p>
+<p>Magic Bullet has grown up a lot since 1999, and today Stu is currently serving as a Creative Director for <a href="http://www.redgiantsoftware.com/products/all/magic-bullet-suite/" target="_blank">Red Gitant Software&#8217;s Magic Bullet</a> product line &#8211; and continues to innovate and introduce amazing new products to the market. I use <a href="http://www.redgiantsoftware.com/products/all/magic-bullet-colorista-II/" target="_blank">Colorista</a> every time I need to grade something quickly &#8211; it&#8217;s incredible. The technology that Stu and his team have created helps me every day to achieve better results faster, and his <a href="http://prolost.com/" target="_blank">words of wisdom</a> inspire me to keep bashing away at the art I love.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1970" title="34878_450144414401_2275131_n" src="../../images/09-34878_450144414401_2275131_n-590x393.jpeg" alt="" width="590" height="393"></p>
+<p>Over the years, I&#8217;ve personally unfortunately fallen into the position where I&#8217;ve become the default go-to audio guy for all of our films. I&#8217;m not an audio guru by any stretch of the imagination, and to be perfectly honest, I don&#8217;t even really enjoy swinging a boom or recording audio on set. The trouble is, finding a good audio person is really, really hard &#8211; especially when you can&#8217;t pay someone.</p>
+<p>Back when I was at film school, there was no shortage of people wanting to be writers, directors and cinematographers, but no one wanted to be an audio recordist. In fact, despite the fact that I was doing my own really, really complex and time consuming graduate film, <a href="./../category/sakooz/" target="_blank">SAKOOZ</a> &#8211; which was probably the hardest thing I&#8217;ve ever done in my life to date &#8211; simply because there was no one else around, I ended up doing the sound recording on pretty much all of my friends films (sadly I&#8217;ve never learnt to say &#8220;no&#8221; &#8211; a skill I really need to get better at). After watching a lot of student films, I&#8217;ve always known that sound is INCREDIBLY important, and if you have bad sound, it can basically destroy an otherwise good film &#8211; so when I first started film school, I spent a lot of time reading blog posts and <a href="http://www.dvinfo.net/forum/all-things-audio/" target="_blank">forums</a>, and invested in some really basic audio gear that I still use to this day.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1971" title="318653_10150419850769402_669568175_n" src="../../images/09-318653_10150419850769402_669568175_n-590x393.jpeg" alt="" width="590" height="393"></p>
+<p><strong>Sound is easy.</strong></p>
+<p>The basic&#8217;s of getting good audio are really simple &#8211; you just need to minimise as much as the background noise as possible (i.e. turning off fridges, closing windows, putting a mattress in front of a door to limitate traffic noise, etc.) and get the microphone as close to the actors mouth as possible (anything further away than 2 feet will cause you problems). Assuming you have a half decent microphone, have the levels on your recorder all set correctly, and it sounds good in your headphones, then you&#8217;ll get good sound. It&#8217;s that easy.</p>
+<p><img loading="lazy" title="149_14465470242_6324_n" src="../../images/09-149_14465470242_6324_n-590x392.jpeg" alt="" width="590" height="392"></p>
+<p><strong>Sound is hard.</strong></p>
+<p>The problem however is, that it&#8217;s never as simple as just putting a microphone as close to the talent as possible &#8211; especially when you&#8217;re shooting something without a budget. When we were shooting <a href="./../portfolio/happy-sundaes/" target="_blank">Happy Sundaes</a>, we filmed in a working ice-cream shop, which was a fantastic location &#8211; however because we had lots of lights (ensuring that the images looked great), we couldn&#8217;t turn off any of the fridges (as it would melt all the ice cream) &#8211; and there were a LOT of fridges in that location! There was no real workaround &#8211; so we just needed to make sure we had very directional lapel microphones on everyone, made the actors talk a bit louder than they normally would, and got the boom microphone as close to the talent as possible. In the <a href="./../portfolio/happy-sundaes/" target="_blank">finished product</a>, you can definitely hear the fridge noise &#8211; in fact in some cases we even added more fridge noises to make it sound deliberate &#8211; but overall, it doesn&#8217;t distract from the story. No one has ever said to me &#8211; I had that film because the sound was crap. It&#8217;s only after you ask them if could hear the fridges that they twig. That&#8217;s the trick &#8211; the sound doesn&#8217;t need to be Hollywood-grade perfect &#8211; it just mustn&#8217;t distract from the STORY.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1973" title="72063_10150110723179402_1652736_n" src="../../images/09-72063_10150110723179402_1652736_n-590x393.jpeg" alt="" width="590" height="393"></p>
+<p><strong>Location, Location, Location.</strong></p>
+<p>One of the biggest problems indie-filmmakers fall into is they always seem to pick a location that has a huge amount of sound issues. If you&#8217;re filming inside generic house, there&#8217;s no reason that you have to film in the middle of the city, with planes flying constantly over head, a freeway right around the corner, and neighbours banging and crashing. Film in the country &#8211; where everything is peaceful!</p>
+<p>When we were filming <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah &amp; The Hasbian</a>, we shot in one of the actors houses in Prahran. Although the house was quite nice, and it looked pretty good on camera (all things considered &#8211; it was a tad too white) &#8211; really, we could have shot it anywhere, and would have saved a lot of time and pain if we shot in the country, far away from overhead planes and nearby traffic noise. The story didn&#8217;t demand this specific house &#8211; so really, we could have and should have shot somewhere else.</p>
+<p>Obviously this is not the solution for every film &#8211; you can&#8217;t just always pack up and go film somewhere quiet &#8211; but in a huge amount of cases, you can solve the majority of your problems by just selecting a more appropriate location. When you&#8217;re location scouting &#8211; don&#8217;t just think about pretty pictures, think about how the film is actually going to sound on the big screen. Make sure you visit the location at the same time as you&#8217;ll actually be filming too. There&#8217;s nothing worst than realising that the garbage man comes by every day at exactly the same time as you want to shoot.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1976" title="155_15278970242_2469_n" src="../../images/09-155_15278970242_2469_n-590x392.jpeg" alt="" width="590" height="392"></p>
+<p><strong>ADR is hard.</strong></p>
+<p>Sure, you might be thinking &#8211; screw changing locations, let&#8217;s just <a href="http://en.wikipedia.org/wiki/Dubbing_(filmmaking)" target="_blank">ADR</a> the whole film. Yes &#8211; you could do this, but it&#8217;s a huge amount of work. If you watch the credits of any big Hollywood film, you&#8217;ll see just how many people it takes too pull off really good ADR &#8211; it&#8217;s not just a person holding a microphone, and telling an actor to repeat a line &#8211; there is a real art to ADR. I&#8217;ve watched a lot of short films that have relied on ADR to get the film over the line &#8211; and in most cases, you can tell instantly that it&#8217;s ADR and it takes you out of the film. Yes, if you work really hard, you can get ADR sounding pretty good &#8211; but really, in most cases, what could take you a few minutes to fix on location, could take you hours and hours to fix in post. I always prefer to just get it right on set if you can. The real trouble is that it&#8217;s hard to mix location sound with ADR unless you have the right tools and knowledge. In some cases if your location audio really is beyond useable, you might be better off re-doing the whole film using ADR, because at least then things will be consistent.</p>
+<p><strong>Lapel&#8217;s are hard.</strong></p>
+<p>Reading through the <a href="http://prolost.com/blog/2012/9/10/production-audio-is-ripe-for-revolution/#comments" target="_blank">comments</a> on Stu&#8217;s blog post, a few people have said it&#8217;s easy to teach someone how to mount a lavalier microphone. Sure &#8211; it might be easy if you&#8217;re doing a corporate video, and you need to mount the microphone on someone wearing a suit, but if you&#8217;re doing a film where you need to actually hide the microphone, it&#8217;s really, really tough. Most of this comes down to costume/wardrobe choices. When we did <a href="./../portfolio/hannah-and-the-hasbian/" target="_blank">Hannah &amp; The Hasbian</a>, it was INCREDIBLY hard to hide lapels and belt-packs because the girls were moving around a lot in scenes, and wearing outfits that simply did not have good places to hide microphones on and were generally pretty loud (i.e. clothing with lots of layers that rubs against one another). Luckily for me, the three amazing actors we had were true professionals, and really knew the importance of getting good sound, so never once complained when we constantly had to re-position microphones, use surgical tape to hide cables and belt packs, and have to adjust settings of belt packs, which might have been attached to their belt, or taped to their upper thigh. It was awkward at times &#8211; but not once did they complain &#8211; trust professionals, because they knew getting good sound would affect the entire production value of the film.</p>
+<p>We basically had to use every trick in the book &#8211; sometimes we used plastic clips to attach the microphones, sometimes we used metal ties to attack the microphones to the girls bra&#8217;s, sometimes we taped the microphones to the girl&#8217;s skin &#8211; it always depended on the shot, the costume and the action. Yes &#8211; we had a boom pole in action for every shot as well (some scenes we have three) &#8211; but really, you want to try and get every &#8220;input&#8221; sounding as good as you possibly can, because then you have options. Generally speaking, a boom microphone will always sound better than a lapel &#8211; but there are times where you just can&#8217;t get a boom close enough.</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1974" title="236_31000530242_5090_n" src="../../images/09-236_31000530242_5090_n-590x442.jpeg" alt="" width="590" height="442"></p>
+<p><strong>It shouldn&#8217;t be a one-man band.</strong></p>
+<p>I think there&#8217;s a misconception that you only need one person to record good audio. Sure, a single person can do all the jobs and achieve good results &#8211; just like any good cinematographer can also pull focus at the same time and keep everything sharp &#8211; but really, that&#8217;s not ideal. A cinematographer should only concentrate on the framing and lighting &#8211; and leave the focus to a someone else to ensure that it&#8217;s absolutely spot on. It&#8217;s the same with sound &#8211; the sound recordist should be monitoring all the inputs and ensuring that the levels are all correct, whilst a boom swinger (or multiple boom swingers) ensures that the microphone is correctly positioned and there is no handling noise.</p>
+<p>Sadly, every time I&#8217;ve ever done sound recording, I&#8217;ve always had to boom swing as well. Why? Because it&#8217;s really, really hard to find someone who can do a good job. It requires a huge amount of concentration, it&#8217;s physically exhausting, it&#8217;s mentally exhausting (because you have to concentrate on every line of dialogue &#8211; and stay alert in case the actors improvise), and is truly and art. Basically, to be a good boom swinger &#8211; you need to be a ninja. You&#8217;re constantly having to hide away in awkward positions, you need to know and predict what people are going to say and when, and you need to follow the action &#8211; which can be really tricky if people are moving around a lot. It&#8217;s also really hard to not make any handling noise &#8211; especially when your arms start to get tired. It also takes practise. I always find if I&#8217;m boom swinging and I haven&#8217;t done it in a while, the first couple of takes of the day are rubbish, but once I get into the flow of it, I remember how to position and balance my body and hold the boom pole in such a gentle way as to not make any noise at all whilst moving the boom pole around. It&#8217;s an art &#8211; so don&#8217;t expect the lighting best boy to be able to just grab the boom pole and do a perfect job.</p>
+<p>If you want to learn more about boom swinging, have a read of <a href="http://www.thompsound.com/old-site/Articles/QSFT/zen_boom.pdf" target="_blank">The Art of Zen-Boom</a> and <a href="http://www.glennbach.com/schurr_boom_art.pdf" target="_blank">Boom Operating: The Art and Passion</a>.</p>
+<p>If you look at the credits of any major television show or motion picture &#8211; you&#8217;ll see that there&#8217;s not just one &#8220;sound guy&#8221; &#8211; there&#8217;s a whole team. Just like there&#8217;s a 2nd and sometimes 3rd Camera Assistant, there&#8217;s normally a Sound Assistant who looks after all the wireless lapels.</p>
+<p>Sure&#8230; if you&#8217;re shooting a documentary, or something really run-and-gun, you might find yourself in a situation where the camera operator or director might also have to record audio &#8211; this happens all the time. But it all depends on the project. High quality production values do not come from sole operators. I know plenty of fantastic cinematographers who are also comfortable connecting a couple of wireless lapels to a H4N and recording audio &#8211; they could do it with their eyes closed. But they don&#8217;t like doing it, their not experts, and they are basically just following a really simple procedure. As soon as you throw a curve ball into the situation, then they get lost.</p>
+<p><img loading="lazy" title="166_18413205242_9694_n" src="../../images/09-166_18413205242_9694_n-590x442.jpeg" alt="" width="590" height="442"></p>
+<p><strong>Collaboration is the key.</strong></p>
+<p>It&#8217;s funny &#8211; in many ways the camera department and the audio department are very similar, and yet few people think of it that way. Really, the audio recordist is doing the same job as the cinematographer, and the focus puller is doing the same job as the boom swinger &#8211; and yet, no one ever thinks that a boom swinger is on the same par as a focus puller on the film set hierarchy! If you look on the majority of student film sets, there is always a huge amount of respect for the cinematographer just because he&#8217;s behind the camera, and yet no one seems to care about the poor audio recordist (&#8220;Waiting on sound&#8230;&#8221;, &#8220;Boom in shot&#8230;&#8221;). What I also find really funny and sad is that the camera department always seem to be at war with the audio department, and it&#8217;s really hard to get both teams to play nicely together.</p>
+<p>It&#8217;s also really interesting that people in the camera department seem to shrug off audio, and claim that it&#8217;s completely foreign and an area of knowledge they&#8217;ll never possess, and sometimes vice versa &#8211; but the reality is that the two worlds are very similar. Highlights, Mid-tones and Blacks impact video pretty much the same way as Highs, Mids, and Lows impact audio frequencies. A camera records things you see &#8211; an audio recorder records things you hear. If the camera&#8217;s out of focus it looks crap &#8211; if the microphone isn&#8217;t pointing at the source, it will sound crap. If your footage is blown out &#8211; you can&#8217;t fix it in post because you simply didn&#8217;t capture the information. If the audio peaks, exactly the same deal.</p>
+<p>The problem is, that people behind the camera aren&#8217;t idiots. They know that sound is REALLY, REALLY hard, and they just don&#8217;t want to deal with it.</p>
+<p><strong>Do your research.</strong></p>
+<p><strong></strong>If you haven&#8217;t already, make sure you read <a href="http://filmsound.org/production-sound/openletter.htm" target="_blank">An Open Letter from your Sound Department</a>. It&#8217;s an amazing article, and EXTREMELY helpful! While you&#8217;re at it, make sure you read <a href="http://www.syncsoundcinema.com/2007/06/fifteen-drops-tabletten-ten/" target="_blank">Ten Commandments of Sound for Picture</a>. If you&#8217;re really inspired, buy this amazing book by audio guru and Acadamy Award winner <a href="http://en.wikipedia.org/wiki/Tomlinson_Holman" target="_blank">Tomlinson Holman</a> (aka creator of <a href="http://en.wikipedia.org/wiki/THX" target="_blank">THX</a>) called <a href="http://www.amazon.com/Sound-Digital-Video-Tomlinson-Holman/dp/0240807200" target="_blank">Sound for Digital Video</a>.</p>
+<p>There is heaps of useful information out there &#8211; so if you really care about high production value &#8211; DO YOUR RESEARCH!</p>
+<p><img loading="lazy" title="287_42734985242_701_n" src="../../images/09-287_42734985242_701_n-590x392.jpeg" alt="" width="590" height="392"></p>
+<p><strong>It&#8217;s all about teamwork.</strong></p>
+<p>At the end of the day filmmaking is all about collaboration, teamwork and compromise.</p>
+<p>One big mistake I see a lot of indie filmmakers make is that the DOP will be so worried about a boom shadow or the boom itself being in shot, when in reality, in a lot of cases quickly removing the boom shadow in post will take a few minutes work, compared to a few hours of work if you need to ADR a scene. Filmmakers are very quick to say, &#8220;we&#8217;ll just ADR that&#8221; or &#8220;we&#8217;ll just grab a wild line&#8221;, yet few are comfortable enough with technology and the filmmaking process to say, &#8220;we&#8217;ll just remove that boom shadow in post&#8221;. Sometimes it&#8217;s a lot quicker to do things in After Effects than it is in ProTools. That&#8217;s what separates professionals from amateurs &#8211; a basic knowledge of all departments, both production and post, and knowing what&#8217;s possible and how long things take.</p>
+<p>It&#8217;s also always a balance between time versus money. When you&#8217;re got no money, you can justify spending a lot of time on something &#8211; but rather than just giving in and saying &#8220;we have heaps of time to do post &#8211; we&#8217;ll just ADR everything&#8221;, a lot of the time you will achieve BETTER results getting it right on the day &#8211; and that&#8217;s the most important thing &#8211; QUALITY.</p>
+<p><img loading="lazy" title="163951_10150110723859402_4082082_n" src="../../images/09-163951_10150110723859402_4082082_n-590x393.jpeg" alt="" width="590" height="393"></p>
+<p><em><strong>I love filmmaking. I love shooting. I love everything about the on-set experience. Except recording audio.</strong></em></p>
+<p>The whole reason I started writing this though, was to discuss Stu&#8217;s blog post &#8211; so let&#8217;s get back on track.</p>
+<p>Thinking about it, recording good audio is not hard &#8211; it just requires a lot of work &#8211; just like cinematography. Sure, anyone over the age of about eight can pick up an iPhone and record a movie, edit it on their phone, then upload it to YouTube &#8211; but that doesn&#8217;t mean the pictures will look good. Capturing pretty pictures is an art &#8211; just like capturing good audio. The more you practise at it, the better you get.</p>
+<p>Are you a musician or a painter? I think if you have a musical ear, then maybe sound will come naturally to you. However, if you prefer to communicate with the world visually &#8211; maybe it&#8217;s just really hard to &#8220;get&#8221; sound. Really though &#8211; the basic&#8217;s are easy and anyone can learn it. But to get good at it, you need to practise, just like anything in life.</p>
+<p><em><strong>My shotgun microphone has a little switch on it. That switch has two positions. One is the right one, one is the wrong one. You know what? It would be easier to just re-write this short to have no dialogue.</strong></em></p>
+<p>I&#8217;m very confident that Stu just wrote this for effect, as I&#8217;m sure that he does actually know what the &#8220;roll off&#8221; switch does &#8211; but even if he didn&#8217;t &#8211; that&#8217;s just lazy. You can Google this kind of thing in seconds (Olaf also has a good explanation in the <a href="http://prolost.com/blog/2012/9/10/production-audio-is-ripe-for-revolution/#comments" target="_blank">comments</a> of the blog). The information is out there. If you&#8217;re really dedicated &#8211; you can easily learnt it. That&#8217;s the problem &#8211; I don&#8217;t think Stu&#8217;s lazy &#8211; I think he just knows deep down how hard capture good sound is, so he chooses to just ignore it. Ignorance is bliss!</p>
+<p><img loading="lazy" class="alignnone size-medium wp-image-1980" title="788T" src="../../images/09-788T-590x440.jpg" alt="" width="590" height="440"></p>
+<p><em><strong>Have you ever navigated the menu of a Zoom H4N? It’s like playing a Chinese knockoff of Tetris on a Gameboy that was run over by a car.</strong></em></p>
+<p>This is the essence of Stu&#8217;s post &#8211; and I couldn&#8217;t agree more. Just like the <a href="http://gopro.com/" target="_blank">GoPro</a> on the video side &#8211; the <a href="http://www.zoom.co.jp/english/products/h4n/" target="_blank">H4N</a> interface is simply horrible. People in the comments have suggested that the DR-100 is much better, and it is &#8211; but only slightly. If anyone&#8217;s every used a <a href="http://www.aaton.com/products/sound/cantar/" target="_blank">Cantar</a> &#8211; then that&#8217;s taking it to a whole other extreme &#8211; it&#8217;s like operating an Alien space ship! However, camera&#8217;s suffer the same problems. The original RED ONE is still a horrible camera to navigate unless you do it all the time (simply because it&#8217;s so complex, and there&#8217;s so many layers to the menu!). It&#8217;s only in the more recent RED EPIC and Scarlet builds has RED finally managed to design an interface that&#8217;s logical and has a nice flow to it. I&#8217;ve always really liked Sony&#8217;s menus (aka the <a href="http://en.wikipedia.org/wiki/Sony_camcorders#Sony_HVR-Z1" target="_blank">Z1P</a>) and hated Panasonic&#8217;s interface (aka the <a href="http://en.wikipedia.org/wiki/List_of_Panasonic_camcorders#AG-HVX200.2C_AG-HVX200A" target="_blank">HVX202</a>) &#8211; but there are plenty that strongly disagree with me, and prefer Panasonic over Sony. The reality is &#8211; designing good GUIs is hard, really hard. Just look at how many people struggled with a good music player interface before the iPod came along!</p>
+<p>The only company that seems to be making audio gear that&#8217;s remotely user friendly is <a href="http://www.sounddevices.com/" target="_blank">Sound Devices</a>. Whenever I have to hire audio gear I always go for the Sound Devices <a href="http://www.sounddevices.com/products/744t/" target="_blank">744T</a> or it&#8217;s bigger brother the <a href="http://www.sounddevices.com/products/788t/" target="_blank">788T</a>. It&#8217;s has a LOT of functionality, and therefore could be considered complicated &#8211; but the user interface is easy to navigate, and everything in logical. Admittedly it does have one of the world biggest main menu&#8217;s &#8211; but everything&#8217;s in the one place (just like on Avid Media Composer). I would LOVE to own one of these devices &#8211; but they&#8217;re INCREDIBLY expensive.</p>
+<p>The trouble is &#8211; these are professional tools. Just like an <a href="http://www.arri.com/camera/digital_cameras/" target="_blank">ARRI Alexa</a> costs as much as a really nice car &#8211; these professional audio recorders cost a LOT of money. What&#8217;s annoying though, is that the cheaper tools (i.e. H4N, DR-100, etc.) are simply crap. Sure, they can do the job &#8211; and yes, I own both a <a href="http://www.dvinfo.net/forum/all-things-audio/486263-zoom-h4n-vs-tascam-dr-100-a/" target="_blank">H4N and DR-100</a>, and I&#8217;ve captured great audio from them for a number of short film projects &#8211; but they&#8217;re a pain in the butt, and I consider myself as someone who &#8220;gets&#8221; audio. Camera operators must REALLY hate these prosumer audio tools!</p>
+<p>I agree we Stu &#8211; someone needs to come out with a <a href="http://en.wikipedia.org/wiki/Canon_EOS_5D" target="_blank">Canon 5D</a> or <a href="http://www.blackmagicdesign.com/products/blackmagiccinemacamera/" target="_blank">Blackmagic Cinema Camera</a> equivalent for audio. Something that can achieve near-professional results, but doesn&#8217;t require you to take out a loan. Admittedly, something like a 744T is a lot cheaper than, say a RED EPIC &#8211; but still, it&#8217;s hard to justify paying so much money.</p>
+<p>We need to go back to square one. Someone needs to rework the problems, and offer actual useful and easy-to-use solutions.</p>
+<p>There are only a few companies who I think could be up to the challenge &#8211; <a href="http://www.blackmagicdesign.com/" target="_blank">Blackmagic</a>, <a href="http://www.red.com/" target="_blank">RED</a>, <a href="http://www.sounddevices.com/" target="_blank">Sound Devices</a> and possibly a new random start-up company funded by <a href="http://www.kickstarter.com/" target="_blank">Kickstarter</a> (not that this has happened yet). If someone come up with a Kickstart project for a new audio recorder &#8211; I&#8217;d jump on that in a second. There seems to be plenty of people wanting to build cheap and powerful cameras &#8211; so it&#8217;s only a matter of time until someone tries to reinvent audio &#8211; or at least, I hope so!</p>
+<p><em><strong>Like every filmmaker I’ve ever met, I own an iPhone. Build your portable audio recorder around that.</strong></em></p>
+<p>I love my iPhone and iPad &#8211; and I love the fact that I can use either as a slate that is <a href="http://www.movie-slate.com/Timecode_Sync/" target="_blank">timecode synced</a> to the camera, and that all the meta data captured on set follows nicely along to post. The technology is cool and is only getting better. It gets me excited.</p>
+<p>But&#8230; while I think Stu&#8217;s suggestions are very cool &#8211; and I see no reason why technically you couldn&#8217;t make it all happen right now using existing tools and technology &#8211; at the end of the day, I don&#8217;t want my iPhone to be my audio recorder. I want something standalone, dedicated, and rock solid.</p>
+<p>What I really want is for Blackmagic to apply the same magic they applied to their BMC, and create a new audio recording solution that sells for $2995. Maybe that&#8217;s just the recorder and &#8220;base station&#8221; and you can buy the wireless packs separately.</p>
+<p>The Sound Devices 744T is fantastic, and I do truly love it &#8211; plus I&#8217;ve even MORE excited about the upcoming <a href="http://www.sounddevices.com/products/664/" target="_blank">664</a> product release &#8211; but these products are all more than four grand, and contain a heap of functionality that I&#8217;ll probably never use.</p>
+<p>We need something that&#8217;s simple, friendly, flexible and bullet proof.</p>
+<p>Less is more. I want the option of three XLRs for Booms (with phantom), five wireless lapels, a wireless transmitter so that the director can listen to the audio on set (maybe this is all done via an iPhone?), a wireless transmitter that I can put on the camera which transmits timecode and a guide track, 48kHz 24bit, a touch screen to enter metadata (as friendly as an iPhone), and some bundled software (like <a href="http://www.videotoolshed.com/product/26/fcp-auxtc-reader" target="_blank">FCP auxTC Reader</a>) that allows me to very easily and automatically sync the audio to the vision and embeds all the metadata. Yes, that does sound like a lot to ask for, but if you do it like RED, and sell the &#8220;brain&#8221; separately to all the wireless receivers and transmitters, you could gradually build up your rig over a number of jobs. Better yet &#8211; you could even split it up into different modules, so that you could add more wireless transmitters/receivers as you need.</p>
+<p>The thing that really annoys me about the current range of audio recorders and wireless gear is that it&#8217;s not easily and seamlessly interconnected &#8211; so you end up with a mixer bag that&#8217;s got so many cables running all over the place that it takes a lot of concentration just to fault find. We need something that&#8217;s standalone and self-contained.</p>
+<p><em><strong>Rate the quality of my incoming audio on the screen, live. Warn me when I have a bad echo, or background noise. Suggest fixes. I’ll move the mic around as instructed and watch the quality level change, and then stop moving when it’s great.</strong></em></p>
+<p>Stu&#8217;s right &#8211; we need to take some of the amazing technology that already exists in post production, and move it on set. Imagine if you could do real-time noise reduction on set, so that you can actually hear what the end result would sound like (even if it&#8217;s not baked in). Most of this technology already exists &#8211; so it&#8217;s just a matter of moving it off our Mac&#8217;s and PC&#8217;s and putting it in a form factor that we can carry on our shoulder. Imagine if Adobe teamed up with Blackmagic and brought some of their post production technology to an on-set product &#8211; it could literally be a game changer.</p>
+<p><em><strong>Listen for me saying the word “check” and set the audio levels automatically when you recognize that word. Flash an alert on the screen if you detect a hum. Or an airplane flying overhead.</strong></em></p>
+<p><a href="http://www.pcworld.com/article/234773/calibrate_your_home_theater_audio/" target="_blank">Self-calibrating</a> surround sound systems have existed in home theatre systems and fancy cars for a few years now &#8211; surely some of this technology could be utilised in film production? Wouldn&#8217;t it be great if the sound recordist could just press a button, triggering a set of &#8220;sweep tones&#8221; that come out of the recorder&#8217;s speaker, then a microphone on the recorder picks up the &#8220;whooping sounds&#8221;, and specialised software analysis&#8217;s it, and determines what noise reduction algorithms to use. That way when the producers asks you &#8211; will we need to ADR this scene, you can answer with confidence, yes or no. Some might say that will just waste time on set &#8211; however, I&#8217;ve had to wait around plenty of times while the camera team shoots Macbeth charts, or does a white balance &#8211; so I&#8217;m sure they can wait around an extra 30 seconds while the audio recorder does it&#8217;s magic! Hell, you could even do a quite calibration whilst the focus puller is getting marks.</p>
+<p><em><strong>A good wireless lavalier kit goes for roughly four times the cost of an iPod touch, and suffers from radio interference and complexity. Build me a lapel mic that wires to an iPhone/iPod in my actor’s pocket and you just saved me endless headaches and hundreds of dollars.</strong></em></p>
+<p>This is all technically possible &#8211; in fact I&#8217;ve seen people doing it in the real world. There are plenty of XLR to iPhone adapters out there now-days, <a href="http://www.ikmultimedia.com/products/irigpre/" target="_blank">some even with Phantom Power</a>. However, the problem is that you need a complete system. It&#8217;s easy to record good audio via an iPod Touch or iPhone &#8211; but what would be really cool is if everything was controlled by a master controller, and then once it&#8217;s finished recording, everything is automatically uploaded to Dropbox ready for the assistant editors to &#8220;attach&#8221; to the video files once dumped. It&#8217;s the automation an simplicity that&#8217;s the key.</p>
+<p><em><strong>And let my intern log into the same account and tag the incoming audio files with slate info and other useful metadata, like the name of the character being recorded—all while we work.</strong></em></p>
+<p>Everyone from production to post seems to understand that having accurate meta-data that follows the production from start to end is EXTREMELY important &#8211; everyone gets this. Things like <a href="http://www.movie-slate.com/Sound_Dept/" target="_blank">MovieSlate</a> already go a big way to making sure metadata is easy to enter, and easily gets from on-set to the edit suite. The future is here &#8211; and it&#8217;s only going to get better and easier. But with all this kind of tech, it only ever gets used if it&#8217;s quick, easy and you don&#8217;t have to even think about it. As someone who works in post production, I get to see everyone camera and audio notes at the end of the shoot &#8211; and sadly, most of the information jotted down is useless and illegible. There&#8217;s no point in having meta-data unless it&#8217;s useful. That&#8217;s the key &#8211; you need to capture RELEVANT information that&#8217;s actually helpful later down the line.</p>
+<p><em><strong>Make an iPad slating app that emits a special coded beep that contains the audio equivalent of a QR code. Every beep is a unique timecode signature. Post-production software could recognize that and sync dailies easily.</strong></em></p>
+<p>While I agree this could be cool &#8211; I think having accurate timecode between all devices makes more sense, as that way everything can be on the same page. That&#8217;s the beautiful thing about <a href="http://www.movie-slate.com/timecode_buddy" target="_blank">Timecode Buddy</a> &#8211; everyone&#8217;s iPhone&#8217;s and iPad&#8217;s can be &#8220;in sync&#8221; ensuring that everyone can see the notes for the CURRENT shot. Having a good sync point is handy &#8211; but having a unique frame accurate reference point is much more useful.</p>
+<p><em><strong>This is what I cam up with in one evening of pounding keys. But as we’ve established, I’m a lazy idiot. You’re the experts. Come up with stuff that makes my ideas seem trivial and silly.</strong></em></p>
+<p>The exciting thing is that there&#8217;s money in this. If Blackmagic or Sound Devices came out with a audio recorder for the &#8220;DSLR crowd&#8221;, then people would buy it &#8211; so there&#8217;s incentive to innovate.</p>
+<p>I think the technology can definitely be simplified and improved &#8211; however as I tried to explain at the start of this post &#8211; it&#8217;s not just about the tech, it&#8217;s about treating sound as equal with vision. You can have the best gear in the world and it will still sound shit in the wrong hands. You can have the best sound recordist in the world, and they can still record horrible results if there&#8217;s no where to properly hide a lapel and if you can&#8217;t get the boom close enough to the talent.</p>
+<p>Do I think the tech can be improved &#8211; hell yes! Do I hate the interface on the H4N &#8211; hell yes! But what made camera&#8217;s really useful and mainstream was when they became so good that they basically acted like the human eye. What you see is what you get. This is what needs to happen to sound. The human brain is so darn good at separating voices from background noise &#8211; and we need to somehow emulate this using technology. If my brain can decipher a overhead plane sound from a person talking &#8211; surely we can replicate this in software. Thanks to CGI, we can now basically create anything we want using computers &#8211; just look at Avatar. Visual Effects has finally reached a point where even if you have a trained eye, it&#8217;s getting <a href="http://www.fxguide.com/quicktakes/open-letter-response-to-david-cohen-variety/" target="_blank">harder and harder</a> to work out what&#8217;s real and what&#8217;s &#8220;fake&#8221;. Eventually, this will happen to the audio world too. Instead of having to re-record something, we&#8217;ll just have a computer analysis the voice, and then re-create the missing word from scratch. This technology is probably still a long way off &#8211; but there&#8217;s no reason why it can&#8217;t happen. If we can create a perfectly life-like person in CGI, we can definitely create a realistic sounding and accurate voices using computers. Hell &#8211; maybe even Apple will do this in the next FCPX release &#8211; stealing some technology from the next version of <a href="http://www.apple.com/ios/siri/" target="_blank">Siri</a>.</p>
+<p>But in the meantime, I think the key to easier audio production is to bring post to set &#8211; and make audio cool again.</p>
+<p>People get so excited about the latest cameras. We need people to get excited about audio gear again. We need to get it to a point that people like Stu actually care about audio gear, and are excited to talk about it &#8211; not just rant about it&#8217;s limitations and problems.</p>
+<p>For now, I&#8217;ll just continue use my trusty Rode NT3 (yes, it&#8217;s very heavy on a boom &#8211; but boy it sounds great for the price!), Sennheiser ME66, a bunch of cheap Sennheiser wireless lapels, and hire in a Sound Devices 788T when I need one. It does the job &#8211; and at the end of the day, as long as your story comes across properly, that&#8217;s all that matters. Although capturing good sound is REALLY important &#8211; if you have a shit story, then good audio&#8217;s not going to save that anyway. If I ever come across large amount of money though &#8211; I&#8217;ll definitely blow it all on some really <a href="http://www.schoeps.de/en/home" target="_blank">kick ass audio gear</a>.</p>
+<p>Until next time&#8230; <a href="http://chrisjonesblog.com/" target="_blank"><em>Onwards &amp; Upwards!</em></a></p>
+<p><em>Best Regards, Chris!</em></p>
+</div>
+</div>
+</div>
+</article>
+
+</section>
+<aside class="sidebar three columns">
+<div id="search-2" class="widget cf widget_search">
+<h6>Search Our Blog:</h6>
+<form method="get" id="searchform" action="https://latenitefilms.com/">
+<fieldset>
+<input name="s" type="text" id="s" placeholder="Search" class="twelve">
+</fieldset>
+</form>
+</div>
+<div id="archives-2" class="widget cf widget_archive">
+<h6>Explore by Date:</h6>		<label class="screen-reader-text" for="archives-dropdown-2">Explore by Date:</label>
+<select id="archives-dropdown-2" name="archive-dropdown">
+<option value="">Select Month</option>
+<option value="https://latenitefilms.com/blog/2018/06/"> June 2018 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/12/"> December 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/09/"> September 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/07/"> July 2016 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2016/01/"> January 2016 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2015/12/"> December 2015 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2015/10/"> October 2015 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2015/01/"> January 2015 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/12/"> December 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/11/"> November 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/10/"> October 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/09/"> September 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/08/"> August 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2014/07/"> July 2014 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2014/06/"> June 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/04/"> April 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/03/"> March 2014 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2014/02/"> February 2014 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2014/01/"> January 2014 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/12/"> December 2013 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2013/11/"> November 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/07/"> July 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/06/"> June 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/05/"> May 2013 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2013/04/"> April 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/03/"> March 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2013/02/"> February 2013 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2013/01/"> January 2013 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2012/12/"> December 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/11/"> November 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/10/"> October 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2012/08/"> August 2012 &nbsp;(8)</option>
+<option value="https://latenitefilms.com/blog/2012/07/"> July 2012 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2012/06/"> June 2012 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2012/05/"> May 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/03/"> March 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/12/"> December 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2011/09/"> September 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/07/"> July 2011 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2011/04/"> April 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2011/03/"> March 2011 &nbsp;(16)</option>
+<option value="https://latenitefilms.com/blog/2011/01/"> January 2011 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/12/"> December 2010 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2010/11/"> November 2010 &nbsp;(5)</option>
+<option value="https://latenitefilms.com/blog/2010/10/"> October 2010 &nbsp;(14)</option>
+<option value="https://latenitefilms.com/blog/2010/09/"> September 2010 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2010/08/"> August 2010 &nbsp;(7)</option>
+<option value="https://latenitefilms.com/blog/2010/07/"> July 2010 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2010/03/"> March 2010 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/11/"> November 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/08/"> August 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2009/06/"> June 2009 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2009/05/"> May 2009 &nbsp;(4)</option>
+<option value="https://latenitefilms.com/blog/2009/03/"> March 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/02/"> February 2009 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2009/01/"> January 2009 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2008/12/"> December 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/11/"> November 2008 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2008/10/"> October 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/09/"> September 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/08/"> August 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/07/"> July 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/06/"> June 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2008/05/"> May 2008 &nbsp;(6)</option>
+<option value="https://latenitefilms.com/blog/2008/04/"> April 2008 &nbsp;(2)</option>
+<option value="https://latenitefilms.com/blog/2007/10/"> October 2007 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2007/08/"> August 2007 &nbsp;(55)</option>
+<option value="https://latenitefilms.com/blog/2006/10/"> October 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/09/"> September 2006 &nbsp;(3)</option>
+<option value="https://latenitefilms.com/blog/2006/08/"> August 2006 &nbsp;(86)</option>
+<option value="https://latenitefilms.com/blog/2006/06/"> June 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/04/"> April 2006 &nbsp;(1)</option>
+<option value="https://latenitefilms.com/blog/2006/03/"> March 2006 &nbsp;(1)</option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+var dropdown = document.getElementById( "archives-dropdown-2" );
+function onSelectChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+document.location.href = this.options[ this.selectedIndex ].value;
+}
+}
+dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div>
+<div id="recent-posts-4" class="widget cf widget_recent_entries">
+<h6>Recent Posts:</h6>
+<ul>
+<li>
+<a href="./../superannuation/">Superannuation for Filmmakers</a>
+</li>
+<li>
+<a href="./../death-star-movie-night/">Death Star Movie Night</a>
+</li>
+<li>
+<a href="./../final-cut-pro-hacks/">Final Cut Pro Hacks</a>
+</li>
+<li>
+<a href="./../the-bourne-wipe/">The Bourne Wipe</a>
+</li>
+<li>
+<a href="./../acting-in-the-wizards-of-aus/">Acting in The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../makeup-on-the-wizards-of-aus/">Makeup on The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../shooting-the-wizards-of-aus/">Shooting The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../writing-the-wizards-of-aus/">Writing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../producing-the-wizards-of-aus/">Producing The Wizards of Aus</a>
+</li>
+<li>
+<a href="./../year-in-review-2015-part-2/">Year in Review 2015 - Part 2</a>
+</li>
+</ul>
+</div>
+<style>.JPV_list {
+overflow: hidden;
+}
+.JPV_thumbnail {
+width: 45%;
+}
+.JPV_thumbnail > .JPV_thumbnail_img {
+max-width: 125px;
+height: auto;
+}
+.JPV_thumbnail + .JPV_text {
+width: 45%;
+padding-bottom: 10px;
+text-align: center;
+margin-top: -5px;
+}
+.JPV_thumbnail_title {
+float: left;
+width: 21.276596%;
+}
+.JPV_thumbnail_title > .JPV_thumbnail_img {
+max-width: 40px;
+height: auto;
+}
+.JPV_thumbnail_title + .JPV_text {
+float: right;
+width: 73.404255%;
+padding-bottom: 10px;
+}</style>
+<div id="jetpack-post-views-widget-3" class="widget cf jetpack-post-views">
+<h6>Popular Posts:</h6>
+<ul>
+<li class="JPV_list"><a href="./../calculating-timecode-in-excel/" title="Calculating Timecode in Excel" class="JPV_title">Calculating Timecode in Excel</a></li>
+<li class="JPV_list"><a href="./../final-cut-pro-hacks/" title="Final Cut Pro Hacks" class="JPV_title">Final Cut Pro Hacks</a></li>
+<li class="JPV_list"><a href="./../calculating-timecode-in-google-sheets/" title="Calculating Timecode in Google Sheets" class="JPV_title">Calculating Timecode in Google Sheets</a></li>
+<li class="JPV_list"><a href="./../fcpx-rant/" title="FCPX Rant" class="JPV_title">FCPX Rant</a></li>
+<li class="JPV_list"><a href="./../blackmagic-cinema-camera/" title="Blackmagic Cinema Camera" class="JPV_title">Blackmagic Cinema Camera</a></li>
+<li class="JPV_list"><a href="./../philosophy-of-open-source/" title="Philosophy of Open Source" class="JPV_title">Philosophy of Open Source</a></li>
+<li class="JPV_list"><a href="./../fcpxs-hidden-debug-preferences/" title="FCPX&#8217;s Hidden Debug Preferences" class="JPV_title">FCPX&#8217;s Hidden Debug Preferences</a></li>
+<li class="JPV_list"><a href="./../final-cut-studio-3-predictions/" title="Final Cut Studio 3 Predictions" class="JPV_title">Final Cut Studio 3 Predictions</a></li>
+<li class="JPV_list"><a href="./../superannuation/" title="Superannuation for Filmmakers" class="JPV_title">Superannuation for Filmmakers</a></li>
+<li class="JPV_list"><a href="./../lightworks-day-one/" title="Lightworks &#8211; Day One" class="JPV_title">Lightworks &#8211; Day One</a></li>
+</ul>
+</div>
+<div id="categories-2" class="widget cf widget_categories">
+<h6>Explore By Category:</h6>
+<ul>
+<li class="cat-item cat-item-80">
+<a href="./../category/bts/">Behind The Scenes</a> (1)
+</li>
+<li class="cat-item cat-item-83">
+<a href="./../category/conferences-and-events/">Conferences &amp; Events</a> (8)
+</li>
+<li class="cat-item cat-item-91">
+<a href="./../category/creative-discussions/">Creative Discussions</a> (17)
+</li>
+<li class="cat-item cat-item-79">
+<a href="./../category/documentary/">Documentary</a> (10)
+</li>
+<li class="cat-item cat-item-89">
+<a href="./../category/educational/">Educational</a> (6)
+</li>
+<li class="cat-item cat-item-43">
+<a href="./../category/sakooz/">Film Project &#8211; SAKOOZ</a> (25)
+</li>
+<li class="cat-item cat-item-57">
+<a href="./../category/shotgun/">Film Project &#8211; SHOTGUN</a> (28)
+</li>
+<li class="cat-item cat-item-107">
+<a href="./../category/film-project-wizards/">Film Project &#8211; Wizards</a> (6)
+</li>
+<li class="cat-item cat-item-39">
+<a href="./../category/film-reviews/">Film Reviews</a> (174)
+</li>
+<li class="cat-item cat-item-81">
+<a href="./../category/guest-bloggers/">Guest Bloggers</a> (5)
+</li>
+<li class="cat-item cat-item-92">
+<a href="./../category/news/">News</a> (29)
+</li>
+<li class="cat-item cat-item-99">
+<a href="./../category/podcasts/">Podcasts</a> (2)
+</li>
+<li class="cat-item cat-item-90">
+<a href="./../category/technical-discussions/">Technical Discussions</a> (19)
+</li>
+<li class="cat-item cat-item-59">
+<a href="./../category/videos/">Videos</a> (27)
+</li>
+</ul>
+</div></aside>
+</div>
+</div>
+</div>
+
+    </article>
+  </section>
+  <div id="gradient"></div>
+  <footer>
+    <section class="widthwrap">
+      <div>
+        
+
+        <sub>&copy; 2007-2023 LateNite Films Pty Ltd. All rights reserved.<br>
+          LateNite Films&trade; is a registered trademark. ABN: 72 130 929 725.</sub>
+
+      </div>
+      <div class="icon">
+        <p> <a href="mailto:producers@latenitefilms.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+              viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m1.574 5.286 7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z" />
+            </svg>
+            producers@latenitefilms.com</a></p>
+
+        <p> <a href="http://goo.gl/maps/qvpIU" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20">
+              <path fill="#FFF"
+                d="m19.799 5.165-2.375-1.83a1.997 1.997 0 0 0-.521-.237A2.035 2.035 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335zM8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            8/15
+            Vere Street, Collingwood 3066 </a></p>
+
+        <p> <a href="../privacy-policy/">Privacy Policy</a> & <a href="../code-of-conduct/">Code of Conduct </a></p>
+        <h2><a href="http://vimeo.com/latenitefilms" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve" viewBox="0 0 20 20" class="vimeo">
+              <path fill="#FFF"
+                d="M18.91 5.84c-1.006 5.773-6.625 10.66-8.315 11.777-1.69 1.115-3.233-.447-3.792-1.631-.641-1.347-2.559-8.656-3.062-9.261-.503-.606-2.01.605-2.01.605L1 6.354s3.061-3.725 5.391-4.191c2.47-.493 2.466 3.864 3.06 6.282.574 2.342.961 3.68 1.463 3.68s1.462-1.305 2.512-3.305c1.053-2.004-.045-3.772-2.101-2.514.823-5.027 8.591-6.236 7.585-.466z" />
+            </svg>
+          </a> </h2>
+      </div>
+    </section>
+  </footer>
+  <div id="cursor"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</body>
