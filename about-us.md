@@ -1,7 +1,7 @@
 ---
 title: About Us
 layout: default
-img: about.png
+img: og/about.png
 ---
 {% include relBase.html %}
 <section>
