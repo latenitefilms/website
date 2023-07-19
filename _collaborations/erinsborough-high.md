@@ -1,5 +1,5 @@
 ---
-title:Erinsborough High
+title: Erinsborough High
 layout: project-details
 img: ehigh.jpg
 subtitle: Series
