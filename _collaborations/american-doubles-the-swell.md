@@ -2,7 +2,7 @@
 title: American Doubles - the Swell
 layout: project-details
 img: swell.jpg
-subtitle: Series
+subtitle: Music Video
 type: filter_option3
 tags: projects
 customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in search for love. This incredibly complex music video was shot in a fully functional bar at the bottom of a diving pool with a cast of free divers.
@@ -13,9 +13,9 @@ customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="../../img/gallery/swell3.jpg" id="img1">
-        <img src="../../img/gallery/swell1.jpg" id="img2">
-        <img src="../../img/gallery/swell2.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/swell3.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/swell1.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/swell2.jpg" id="img3">
       </div>
     </div>
 
@@ -58,7 +58,7 @@ Natalia Tjahjono<br>
         <hr>ARTIST
         <hr>
         American Doubles<br><br>
-        <a href="https://www.youtube.com/watch?v=BobK7ZC3afE" target="_blank"><img src="../../img/social/youtube.svg" class="youtube"></a>
+        <a href="https://www.youtube.com/watch?v=BobK7ZC3afE" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
 
@@ -67,15 +67,15 @@ Natalia Tjahjono<br>
       Related Project
       <hr>
       <ul>
-        <li><a href="../rufus-du-sol-be-with-you/"><img src="../../img/projects/bewithyou.jpg">R&uuml;f&uuml;s Du Sol - Be With You
+        <li><a href="../rufus-du-sol-be-with-you/"><img src="{{ relBase }}img/projects/bewithyou.jpg">R&uuml;f&uuml;s Du Sol - Be With You
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../crooked-colours-flow/"><img src="../../img/projects/flow.jpg">Crooked Colours - Flow
+        <li><a href="../crooked-colours-flow/"><img src="{{ relBase }}img/projects/flow.jpg">Crooked Colours - Flow
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../cosmos-midnight-mind-off/"><img src="../../img/projects/mindoff.jpg">Cosmos Midnight - Mind Off
+        <li><a href="../cosmos-midnight-mind-off/"><img src="{{ relBase }}img/projects/mindoff.jpg">Cosmos Midnight - Mind Off
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
