@@ -70,12 +70,12 @@ jobs:
           ### If you need to specify any Jekyll build options, enable the above input
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
 
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          exclude_assets: ''
-          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
-          # if you are including the line below, make sure your source files are NOT in the master branch:
-          # publish_branch: master
+          server: 43.250.142.14
+          username: github@latenitefilms.com
+          password: ${{ secrets.ftp_password }}
+          server-dir: /kevin.latenitefilms.com/
+          local-dir: ./_site/
+          protocol: ftps
