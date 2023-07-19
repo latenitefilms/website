@@ -5,7 +5,7 @@ img: flow.jpg
 subtitle: Music Video
 type: filter_option3
 tags: projects
-customExcerpt: "FLOW" is taken from Crooked Colours debut album VERA
+customExcerpt: &#39;FLOW&#39; is taken from Crooked Colours debut album VERA
 ---
 {% include relBase.html %}
 
