@@ -1,5 +1,5 @@
 ---
-title: Originals
+title: Collaborations
 layout: filter
 ---
 {% include relBase.html %}
@@ -13,14 +13,14 @@ layout: filter
     <input type="checkbox" id="filter_option3" autocomplete="off" class="hidden filter_checkbox" />
     <ul class="checkbox-circle filter_options ">
       <!--Manual Loop options Entry-->
-      <li><label for="filter_option1" class="filter_option1">Animation</label></li>
-      <li><label for="filter_option2" class="filter_option2">Live Action</label></li>
-      <li><label for="filter_option3" class="filter_option3">Kids</label></li>
+      <li><label for="filter_option1" class="filter_option1">Series</label></li>
+      <li><label for="filter_option2" class="filter_option2">Film</label></li>
+      <li><label for="filter_option3" class="filter_option3">Music Video</label></li>
     </ul>
     <hr>
        <article>
       <ul class="projectlist">
-       {% for page in site.originals %}
+       {% for page in site.collaborations %}
               <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>

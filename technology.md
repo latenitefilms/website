@@ -1,7 +1,6 @@
 ---
 title: Technology
 layout: default
-order: 4
 ---
 
 <section>

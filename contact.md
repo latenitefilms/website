@@ -2,7 +2,6 @@
 title: Contact
 layout: default
 img: contact.png
-order: 6
 ---
 
 <section>

@@ -1,6 +1,5 @@
 ---
 layout: index
-order: 1
 ---
 
 <div id="slider">

@@ -2,7 +2,6 @@
 title: About Us
 layout: default
 img: about.png
-order: 2
 ---
 {% include relBase.html %}
 <section>

@@ -1,7 +1,6 @@
 ---
 title: Privacy Policy
 layout: default
-order: 8
 ---
 
 <section>
