@@ -178,7 +178,7 @@ var reOrient = function () {
 
 
 // on page ready, initialise all the things.
-(function ready(fn) {
+(function ready(fn) {/*
   if (document.readyState != 'loading') {
     calcDPpx();
     calcDpi();
@@ -195,8 +195,13 @@ var reOrient = function () {
       display();
       reOrient();
     });
-  }
+  }*/
   console.log('page is fully loaded');
   getPrefs();
   MobileSwitch(false);
 })();
+
+window.addEventListener('pageshow', (event) => {
+  getPrefs();
+  MobileSwitch(false);
+})
