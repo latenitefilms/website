@@ -1,6 +1,7 @@
 ---
 title: Collaborations
 layout: filter
+img: projects/lambsofgod.jpg
 ---
 {% include relBase.html %}
 <section>

@@ -1,6 +1,7 @@
 ---
 title: Originals
 layout: filter
+img: projects/tfoe.jpg
 ---
 {% include relBase.html %}
 <section>
