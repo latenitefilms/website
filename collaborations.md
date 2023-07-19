@@ -22,7 +22,7 @@ img: projects/lambsofgod.jpg
        <article>
       <ul class="projectlist">
        {% for page in site.collaborations %}
-              <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/projects/{{ page.img }}">
+              <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
           <hr></a>
