@@ -1,10 +1,9 @@
 ---
 title: Erinsborough High
 layout: project-details
-img: ehigh.jpg
+img: projects/ehigh.jpg
 subtitle: Series
 type: filter_option1
-tags: projects
 customExcerpt: During the Year 12 exam period, a popular Erinsborough High student goes missing. While the students deal with bullying, mental health, and parental and peer pressure, more revelations about the disappearance come to light.
 ---
 {% include relBase.html %}

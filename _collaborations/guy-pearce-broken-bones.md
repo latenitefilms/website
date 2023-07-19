@@ -1,10 +1,9 @@
 ---
 title: Guy Pearce - Broken Bones
 layout: project-details
-img: brokenbones.jpg
+img: projects/brokenbones.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: So, after many years of keeping things to myself I&#39;m very pleased to be releasing my first record - "Broken Bones". - Guy Pearce
 ---
 {% include relBase.html %}

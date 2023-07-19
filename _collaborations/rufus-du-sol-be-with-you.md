@@ -1,10 +1,9 @@
 ---
 title: R&uuml;f&uuml;s Du Sol - Be With You
 layout: project-details
-img: bewithyou.jpg
+img: projects/bewithyou.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
 ---
 {% include relBase.html %}

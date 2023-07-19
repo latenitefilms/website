@@ -1,10 +1,9 @@
 ---
 title: Casey Donovan - The Villain
 layout: project-details
-img: villain.jpg
+img: projects/villain.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: New Music Video For The Villain the 2nd Single off of EP "Off The Grid & Somewhere In Between".
 ---
 {% include relBase.html %}

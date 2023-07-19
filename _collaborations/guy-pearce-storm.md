@@ -1,10 +1,9 @@
 ---
 title: Guy Pearce - Storm
 layout: project-details
-img: storm.jpg
+img: projects/storm.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.
 ---
 {% include relBase.html %}

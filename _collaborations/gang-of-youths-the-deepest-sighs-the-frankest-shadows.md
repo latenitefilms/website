@@ -1,10 +1,9 @@
 ---
 title: The Deepest Sighs, the Frankest Shadows
 layout: project-details
-img: sighs.jpg
+img: projects/sighs.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: The Deepest Sighs, The Frankest Shadows is the fourth and final single from Gang of Youths&#39; second studio album, Go Farther in Lightness. The clip follows lead singer Dave Le'aupepe escaping from the law through an afternoon sun drenched field.
 ---
 {% include relBase.html %}

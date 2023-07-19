@@ -1,10 +1,9 @@
 ---
 title: Cosmos Midnight - Mind Off
 layout: project-details
-img: mindoff.jpg
+img: projects/mindoff.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: Music Video for Cosmo's Midnight.
 ---
 {% include relBase.html %}

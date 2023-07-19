@@ -1,10 +1,9 @@
 ---
 title: Dappled Cities - Stone Men
 layout: project-details
-img: stonemen.jpg
+img: projects/stonemen.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: Official video for "Stone Men" by Dappled Cities taken from their 5th studio album out on May 5, 2017.
 ---
 {% include relBase.html %}

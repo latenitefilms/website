@@ -1,10 +1,9 @@
 ---
 title: American Doubles - the Swell
 layout: project-details
-img: swell.jpg
+img: projects/swell.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in search for love. This incredibly complex music video was shot in a fully functional bar at the bottom of a diving pool with a cast of free divers.
 ---
 {% include relBase.html %}

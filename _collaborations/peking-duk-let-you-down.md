@@ -1,10 +1,9 @@
 ---
 title: Peking Duk - Let You Down
 layout: project-details
-img: letyoudown.jpg
+img: projects/letyoudown.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: A stunt performers dream, the clip for Let You Down from Australian powerhouse Peking Duk follows an anxious woman (Maria Angelico) trying desperately to avoid a marriage proposal from her well meaning partner (Nazeem Hussain).
 ---
 {% include relBase.html %}

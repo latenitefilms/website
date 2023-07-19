@@ -1,7 +1,6 @@
 ---
 layout: index
-img: tfoe.jpg
-tags: projects
+img: projects/tfoe.jpg
 ---
 
 <div id="slider">

@@ -1,10 +1,9 @@
 ---
 title: Guy Pearce - What Makes You Think
 layout: project-details
-img: wmyt.jpg
+img: projects/wmyt.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from his album "The Nomad"
 ---
 {% include relBase.html %}

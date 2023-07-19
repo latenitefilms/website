@@ -1,10 +1,9 @@
 ---
 title: The Slot
 layout: project-details
-img: slot.jpg
+img: projects/slot.jpg
 subtitle: Series
 type: filter_option3
-tags: projects
 customExcerpt: An original Foxtel series, The Slot presents emerging and experimental short form comedy from Australia's most successful online comedy content creators. Each episode follows hosts Christiaan Van Vuuren (Bondi Hipsters) and Adele Vuko (Skit Box), and the unorthodox encounters they conjure with this new wave of Australian viral classics.
 ---
 {% include relBase.html %}

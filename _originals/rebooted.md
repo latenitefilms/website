@@ -1,10 +1,9 @@
 ---
 title: Rebooted
 layout: project-details
-img: rebooted.jpg
+img: projects/ rebooted.jpg
 subtitle: Short
 type: filter_option1
-tags: projects
 customExcerpt: "In an industry obsessed with the superficial, it's not easy being an aging movie star. It&#39;s even harder when you're also a stop-motion animated skeleton monster. "
 ---
 {% include relBase.html %}

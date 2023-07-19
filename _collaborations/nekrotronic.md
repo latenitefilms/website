@@ -1,10 +1,9 @@
 ---
 title: Nekrotronic
 layout: project-details
-img: nekrotronic.jpg
+img: projects/nekrotronic.jpg
 subtitle: Film
 type: filter_option2
-tags: projects
 customExcerpt: Down-on-his-luck sewage worker, Howard North, discovers he is a part of a secret sect of magical demon hunters called the Nekromancers. When Howard finds out about evil demon Finnegan's dark plans, he sets out to defeat her.
 ---
 {% include relBase.html %}

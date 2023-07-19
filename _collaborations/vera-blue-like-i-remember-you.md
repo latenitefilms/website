@@ -1,10 +1,9 @@
 ---
 title: Vera Blue - Like I Remember You
 layout: project-details
-img: liry.jpg
+img: projects/liry.jpg
 subtitle: Music Video
 type: filter_option3
-tags: projects
 customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produced in collaboration with Greenpeace to protect the Great Australian Bight from oil drilling. Stand with Vera and do your bit to stop risky oil drilling.
 ---
 {% include relBase.html %}

@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: default
-img: contact.png
+img: og/contact.png
 ---
 
 <section>

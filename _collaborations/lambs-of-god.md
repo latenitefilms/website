@@ -1,10 +1,9 @@
 ---
 title: Lambs of God
 layout: project-details
-img: lambsofgod.jpg
+img: projects/lambsofgod.jpg
 subtitle: Series
 type: filter_option1
-tags: projects
 customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Iphigenia, Margarita and Carla, who are the last remaining members of the enclosed order of St Agnes. Living in an isolated convent by the coast, they have all but forgotten the outside world, until an unwelcome visitor enters their lives and changes their world forever. 
 ---
 {% include relBase.html %}
