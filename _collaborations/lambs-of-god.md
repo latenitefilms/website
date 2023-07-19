@@ -46,7 +46,6 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
         <hr>
         Foxtel<br><br>
         <a href="https://www.imdb.com/title/tt8709928/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
-       <img src="{{ relBase }}img/social/imdb.svg" class="imdb" onclick="popUp()" style="opacity: 0;"">
       </sub>
       <style>
       #popup{
