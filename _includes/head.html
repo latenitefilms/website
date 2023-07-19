@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 	<meta property="og:description" content="{% if page.customExcerpt %}{{page.customExcerpt}}{% elsif  page.excerpt%}{{page.excerpt | strip_html}} | {{ site.excerpt }}{% else %}{{site.tagline}} {% endif %}"/>
-	<meta property="og:image" content="{% if page.img %}{% if page.tags == 'projects' %}{{ site.url }}img/projects/{{page.img}}{% else %}{{ site.url }}img/og/{{page.img}}{% endif %}{% else %}{{ site.url }}{{site.socialimg}}{% endif %}"/>
+	<meta property="og:image" content="{% if page.img %}{% if page.tags == 'projects' %}{{ site.url }}img/projects/{{page.img}}{% else %}{{ site.url }}img/og/{{page.img}}{% endif %}"/>
 	<meta property="og:url" content="{{ site.url }}{{page.url}}"/>
 	<meta property="og:site_name" content="{{ site.title }} "/>
 	
@@ -26,7 +26,7 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:description" content="{% if page.customExcerpt %}{{page.customExcerpt}}{% elsif  page.excerpt%}{{page.excerpt | strip_html}} | {{ site.excerpt }}{% else %}{{site.tagline}} {% endif %}">
-	<meta name="twitter:image" content="{% if page.img %}{% if page.tags == 'projects' %}{{ site.url }}img/projects/{{page.img}}{% else %}{{ site.url }}img/og/{{page.img}}{% endif %}{% else %}{{ site.url }}{{site.socialimg}}{% endif %}"/>
+	<meta name="twitter:image" content="{% if page.img %}{% if page.tags == 'projects' %}{{ site.url }}img/projects/{{page.img}}{% else %}{{ site.url }}img/og/{{page.img}}{% endif %}"/>
 	<meta name="twitter:url" content="{{ site.url }}{{page.url}}">
 	
 	<!-- CSS & fonts -->
