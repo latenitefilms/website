@@ -1458,6 +1458,7 @@ width:100%;
 #details iframe{
   max-height: calc((50vw - 6rem) / 16 * 9);
   height: calc(60em / 16 * 9);
+  border:none;
 }
 
 
