@@ -76,6 +76,6 @@ jobs:
           server: 43.250.142.14
           username: github@latenitefilms.com
           password: ${{ secrets.ftp_password }}
-          server-dir: /kevin.latenitefilms.com/
+          server-dir: /public_html/
           local-dir: ./_site/
           protocol: ftps
