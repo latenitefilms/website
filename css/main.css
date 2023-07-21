@@ -1455,6 +1455,11 @@ width:100%;
   filter:none !important;
 }
 
+#details iframe{
+  max-height: calc((50vw - 6rem) / 16 * 9);
+  height: calc(60em / 16 * 9);
+}
+
 
 .laurel{
   width:5em;
@@ -1654,6 +1659,10 @@ article#about-us button{
   /* Detail Page*/ 
   #details article {
     display: initial;
+  }
+
+  #details iframe{
+    max-height: calc((100vw - 6rem) / 16 * 9);
   }
 
   #details {
