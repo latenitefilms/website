@@ -53,7 +53,7 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <hr>BROADCASTER
         <hr>
         Grouse House<br><br>
-        <a href="https://www.imdb.com/title/tt23863806/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=E0c20UVV-MI&list=PLoO7Ckc824zsM3cpF3eXM1g9unl0hkJT0&index=2" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
+        <a href="https://www.imdb.com/title/tt23863806/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="ltnt.tv/tfoe" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
 
