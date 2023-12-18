@@ -1,9 +1,9 @@
 ---
-title: Ruby Rai
+title: Ruby Rai P.I.
 layout: project-details
 img: projects/rubyrai.jpg
 subtitle: Online
-type: filter_option2 filter_option3
+type: filter_option2
 customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...
 ---
 {% include relBase.html %}
@@ -12,10 +12,10 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/rubyrai.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/rubyrai.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/rubyrai.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/rubyrai.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/rubyrai1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4">
       </div>
     </div>
 
