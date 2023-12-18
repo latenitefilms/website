@@ -79,3 +79,10 @@ jobs:
           server-dir: /public_html/
           local-dir: ./_site/
           protocol: ftps
+
+      - name: Purge CloudFlare cache
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+          -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          --data '{"purge_everything":true}'
