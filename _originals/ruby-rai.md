@@ -19,7 +19,6 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       </div>
     </div>
 
-
     <article><span id="main-detail">
       <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p></span>
       <sub>
@@ -35,19 +34,50 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>Elyce Phillips</td>
           </tr>
           <tr>
-            <td>X</td>
+            <td>Squalene</td>
             <td>Ella Lawry</td>
           </tr>
           <tr>
-            <td>X</td>
+            <td>Chi Chi</td>
             <td>Nicolette Minster</td>
           </tr>
           <tr>
-            <td>X</td>
+            <td>Gobbo</td>
             <td>Lee Beckhurst</td>
           </tr>
           <tr>
-            <td colspan="2"><br><hr>CREW<hr></td>
+            <td>Scott</td>
+            <td>Pedro Cooray</td>
+          </tr>
+          <tr>
+            <td>Gwenifer</td>
+            <td>Charlize Costantin</td>
+          </tr>
+          <tr>
+            <td>Trinket</td>
+            <td>Eloise Willis-Hardy</td>
+          </tr>
+          <tr>
+            <td>Uncle</td>
+            <td>Kumar Eliezer</td>
+          </tr>
+          <tr>
+            <td>Denise</td>
+            <td>Heidi Arena</td>
+          </tr>
+          <tr>
+            <td>Monstera Murderer</td>
+            <td>Sarah Walker</td>
+          </tr>
+          <tr>
+            <td>Filip Lescaut</td>
+            <td>Filip Lescaut</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+                <br />
+                <hr>CREW<hr>
+            </td>
           </tr>
           <tr>
             <td>Writer/Creator</td>
@@ -56,6 +86,10 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
           <tr>
             <td>Writer</td>
             <td>Elyce Phillips</td>
+          </tr>
+          <tr>
+            <td>Director</td>
+            <td>Jesse Vogelaar</td>
           </tr>
           <tr>
             <td>Producer</td>
@@ -97,7 +131,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
 
         <br><hr>GENRE
         <hr class="margin_bottom">
-        Comedy&#39;s<br>
+        Comedy<br>
         <br>
         <hr>BROADCASTER
         <hr class="margin_bottom">
