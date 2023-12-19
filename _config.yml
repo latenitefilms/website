@@ -9,7 +9,7 @@ url: "https://latenitefilms.com" # The base hostname & protocol for your site. U
 #twitter: latenitefilms
 
 # Contact
-email: "producers@latenitefilms.com" 
+email: "producers@latenitefilms.com"
 permalink: /:categories/:title/
 
 # Use this for production
@@ -24,6 +24,7 @@ collections:
   originals:
     output: true
     order:
+      - ruby-rai.md
       - the-future-of-everything.md
       - the-legend-of-burnout-barry.md
       - rebooted.md
@@ -32,20 +33,20 @@ collections:
   collaborations:
     output: true
     order:
-      - lambs-of-god.md 
-      - the-slot.md 
-      - erinsborough-high.md 
-      - nekrotronic.md 
-      - guy-pearce-storm.md 
-      - gang-of-youths-the-deepest-sighs-the-frankest-shadows.md 
-      - peking-duk-let-you-down.md 
-      - american-doubles-the-swell.md 
+      - lambs-of-god.md
+      - the-slot.md
+      - erinsborough-high.md
+      - nekrotronic.md
+      - guy-pearce-storm.md
+      - gang-of-youths-the-deepest-sighs-the-frankest-shadows.md
+      - peking-duk-let-you-down.md
+      - american-doubles-the-swell.md
       - vera-blue-like-i-remember-you.md
-      - rufus-du-sol-be-with-you.md 
-      - guy-pearce-what-makes-you-think.md 
-      - cosmos-midnight-mind-off.md 
-      - dappled-cities-stone-men.md 
-      - crooked-colours-flow.md 
-      - guy-pearce-broken-bones.md 
-      - casey-donovan-the-villain.md 
+      - rufus-du-sol-be-with-you.md
+      - guy-pearce-what-makes-you-think.md
+      - cosmos-midnight-mind-off.md
+      - dappled-cities-stone-men.md
+      - crooked-colours-flow.md
+      - guy-pearce-broken-bones.md
+      - casey-donovan-the-villain.md
   technology:
