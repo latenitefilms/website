@@ -57,7 +57,6 @@ customExcerpt: "In a fantastical world of magic and monsters, saving the world i
             <td colspan="2"><br>Co-production with <a href="http://web.archive.org/web/20230208140149/https://www.pixel.melbourne/" target="_new">Pixel</a></td>
           </tr>
         </table>
-        </span>
         <br>
         <hr>GENRE
         <hr>
