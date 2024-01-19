@@ -38,7 +38,7 @@ Schoolhouse Studios<br>
 Helen Townshend @ Creative Rep<br>
 Helen Pandos @ Helen Pandos Mgmt<br>
 Melissa Quinn @ Centrestage Mgmt<br>
-Michel Maronde @ Real People<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
+Michel Maronde @ Real People<br><p style='margin-top:1em; font-size:0.7rem;'>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
 THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
 </p></span>
      
