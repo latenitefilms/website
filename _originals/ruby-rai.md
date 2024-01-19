@@ -22,7 +22,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
     </div>
 
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>SPECIAL THANKS<hr>
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><sub><hr>SPECIAL THANKS<hr>
                 Scott Limbrick<br>
 Mike Greaney<br>
 Dan Carr<br>
@@ -43,7 +43,7 @@ Michel Maronde @ Real People<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE T
 
 THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
 
-</p>
+</p></sub>
      
 </span>
       <sub>
