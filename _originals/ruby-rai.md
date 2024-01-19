@@ -193,7 +193,7 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>johnsen cummings<br>joel taylor</td>
           </tr>
           <tr>
-            <td>re record mix</td>
+            <td>re-record mix</td>
             <td>ryan granger<br>johnsen cummings</td>
           </tr>
           <tr>
