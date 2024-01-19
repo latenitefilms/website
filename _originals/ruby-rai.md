@@ -122,6 +122,10 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>nicolette minster</td>
           </tr>
           <tr>
+            <td>Executive Producer</td>
+            <td>Vidya Rajan<br>Chris Hocking</td>
+          </tr>
+          <tr>
             <td>developed with</td>
             <td>amruta nargundkar</td>
           </tr>
