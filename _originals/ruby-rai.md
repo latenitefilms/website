@@ -22,7 +22,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
     </div>
 
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>Special Thanks<hr>
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>SPECIAL THANKS<hr>
                 SCOTT LIMBRICK<br>
 MIKE GREANEY<br>
 DAN CARR<br>
