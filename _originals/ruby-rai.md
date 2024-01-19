@@ -20,9 +20,8 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
         <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4">
       </div>
     </div>
-
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>SPECIAL THANKS<hr>
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><span style='font-family:"SuisseIntlMono", monospace, sans-serif; font-size:0.7rem;'><hr>SPECIAL THANKS<hr>
                 Scott Limbrick<br>
 Mike Greaney<br>
 Dan Carr<br>
@@ -40,10 +39,8 @@ Helen Townshend @ Creative Rep<br>
 Helen Pandos @ Helen Pandos Mgmt<br>
 Melissa Quinn @ Centrestage Mgmt<br>
 Michel Maronde @ Real People<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
-
 THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
-
-</p>
+</p></span>
      
 </span>
       <sub>
