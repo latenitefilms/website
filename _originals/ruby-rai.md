@@ -202,10 +202,6 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>kevin luk</td>
           </tr>
           <tr>
-            <td>additional music by</td>
-            <td>ryan granger<br>johnsen cummings</td>
-          </tr>
-          <tr>
             <td>colourist</td>
             <td>moodlab<br>daniel witt<br>CJ dobson<br></td>
           </tr>
