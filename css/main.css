@@ -1419,6 +1419,7 @@ width:100%;
 
 #details article sub tr td:nth-of-type(2){
   padding-left: 2em;
+  text-transform: capitalize;
 }
 
 #details .imdb, #details .youtube, #details img.vimeo{
