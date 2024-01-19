@@ -6,7 +6,9 @@ subtitle: Online
 type: filter_option2
 customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...
 ---
+
 {% include relBase.html %}
+
   <section id="details">
     <div id="carousel">
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
@@ -20,7 +22,13 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
     </div>
 
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p></span>
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br>&nbsp;<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
+
+THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
+
+</p>
+     
+</span>
       <sub>
         <hr>CAST
         <hr class="margin_bottom">
@@ -55,7 +63,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
           </tr>
           <tr>
             <td>Trinket</td>
-            <td>Eloise Willis-Hardy</td>
+            <td>Eloise VIGILANTONIE</td>
           </tr>
           <tr>
             <td>Uncle</td>
@@ -100,6 +108,14 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>Nicolette Minster</td>
           </tr>
           <tr>
+            <td>Developed with</td>
+            <td>AMRUTA NARGUNDKAR</td>
+          </tr>
+          <tr>
+            <td>Director Of Photography</td>
+            <td>Michael Lincoln</td>
+          </tr>
+          <tr>
             <td>Director Of Photography</td>
             <td>Michael Lincoln</td>
           </tr>
@@ -108,25 +124,110 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>Rennie Watson</td>
           </tr>
           <tr>
-            <td>Make Up Designer</td>
-            <td>Marie Princi<br></td>
-          </tr>
-          <tr>
             <td>Costume Designer</td>
             <td>Matilda Woodroofe<br></td>
+          </tr>
+          <tr>
+            <td>Make Up & Hair Designer</td>
+            <td>Marie Princi</td>
+          </tr>
+          <tr>
+            <td>Gaffer</td>
+            <td>CHRISTIAAN ABERNETHY</td>
           </tr>
           <tr>
             <td>Editor</td>
             <td>Kevin Luk<br></td>
           </tr>
           <tr>
-            <td>Colourist</td>
-            <td>CJ Dobson<br></td>
+            <td>1st Assistant Camera</td>
+            <td>HARRISON HUGGINS<br></td>
+          </tr>
+          <tr>
+            <td>Best Boy</td>
+            <td>JACK DONALD MCDOWELL<br></td>
+          </tr>
+          <tr>
+            <td>Sound Recordist</td>
+            <td>RYAN GRANGER<br></td>
+          </tr>
+          <tr>
+            <td>Boom Operator</td>
+            <td>JOHNSEN CUMMINGS<br></td>
+          </tr>
+          <tr>
+            <td>Art Dept Assistant</td>
+            <td>KATIE ESCANE<br></td>
+          </tr>
+          <tr>
+            <td>Production Assistant</td>
+            <td>MARNIE COLLA<br></td>
+          </tr>
+          <tr>
+            <td>Audio Post by</td>
+            <td>DEAD ON SOUND<br></td>
           </tr>
           <tr>
             <td>Sound Designer</td>
-            <td>Michael Granger<br></td>
+            <td>RYAN GRANGER<br></td>
           </tr>
+          <tr>
+            <td>Audio Editor</td>
+            <td>JOHNSEN CUMMINGS<br>JOEL TAYLOR</td>
+          </tr>
+          <tr>
+            <td>Re Record Mix</td>
+            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+          </tr>
+          <tr>
+            <td>Additional Music by</td>
+            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+          </tr>
+          <tr>
+            <td>Stills</td>
+            <td>SARAH WALKER<br>BEN RIDGWELL</td>
+          </tr>
+          <tr>
+            <td>Visual Effects</td>
+            <td>KEVIN LUK</td>
+          </tr>
+          <tr>
+            <td>Additional Music by</td>
+            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+          </tr>
+          <tr>
+            <td>Colourist</td>
+            <td>MOODLAB<br>DANIEL WITT<br>CJ Dobson<br></td>
+          </tr>
+          <tr>
+            <td>Legal & Business Affairs</td>
+            <td>JENNY LALOR</td>
+          </tr>
+          <tr>
+            <td>Producers Attachment</td>
+            <td>RACHEL KAMATH</td>
+          </tr>
+          <td colspan="2">
+                <br />
+                <hr>Special Thanks<hr>
+                SCOTT LIMBRICK
+MIKE GREANEY
+DAN CARR
+KIERAN WHEELER
+BEN RIDGWELL
+SARAH WALKER
+ESTELE & GIOVANNI SCOTTO
+MIKE BENNETT
+FREDDIE, SOPHIE & CHOKI
+MIKE RUSSO
+SAM MCMILLAN
+NIKKI HAMILTON-CORNWALL
+SCHOOLHOUSE STUDIOS
+HELEN TOWNSHEND @ CREATIVE REP
+HELEN PANDOS @ HELEN PANDOS MGMT
+MELISSA QUINN @ CENTRESTAGE MGMT
+MICHEL MARONDE @ REAL PEOPLE
+            </td></tr>
         </table>
 
         <br><hr>GENRE
@@ -158,8 +259,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
         </li>
       </ul>
     </div>
+
   </section>
-
-
 
   <div id="gradient"></div>
