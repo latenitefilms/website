@@ -23,23 +23,23 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
 
     <article><span id="main-detail">
       <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>SPECIAL THANKS<hr>
-                SCOTT LIMBRICK<br>
-MIKE GREANEY<br>
-DAN CARR<br>
-KIERAN WHEELER<br>
-BEN RIDGWELL<br>
-SARAH WALKER<br>
-ESTELE & GIOVANNI SCOTTO<br>
-MIKE BENNETT<br>
-FREDDIE, SOPHIE & CHOKI<br>
-MIKE RUSSO<br>
-SAM MCMILLAN<br>
-NIKKI HAMILTON-CORNWALL<br>
-SCHOOLHOUSE STUDIOS<br>
-HELEN TOWNSHEND @ CREATIVE REP<br>
-HELEN PANDOS @ HELEN PANDOS MGMT<br>
-MELISSA QUINN @ CENTRESTAGE MGMT<br>
-MICHEL MARONDE @ REAL PEOPLE<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
+                Scott Limbrick<br>
+Mike Greaney<br>
+Dan Carr<br>
+Kieran Wheeler<br>
+Ben Ridgwell<br>
+Sarah Walker<br>
+Estele & Giovanni Scotto<br>
+Mike Bennett<br>
+Freddie, Sophie & Choki<br>
+Mike Russo<br>
+Sam Mcmillan<br>
+Nikki Hamilton-cornwall<br>
+Schoolhouse Studios<br>
+Helen Townshend @ Creative Rep<br>
+Helen Pandos @ Helen Pandos Mgmt<br>
+Melissa Quinn @ Centrestage Mgmt<br>
+Michel Maronde @ Real People<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
 
 THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
 
@@ -51,52 +51,52 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
         <hr class="margin_bottom">
         <table>
           <tr>
-            <td>Ruby</td>
-            <td>Vidya Rajan</td>
+            <td>ruby</td>
+            <td>vidya rajan</td>
           </tr>
           <tr>
-            <td>Beamshine</td>
-            <td>Elyce Phillips</td>
+            <td>beamshine</td>
+            <td>elyce phillips</td>
           </tr>
           <tr>
-            <td>Squalene</td>
-            <td>Ella Lawry</td>
+            <td>squalene</td>
+            <td>ella lawry</td>
           </tr>
           <tr>
-            <td>Chi Chi</td>
-            <td>Nicolette Minster</td>
+            <td>chi chi</td>
+            <td>nicolette minster</td>
           </tr>
           <tr>
-            <td>Gobbo</td>
-            <td>Lee Beckhurst</td>
+            <td>gobbo</td>
+            <td>lee beckhurst</td>
           </tr>
           <tr>
-            <td>Scott</td>
-            <td>Pedro Cooray</td>
+            <td>scott</td>
+            <td>pedro cooray</td>
           </tr>
           <tr>
-            <td>Gwenifer</td>
-            <td>Charlize Costantin</td>
+            <td>gwenifer</td>
+            <td>charlize costantin</td>
           </tr>
           <tr>
-            <td>Trinket</td>
-            <td>Eloise VIGILANTONIE</td>
+            <td>trinket</td>
+            <td>eloise vigilantonie</td>
           </tr>
           <tr>
-            <td>Uncle</td>
-            <td>Kumar Eliezer</td>
+            <td>uncle</td>
+            <td>kumar eliezer</td>
           </tr>
           <tr>
-            <td>Denise</td>
-            <td>Heidi Arena</td>
+            <td>denise</td>
+            <td>heidi arena</td>
           </tr>
           <tr>
-            <td>Monstera Murderer</td>
-            <td>Sarah Walker</td>
+            <td>monstera murderer</td>
+            <td>sarah walker</td>
           </tr>
           <tr>
-            <td>Filip Lescaut</td>
-            <td>Filip Lescaut</td>
+            <td>filip lescaut</td>
+            <td>filip lescaut</td>
           </tr>
           <tr>
             <td colspan="2">
@@ -105,124 +105,124 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             </td>
           </tr>
           <tr>
-            <td>Writer/Creator</td>
-            <td>Vidya Rajan</td>
+            <td>writer/creator</td>
+            <td>vidya rajan</td>
           </tr>
           <tr>
-            <td>Writer</td>
-            <td>Elyce Phillips</td>
+            <td>writer</td>
+            <td>elyce phillips</td>
           </tr>
           <tr>
-            <td>Director</td>
-            <td>Jesse Vogelaar</td>
+            <td>director</td>
+            <td>jesse vogelaar</td>
           </tr>
           <tr>
-            <td>Producer</td>
-            <td>Nicholas Colla</td>
+            <td>producer</td>
+            <td>nicholas colla</td>
           </tr>
           <tr>
-            <td>Associate Producer</td>
-            <td>Nicolette Minster</td>
+            <td>associate producer</td>
+            <td>nicolette minster</td>
           </tr>
           <tr>
-            <td>Developed with</td>
-            <td>AMRUTA NARGUNDKAR</td>
+            <td>developed with</td>
+            <td>amruta nargundkar</td>
           </tr>
           <tr>
-            <td>Director Of Photography</td>
-            <td>Michael Lincoln</td>
+            <td>director of photography</td>
+            <td>michael lincoln</td>
           </tr>
           <tr>
-            <td>Director Of Photography</td>
-            <td>Michael Lincoln</td>
+            <td>director of photography</td>
+            <td>michael lincoln</td>
           </tr>
           <tr>
-            <td>Production Designer</td>
-            <td>Rennie Watson</td>
+            <td>production designer</td>
+            <td>rennie watson</td>
           </tr>
           <tr>
-            <td>Costume Designer</td>
-            <td>Matilda Woodroofe<br></td>
+            <td>costume designer</td>
+            <td>matilda woodroofe<br></td>
           </tr>
           <tr>
-            <td>Make Up & Hair Designer</td>
-            <td>Marie Princi</td>
+            <td>make up & hair designer</td>
+            <td>marie princi</td>
           </tr>
           <tr>
-            <td>Gaffer</td>
-            <td>CHRISTIAAN ABERNETHY</td>
+            <td>gaffer</td>
+            <td>christiaan abernethy</td>
           </tr>
           <tr>
-            <td>Editor</td>
-            <td>Kevin Luk<br></td>
+            <td>editor</td>
+            <td>kevin luk<br></td>
           </tr>
           <tr>
-            <td>1st Assistant Camera</td>
-            <td>HARRISON HUGGINS<br></td>
+            <td>1st assistant camera</td>
+            <td>harrison huggins<br></td>
           </tr>
           <tr>
-            <td>Best Boy</td>
-            <td>JACK DONALD MCDOWELL<br></td>
+            <td>best boy</td>
+            <td>jack donald mcdowell<br></td>
           </tr>
           <tr>
-            <td>Sound Recordist</td>
-            <td>RYAN GRANGER<br></td>
+            <td>sound recordist</td>
+            <td>ryan granger<br></td>
           </tr>
           <tr>
-            <td>Boom Operator</td>
-            <td>JOHNSEN CUMMINGS<br></td>
+            <td>boom operator</td>
+            <td>johnsen cummings<br></td>
           </tr>
           <tr>
-            <td>Art Dept Assistant</td>
-            <td>KATIE ESCANE<br></td>
+            <td>art dept assistant</td>
+            <td>katie escane<br></td>
           </tr>
           <tr>
-            <td>Production Assistant</td>
-            <td>MARNIE COLLA<br></td>
+            <td>production assistant</td>
+            <td>marnie colla<br></td>
           </tr>
           <tr>
-            <td>Audio Post by</td>
-            <td>DEAD ON SOUND<br></td>
+            <td>audio post by</td>
+            <td>dead on sound<br></td>
           </tr>
           <tr>
-            <td>Sound Designer</td>
-            <td>RYAN GRANGER<br></td>
+            <td>sound designer</td>
+            <td>ryan granger<br></td>
           </tr>
           <tr>
-            <td>Audio Editor</td>
-            <td>JOHNSEN CUMMINGS<br>JOEL TAYLOR</td>
+            <td>audio editor</td>
+            <td>johnsen cummings<br>joel taylor</td>
           </tr>
           <tr>
-            <td>Re Record Mix</td>
-            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+            <td>re record mix</td>
+            <td>ryan granger<br>johnsen cummings</td>
           </tr>
           <tr>
-            <td>Additional Music by</td>
-            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+            <td>additional music by</td>
+            <td>ryan granger<br>johnsen cummings</td>
           </tr>
           <tr>
-            <td>Stills</td>
-            <td>SARAH WALKER<br>BEN RIDGWELL</td>
+            <td>stills</td>
+            <td>sarah walker<br>ben ridgwell</td>
           </tr>
           <tr>
-            <td>Visual Effects</td>
-            <td>KEVIN LUK</td>
+            <td>visual effects</td>
+            <td>kevin luk</td>
           </tr>
           <tr>
-            <td>Additional Music by</td>
-            <td>RYAN GRANGER<br>JOHNSEN CUMMINGS</td>
+            <td>additional music by</td>
+            <td>ryan granger<br>johnsen cummings</td>
           </tr>
           <tr>
-            <td>Colourist</td>
-            <td>MOODLAB<br>DANIEL WITT<br>CJ Dobson<br></td>
+            <td>colourist</td>
+            <td>moodlab<br>daniel witt<br>cj dobson<br></td>
           </tr>
           <tr>
-            <td>Legal & Business Affairs</td>
-            <td>JENNY LALOR</td>
+            <td>legal & business affairs</td>
+            <td>jenny lalor</td>
           </tr>
           <tr>
-            <td>Producers Attachment</td>
-            <td>RACHEL KAMATH</td>
+            <td>producers attachment</td>
+            <td>rachel kamath</td>
           </tr>
         </table>
 
