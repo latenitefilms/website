@@ -130,10 +130,6 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>michael lincoln</td>
           </tr>
           <tr>
-            <td>director of photography</td>
-            <td>michael lincoln</td>
-          </tr>
-          <tr>
             <td>production designer</td>
             <td>rennie watson</td>
           </tr>
