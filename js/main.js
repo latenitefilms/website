@@ -41,6 +41,10 @@ function MobileSwitch(click) {
   }
 }
 
+function copyABN() {
+  navigator.clipboard.writeText(72130929725);
+}
+
 function setPrefs(x) {
   localStorage.setItem("light", x);
   if (x) {
