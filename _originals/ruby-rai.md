@@ -214,7 +214,7 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
           </tr>
           <tr>
             <td>colourist</td>
-            <td>moodlab<br>daniel witt<br>cj dobson<br></td>
+            <td>moodlab<br>daniel witt<br>CJ dobson<br></td>
           </tr>
           <tr>
             <td>legal & business affairs</td>
