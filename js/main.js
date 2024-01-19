@@ -42,7 +42,7 @@ function MobileSwitch(click) {
 }
 
 function copyABN() {
-  navigator.clipboard.writeText(72130929725);
+  navigator.clipboard.writeText("72130929725");
 }
 
 function setPrefs(x) {
