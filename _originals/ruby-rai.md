@@ -22,7 +22,24 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
     </div>
 
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br>&nbsp;<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><hr>Special Thanks<hr>
+                SCOTT LIMBRICK<br>
+MIKE GREANEY<br>
+DAN CARR<br>
+KIERAN WHEELER<br>
+BEN RIDGWELL<br>
+SARAH WALKER<br>
+ESTELE & GIOVANNI SCOTTO<br>
+MIKE BENNETT<br>
+FREDDIE, SOPHIE & CHOKI<br>
+MIKE RUSSO<br>
+SAM MCMILLAN<br>
+NIKKI HAMILTON-CORNWALL<br>
+SCHOOLHOUSE STUDIOS<br>
+HELEN TOWNSHEND @ CREATIVE REP<br>
+HELEN PANDOS @ HELEN PANDOS MGMT<br>
+MELISSA QUINN @ CENTRESTAGE MGMT<br>
+MICHEL MARONDE @ REAL PEOPLE<br><p>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
 
 THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
 
@@ -207,27 +224,6 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>Producers Attachment</td>
             <td>RACHEL KAMATH</td>
           </tr>
-          <td colspan="2">
-                <br />
-                <hr>Special Thanks<hr>
-                SCOTT LIMBRICK
-MIKE GREANEY
-DAN CARR
-KIERAN WHEELER
-BEN RIDGWELL
-SARAH WALKER
-ESTELE & GIOVANNI SCOTTO
-MIKE BENNETT
-FREDDIE, SOPHIE & CHOKI
-MIKE RUSSO
-SAM MCMILLAN
-NIKKI HAMILTON-CORNWALL
-SCHOOLHOUSE STUDIOS
-HELEN TOWNSHEND @ CREATIVE REP
-HELEN PANDOS @ HELEN PANDOS MGMT
-MELISSA QUINN @ CENTRESTAGE MGMT
-MICHEL MARONDE @ REAL PEOPLE
-            </td></tr>
         </table>
 
         <br><hr>GENRE
