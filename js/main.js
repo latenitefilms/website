@@ -43,6 +43,12 @@ function MobileSwitch(click) {
 
 function copyABN() {
   navigator.clipboard.writeText("72130929725");
+  document.getElementById("entypo-check").style.display = 'inline-block';
+  document.getElementById("entypo-copy").style.display = 'none';
+  setTimeout(() => {
+    document.getElementById("entypo-check").style.display = 'none';
+    document.getElementById("entypo-copy").style.display = 'inline-block';
+  }, "3000");
 }
 
 function setPrefs(x) {
