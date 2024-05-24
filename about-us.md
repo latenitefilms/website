@@ -73,6 +73,14 @@ img: og/about.png
           </td>
         </tr>
         <tr>
+          <td><img class="headshot" src="{{ relBase }}img/headshot/scarlett.jpg"></td>
+          <td>
+            <h3>SCARLETT KOEHNE / Producer</h3>
+            <p>Scarlett is a producer whose credits include limited series, Videoland, which was was made with support from Screen Australia, VicScreen and Queer Screen and awarded Best Series in the Comedy Competition at Series Mania 2024. Scarlett previously produced online series, Loving Captivity, which was supported by the City of Melbourne and Screen Australia. After completing a law degree, Scarlett developed her screen career in the Production Management department on Clickbait, La Brea, Books That Made Us and House of Wellness among others. As a writer, she was selected in last year’s SPA Pitch On Demand competition. Scarlett is proud to be participating as a mentor in this year’s ElevateUs program run by WIFT and is thrilled to be joining LateNite on a VicScreen supported Producer Placement.
+            </p>
+          </td>
+        </tr>
+        <tr>
           <td><img class="headshot" src="{{ relBase }}img/headshot/kevin.jpg"></td>
           <td>
             <h3>KEVIN LUK / Editor</h3>
