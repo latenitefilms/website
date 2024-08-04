@@ -61,7 +61,6 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         SBS<br><br>
         <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
       </sub>
-      </sub>
     </article>
 
     <div id="related">
