@@ -151,7 +151,7 @@ footer span.abn:hover {
   color: #26AAE2;
 }
 
-footer span.abn:hover .icon p svg path {
+footer span.abn:hover svg path {
   fill: #26AAE2;
 }
 
