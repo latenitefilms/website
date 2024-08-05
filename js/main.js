@@ -62,6 +62,10 @@ function setPrefs(x) {
 }
 
 function getPrefs() {
+
+let lighton = document.getElementById("lighton");
+let lightoff = document.getElementById("lightoff");
+
   console.log("getting prefs");
   if (localStorage.getItem("light") == "true") {
     console.log("pref on");
@@ -255,7 +259,7 @@ function initialise() {
 }
 
 window.addEventListener('pageshow', (event) => {
-  console.log("pageshow")
+  console.log("pageshow");
   initialise();
-  const myTimeout = setTimeout(initialise, 500);
 })
+
