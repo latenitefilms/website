@@ -246,10 +246,19 @@ window.addEventListener('resize', updateClasses);
   MobileSwitch(false);
 })();
 
-window.addEventListener('pageshow', (event) => {
+var timer;
+
+function initialise() { 
   getPrefs();
   updateClasses();
   MobileSwitch(false);
+}
+
+window.addEventListener('pageshow', (event) => {
+  initialise();
+   // avoid calling onPageBack twice if 'pageshow' event has been fired...
+   if (timer)
+    clearInterval(timer);
 })
 
 
@@ -260,8 +269,7 @@ window.onhashchange = function() {
   } else {
       //Browser back button was clicked
       console.log("Back button detected")
-      getPrefs();
-      MobileSwitch(false);
+      initialise();
   }
 }
 
@@ -269,7 +277,14 @@ window.onpageshow = function(event) {
   if (event.persisted) {
 
     console.log("event.persisted");
-    getPrefs();
-    MobileSwitch(false);
+    initialise();
   }
 };
+
+// when page is hidden, start timer that will fire when going back to the page...
+window.addEventListener('pagehide', function() {
+  timer = setInterval(function() {
+      clearInterval(timer);
+      onPageBack(); 
+  }, 100); 
+});
