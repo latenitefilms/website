@@ -73,8 +73,8 @@ function getPrefs() {
   else {
     console.log("pref off");
     //mobilelightswitch.classList.remove('checked');
-    lighton.checked = false;
     lightoff.checked = true;
+    lighton.checked = false;
     //mobilelightswitch.setAttribute("for", "lighton");  
   };
 }
