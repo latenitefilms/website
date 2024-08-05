@@ -283,7 +283,7 @@ function safariFix() {
 }*/
 
 window.addEventListener('pagehide', (event) => {
-  console.log("pagehide");
+  //console.log("pagehide");
   //initialise();
   const myTimeout = setTimeout(initialise, 100);
 })
