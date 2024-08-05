@@ -80,6 +80,7 @@ let lightoff = document.getElementById("lightoff");
     //mobilelightswitch.classList.remove('checked');
     lightoff.checked = true;
     lighton.checked = false;
+    safariFix();
     //mobilelightswitch.setAttribute("for", "lighton");  
   };
 }
@@ -270,3 +271,11 @@ window.addEventListener('focus', (event) => {
   initialise();
 })
 */
+function safariFix() { 
+const nav = document.querySelector("nav");
+const compStyles = window.getComputedStyle(nav).getPropertyValue("background-color");
+if (compStyles == "#fff"){
+  console.log("applying Safari Fix");
+  const myTimeout = setTimeout(safariFix, 1500);
+}
+}
