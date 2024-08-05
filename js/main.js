@@ -256,35 +256,8 @@ function initialise() {
 
 window.addEventListener('pageshow', (event) => {
   initialise();
-   // avoid calling onPageBack twice if 'pageshow' event has been fired...
-   if (timer)
-    clearInterval(timer);
 })
 
-
-window.onhashchange = function() {
-  console.log("onhashchange");
-  if (window.innerDocClick) {
-      //Your own in-page mechanism triggered the hash change
-  } else {
-      //Browser back button was clicked
-      console.log("Back button detected")
-      initialise();
-  }
-}
-
-window.onpageshow = function(event) {
-  if (event.persisted) {
-
-    console.log("event.persisted");
-    initialise();
-  }
-};
-
-// when page is hidden, start timer that will fire when going back to the page...
-window.addEventListener('pagehide', function() {
-  timer = setInterval(function() {
-      clearInterval(timer);
-      onPageBack(); 
-  }, 100); 
+window.addEventListener('popstate', function(event) {
+  initialise();
 });
