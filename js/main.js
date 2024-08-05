@@ -275,7 +275,7 @@ function safariFix() {
   const nav = document.querySelector("nav");
   const compStyles = window.getComputedStyle(nav).getPropertyValue("background-color");
   console.log(compStyles);
-  if (compStyles == "#fff"){
+  if (compStyles == "rgb(255, 255, 255)"){
     console.log("applying Safari Fix");
     const myTimeout = setTimeout(safariFix, 1500);
 }
