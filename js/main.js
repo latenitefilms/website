@@ -80,7 +80,7 @@ let lightoff = document.getElementById("lightoff");
     //mobilelightswitch.classList.remove('checked');
     lightoff.checked = true;
     lighton.checked = false;
-    safariFix();
+    //safariFix();
     //mobilelightswitch.setAttribute("for", "lighton");  
   };
 }
@@ -271,6 +271,7 @@ window.addEventListener('focus', (event) => {
   initialise();
 })
 */
+/*
 function safariFix() { 
   const nav = document.querySelector("nav");
   const compStyles = window.getComputedStyle(nav).getPropertyValue("background-color");
@@ -279,4 +280,10 @@ function safariFix() {
     console.log("applying Safari Fix");
     const myTimeout = setTimeout(safariFix, 1500);
 }
-}
+}*/
+
+window.addEventListener('pagehide', (event) => {
+  console.log("pagehide");
+  //initialise();
+  const myTimeout = setTimeout(initialise, 100);
+})
