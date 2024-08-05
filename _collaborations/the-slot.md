@@ -47,6 +47,8 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
         <hr>BROADCASTER
         <hr>
         Foxtel<br><br>
+        <hr>LINKS
+        <hr>
         <a href="https://www.imdb.com/title/tt7362280/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
