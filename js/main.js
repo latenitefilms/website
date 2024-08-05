@@ -276,10 +276,12 @@ function safariFontSizeFix(){
   const reference = document.querySelector("span.festival");
   const target = document.querySelector("span.award");
   if (reference) {
+    console.log("laurel found");
    const referenceSize = parseFloat(getComputedStyle(reference).fontSize);
    const targetSize = parseFloat(getComputedStyle(target).fontSize);
    const idealSize = referenceSize / 4 * 3;
    if (targetSize > idealSize) {
+    console.log("applying font size fix");
     target.style.fontsize = idealSize;
    }
   }
