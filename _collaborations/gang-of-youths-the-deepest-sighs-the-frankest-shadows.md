@@ -45,6 +45,8 @@ Visual Effects</td><td>Toby Angwin<br>Michael Shanks <br>Chris Hocking</td></tr>
         <hr>LABEL
         <hr>
         Sony<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=9URhKk22xbM" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
