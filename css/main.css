@@ -151,6 +151,10 @@ footer span.abn:hover {
   color: #26AAE2;
 }
 
+footer span.abn:hover .icon p svg path {
+  fill: #26AAE2;
+}
+
 #slider svg {
   transition: opacity 0.2s;
 }
