@@ -284,7 +284,7 @@ function safariFontSizeFix(){
     console.log("applying font size fix to "+ idealSize);
     const targets = document.querySelectorAll('span.award');
     if (targets) {
-      targets.forEach(target => targetstyle.fontSize = idealSize+"px");
+      targets.forEach(target => target.style.fontSize = idealSize+"px");
     }
    }
   }
