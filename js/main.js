@@ -76,7 +76,7 @@ let lightoff = document.getElementById("lightoff");
   }
   else {
     console.log("pref off");
-    consosle.log(lightoff.checked );
+    console.log(lightoff.checked );
     //mobilelightswitch.classList.remove('checked');
     lightoff.checked = true;
     lighton.checked = false;
