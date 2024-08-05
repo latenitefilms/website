@@ -151,8 +151,9 @@ footer span.abn:hover {
   color: #26AAE2;
 }
 
-#lighton~footer .icon p span.abn svg path {
+#lighton~footer .icon p span.abn:hover svg path {
   fill: #26AAE2;
+  transition: none;
 }
 
 #slider svg {
