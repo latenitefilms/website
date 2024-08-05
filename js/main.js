@@ -251,3 +251,14 @@ window.addEventListener('pageshow', (event) => {
   updateClasses();
   MobileSwitch(false);
 })
+
+
+window.onhashchange = function() {
+  if (window.innerDocClick) {
+      //Your own in-page mechanism triggered the hash change
+  } else {
+      //Browser back button was clicked
+  getPrefs();
+  MobileSwitch(false);
+  }
+}
