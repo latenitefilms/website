@@ -219,7 +219,6 @@ function updateClasses() {
 }
 
 // Run the function on page load
-updateClasses();
 
 // Optionally, you can also run the function on window resize
 window.addEventListener('resize', updateClasses);
@@ -246,10 +245,12 @@ window.addEventListener('resize', updateClasses);
   }*/
   console.log('page is fully loaded');
   getPrefs();
+  updateClasses();
   MobileSwitch(false);
 })();
 
 window.addEventListener('pageshow', (event) => {
   getPrefs();
+  updateClasses();
   MobileSwitch(false);
 })
