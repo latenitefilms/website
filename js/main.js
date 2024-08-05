@@ -192,18 +192,15 @@ function isVerticalScrollbarPresent() {
 
 function updateClasses() {
   const section = document.querySelector('section');
-  const slider = document.getElementById('slider');
+  const label = document.document.querySelector('#slider label');
   const footerWidthwrap = document.querySelector('footer .widthwrap');
-  if (slider) {
-    console.log("slider found");
-    const label = slider.querySelector('label');
-  }
+
 
   if (isVerticalScrollbarPresent()) {
     console.log("scrollbar found");
       section.classList.add('scrollbar-present');
       footerWidthwrap.classList.add('scrollbar-present');
-      if (slider) {
+      if (label) {
           label.classList.add('scrollbar-present');
       }
 
@@ -211,7 +208,7 @@ function updateClasses() {
     console.log("scrollbar not found");
       section.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
-      if (slider) {
+      if (label) {
         label.classList.remove('scrollbar-present');
     }
   }
