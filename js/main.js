@@ -199,6 +199,7 @@ function updateClasses() {
   }
 
   if (isVerticalScrollbarPresent()) {
+    console.log("scrollbar found");
       section.classList.add('scrollbar-present');
       label.classList.add('scrollbar-present');
       footerWidthwrap.classList.add('scrollbar-present');
@@ -207,6 +208,7 @@ function updateClasses() {
       }
 
   } else {
+    console.log("scrollbar not found");
       section.classList.remove('scrollbar-present');
       label.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
