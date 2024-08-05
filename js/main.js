@@ -193,17 +193,26 @@ function isVerticalScrollbarPresent() {
 function updateClasses() {
   const section = document.getElementById('mySection');
   const slider = document.getElementById('slider');
-  const label = slider.querySelector('label');
   const footerWidthwrap = document.querySelector('footer .widthwrap');
+  if (slider) {
+    const label = slider.querySelector('label');
+  }
 
   if (isVerticalScrollbarPresent()) {
       section.classList.add('scrollbar-present');
       label.classList.add('scrollbar-present');
       footerWidthwrap.classList.add('scrollbar-present');
+      if (label) {
+          label.classList.add('scrollbar-present');
+      }
+
   } else {
       section.classList.remove('scrollbar-present');
       label.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
+      if (label) {
+        label.classList.remove('scrollbar-present');
+    }
   }
 }
 
