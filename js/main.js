@@ -247,8 +247,8 @@ window.addEventListener('resize', updateClasses);
 var timer;
 
 function initialise() { 
-  `${new Date().toLocaleTimeString()} - initialise`;
-  const message = console.log(message);
+  const message = `${new Date().toLocaleTimeString()} - initialise`;
+  console.log(message);
   getPrefs();
   updateClasses();
   MobileSwitch(false);
