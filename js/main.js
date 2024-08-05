@@ -186,6 +186,32 @@ var reOrient = function () {
   });
 };
 
+function isVerticalScrollbarPresent() {
+  return document.documentElement.scrollHeight > window.innerHeight;
+}
+
+function updateClasses() {
+  const section = document.getElementById('mySection');
+  const label = slider.document.querySelector('#slider label');
+  const footerWidthwrap = document.querySelector('footer .widthwrap');
+
+  if (isVerticalScrollbarPresent()) {
+      section.classList.add('scrollbar-present');
+      label.classList.add('scrollbar-present');
+      footerWidthwrap.classList.add('scrollbar-present');
+  } else {
+      section.classList.remove('scrollbar-present');
+      label.classList.remove('scrollbar-present');
+      footerWidthwrap.classList.remove('scrollbar-present');
+  }
+}
+
+// Run the function on page load
+updateClasses();
+
+// Optionally, you can also run the function on window resize
+window.addEventListener('resize', updateClasses);
+
 
 // on page ready, initialise all the things.
 (function ready(fn) {/*

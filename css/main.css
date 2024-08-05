@@ -897,6 +897,10 @@ section {
   transition: all 0.2s;
 }
 
+.scrollbar-present{
+  padding-right: calc(3rem + 15px);
+}
+
 hr {
   border-bottom: none;
 }
