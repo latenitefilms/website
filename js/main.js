@@ -282,7 +282,7 @@ function safariFontSizeFix(){
    const idealSize = referenceSize / 4 * 3;
    if (targetSize > idealSize) {
     console.log("applying font size fix to "+ idealSize);
-    target.style.fontsize = idealSize+"px";
+    target.style.fontSize = idealSize+"px";
    }
   }
 }
