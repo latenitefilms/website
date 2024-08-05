@@ -257,22 +257,3 @@ function initialise() {
 window.addEventListener('pageshow', initialise, true);
 
 
-const logDiv = document.getElementById('log');
-
-function logEvent(event) {
-    const { type, target } = event;
-    const message = `${new Date().toLocaleTimeString()} - Event: ${type}, Target: ${target.tagName}`;
-    console.log(message);
-}
-
-// List of DOM events to listen for
-const events = [
-    'click', 'dblclick', 'mousedown', 'mouseup', 'mouseover', 'mouseout', 
-    'mousemove', 'keydown', 'keyup', 'keypress', 'focus', 'blur', 
-    'change', 'input', 'submit', 'reset', 'resize', 'scroll', 'wheel',
-    'popstate', 'pageshow', 'pagehide', 'beforeunload', 'unload'
-];
-
-events.forEach(event => {
-    window.addEventListener(event, logEvent, true);
-});
