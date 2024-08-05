@@ -76,6 +76,7 @@ let lightoff = document.getElementById("lightoff");
   }
   else {
     console.log("pref off");
+    consosle.log(lightoff.checked );
     //mobilelightswitch.classList.remove('checked');
     lightoff.checked = true;
     lighton.checked = false;
@@ -261,5 +262,11 @@ function initialise() {
 window.addEventListener('pageshow', (event) => {
   console.log("pageshow");
   initialise();
+  //const myTimeout = setTimeout(initialise, 500);
 })
-
+/*
+window.addEventListener('focus', (event) => {
+  console.log("focus");
+  initialise();
+})
+*/
