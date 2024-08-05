@@ -59,7 +59,13 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <hr>BROADCASTER
         <hr>
         SBS<br><br>
-        <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
+         <hr>WATCH
+        <hr>
+        <a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
+        <br><br>
+        <hr>LINKS
+        <hr>
+        <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
 
