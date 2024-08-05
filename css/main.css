@@ -897,7 +897,7 @@ section {
   transition: all 0.2s;
 }
 
-.scrollbar-present{
+.scrollbar-present, #slider label.scrollbar-present{
   padding-right: calc(3rem + 15px);
 }
 

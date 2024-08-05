@@ -192,7 +192,6 @@ function isVerticalScrollbarPresent() {
 
 function updateClasses() {
   const section = document.querySelector('section');
-  const label = document.querySelector('#slider label');
   const footerWidthwrap = document.querySelector('footer .widthwrap');
 
 
@@ -200,17 +199,19 @@ function updateClasses() {
     console.log("scrollbar found");
       section.classList.add('scrollbar-present');
       footerWidthwrap.classList.add('scrollbar-present');
+      const labels = document.querySelectorAll('#slider label');
       if (label) {
-          label.classList.add('scrollbar-present');
+      labels.forEach(label => label.classList.add('scrollbar-present'));
       }
 
   } else {
     console.log("scrollbar not found");
       section.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
+      const labels = document.querySelectorAll('#slider label');
       if (label) {
-        label.classList.remove('scrollbar-present');
-    }
+        labels.forEach(label => label.classList.remove('scrollbar-present'));
+      }
   }
 }
 
