@@ -263,7 +263,6 @@ function logEvent(event) {
     const { type, target } = event;
     const message = `${new Date().toLocaleTimeString()} - Event: ${type}, Target: ${target.tagName}`;
     console.log(message);
-    initialise();
 }
 
 // List of DOM events to listen for
