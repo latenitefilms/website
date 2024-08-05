@@ -258,7 +258,7 @@ function initialise() {
   getPrefs();
   updateClasses();
   MobileSwitch(false);
-  safariFontSizeFix;
+  safariFontSizeFix();
 }
 
 window.addEventListener('pageshow', (event) => {
