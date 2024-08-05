@@ -35,6 +35,8 @@ customExcerpt: "&#39;FLOW&#39; is taken from Crooked Colours debut album VERA"
         <hr>ARTIST
         <hr>
         Crooked Colours<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=DgkgGbJwRyo" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>

@@ -52,6 +52,8 @@ Colourist</td><td>Chris Tomkins</td></tr></table><br>
         <hr>Label
         <hr>
         Sony<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=5LvO-K_0BNA" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
