@@ -254,6 +254,7 @@ window.addEventListener('pageshow', (event) => {
 
 
 window.onhashchange = function() {
+  console.log("onhashchange");
   if (window.innerDocClick) {
       //Your own in-page mechanism triggered the hash change
   } else {
@@ -263,3 +264,12 @@ window.onhashchange = function() {
       MobileSwitch(false);
   }
 }
+
+window.onpageshow = function(event) {
+  if (event.persisted) {
+
+    console.log("event.persisted");
+    getPrefs();
+    MobileSwitch(false);
+  }
+};
