@@ -200,7 +200,7 @@ function updateClasses() {
       section.classList.add('scrollbar-present');
       footerWidthwrap.classList.add('scrollbar-present');
       const labels = document.querySelectorAll('#slider label');
-      if (label) {
+      if (labels) {
       labels.forEach(label => label.classList.add('scrollbar-present'));
       }
 
@@ -209,7 +209,7 @@ function updateClasses() {
       section.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
       const labels = document.querySelectorAll('#slider label');
-      if (label) {
+      if (labesl) {
         labels.forEach(label => label.classList.remove('scrollbar-present'));
       }
   }
