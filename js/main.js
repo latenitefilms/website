@@ -191,7 +191,7 @@ function isVerticalScrollbarPresent() {
 }
 
 function updateClasses() {
-  const section = document.getElementById('mySection');
+  const section = document.querySelector('section');
   const slider = document.getElementById('slider');
   const footerWidthwrap = document.querySelector('footer .widthwrap');
   if (slider) {
