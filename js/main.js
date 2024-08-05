@@ -241,22 +241,18 @@ window.addEventListener('resize', updateClasses);
     });
   }*/
   console.log('page is fully loaded');
-  getPrefs();
-  updateClasses();
-  MobileSwitch(false);
+  initialise();
 })();
 
 var timer;
 
 function initialise() { 
+  console.log("initialise");
   getPrefs();
   updateClasses();
   MobileSwitch(false);
 }
 
-window.addEventListener('pageshow', (event) => {
-  console.log("pageshow")
-  initialise();
-})
+window.addEventListener('pageshow', initialise, true);
 
 
