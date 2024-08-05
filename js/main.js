@@ -258,32 +258,29 @@ function initialise() {
   getPrefs();
   updateClasses();
   MobileSwitch(false);
+  safariFontSizeFix;
 }
 
 window.addEventListener('pageshow', (event) => {
   console.log("pageshow");
   initialise();
-  //const myTimeout = setTimeout(initialise, 500);
 })
-/*
-window.addEventListener('focus', (event) => {
-  console.log("focus");
-  initialise();
-})
-*/
-/*
-function safariFix() { 
-  const nav = document.querySelector("nav");
-  const compStyles = window.getComputedStyle(nav).getPropertyValue("background-color");
-  console.log(compStyles);
-  if (compStyles == "rgb(255, 255, 255)"){
-    console.log("applying Safari Fix");
-    const myTimeout = setTimeout(safariFix, 1500);
-}
-}*/
 
 window.addEventListener('pagehide', (event) => {
   //console.log("pagehide");
   //initialise();
   const myTimeout = setTimeout(initialise, 100);
 })
+
+function safariFontSizeFix(){
+  const reference = document.querySelector("span.festival");
+  const target = document.querySelector("span.award");
+  if (reference) {
+   const referenceSize = parseFloat(getComputedStyle(reference).fontSize);
+   const targetSize = parseFloat(getComputedStyle(target).fontSize);
+   const idealSize = referenceSize / 4 * 3;
+   if (targetSize > idealSize) {
+    target.style.fontsize = idealSize;
+   }
+  }
+}
