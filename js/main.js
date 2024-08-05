@@ -76,13 +76,25 @@ let lightoff = document.getElementById("lightoff");
   }
   else {
     console.log("pref off");
-    console.log(lightoff.checked );
+    checkLightStatus();
     //mobilelightswitch.classList.remove('checked');
     lightoff.checked = true;
     lighton.checked = false;
     //mobilelightswitch.setAttribute("for", "lighton");  
-  };
-}
+  }
+};
+
+  function checkLightStatus() {
+    if (!lightoff.checked) {
+        clearInterval(checkInterval);
+        lightoff.checked = true;
+        lighton.checked = false;
+    } else {
+       console.log("loop end");
+    }
+  }
+
+const checkInterval = setInterval(checkLightStatus, 1000); 
 /*
 window.onload = function() {//= (event) => {
   console.log('page is fully loaded');
