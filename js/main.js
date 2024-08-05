@@ -257,5 +257,5 @@ function initialise() {
 window.addEventListener('pageshow', (event) => {
   console.log("pageshow")
   initialise();
-  const myTimeout = setTimeout(initialise, 1000);
+  const myTimeout = setTimeout(initialise, 500);
 })
