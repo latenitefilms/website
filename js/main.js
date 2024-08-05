@@ -281,7 +281,7 @@ function safariFontSizeFix(){
    const targetSize = parseFloat(getComputedStyle(target).fontSize);
    const idealSize = referenceSize / 4 * 3;
    if (targetSize > idealSize) {
-    console.log("applying font size fix");
+    console.log("applying font size fix to "+ idealSize);
     target.style.fontsize = idealSize;
    }
   }
