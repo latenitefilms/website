@@ -526,7 +526,6 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
     width:350px;
     top: 0;
     right: 0;
-    color: #fff;
     font-family: Verdana, Geneva, sans-serif;
     text-align: center;
     padding:0;
@@ -563,14 +562,14 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
   }
 
   #fpc_corner-contents img{
-    height: 6em;
-    width: 6em;
+    height: 8em;
+    width: 8em;
   }
 
   #fpc_corner-contents figure{
     position: absolute;
-    bottom: -8em;
-    right: 2em;
+    bottom: -12em;
+    right: -1em;
     transform: rotate(-90deg);
   }
   
