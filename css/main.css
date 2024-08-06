@@ -563,11 +563,14 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
   }
 
   #fpc_corner-contents img{
+    height: 6em;
+    width: 6em;
+  }
+
+  #fpc_corner-contents figure{
     position: absolute;
     bottom: -8em;
     right: 2em;
-    height: 6em;
-    width: 6em;
     transform: rotate(-90deg);
   }
   
