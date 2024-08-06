@@ -39,6 +39,8 @@ customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from
         <hr>
         Guy Pearce
         <br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=KcXrf-eHQeE" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>

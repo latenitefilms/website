@@ -48,6 +48,8 @@ customExcerpt: Down-on-his-luck sewage worker, Howard North, discovers he is a p
         <hr>DISTRIBUTOR
         <hr>
         Momentum Pictures<br><br>
+        <hr>LINKS
+        <hr>
         <a href="https://www.imdb.com/title/tt7453418/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>

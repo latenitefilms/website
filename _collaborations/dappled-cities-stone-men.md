@@ -41,6 +41,8 @@ Colourist</td><td>Jared Daperis</td></tr></table><br>
         <hr>ARTIST
         <hr>
         Dappled Cities<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=1-t4SeoRx40" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>

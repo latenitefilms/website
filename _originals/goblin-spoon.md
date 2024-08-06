@@ -35,7 +35,6 @@ customExcerpt: "In a fantastical world of magic and monsters, saving the world i
         Nugg has the skills, the ingredients, the buds and the real estate...</p>
         <p>
         Now all he needs are some customers.</p>
-      </p>
       </span>
       <sub>
         <hr>CREW

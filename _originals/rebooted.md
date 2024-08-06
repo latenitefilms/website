@@ -160,7 +160,6 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
             <td> Michael Shanks</td>
           </tr>
         </table>
-        </span>
         <br>
         <hr>GENRE
         <hr>
@@ -170,7 +169,13 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <hr>
         Online
         <br><br>
-        <a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
+        <hr>WATCH
+        <hr>
+        <a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
+        <br><br>
+        <hr>LINKS
+        <hr>
+        <a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
     <div id="related">

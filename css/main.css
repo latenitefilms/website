@@ -143,6 +143,19 @@ footer .icon p svg path {
   transition: fill 0.2s;
 }
 
+footer span.abn {
+  display: inline-block;
+}
+
+footer span.abn:hover {
+  color: #26AAE2;
+}
+
+#lighton~footer .icon p span.abn:hover svg path {
+  fill: #26AAE2;
+  transition: none;
+}
+
 #slider svg {
   transition: opacity 0.2s;
 }
@@ -897,6 +910,10 @@ section {
   transition: all 0.2s;
 }
 
+.scrollbar-present, #slider label.scrollbar-present{
+  padding-right: calc(3rem + 15px);
+}
+
 hr {
   border-bottom: none;
 }
@@ -1360,6 +1377,8 @@ user-select: none;
   display: flex;
   text-transform: initial;
   grid-gap: 16em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #details #main-detail {
 font-family: Karelia;

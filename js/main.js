@@ -62,6 +62,10 @@ function setPrefs(x) {
 }
 
 function getPrefs() {
+
+let lighton = document.getElementById("lighton");
+let lightoff = document.getElementById("lightoff");
+
   console.log("getting prefs");
   if (localStorage.getItem("light") == "true") {
     console.log("pref on");
@@ -72,9 +76,11 @@ function getPrefs() {
   }
   else {
     console.log("pref off");
+    console.log(lightoff.checked );
     //mobilelightswitch.classList.remove('checked');
-    lighton.checked = false;
     lightoff.checked = true;
+    lighton.checked = false;
+    //safariFix();
     //mobilelightswitch.setAttribute("for", "lighton");  
   };
 }
@@ -186,6 +192,40 @@ var reOrient = function () {
   });
 };
 
+function isVerticalScrollbarPresent() {
+  return document.documentElement.scrollHeight > window.innerHeight;
+}
+
+function updateClasses() {
+  const section = document.querySelector('section');
+  const footerWidthwrap = document.querySelector('footer .widthwrap');
+
+
+  if (isVerticalScrollbarPresent()) {
+    console.log("scrollbar found");
+      section.classList.add('scrollbar-present');
+      footerWidthwrap.classList.add('scrollbar-present');
+      const labels = document.querySelectorAll('#slider label');
+      if (labels) {
+      labels.forEach(label => label.classList.add('scrollbar-present'));
+      }
+
+  } else {
+    console.log("scrollbar not found");
+      section.classList.remove('scrollbar-present');
+      footerWidthwrap.classList.remove('scrollbar-present');
+      const labels = document.querySelectorAll('#slider label');
+      if (labesl) {
+        labels.forEach(label => label.classList.remove('scrollbar-present'));
+      }
+  }
+}
+
+// Run the function on page load
+
+// Optionally, you can also run the function on window resize
+window.addEventListener('resize', updateClasses);
+
 
 // on page ready, initialise all the things.
 (function ready(fn) {/*
@@ -207,11 +247,45 @@ var reOrient = function () {
     });
   }*/
   console.log('page is fully loaded');
-  getPrefs();
-  MobileSwitch(false);
+  initialise();
 })();
 
-window.addEventListener('pageshow', (event) => {
+var timer;
+
+function initialise() { 
+  const message = `${new Date().toLocaleTimeString()} - initialise`;
+  console.log(message);
   getPrefs();
+  updateClasses();
   MobileSwitch(false);
+  safariFontSizeFix();
+}
+
+window.addEventListener('pageshow', (event) => {
+  console.log("pageshow");
+  initialise();
 })
+
+window.addEventListener('pagehide', (event) => {
+  //console.log("pagehide");
+  //initialise();
+  const myTimeout = setTimeout(initialise, 100);
+})
+
+function safariFontSizeFix(){
+  const reference = document.querySelector("span.festival");
+  const target = document.querySelector("span.award");
+  if (reference) {
+    console.log("laurel found");
+   const referenceSize = parseFloat(getComputedStyle(reference).fontSize);
+   const targetSize = parseFloat(getComputedStyle(target).fontSize);
+   const idealSize = referenceSize / 4 * 3;
+   if (targetSize > idealSize) {
+    console.log("applying font size fix to "+ idealSize);
+    const targets = document.querySelectorAll('span.award');
+    if (targets) {
+      targets.forEach(target => target.style.fontSize = idealSize+"px");
+    }
+   }
+  }
+}

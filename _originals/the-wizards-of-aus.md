@@ -44,10 +44,10 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         Michael Shanks<br> Nicholas Issell</td></tr>
         <tr><td>
         Directed By</td><td>Michael Shanks</td></tr><tr><td>
-        Producer</td><td>Chris Hocking<br>Nicholas Colla <br> Sumah Hurley</td></tr></tr><td>
+        Producer</td><td>Chris Hocking<br>Nicholas Colla <br> Sumah Hurley</td></tr><tr><td>
         Director Of Photography</td><td>
-        Benjamin Hidalgo De La Barrera</td></tr></tr><td>
-        Art Director & Production Designer</td><td>Rennie Watson</td></tr></tr><td>
+        Benjamin Hidalgo De La Barrera</td></tr><tr><td>
+        Art Director & Production Designer</td><td>Rennie Watson</td></tr><tr><td>
         Costume Designer</td><td>Paige Prendergast</td></tr><tr><td>
         Makeup Designer</td><td>Marie Kealy</td></tr><tr><td>
         Colourist</td><td>CJ Dobson</td></tr><tr><td>
@@ -59,8 +59,13 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <hr>BROADCASTER
         <hr>
         SBS<br><br>
-        <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
-      </sub>
+         <hr>WATCH
+        <hr>
+        <a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
+        <br><br>
+        <hr>LINKS
+        <hr>
+        <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
 

@@ -37,6 +37,8 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         <hr>LABEL
         <hr>
         Universal<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=IkMqDLOrmXw" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>

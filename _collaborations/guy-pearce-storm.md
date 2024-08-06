@@ -43,6 +43,8 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
         <hr>ARTIST
         <hr>
         Guy Pearce<br><br>
+        <hr>WATCH
+        <hr>
         <a href="https://www.youtube.com/watch?v=h9IJS9uvvdY" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
