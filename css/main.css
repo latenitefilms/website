@@ -561,7 +561,7 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
     transition: border-right .3s ease-in-out, border-top .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
   }
 
-  #fpc_corner-contents img{
+  #fpc_corner-contents figure img{
     height: 8em;
     width: 8em;
   }
@@ -571,6 +571,12 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
     bottom: -12em;
     right: -1em;
     transform: rotate(-90deg);
+  }
+
+  #fpc_corner-contents>img{
+    position: absolute;
+    bottom:0;
+    right:0;
   }
   
 
