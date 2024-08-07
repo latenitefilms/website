@@ -573,7 +573,7 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
     transform: rotate(-90deg);
   }
 
-  #fpc_corner-contents>img{
+  #fpc_corner-contents > img{
     position: absolute;
     bottom:0;
     right:0;
