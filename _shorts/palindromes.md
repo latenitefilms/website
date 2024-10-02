@@ -21,7 +21,7 @@ customExcerpt: "A lonely man obsessed with symmetry is forced to reveal a peculi
     </div>
     <article><span id="main-detail">
       <h1>{{ page.title}}</h1><p>A lonely man obsessed with symmetry is forced to reveal a peculiar imperfection when he falls in love with the seemingly perfect woman.
-      </span>
+      </p></span>
       <sub>
         <hr>CREW
         <hr>
