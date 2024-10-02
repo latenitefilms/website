@@ -1441,7 +1441,7 @@ width:100%;
   text-transform: capitalize;
 }
 
-#details .imdb, #details .youtube, #details img.vimeo{
+#details .imdb, #details .youtube, #details img.project-vimeo{
   height:4.5em;
   width:auto;
   filter: grayscale() invert();
@@ -1467,11 +1467,11 @@ width:100%;
   filter: grayscale() invert() contrast(3);
 }
 
-#lightoff:checked~#details img.vimeo{
-  filter: grayscale() contrast(3);
+#lightoff:checked~#details img.project-vimeo{
+  filter: grayscale() contrast(5);
 }
 
-#details .imdb:hover, #details:hover .youtube:hover, #details img.vimeo:hover{
+#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover{
   filter:none !important;
 }
 

@@ -80,7 +80,7 @@ Scott Major</td>
         <br><br>
         <hr>WATCH
         <hr>
-        <a href="https://vimeo.com/79161189" target="_blank"><img src="{{ relBase }}img/social/vimeo.svg" class="vimeo"></a>
+        <a href="https://vimeo.com/79161189" target="_blank"><img src="{{ relBase }}img/social/vimeo.svg" class="project-vimeo"></a>
         <br><br>
         <hr>LINKS
         <hr>
