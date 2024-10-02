@@ -21,7 +21,7 @@ customExcerpt: "Harry, a troubled young boy with a vivid imagination wants to fi
     </div>
     <article><span id="main-detail">
       <h1>{{ page.title}}</h1><p>Harry, a troubled young boy with a vivid imagination wants to fight the forces of evil like his television hero, the Star Ship Captain. When he meets the athletic but slightly awkward Jordan, the two boys set a plan in motion to defeat the forces of evil and save the day. Set in Melbourne in the late 1970‘s, this is the story of a suburban Space Captain, his Lieutenant, the Rocket they built and the heroes they become.
-      </p>
+      </p></span>
       <sub>
         <hr>CREW
         <hr>
