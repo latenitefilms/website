@@ -1,7 +1,7 @@
 ---
-title: Collaborations
+title: Shorts
 layout: filter
-img: projects/lambsofgod.jpg
+img: projects/rebooted.jpg
 ---
 {% include relBase.html %}
 <section>
