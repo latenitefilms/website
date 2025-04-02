@@ -8,7 +8,7 @@ img: projects/rubyrai.jpg
 <input type="checkbox" id="filter_options" autocomplete="off" class="hidden" />
        <article>
       <ul class="projectlist">
-       {% for page in site.ani %}
+       {% for page in site.live-action %}
               <li class="{{page.type}}"><a href="{{ relBase }}{{page.id}}"><img src="{{ relBase }}img/{{ page.img }}">
           <h4>{{page.title}}</h4>
           <hr><sub>{{page.subtitle}}</sub>
