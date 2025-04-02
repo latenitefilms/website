@@ -12,12 +12,12 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/dbem1.png" id="img1">
-        <img src="{{ relBase }}img/gallery/dbem2.png" id="img2">
-        <img src="{{ relBase }}img/gallery/dbem3.png" id="img3">
-        <img src="{{ relBase }}img/gallery/dbem4.png" id="img4">
-        <img src="{{ relBase }}img/gallery/dbem5.png" id="img5">
-        <img src="{{ relBase }}img/gallery/dbem6.png" id="img6">
+        <img src="{{ relBase }}img/gallery/tfoe1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/tfoe2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/tfoe3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/tfoe4.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/tfoe5.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/tfoe6.jpg" id="img6">
       </div>
     </div>
 
