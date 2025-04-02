@@ -19,8 +19,6 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <img src="{{relBase}}img/gallery/wizards5.jpg" id="img5">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>The Wizards of Aus</h1><p>Fed up with the Magical Realm&#39;s obsession with large-scale fantasy warfare, Jack the Wizard decides to migrate to the sanest place he can think of: Melbourne&#39;s Western suburbs.</p>
 <p>
@@ -54,21 +52,16 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         Sound Design</td><td>Craig Jansson</td></tr></table>  <br>
         <hr>GENRE
         <hr>
-        Comedy<br>
+        Fantasy Comedy<br>
         <br> 
         <hr>BROADCASTER
         <hr>
         SBS<br><br>
-         <hr>WATCH
-        <hr>
-        <a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
-        <br><br>
         <hr>LINKS
-        <hr>
+        <hr> <a href="https://www.youtube.com/watch?v=yv3DedNXN4o&list=PLJSMFXYSojXotCa_NrjYM54ICmSmmCygg&ab_channel=timtimfed" target="_blank"><img src="{{relBase}}img/social/youtube.svg" class="youtube"></a>
         <a href="https://www.imdb.com/title/tt5260254/" target="_blank"><img src="{{relBase}}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
