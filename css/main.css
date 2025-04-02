@@ -1461,8 +1461,11 @@ width:100%;
   padding:0;
   transition: all 0s;
 }
-
 #details .imdb{
+  filter: grayscale() contrast(3) invert();;
+}
+
+#lightoff:checked~#details .imdb{
   filter: grayscale() contrast(3);
 }
 
