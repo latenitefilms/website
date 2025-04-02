@@ -148,9 +148,9 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       Related Project
       <hr>
       <ul>
-      {% assign related1 = site.pages | where: "title", "Rebooted" | first %}
-      {% assign related2 = site.pages | where: "title", "The Wizards of Aus" | first %}
-      {% assign related3 = site.pages | where: "title", "The Legend of Burnout Barry" | first %}
+      {% assign related1 = site.live-action | where: "title", "Rebooted" | first %}
+      {% assign related2 = site.live-action | where: "title", "The Wizards of Aus" | first %}
+      {% assign related3 = site.live-action | where: "title", "The Legend of Burnout Barry" | first %}
       <li>
         <a href="{{ related1.url | relative_url }}">
           <img src="{{ relBase }}{{ related1.img }}" alt="{{ related1.title }}">
