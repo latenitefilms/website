@@ -215,7 +215,7 @@ function updateClasses() {
       section.classList.remove('scrollbar-present');
       footerWidthwrap.classList.remove('scrollbar-present');
       const labels = document.querySelectorAll('#slider label');
-      if (labesl) {
+      if (labels) {
         labels.forEach(label => label.classList.remove('scrollbar-present'));
       }
   }
