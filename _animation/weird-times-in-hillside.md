@@ -21,34 +21,26 @@ customExcerpt:
       </div>
     </div>
     <article><span id="main-detail">
-      <h1>Munch Rexford</h1>
-      <p>When Munch Rexford was a small and skinny boy of eight, he was bitten by a German Shepherd.</p><p>
-
-Feeling responsible, his twin sister, Miriam, hoped that with a bit of love and encouragement, he would eventually move past the incident… Instead, Munch vowed to kill one of every animal. A reverse Noah’s Arc, if you will. It started off easy; the cow, the bald eagle, the humble worm. Now, Munch has his sights on more legendary prey. Moby Dick. Icarus. The Minotaur.</p><p>
-
-With his caddy/best-friend by his side (a horrid creature called Peter) and a whole world at his fingertips — nothing and no one can stop him.</p>
+      <h1>Weird Times in Hillside</h1>
+      <p>Matt, Amber and Jake are three teenagers growing up in ‘weird times.’ The dead are rising, magic is returning, and mythical creatures walk the Earth. Unfortunately for them, none of these things are happening dramatically enough to disrupt the flow of life in their outer suburban town.</p>
 </span>   <sub>
         <hr>CAST
         <hr>
-        <table><tr><td>Munch</td><td>Tom Burton</td></tr>
-        <tr><td>Miriam</td><td>Haley Alea Erickson</td></tr>
-        <tr><td>Mould</td><td>Alexei Toliopoulos</td></tr>
-        <tr><td>Peter</td><td>Mark Samual Bonanno</td></tr>
-        <tr><td>Bucky</td><td>Lizzy Hoo</td></tr>
+        <table><tr><td>Jake</td><td>Mike Greaney</td></tr>
+        <tr><td>Matt</td><td>Nicholas Colla</td></tr>
+        <tr><td>Amber</td><td>Sarah Walker</td></tr>
+        <tr><td>Kel</td><td>Nicolette Minster</td></tr>
+        <tr><td>Johnno</td><td>Dan Brumm</td></tr>
         <tr><td colspan="2"><br><hr>CREW
-          <hr></td></tr><tr><td>Created by </td><td>Millie Holten</td></tr><tr><td>
-        Written & Directed by </td><td>Millie Holten</td></tr><tr><td>
-          Executive Producer</td><td>Nicholas Colla</td></tr><tr><td>
-          Design</td><td>Millie Holten & Sammy Lewis</td></tr><tr><td>
-            Animation Director</td><td>Dale Anderson</td></tr><tr><td>
-            Editor</td><td>Kevin Luk</td></tr></table><br>
+          <hr></td></tr><tr><td>Created, Written & Directed by</td><td>Mike Greaney</td></tr><tr><td>
+          Executive Produced by </td><td>Nicholas Colla</td></tr></table><br>
         <hr>GENRE
         <hr>
-        Adventure Comedy<br>
+        Fantasy Comedy<br>
         <br>
-        <hr>BROADCASTER
+        <hr>PLATFORM
         <hr>
-        Adult Swim<br><br><!--
+        A Studio Digital<br><br><!--
         <hr>WATCH
         <hr>
         <a href="https://ltnt.tv/dbem" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
