@@ -149,7 +149,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       <hr>
       <ul>
         <li><a href= "../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
-          <hr><sub>Series</sub>
+          <hr><sub>{{ pages['the-future-of-everything'].metafields.namespace.subtitle }}</sub>
           <hr></a>
         </li>
         <li><a href= "../rebooted/"><img src="{{ relBase }}img/projects/rebooted.jpg">Rebooted
