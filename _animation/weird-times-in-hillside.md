@@ -1,7 +1,7 @@
 ---
 title: Weird Times in Hillside
 layout: project-details
-img: gallery/WeirdTimes_001.jpg
+img: projects/WeirdTimes.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt: 
