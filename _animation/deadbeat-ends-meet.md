@@ -1,7 +1,7 @@
 ---
 title: Deadbeat Ends Meet
 layout: project-details
-img: projects/dbem.png
+img: projects/dbem.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
@@ -12,12 +12,12 @@ customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard)
       <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
             id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
       <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/dbem1.png" id="img1">
-        <img src="{{ relBase }}img/gallery/dbem2.png" id="img2">
-        <img src="{{ relBase }}img/gallery/dbem3.png" id="img3">
-        <img src="{{ relBase }}img/gallery/dbem4.png" id="img4">
-        <img src="{{ relBase }}img/gallery/dbem5.png" id="img5">
-        <img src="{{ relBase }}img/gallery/dbem6.png" id="img6">
+        <img src="{{ relBase }}img/gallery/dbem1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
       </div>
     </div>
     <article><span id="main-detail">
