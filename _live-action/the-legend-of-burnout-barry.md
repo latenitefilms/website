@@ -18,8 +18,6 @@ customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell
         <img src="{{ relBase }}img/gallery/barry5.jpg" id="img4">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>The Legend of Burnout Barry</h1><p>Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what&#39;s possible. When speed demon and record holder Josh &quot;Wheely&quot; Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.</p></span>
       <sub>
@@ -41,16 +39,14 @@ customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell
         Production Designer</td><td>Nathan Wentworth<br></td></tr></table>
         <br><hr>GENRE
         <hr class="margin_bottom">
-        Children&#39;s<br>
+        Children&#39;s Adventure Comedy<br>
         <br>
         <hr>BROADCASTER
         <hr class="margin_bottom">
-        ABC<br><br><hr>WATCH
-        <hr>
-        <a href="https://vimeo.com/416291138" target="_blank"><img src="{{ relBase }}img/social/vimeo.svg" class="project-vimeo"></a>
+        ABC
         <br><br>
         <hr>LINKS
-        <hr>
+        <hr><a href="https://vimeo.com/416291138" target="_blank"><img src="{{ relBase }}img/social/vimeo.svg" class="project-vimeo"></a>
         <a href="https://www.imdb.com/title/tt11147376/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
