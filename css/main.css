@@ -1441,7 +1441,7 @@ width:100%;
   text-transform: capitalize;
 }
 
-#details .imdb, #details .youtube, #details img.project-vimeo{
+#details .imdb, #details .youtube, #details img.project-vimeo img.project-abc{
   height:4.5em;
   width:auto;
   filter: grayscale() invert();
