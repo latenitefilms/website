@@ -163,19 +163,15 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <br>
         <hr>GENRE
         <hr>
-        Animation<br>
+        Comedy, Coming of Age<br>
         <br>
         <hr>BROADCASTER
         <hr>
         Online
         <br><br>
-        <hr>WATCH
-        <hr>
-        <a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
-        <br><br>
         <hr>LINKS
         <hr>
-        <a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
+        <a href="https://www.youtube.com/watch?v=1Rkn6rnsgc4" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a><a href="https://www.imdb.com/title/tt9335950/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
     <div id="related">
