@@ -20,8 +20,6 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
         <img src="{{ relBase }}img/gallery/bewithyou5.jpg" id="img5">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>R&uuml;f&uuml;s Du Sol - Be With You</h1><p>R&uuml;f&uuml;s Du Sol - Be With You</p></span>
       <sub>
@@ -45,7 +43,6 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
         <a href="https://www.youtube.com/watch?v=DKH2t5d2Mj0" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -55,7 +52,7 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../crooked-colours-flow/"><img src="{{ relBase }}img/projects/flow.jpg">Crooked Colours - Flow
+        <li><a href="../guy-pearce-storm/"><img src="{{ relBase }}img/projects/storm.jpg">Guy Pearce - Storm
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>

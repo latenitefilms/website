@@ -20,8 +20,6 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
         <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>Peking Duk - Let You Down</h1><p>A stunt performers dream, the clip for Let You Down from Australian powerhouse Peking Duk follows an anxious woman (Maria Angelico) trying desperately to avoid a marriage proposal from her well meaning partner (Nazeem Hussain).
       </p><p>
@@ -61,7 +59,6 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
         <a href="https://www.youtube.com/watch?v=zUfVJ7c22r8" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -71,7 +68,7 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../casey-donovan-the-villain/"><img src="{{ relBase }}img/projects/villian.jpg">Casey Donovan - The Villain
+        <li><a href="../american-doubles-the-swell/"><img src="{{ relBase }}img/projects/swell.jpg">AMERICAN DOUBLES - THE SWELL
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>

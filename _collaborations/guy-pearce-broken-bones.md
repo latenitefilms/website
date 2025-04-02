@@ -43,7 +43,6 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
         <a href="https://www.youtube.com/watch?v=s5I62aD6qsE" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project

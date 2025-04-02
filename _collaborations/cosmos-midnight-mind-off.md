@@ -57,7 +57,6 @@ Colourist</td><td>Chris Tomkins</td></tr></table><br>
         <a href="https://www.youtube.com/watch?v=5LvO-K_0BNA" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -67,7 +66,7 @@ Colourist</td><td>Chris Tomkins</td></tr></table><br>
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../crooked-colours-flow/"><img src="{{ relBase }}img/projects/flow.jpg">Crooked Colours - Flow
+        <li><a href="../peking-duk-let-you-down/"><img src="{{ relBase }}img/projects/letyoudown.jpg">PEKING DUK - LET YOU DOWN
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
