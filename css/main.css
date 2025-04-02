@@ -1450,6 +1450,9 @@ width:100%;
 #details .youtube{
   filter: grayscale();
 }
+#details img.project-abc{
+  filter: none;
+}
 
 #details .vimeo{
   border-radius: 0;
@@ -1467,8 +1470,8 @@ width:100%;
   filter: grayscale() invert() contrast(3);
 }
 
-#lightoff:checked~#details .project-abc{
-  filter: none;
+#lightoff:checked~#details img.project-abc{
+  filter: invert();
 }
 
 #lightoff:checked~#details img.project-vimeo{
