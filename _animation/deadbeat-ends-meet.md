@@ -1,7 +1,7 @@
 ---
 title: Deadbeat Ends Meet
 layout: project-details
-img: projects/dbem.jpg
+img: gallery/dbem1.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
