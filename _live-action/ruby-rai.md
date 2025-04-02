@@ -86,10 +86,6 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>Vidya Rajan<br>Chris Hocking</td>
           </tr>
           <tr>
-            <td>developed with</td>
-            <td>amruta nargundkar</td>
-          </tr>
-          <tr>
             <td>director of photography</td>
             <td>michael lincoln</td>
           </tr>
@@ -110,32 +106,12 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>christiaan abernethy</td>
           </tr>
           <tr>
-            <td>editor</td>
-            <td>kevin luk<br></td>
-          </tr>
-          <tr>
-            <td>1st assistant camera</td>
-            <td>harrison huggins<br></td>
-          </tr>
-          <tr>
-            <td>best boy</td>
-            <td>jack donald mcdowell<br></td>
-          </tr>
-          <tr>
             <td>sound recordist</td>
             <td>ryan granger<br></td>
           </tr>
           <tr>
-            <td>boom operator</td>
-            <td>johnsen cummings<br></td>
-          </tr>
-          <tr>
-            <td>art dept assistant</td>
-            <td>katie escane<br></td>
-          </tr>
-          <tr>
-            <td>production assistant</td>
-            <td>marnie colla<br></td>
+            <td>editor</td>
+            <td>kevin luk<br></td>
           </tr>
           <tr>
             <td>audio post by</td>
@@ -144,22 +120,6 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
           <tr>
             <td>sound designer</td>
             <td>ryan granger<br></td>
-          </tr>
-          <tr>
-            <td>audio editor</td>
-            <td>johnsen cummings<br>joel taylor</td>
-          </tr>
-          <tr>
-            <td>re-record mix</td>
-            <td>ryan granger<br>johnsen cummings</td>
-          </tr>
-          <tr>
-            <td>additional music by</td>
-            <td>ryan granger<br>johnsen cummings</td>
-          </tr>
-          <tr>
-            <td>stills</td>
-            <td>sarah walker<br>ben ridgwell</td>
           </tr>
           <tr>
             <td>visual effects</td>
@@ -173,12 +133,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>legal & business affairs</td>
             <td>jenny lalor</td>
           </tr>
-          <tr>
-            <td>producers attachment</td>
-            <td>rachel kamath</td>
-          </tr>
         </table>
-
         <br><hr>GENRE
         <hr class="margin_bottom">
         Comedy<br>
@@ -188,7 +143,6 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
         ABC<br><br>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
