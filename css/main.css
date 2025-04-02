@@ -1467,6 +1467,10 @@ width:100%;
   filter: grayscale() invert() contrast(3);
 }
 
+#lightoff:checked~#details .project-abc{
+  filter: invert();
+}
+
 #lightoff:checked~#details img.project-vimeo{
   filter: grayscale() contrast(5);
 }
