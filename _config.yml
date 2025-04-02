@@ -21,15 +21,17 @@ exclude: [vendor]
 future: true
 
 collections:
-  originals:
+  live-action:
     output: true
     order:
       - ruby-rai.md
-      - the-future-of-everything.md
-      - the-legend-of-burnout-barry.md
       - rebooted.md
-      - goblin-spoon.md
+      - the-legend-of-burnout-barry.md
       - the-wizards-of-aus.md
+  animation:
+    output: true
+    order:
+      - the-future-of-everything.md
   collaborations:
     output: true
     order:
