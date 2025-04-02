@@ -66,7 +66,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
             <td>vidya rajan</td>
           </tr>
           <tr>
-            <td>writer</td>
+            <td>Co-Writer</td>
             <td>elyce phillips</td>
           </tr>
           <tr>
