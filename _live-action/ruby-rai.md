@@ -148,18 +148,33 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       Related Project
       <hr>
       <ul>
-        <li><a href= "../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
-          <hr><sub>{{ pages['the-future-of-everything'].title }}</sub>
-          <hr></a>
-        </li>
-        <li><a href= "../rebooted/"><img src="{{ relBase }}img/projects/rebooted.jpg">Rebooted
-          <hr><sub>Short</sub>
-          <hr></a>
-        </li>
-        <li><a href= "../the-wizards-of-aus/"><img src="{{ relBase }}img/projects/wizards.jpg">The Wizards of Aus
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
+      {% assign related1 = site.pages | where: "title", "Rebooted" | first %}
+      {% assign related2 = site.pages | where: "title", "The Wizards of Aus" | first %}
+      {% assign related3 = site.pages | where: "title", "The Legend of Burnout Barry" | first %}
+      <li>
+        <a href="{{ related1.url | relative_url }}">
+          <img src="{{ relBase }}{{ related1.img }}" alt="{{ related1.title }}">
+          {{ related1.title }}
+          <hr>
+          <sub>{{ related1.subtitle }}</sub>
+        </a>
+      </li>
+      <li>
+        <a href="{{ related2.url | relative_url }}">
+          <img src="{{ relBase }}{{ related2.img }}" alt="{{ related2.title }}">
+          {{ related2.title }}
+          <hr>
+          <sub>{{ related2.subtitle }}</sub>
+        </a>
+      </li>
+      <li>
+        <a href="{{ related3.url | relative_url }}">
+          <img src="{{ relBase }}{{ related3.img }}" alt="{{ related3.title }}">
+          {{ related3.title }}
+          <hr>
+          <sub>{{ related3.subtitle }}</sub>
+        </a>
+      </li>
       </ul>
     </div>
 
