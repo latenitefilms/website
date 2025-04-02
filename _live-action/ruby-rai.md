@@ -2,7 +2,7 @@
 title: Ruby Rai P.I.
 layout: project-details
 img: projects/rubyrai.jpg
-subtitle: Online
+subtitle: Series
 type: filter_option2
 customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...
 ---
@@ -21,27 +21,7 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
       </div>
     </div>
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br><span style='font-family:"SuisseIntlMono", monospace, sans-serif; font-size:0.7rem;'><hr>SPECIAL THANKS<hr>
-                Scott Limbrick<br>
-Mike Greaney<br>
-Dan Carr<br>
-Kieran Wheeler<br>
-Ben Ridgwell<br>
-Sarah Walker<br>
-Estele & Giovanni Scotto<br>
-Mike Bennett<br>
-Freddie, Sophie & Choki<br>
-Mike Russo<br>
-Sam Mcmillan<br>
-Nikki Hamilton-cornwall<br>
-Schoolhouse Studios<br>
-Helen Townshend @ Creative Rep<br>
-Helen Pandos @ Helen Pandos Mgmt<br>
-Melissa Quinn @ Centrestage Mgmt<br>
-Michel Maronde @ Real People<br><p style='margin-top:1em; font-size:0.7rem;'>THE PRODUCERS WOULD LIKE TO ACKNOWLEDGE THE TRADITIONAL OWNERS OF THE LAND ON WHICH RUBY RAI WAS PRODUCED.
-THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
-</p></span>
-     
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br>     
 </span>
       <sub>
         <hr>CAST
@@ -72,28 +52,8 @@ THE WURUNDJERI WOI WURRUNG PEOPLES OF THE EASTERN KULIN.
             <td>pedro cooray</td>
           </tr>
           <tr>
-            <td>gwenifer</td>
-            <td>charlize costantin</td>
-          </tr>
-          <tr>
-            <td>trinket</td>
-            <td>eloise vigilantonie</td>
-          </tr>
-          <tr>
             <td>uncle</td>
             <td>kumar eliezer</td>
-          </tr>
-          <tr>
-            <td>denise</td>
-            <td>heidi arena</td>
-          </tr>
-          <tr>
-            <td>monstera murderer</td>
-            <td>sarah walker</td>
-          </tr>
-          <tr>
-            <td>filip lescaut</td>
-            <td>filip lescaut</td>
           </tr>
           <tr>
             <td colspan="2">
