@@ -1,7 +1,7 @@
 ---
 title: Deadbeat Ends Meet
 layout: project-details
-img: projects/dbem.jpg
+img: projects/dbem.png
 subtitle: Series
 type: filter_option1
 customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
