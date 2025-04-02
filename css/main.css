@@ -1468,7 +1468,7 @@ width:100%;
 }
 
 #lightoff:checked~#details .project-abc{
-  filter: invert();
+  filter: none;
 }
 
 #lightoff:checked~#details img.project-vimeo{
