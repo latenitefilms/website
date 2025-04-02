@@ -48,9 +48,9 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
             Sound Designer</td><td>Ryan Granger</td></tr></table><br>
         <hr>GENRE
         <hr>
-        Animation<br>
+        Surrealist Comedy<br>
         <br>
-        <hr>BROADCASTER
+        <hr>PLATFORM
         <hr>
         Grouse House<br><br>
         <hr>WATCH
