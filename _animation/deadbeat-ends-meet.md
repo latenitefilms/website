@@ -30,7 +30,7 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
         <table><tr><td>Indy</td><td>Charlotte Nicdao</td></tr>
         <tr><td>Milo</td><td>Jackson Tozer</td></tr>
         <tr><td>Mould</td><td>Alexei Toliopoulos</td></tr>
-        <tr><td>Wolfgang</td><td>CTony Armstrong</td></tr>
+        <tr><td>Wolfgang</td><td>Tony Armstrong</td></tr>
         <tr><td>Goblin</td><td>Maria Angelico</td></tr>
         <tr><td colspan="2"><br><hr>CREW
           <hr></td></tr><tr><td>Created & Directed by</td><td>Evie Hilliar</td></tr><tr><td>
