@@ -18,22 +18,7 @@ img: og/about.png
           <td><img class="headshot" src="{{ relBase }}img/headshot/nick.jpg"></td>
           <td>
             <h3>NICHOLAS COLLA / Director & Co-Founder</h3>
-            <p>Nicholas Colla is a producer and director of film,
-              television & digital content. Nick's producing
-              credits include the fantasy comedy series The
-              Wizards of Aus featuring Guy Pearce (SBS2),
-              children's adventure comedy The Legend of Burnout
-              Barry (ABC) and the AACTA nominated Rebooted, which
-              featured in competition at festivals including
-              Clermont-Ferrand, Annecy and Austin. Nick's latest
-              project, the animated comedy series The Future of
-              Everything, premiered in competition at both Adelaide
-              and Austin Film Festivals before being released on
-              Grouse House TV. Nick has directed the much adored
-              Australian soap Neighbours (Fremantle Media) and
-              music videos for some of Australia's biggest artists
-              including Peking Duk (ADG award nominated), Cosmo's
-              Midnight and Vera Blue.
+            <p>Nicholas Colla is a producer of film, television & digital content, working across both live action and animation. His producing credits include fantasy comedy The Wizards of Aus featuring Guy Pearce (SBS), children’s adventure comedy The Legend of Burnout Barry (ABC) and the AACTA nominated Rebooted, which had its world premiere at Annecy. Nick has produced units for Lingo Pictures AACTA award winning drama Lambs of God (Foxtel) and Princess Pictures sketch series The Slot (Comedy Channel). His more recent projects include animated comedy Munch Rexford: Legendary Poacher!! (Adult Swim), mystery comedy Ruby Rai P.I. (ABC), the AACTA nominated animated sitcom The Future of Everything (Grouse House) and Australia-Canada-Singapore Co-Production Andrew the big BIG Unicorn with Pirate Size Productions, Mainframe Studios and Infinite Studios (ABC/CBC).
             </p>
           </td>
         </tr>
