@@ -58,7 +58,7 @@ img: projects/tfoe.jpg
         <hr>
         <div>
           <span>
-            THE Future Of Everything
+            Weird Times in Hillside
           </span>
         </div>
         <hr>
@@ -80,7 +80,7 @@ img: projects/tfoe.jpg
         <hr>
         <div>
           <span>
-            REBOOTED
+            Deadbeat Ends Meet
           </span>
         </div>
         <hr>
@@ -102,7 +102,7 @@ img: projects/tfoe.jpg
         <hr>
         <div>
           <span>
-            GOBLIN SPOON
+            Munch Rexford
           </span>
         </div>
         <hr>
