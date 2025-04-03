@@ -31,6 +31,9 @@ collections:
   animation:
     output: true
     order:
+      - deadbeat-ends-meet.md
+      - weird-times-in-hillside.md
+      - munch-rexford.md
       - the-future-of-everything.md
   collaborations:
     output: true
