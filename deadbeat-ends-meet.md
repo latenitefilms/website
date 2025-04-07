@@ -8,7 +8,7 @@ customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard)
 ---
 {% include relBase.html %}
 <style>img#heroImage{grid-row-start: 2;section#details:grid-row-start:3;}</style>
-<<div><>img src="{{ relBase }}img/gallery/dbem1.jpg" id="heroImage">
+<img src="{{ relBase }}img/gallery/dbem1.jpg" id="heroImage" style="display:block;">
  <section id="details">
     <article><span id="main-detail">
       <h1>Deadbeat Ends Meet</h1>
