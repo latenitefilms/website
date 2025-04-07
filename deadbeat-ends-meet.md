@@ -7,8 +7,8 @@ type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
 {% include relBase.html %}
- <section id="details">
 <img src="{{ relBase }}img/gallery/dbem1.jpg" id="heroImage" style="width:100vw;height:auto;">
+ <section id="details">
     <article><span id="main-detail">
       <h1>Deadbeat Ends Meet</h1>
       <p>Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst
