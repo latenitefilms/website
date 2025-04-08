@@ -7,14 +7,22 @@ type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
 {% include relBase.html %}
-<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:grid;grid-template-columns:33% 33% 33%;margin-bottom:5rem;}div#gallery img, div#heroImage img{width:100%;}</style>
+<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:flex;column-gap:2rem;margin-bottom:5rem;} div#heroImage img{width:100%;}div#gallery img{flex-basis:33.3%;}</style>
 <div id="heroImage"><img src="{{ relBase }}img/gallery/dbem1.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
       <h1>Deadbeat Ends Meet</h1>
       <p>Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst
 reckoning with the cost of living and the pitfalls of the gig economy.</p>
-</span>   <sub>
+</span>  
+    <div id="gallery">
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
+        </div>
+         <sub>
         <hr>CAST
         <hr>
         <table><tr><td>Indy</td><td>Charlotte Nicdao</td></tr>
@@ -48,13 +56,6 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
         <a href="https://www.imdb.com/title/tt34748315/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
-    <div id="gallery">
-        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
-        </div>
     <div id="related">
       <hr>
       Related Project
