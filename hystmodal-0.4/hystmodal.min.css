@@ -9,7 +9,7 @@
 }
 
 .hystmodal *{
-    cursor: unset;
+    cursor: initial;
 }
 
 .hystmodal__window{
