@@ -18,8 +18,6 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         <img src="{{ relBase }}img/gallery/liry1.jpg" id="img3">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>Vera Blue - Like I Remember You</h1><p>Like I Remember You is Vera Blue&#39;s exclusive new single produced in collaboration with Greenpeace to protect the Great Australian Bight from oil drilling. Stand with Vera and do your bit to stop risky oil drilling.</p></span>
       <sub>
@@ -42,7 +40,6 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         <a href="https://www.youtube.com/watch?v=IkMqDLOrmXw" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -52,7 +49,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../casey-donovan-the-villain/"><img src="{{ relBase }}img/projects/villian.jpg">Casey Donovan - The Villain
+        <li><a href="../american-doubles-the-swell/"><img src="{{ relBase }}img/projects/swell.jpg">AMERICAN DOUBLES - THE SWELL
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>

@@ -20,8 +20,6 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
         <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>Guy Pearce - Storm</h1><p>From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.</p><p>Storm is the debut single from actor/musician Guy Pearce.</p></span>
       <sub>
@@ -48,7 +46,6 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
         <a href="https://www.youtube.com/watch?v=h9IJS9uvvdY" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project

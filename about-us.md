@@ -18,22 +18,7 @@ img: og/about.png
           <td><img class="headshot" src="{{ relBase }}img/headshot/nick.jpg"></td>
           <td>
             <h3>NICHOLAS COLLA / Director & Co-Founder</h3>
-            <p>Nicholas Colla is a producer and director of film,
-              television & digital content. Nick's producing
-              credits include the fantasy comedy series The
-              Wizards of Aus featuring Guy Pearce (SBS2),
-              children's adventure comedy The Legend of Burnout
-              Barry (ABC) and the AACTA nominated Rebooted, which
-              featured in competition at festivals including
-              Clermont-Ferrand, Annecy and Austin. Nick's latest
-              project, the animated comedy series The Future of
-              Everything, premiered in competition at both Adelaide
-              and Austin Film Festivals before being released on
-              Grouse House TV. Nick has directed the much adored
-              Australian soap Neighbours (Fremantle Media) and
-              music videos for some of Australia's biggest artists
-              including Peking Duk (ADG award nominated), Cosmo's
-              Midnight and Vera Blue.
+            <p>Nicholas Colla is a producer of film, television & digital content, working across both live action and animation. His producing credits include fantasy comedy The Wizards of Aus featuring Guy Pearce (SBS), children’s adventure comedy The Legend of Burnout Barry (ABC) and the AACTA nominated Rebooted, which had its world premiere at Annecy. Nick has produced units for Lingo Pictures AACTA award winning drama Lambs of God (Foxtel) and Princess Pictures sketch series The Slot (Comedy Channel). His more recent projects include animated comedy Munch Rexford: Legendary Poacher!! (Adult Swim), mystery comedy Ruby Rai P.I. (ABC), the AACTA nominated animated sitcom The Future of Everything (Grouse House) and Australia-Canada-Singapore Co-Production Andrew the big BIG Unicorn with Pirate Size Productions, Mainframe Studios and Infinite Studios (ABC/CBC).
             </p>
           </td>
         </tr>
@@ -69,14 +54,6 @@ img: og/about.png
           <td>
             <h3>CHRIS HOCKING / Director & Co-Founder</h3>
             <p>Chris has been working in the entertainment industry for over two decades. Previously the Post Production Supervisor at Melbourne&#39;s award winning editing house The Butchery, and finishing house The Refinery, Chris has an incredibly strong and varied technical and business background, ensuring that each production makes use of the best and most relevant technology and workflows. He is the creator of the open source macOS application, CommandPost, which has been downloaded over 165K times - as well as a suite of Final Cut Pro tools on the macOS App Store. His producing credits include the SBS2 series The Wizards of Aus, the Fairy Tale unit on Foxtel mini series Lambs of God, and the ABC ME project The Legend of Burnout Barry. Chris is a member of SPA, ASE and is an Adobe Certified Expert.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="headshot" src="{{ relBase }}img/headshot/scarlett.jpg"></td>
-          <td>
-            <h3>SCARLETT KOEHNE / Producer</h3>
-            <p>Scarlett is a producer whose credits include limited series, Videoland, which was was made with support from Screen Australia, VicScreen and Queer Screen and awarded Best Series in the Comedy Competition at Series Mania 2024. Scarlett previously produced online series, Loving Captivity, which was supported by the City of Melbourne and Screen Australia. After completing a law degree, Scarlett developed her screen career in the Production Management department on Clickbait, La Brea, Books That Made Us and House of Wellness among others. As a writer, she was selected in last year’s SPA Pitch On Demand competition. Scarlett is proud to be participating as a mentor in this year’s ElevateUs program run by WIFT and is thrilled to be joining LateNite on a VicScreen supported Producer Placement.
             </p>
           </td>
         </tr>

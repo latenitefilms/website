@@ -52,26 +52,6 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
         <a href="https://www.imdb.com/title/tt7362280/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>
       </sub>
     </article>
-
-    <div id="related">
-      <hr>
-      Related Project
-      <hr>
-      <ul>
-        <li><a href="../lambs-of-god/"><img src="{{ relBase }}img/projects/lambsofgod.jpg">Lambs of God
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
-        <li><a href="../erinsborough-high/"><img src="{{ relBase }}img/projects/ehigh.jpg">Erinsborough High
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
-        <li><a href="../nekrotronic/"><img src="{{ relBase }}img/projects/nekrotronic.jpg">Nekrotronic
-          <hr><sub>Film</sub>
-          <hr></a>
-        </li>
-      </ul>
-    </div>
   </section>
 
 

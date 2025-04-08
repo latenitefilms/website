@@ -62,7 +62,6 @@ Natalia Tjahjono<br>
         <a href="https://www.youtube.com/watch?v=BobK7ZC3afE" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -72,7 +71,7 @@ Natalia Tjahjono<br>
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../crooked-colours-flow/"><img src="{{ relBase }}img/projects/flow.jpg">Crooked Colours - Flow
+        <li><a href="../guy-pearce-storm/"><img src="{{ relBase }}img/projects/storm.jpg">Guy Pearce - Storm
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>

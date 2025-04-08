@@ -236,7 +236,7 @@ hr {
 }
 
 #slider li:nth-of-type(2) {
-  background-image: url("../img/projects/tfoe.jpg");
+  background-image: url("../img/projects/WeirdTimes.jpg");
 }
 
 #slider li:nth-of-type(5) {
@@ -244,7 +244,7 @@ hr {
 }
 
 #slider li:nth-of-type(4) {
-  background-image: url("../img/projects/rebooted.jpg");
+  background-image: url("../img/gallery/dbem1.jpg");
 }
 
 #slider li:nth-of-type(3) {
@@ -252,7 +252,7 @@ hr {
 }
 
 #slider li:nth-of-type(6) {
-  background-image: url("../img/projects/goblinspoon.jpg");
+  background-image: url("../img/gallery/Munch_001.jpg");
 }
 
 
@@ -1607,13 +1607,16 @@ width:100%;
   text-transform: capitalize;
 }
 
-#details .imdb, #details .youtube, #details img.vimeo{
+#details .imdb, #details .youtube, #details img.project-vimeo, #details img.project-abc{
   height:4.5em;
   width:auto;
   filter: grayscale() invert();
   margin-right:1em;
 }
 #details .youtube{
+  filter: grayscale();
+}
+#details img.project-abc{
   filter: grayscale();
 }
 
@@ -1624,6 +1627,9 @@ width:100%;
   padding:0;
   transition: all 0s;
 }
+#details .imdb{
+  filter: grayscale() contrast(3) invert();;
+}
 
 #lightoff:checked~#details .imdb{
   filter: grayscale() contrast(3);
@@ -1633,11 +1639,15 @@ width:100%;
   filter: grayscale() invert() contrast(3);
 }
 
-#lightoff:checked~#details img.vimeo{
-  filter: grayscale() contrast(3);
+#lightoff:checked~#details img.project-abc{
+  filter: invert();
 }
 
-#details .imdb:hover, #details:hover .youtube:hover, #details img.vimeo:hover{
+#lightoff:checked~#details img.project-vimeo{
+  filter: grayscale() contrast(5);
+}
+
+#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover{
   filter:none !important;
 }
 

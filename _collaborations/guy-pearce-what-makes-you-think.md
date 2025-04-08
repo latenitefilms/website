@@ -20,8 +20,6 @@ customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from
         <img src="{{ relBase }}img/gallery/wmyt5.jpg" id="img5">
       </div>
     </div>
-
-
     <article><span id="main-detail">
       <h1>Guy Pearce - What Makes You Think</h1><p>A music video for Guy Pearce&#39;s single &#39;What Makes You Think&#39; from his album &#39;The Nomad&#39;.</p></span>
       <sub>
@@ -44,7 +42,6 @@ customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from
         <a href="https://www.youtube.com/watch?v=KcXrf-eHQeE" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project

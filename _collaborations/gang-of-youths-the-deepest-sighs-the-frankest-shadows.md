@@ -50,7 +50,6 @@ Visual Effects</td><td>Toby Angwin<br>Michael Shanks <br>Chris Hocking</td></tr>
         <a href="https://www.youtube.com/watch?v=9URhKk22xbM" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
-
     <div id="related">
       <hr>
       Related Project
@@ -60,7 +59,7 @@ Visual Effects</td><td>Toby Angwin<br>Michael Shanks <br>Chris Hocking</td></tr>
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
-        <li><a href="../casey-donovan-the-villain/"><img src="{{ relBase }}img/projects/villian.jpg">Casey Donovan - The Villain
+        <li><a href="../dappled-cities-stone-men/"><img src="{{ relBase }}img/projects/stonemen.jpg">Dappled Cities - Stone Men
           <hr><sub>Music Video</sub>
           <hr></a>
         </li>
