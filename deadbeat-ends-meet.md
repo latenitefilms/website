@@ -7,14 +7,13 @@ type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
 {% include relBase.html %}
-<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:flex;column-gap:2rem;margin-bottom:5rem;} div#heroImage img{width:100%;}div#gallery img{flex-basis:33.3%;}</style>
+<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:flex;column-gap:2rem;margin-bottom:5rem;} div#heroImage img{width:100%;}div#gallery img{flex-basis:calc(33.3% - 2rem);}</style>
 <div id="heroImage"><img src="{{ relBase }}img/gallery/dbem1.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
       <h1>Deadbeat Ends Meet</h1>
       <p>Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst
 reckoning with the cost of living and the pitfalls of the gig economy.</p>
-</span>  
     <div id="gallery">
         <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
         <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
@@ -22,6 +21,7 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
         <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
         <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
         </div>
+        </span>  
          <sub>
         <hr>CAST
         <hr>
