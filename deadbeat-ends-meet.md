@@ -10,7 +10,7 @@ customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard)
 <style>div#heroImage{grid-row-start: 1;grid-column-start: 1;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details article{grid-gap:0;width:80rem;margin:auto;}
 
 
-.projects header{grid-column-start: 1;grid-row-start: 1;color:white;}
+.projects header, .projects #lighton:checked ~ header{grid-column-start: 1;grid-row-start: 1;color:white;}
 
 .projects #lighton:checked~header .lighton:before {
   background: #fff;
