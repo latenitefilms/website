@@ -7,7 +7,30 @@ type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
 {% include relBase.html %}
-<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details article{grid-gap:0;width:80rem;margin:auto;}</style>
+<style>header{grid-column-start: 1;grid-row-start: 1}div#heroImage{grid-row-start: 1;grid-column-start: 1;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details article{grid-gap:0;width:80rem;margin:auto;}
+
+
+.projects #lighton:checked~header .lighton:before {
+  background: #fff;
+}
+
+.projects #lighton:checked~header .checkbox-circle label:before, .projects #lighton:checked~section .checkbox-circle label:before {
+  border-color: #fff;
+}
+
+.projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span, .projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span:after, .projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span:before {
+  background-color: #fff;
+}
+
+.projects #lighton:checked~header #logo svg:nth-child(4) path {
+  fill: #fff;
+}
+
+.projects #lighton:checked~header #logo svg:nth-child(1), .projects #lighton:checked~header #logo svg:nth-child(2), .projects #lighton:checked~header #logo svg:nth-child(3) {
+  mix-blend-mode: lighten;
+}
+
+</style>
 <div id="heroImage"><img src="{{ relBase }}img/gallery/dbem1.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
