@@ -9,6 +9,13 @@ customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard)
 {% include relBase.html %}
 <style>div#heroImage{grid-row-start: 1;grid-column-start: 1;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details article{grid-gap:0;width:80rem;margin:auto;}
 
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
 
 .projects header, .projects #lighton:checked ~ header{grid-column-start: 1;grid-row-start: 1;color:white;}
 
@@ -117,4 +124,14 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
     </div>
   </section>
 
+<!-- [1] -->
+<div id="modal-1" aria-hidden="true">
+  <!-- [2] -->
+  <div tabindex="-1" data-micromodal-close>
+    <!-- [3] -->
+    <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+    <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
+    </div>
+  </div>
+</div>
   <div id="gradient"></div>
