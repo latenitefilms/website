@@ -8,6 +8,10 @@
     width:100%;
 }
 
-.hystmodal{
+.hystmodal *{
     cursor: unset;
+}
+
+.hystmodal__window{
+    width:70vw;
 }
