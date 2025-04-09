@@ -416,61 +416,6 @@ input#overlay-input[type=checkbox]:checked~#bgclose {
   z-index: 2;
 }
 
-/* Nav Peel */
-
-#fpc_effect-back {
-  background-color: #eeeef4;
-  width: 100%;
-  font: 12pt arial, sans-serif, helvetica, verdana;
-  color: #666;
-}
-
-#fpc_effect-back * {
-  box-sizing: border-box;
-}
-
-#fpc_content {
-  padding: 20px;
-}
-
-#fpc_content:before {
-  content: "";
-  width: 80px;
-  height: 80px;
-  float: right;
-}
-
-#fpc_page-tip:before, #fpc_page-tip:after {
-  background-color: #FFF;
-  position: absolute;
-  display: block;
-  z-index: 2;
-  border-top-right-radius: 60%;
-  width: 50%;
-  height: 50%;
-  content: "";
-}
-
-#fpc_page-tip:before {
-  right: 100%;
-  top: 0%;
-  background: -webkit-radial-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, .2) 100%);
-}
-
-#fpc_box:hover #fpc_page-tip:before {
-  border-right: solid 1px #fff;
-}
-
-#fpc_box div#fpc_corner-box:hover #fpc_page-tip:before {
-  border-right: solid 2px #fff;
-}
-
-#fpc_page-tip:after {
-  top: 100%;
-  right: 0%;
-  background: -webkit-radial-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, .2) 100%);
-}
-
 #lightoff:checked~header #fpc_page-tip:after {
   top: 98%;
 }
