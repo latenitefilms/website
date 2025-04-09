@@ -9,6 +9,7 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
         <img src="{{relBase}}img/gallery/wizards1.jpg"></div>
  <section id="details">
