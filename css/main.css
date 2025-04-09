@@ -1616,6 +1616,12 @@ hr.margin_bottom {
   margin-bottom: 1em;
 }
 
+#details article {
+  grid-gap: 0;
+  width: 80rem;
+  margin: auto;
+}
+
 #details article:nth-of-type(1) h1 {
   font-size: 1.7em;
 }
