@@ -99,7 +99,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/munch2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/Munch_002.jpg" id="img2">
         </div>
     </div>
 </div>
@@ -109,7 +109,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/munch3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/Munch_003.jpg" id="img3">
         </div>
     </div>
 </div>
@@ -118,7 +118,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/munch4.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/Munch_004.jpg" id="img4">
         </div>
     </div>
 </div>
@@ -127,7 +127,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/munch5.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/Munch_005.jpg" id="img5">
         </div>
     </div>
 </div>
@@ -136,7 +136,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/munch6.jpg" id="img6">
+        <img src="{{ relBase }}img/gallery/Munch_006.jpg" id="img6">
         </div>
     </div>
 </div>
