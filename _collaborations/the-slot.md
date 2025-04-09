@@ -9,6 +9,7 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 4/3;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/slot1.jpg"></div>
  <section id="details">
