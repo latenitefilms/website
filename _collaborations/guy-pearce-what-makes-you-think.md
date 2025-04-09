@@ -6,22 +6,22 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from his album "The Nomad"
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/wmyt1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/wmyt2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/wmyt3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/wmyt4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/wmyt5.jpg" id="img5">
-      </div>
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/wmyt1.jpg"></div>
+ <section id="details">
     </div>
     <article><span id="main-detail">
-      <h1>Guy Pearce - What Makes You Think</h1><p>A music video for Guy Pearce&#39;s single &#39;What Makes You Think&#39; from his album &#39;The Nomad&#39;.</p></span>
+      <h1>Guy Pearce - What Makes You Think</h1><p>A music video for Guy Pearce&#39;s single &#39;What Makes You Think&#39; from his album &#39;The Nomad&#39;.</p>
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/wmyt2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/wmyt3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/wmyt4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/wmyt5.jpg" id="img5" data-hystmodal="#myModal5">
+      </div>
+      </span>
       <sub>
         <hr>CAST
         <hr>
@@ -63,7 +63,42 @@ customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wmyt2.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wmyt3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wmyt4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wmyt5.jpg" id="img5">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
-  

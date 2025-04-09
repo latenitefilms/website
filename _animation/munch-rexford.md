@@ -4,22 +4,14 @@ layout: project-details
 img: gallery/Munch_001.jpg
 subtitle: Series
 type: filter_option1
-customExcerpt: 
+customExcerpt:
 ---
+
 {% include relBase.html %}
+
+<div id="heroImage">
+        <img src="{{ relBase }}img/gallery/Munch_001.jpg"></div>
  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/Munch_001.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/Munch_002.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/Munch_003.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/Munch_004.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/Munch_005.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/Munch_006.jpg" id="img6">
-      </div>
-    </div>
     <article><span id="main-detail">
       <h1>Munch Rexford</h1>
       <p>When Munch Rexford was a small and skinny boy of eight, he was bitten by a German Shepherd.</p><p>
@@ -27,6 +19,14 @@ customExcerpt:
 Feeling responsible, his twin sister, Miriam, hoped that with a bit of love and encouragement, he would eventually move past the incident… Instead, Munch vowed to kill one of every animal. A reverse Noah’s Arc, if you will. It started off easy; the cow, the bald eagle, the humble worm. Now, Munch has his sights on more legendary prey. Moby Dick. Icarus. The Minotaur.</p><p>
 
 With his caddy/best-friend by his side (a horrid creature called Peter) and a whole world at his fingertips — nothing and no one can stop him.</p>
+
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/Munch_002.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/Munch_003.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/Munch_004.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/Munch_005.jpg" id="img2" data-hystmodal="#myModal5">
+        <img src="{{ relBase }}img/gallery/Munch_006.jpg" id="img6" data-hystmodal="#myModal6">
+      </div>
 </span>   <sub>
         <hr>CAST
         <hr>
@@ -94,4 +94,50 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/munch2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/munch3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/munch4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/munch5.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/munch6.jpg" id="img6">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>

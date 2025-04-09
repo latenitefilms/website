@@ -6,20 +6,20 @@ subtitle: Television
 type: filter_option2 filter_option3
 customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what's possible. When speed demon and record holder Josh "Wheely" Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.
 ---
+
 {% include relBase.html %}
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/barry1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/barry3.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/barry4.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/barry5.jpg" id="img4">
-      </div>
-    </div>
+
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/barry1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
-      <h1>The Legend of Burnout Barry</h1><p>Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what&#39;s possible. When speed demon and record holder Josh &quot;Wheely&quot; Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.</p></span>
+      <h1>The Legend of Burnout Barry</h1><p>Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what&#39;s possible. When speed demon and record holder Josh &quot;Wheely&quot; Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.</p>
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/barry3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/barry4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/barry5.jpg" id="img4" data-hystmodal="#myModal5">
+      </div>
+      </span>
       <sub>
         <hr>CAST
         <hr class="margin_bottom">
@@ -71,6 +71,32 @@ customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell
     </div>
   </section>
 
-
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/barry3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/barry4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/barry5.jpg" id="img5">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>

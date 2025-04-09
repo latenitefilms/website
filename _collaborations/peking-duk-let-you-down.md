@@ -6,26 +6,25 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: A stunt performers dream, the clip for Let You Down from Australian powerhouse Peking Duk follows an anxious woman (Maria Angelico) trying desperately to avoid a marriage proposal from her well meaning partner (Nazeem Hussain).
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/letyoudown1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/letyoudown2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/letyoudown3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/letyoudown4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5">
-      </div>
-    </div>
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/letyoudown1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
       <h1>Peking Duk - Let You Down</h1><p>A stunt performers dream, the clip for Let You Down from Australian powerhouse Peking Duk follows an anxious woman (Maria Angelico) trying desperately to avoid a marriage proposal from her well meaning partner (Nazeem Hussain).
       </p><p>
         Our hero throws herself into oncoming traffic, off a cliff and even sets herself alight.
       </p><p>
-        This action heavy music video was nominated for an Australian Directors Guild award.</p></span>
+        This action heavy music video was nominated for an Australian Directors Guild award.</p>        
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/letyoudown2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/letyoudown3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/letyoudown4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5" data-hystmodal="#myModal5">
+      </div>
+      </span>
       <sub>
         <hr>CAST
         <hr class="margin_bottom">
@@ -80,7 +79,42 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/letyoudown2.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/letyoudown3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/letyoudown4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
-  

@@ -6,22 +6,21 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/storm1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/storm3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/storm4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5">
-      </div>
-    </div>
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/storm1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
-      <h1>Guy Pearce - Storm</h1><p>From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.</p><p>Storm is the debut single from actor/musician Guy Pearce.</p></span>
+      <h1>Guy Pearce - Storm</h1><p>From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.</p><p>Storm is the debut single from actor/musician Guy Pearce.</p>
+      <div id="gallery">
+        <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/storm3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/storm4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5" data-hystmodal="#myModal5">
+      </div>
+      </span>
       <sub>
         <hr>CAST
         <hr>
@@ -67,6 +66,42 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/storm3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/storm4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
-  

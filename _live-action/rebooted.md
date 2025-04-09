@@ -6,19 +6,12 @@ subtitle: Short
 type: filter_option1
 customExcerpt: "In an industry obsessed with the superficial, it's not easy being an aging movie star. It&#39;s even harder when you're also a stop-motion animated skeleton monster. "
 ---
+
 {% include relBase.html %}
-<section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/rebooted1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img5">
-      </div>
-    </div>
+
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/rebooted1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
       <h1>Rebooted</h1><p>In an industry obsessed with the superficial, it&#39;s not easy being an aging movie star. It&#39;s even harder when you&#39;re also a stop-motion animated skeleton monster.  <br><br>Phil used to be a cutting-edge special effect. As a stop-motion animated skeleton from the 1960s, modern movie studios just aren&#39;t hiring him to star in blockbusters anymore. Refusing to succumb to his own irrelevance, Phil takes drastic measures when he learns the film for which he was created is being rebooted without him. 
       </p>
@@ -118,6 +111,12 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
           <span class="year">2020</span>
           <img src="{{ relBase }}img/laurel.svg">
         </div>
+        <div id="gallery">
+        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img5" data-hystmodal="#myModal5">
+      </div>
       </span>
       <sub>
         <hr>CREW
@@ -199,6 +198,51 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img6">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>

@@ -6,23 +6,20 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in search for love. This incredibly complex music video was shot in a fully functional bar at the bottom of a diving pool with a cast of free divers.
 ---
+
 {% include relBase.html %}
+
+<div id="heroImage">
+        <img src="{{ relBase }}img/gallery/swell3.jpg"></div>
  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/swell3.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/swell1.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/swell2.jpg" id="img3">
-      </div>
-    </div>
-
-
     <article><span id="main-detail">
       <h1>American Doubles - the Swell</h1><p>The Swell follows a woman&#39;s journey to the bottom of the ocean in search for love. This incredibly complex music video was shot in a fully functional bar at the bottom of a diving pool with a cast of free divers.
 </p><p>
         The Swell is the debut single from Australian pop duo American Doubles.</p>
+        <div id="gallery">
+        <img src="{{ relBase }}img/gallery/swell1.jpg" id="img2" data-hystmodal="#myModal1">
+        <img src="{{ relBase }}img/gallery/swell2.jpg" id="img3" data-hystmodal="#myModal2">
+      </div>
          </span>
       <sub>
         <hr>CAST
@@ -83,6 +80,23 @@ Natalia Tjahjono<br>
     </div>
   </section>
 
-
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/swell2.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal1" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/swell1.jpg" id="img1">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>

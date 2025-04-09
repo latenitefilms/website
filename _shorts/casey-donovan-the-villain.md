@@ -8,17 +8,15 @@ customExcerpt: New Music Video For The Villain the 2nd Single off of EP "Off The
 ---
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/villain3.png" id="img1">
-        <img src="{{ relBase }}img/gallery/villain1.png" id="img2">
-        <img src="{{ relBase }}img/gallery/villain5.png" id="img3">
-        <img src="{{ relBase }}img/gallery/villain2.png" id="img4">
-        <img src="{{ relBase }}img/gallery/villain6.png" id="img5">
-        <img src="{{ relBase }}img/gallery/villain7.jpg" id="img6">
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/villain3.png"></div>
+ <section id="details">
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/villain1.png" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/villain5.png" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/villain2.png" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/villain6.png" id="img2" data-hystmodal="#myModal5">
+        <img src="{{ relBase }}img/gallery/villain7.jpg" id="img6" data-hystmodal="#myModal6">
       </div>
     </div>
 
@@ -67,7 +65,52 @@ customExcerpt: New Music Video For The Villain the 2nd Single off of EP "Off The
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
   
