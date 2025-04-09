@@ -71,7 +71,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
     </div>
 </div>
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
+<div class="hystmodal" id="myModal1" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
