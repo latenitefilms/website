@@ -7,7 +7,7 @@ type: filter_option1
 customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Iphigenia, Margarita and Carla, who are the last remaining members of the enclosed order of St Agnes. Living in an isolated convent by the coast, they have all but forgotten the outside world, until an unwelcome visitor enters their lives and changes their world forever.
 ---
 
-{% include relBase.html %}<section id="details">
+{% include relBase.html %}
 
  <div id="heroImage">
             <img src="{{ relBase }}img/gallery/lambsofgod1.jpg"></div>
