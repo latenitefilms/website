@@ -55,7 +55,7 @@ customExcerpt:
       <hr>
       <ul>
         {% assign related1 = site.animation | where: "title", "The Future of Everything" | first %}
-          {% assign related2 = site.animation | where: "title", "WeirdTimes_00 Rexford" | first %}
+          {% assign related2 = site.animation | where: "title", "Munch Rexford" | first %}
           {% assign related3 = site.animation | where: "title", "Deadbeat Ends Meet" | first %}
           <li>
             <a href="{{ related1.url | relative_url }}">
