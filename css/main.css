@@ -1684,7 +1684,7 @@ article#about-us button{
     cursor: initial;
   }
   .scrollbar-present, #slider label.scrollbar-present{
-    padding-right: 1rem;
+    padding-right: 3rem;
   }
 }
 
