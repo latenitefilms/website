@@ -9,6 +9,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/liry4.jpg"></div>
  <section id="details">

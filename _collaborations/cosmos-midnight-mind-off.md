@@ -9,6 +9,7 @@ customExcerpt: Music Video for Cosmo's Midnight.
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 4/3;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/mindoff1.jpg"></div>
  <section id="details">

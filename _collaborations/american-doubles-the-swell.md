@@ -9,6 +9,7 @@ customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
 <div id="heroImage">
         <img src="{{ relBase }}img/gallery/swell3.jpg"></div>
  <section id="details">

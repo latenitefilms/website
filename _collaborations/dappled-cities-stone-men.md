@@ -69,7 +69,7 @@ Colourist</td><td>Jared Daperis</td></tr></table><br>
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/stonemen2.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/stonemen2.png" id="img2">
         </div>
     </div>
 </div>
@@ -79,7 +79,7 @@ Colourist</td><td>Jared Daperis</td></tr></table><br>
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/stonemen1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/stonemen1.png" id="img1">
         </div>
     </div>
 </div>
