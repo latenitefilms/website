@@ -11,7 +11,7 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
 
 <style> #gallery img {aspect-ratio: 4/3;}</style>
  <div id="heroImage">
-        <img src="{{ relBase }}img/gallery/storm5.jpg"></div>
+        <img src="{{ relBase }}img/gallery/storm1.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
       <h1>Guy Pearce - Storm</h1><p>From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.</p><p>Storm is the debut single from actor/musician Guy Pearce.</p>
@@ -19,7 +19,7 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
         <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/storm3.jpg" id="img2" data-hystmodal="#myModal3">
         <img src="{{ relBase }}img/gallery/storm4.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/storm1.jpg" id="img5" data-hystmodal="#myModal1">
+        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5" data-hystmodal="#myModal5">
       </div>
       </span>
       <sub>
@@ -95,12 +95,12 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
         </div>
     </div>
 </div>
-<div class="hystmodal" id="myModal1" aria-hidden="true">
+<div class="hystmodal" id="myModal5" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/storm1.jpg" id="img1">
+        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5">
         </div>
     </div>
 </div>
