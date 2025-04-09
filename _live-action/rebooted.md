@@ -9,6 +9,7 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/rebooted1.jpg"></div>
  <section id="details">
@@ -203,7 +204,7 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img2">
         </div>
     </div>
 </div>
@@ -213,7 +214,7 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rebooted2.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img3">
         </div>
     </div>
 </div>
@@ -222,7 +223,7 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rebooted3.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img4">
         </div>
     </div>
 </div>
@@ -231,18 +232,8 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rebooted4.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img5">
         </div>
     </div>
 </div>
-<div class="hystmodal" id="myModal6" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rebooted5.jpg" id="img6">
-        </div>
-    </div>
-</div>
-
   <div id="gradient"></div>
