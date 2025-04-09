@@ -179,9 +179,9 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
       Related Project
       <hr>
      <ul>
-             {% assign related1 = site.animation | where: "title", "The Legend of Burnout Barry" | first %}
-               {% assign related2 = site.animation | where: "title", "Ruby Rai P.I." | first %}
-               {% assign related3 = site.animation | where: "title", "The Wizards of Aus" | first %}
+             {% assign related1 = site.live-action | where: "title", "The Legend of Burnout Barry" | first %}
+               {% assign related2 = site.live-action | where: "title", "Ruby Rai P.I." | first %}
+               {% assign related3 = site.live-action | where: "title", "The Wizards of Aus" | first %}
                <li>
                  <a href="{{ related1.url | relative_url }}">
                    <img src="{{ relBase }}img/{{ related1.img }}" alt="{{ related1.title }}">
