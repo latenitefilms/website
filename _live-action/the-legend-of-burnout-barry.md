@@ -9,6 +9,7 @@ customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 4/3;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/barry1.jpg"></div>
  <section id="details">
