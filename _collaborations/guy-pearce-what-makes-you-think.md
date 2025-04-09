@@ -9,6 +9,7 @@ customExcerpt: A music video for Guy Pearce's single "What Makes You Think" from
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 4/3;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/wmyt1.jpg"></div>
  <section id="details">

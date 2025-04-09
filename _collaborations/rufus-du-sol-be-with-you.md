@@ -9,6 +9,7 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/bewithyou1.jpg"></div>
  <section id="details">
