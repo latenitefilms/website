@@ -47,7 +47,7 @@ Natalia Tjahjono<br>
         Underwater Operator</td><td><a href="http://ginclearfilm.com/" rel="noopener noreferrer" target="_blank">Jon Shaw</a></td></tr><tr><td>
         Set Design & Build</td><td>Lewis Mitchell <br> Andrew Daperis</td></tr><tr><td>
         Architects</td><td>Sheldon Williamson <br> Llewellyn Jane</td></tr><tr><td>
-        Underwater Construction & Safety</td><td>Tiny Good and his INCREDIBLE team at <a href="http://www.showtechaustralia.com.au/" rel="noopener noreferrer" target="_blank">Showtech Australia</a></td></tr><tr><td>
+        Underwater Construction & Safety</td><td><a href="http://www.showtechaustralia.com.au/" rel="noopener noreferrer" target="_blank">Showtech Australia</a></td></tr><tr><td>
         Costume Designer</td><td>Amy Watters</td></tr><tr><td>
         Editor</td><td>Chris Hocking</td></tr><tr><td>
         Colourist</td><td>CJ Dobson</td></tr><tr><td>
