@@ -9,6 +9,7 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
             <img src="{{ relBase }}img/gallery/lambsofgod1.jpg"></div>
  <section id="details">
