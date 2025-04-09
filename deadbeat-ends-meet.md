@@ -7,7 +7,32 @@ type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
 {% include relBase.html %}
-<style>div#heroImage{grid-row-start: 2;}section#details{grid-row-start:3;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details{width:85rem;margin:auto;}section#details article{grid-gap:0;}</style>
+<style>div#heroImage{grid-row-start: 1;grid-column-start: 1;}div#gallery{display:grid;grid-template-columns:calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);grid-gap:2rem;margin:5rem 0;}div#gallery img, div#heroImage img{width:100%;}section#details article{grid-gap:0;width:80rem;margin:auto;}
+
+
+.projects header, .projects #lighton:checked ~ header{grid-column-start: 1;grid-row-start: 1;color:white;}
+
+.projects #lighton:checked~header .lighton:before {
+  background: #fff;
+}
+
+.projects #lighton:checked~header .checkbox-circle label:before, .projects #lighton:checked~section .checkbox-circle label:before {
+  border-color: #fff;
+}
+
+.projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span, .projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span:after, .projects #lighton:checked~header input#overlay-input[type=checkbox]~#overlay-button span:before {
+  background-color: #fff;
+}
+
+.projects #lighton:checked~header #logo svg:nth-child(4) path {
+  fill: #fff;
+}
+
+.projects #lighton:checked~header #logo svg:nth-child(1), .projects #lighton:checked~header #logo svg:nth-child(2), .projects #lighton:checked~header #logo svg:nth-child(3) {
+  mix-blend-mode: lighten;
+}
+
+</style>
 <div id="heroImage"><img src="{{ relBase }}img/gallery/dbem1.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
@@ -15,11 +40,11 @@ customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard)
       <p>Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst
 reckoning with the cost of living and the pitfalls of the gig economy.</p>
     <div id="gallery">
-        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5" data-hystmodal="#myModal5">
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6" data-hystmodal="#myModal6">
         </div>
         </span>  
          <sub>
@@ -91,5 +116,53 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
       </ul>
     </div>
   </section>
+
+
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>

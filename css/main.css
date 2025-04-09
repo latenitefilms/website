@@ -1076,10 +1076,6 @@ section {
   transition: all 0.2s;
 }
 
-.scrollbar-present, #slider label.scrollbar-present{
-  padding-right: calc(3rem + 15px);
-}
-
 hr {
   border-bottom: none;
 }
@@ -1849,6 +1845,12 @@ article#about-us button{
   * {
     cursor: initial;
   }
+}
+
+@media (hover: hover) {
+.scrollbar-present, #slider label.scrollbar-present{
+  padding-right: calc(3rem + 15px);
+}
 }
 
 @media (orientation: portrait) {
