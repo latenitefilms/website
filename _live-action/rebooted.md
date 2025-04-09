@@ -178,26 +178,37 @@ customExcerpt: "In an industry obsessed with the superficial, it's not easy bein
       <hr>
       Related Project
       <hr>
-      <ul>
-        <li><a href="../the-legend-of-burnout-barry/"><img src="{{ relBase }}img/projects/barry.jpg">The Legend of Burnout
-            Barry
-            <hr><sub>Series</sub>
-            <hr>
-          </a>
-        </li>
-        <li><a href="../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
-            <hr><sub>Short</sub>
-            <hr>
-          </a>
-        </li>
-        <li><a href="../the-wizards-of-aus/"><img src="{{ relBase }}img/projects/wizards.jpg">The Wizards of Aus
-            <hr><sub>Series</sub>
-            <hr>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+     <ul>
+             {% assign related1 = site.animation | where: "title", "The Legend of Burnout Barry" | first %}
+               {% assign related2 = site.animation | where: "title", "Ruby Rai P.I." | first %}
+               {% assign related3 = site.animation | where: "title", "The Wizards of Aus" | first %}
+               <li>
+                 <a href="{{ related1.url | relative_url }}">
+                   <img src="{{ relBase }}img/{{ related1.img }}" alt="{{ related1.title }}">
+                   {{ related1.title }}
+                   <hr>
+                   <sub>{{ related1.subtitle }}</sub>
+                 </a>
+               </li>
+               <li>
+                 <a href="{{ related2.url | relative_url }}">
+                   <img src="{{ relBase }}img/{{ related2.img }}" alt="{{ related2.title }}">
+                   {{ related2.title }}
+                   <hr>
+                   <sub>{{ related2.subtitle }}</sub>
+                 </a>
+               </li>
+               <li>
+                 <a href="{{ related3.url | relative_url }}">
+                   <img src="{{ relBase }}img/{{ related3.img }}" alt="{{ related3.title }}">
+                   {{ related3.title }}
+                   <hr>
+                   <sub>{{ related3.subtitle }}</sub>
+                 </a>
+               </li>
+           </ul>
+         </div>
+       </section>
 
 <div class="hystmodal" id="myModal2" aria-hidden="true">
     <div class="hystmodal__wrap">

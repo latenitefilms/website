@@ -56,20 +56,36 @@ customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell
       Related Project
       <hr>
       <ul>
-        <li><a href= "../the-future-of-everything/"><img src="{{ relBase }}img/projects/tfoe.jpg">The Future of Everything
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
-        <li><a href= "../rebooted/"><img src="{{ relBase }}img/projects/rebooted.jpg">Rebooted
-          <hr><sub>Short</sub>
-          <hr></a>
-        </li>
-        <li><a href= "../the-wizards-of-aus/"><img src="{{ relBase }}img/projects/wizards.jpg">The Wizards of Aus
-          <hr><sub>Series</sub>
-          <hr></a>
-        </li>
+      {% assign related1 = site.live-action | where: "title", "Rebooted" | first %}
+      {% assign related2 = site.live-action | where: "title", "The Wizards of Aus" | first %}
+      {% assign related3 = site.live-action | where: "title", "Ruby Rai P.I." | first %}
+      <li>
+        <a href="{{ related1.url | relative_url }}">
+          <img src="{{ relBase }}img/{{ related1.img }}" alt="{{ related1.title }}">
+          {{ related1.title }}
+          <hr>
+          <sub>{{ related1.subtitle }}</sub>
+        </a>
+      </li>
+      <li>
+        <a href="{{ related2.url | relative_url }}">
+          <img src="{{ relBase }}img/{{ related2.img }}" alt="{{ related2.title }}">
+          {{ related2.title }}
+          <hr>
+          <sub>{{ related2.subtitle }}</sub>
+        </a>
+      </li>
+      <li>
+        <a href="{{ related3.url | relative_url }}">
+          <img src="{{ relBase }}img/{{ related3.img }}" alt="{{ related3.title }}">
+          {{ related3.title }}
+          <hr>
+          <sub>{{ related3.subtitle }}</sub>
+        </a>
+      </li>
       </ul>
     </div>
+
   </section>
 
 <div class="hystmodal" id="myModal3" aria-hidden="true">
