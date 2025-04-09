@@ -9,6 +9,7 @@ customExcerpt: The Deepest Sighs, The Frankest Shadows is the fourth and final s
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 1;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/sighs1.jpg"></div>
  <section id="details">
