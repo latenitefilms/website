@@ -4,25 +4,24 @@ layout: project-details
 img: projects/WeirdTimes.jpg
 subtitle: Series
 type: filter_option1
-customExcerpt: 
+customExcerpt:
 ---
+
 {% include relBase.html %}
+
+<div id="heroImage">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_001.jpg"></div>
  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_001.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6">
-      </div>
-    </div>
     <article><span id="main-detail">
       <h1>Weird Times in Hillside</h1>
       <p>Matt, Amber and Jake are three teenagers growing up in ‘weird times.’ The dead are rising, magic is returning, and mythical creatures walk the Earth. Unfortunately for them, none of these things are happening dramatically enough to disrupt the flow of life in their outer suburban town.</p>
+      <div id="gallery">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img2" data-hystmodal="#myModal5">
+        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6" data-hystmodal="#myModal6">
+      </div>
 </span>   <sub>
         <hr>CAST
         <hr>
@@ -56,7 +55,7 @@ customExcerpt:
       <hr>
       <ul>
         {% assign related1 = site.animation | where: "title", "The Future of Everything" | first %}
-          {% assign related2 = site.animation | where: "title", "Munch Rexford" | first %}
+          {% assign related2 = site.animation | where: "title", "WeirdTimes_00 Rexford" | first %}
           {% assign related3 = site.animation | where: "title", "Deadbeat Ends Meet" | first %}
           <li>
             <a href="{{ related1.url | relative_url }}">
@@ -86,4 +85,50 @@ customExcerpt:
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>

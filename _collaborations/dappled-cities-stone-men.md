@@ -6,22 +6,19 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: Official video for "Stone Men" by Dappled Cities taken from their 5th studio album out on May 5, 2017.
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/stonemen3.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/stonemen2.png" id="img2">
-        <img src="{{ relBase }}img/gallery/stonemen1.png" id="img3">
-      </div>
-    </div>
-
-
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/stonemen3.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
-      <h1>Dappled Cities - Stone Men</h1><p>Official video for &#39;Stone Men&#39; by Dappled Cities taken from their 5th studio album out on May 5, 2017.</p></span>
+      <h1>Dappled Cities - Stone Men</h1><p>Official video for &#39;Stone Men&#39; by Dappled Cities taken from their 5th studio album out on May 5, 2017.</p>
+      <div id="gallery">
+        <img src="{{ relBase }}img/gallery/stonemen2.png" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/stonemen1.png" id="img3" data-hystmodal="#myModal1">
+      </div>
+      </span>
       <sub>
         <hr>CAST
         <hr>
@@ -67,6 +64,23 @@ Colourist</td><td>Jared Daperis</td></tr></table><br>
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/stonemen2.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
-
+<div class="hystmodal" id="myModal1" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/stonemen1.jpg" id="img1">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>

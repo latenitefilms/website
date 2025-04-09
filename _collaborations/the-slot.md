@@ -6,21 +6,12 @@ subtitle: Series
 type: filter_option3
 customExcerpt: An original Foxtel series, The Slot presents emerging and experimental short form comedy from Australia's most successful online comedy content creators. Each episode follows hosts Christiaan Van Vuuren (Bondi Hipsters) and Adele Vuko (Skit Box), and the unorthodox encounters they conjure with this new wave of Australian viral classics.
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/slot1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/slot2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/slot4.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/slot5.jpg" id="img4">
-      </div>
-    </div>
-
-
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/slot1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
       <h1>The Slot</h1><p>An original Foxtel series, The Slot presents emerging and experimental short form comedy from Australia&#39;s most successful online comedy content creators. Each episode follows hosts Christiaan Van Vuuren (Bondi Hipsters) and Adele Vuko (Skit Box), and the unorthodox encounters they conjure with this new wave of Australian viral classics.
 </p><p>
@@ -28,7 +19,12 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
       </p><p>
         Between them they&#39;ve amassed billions of views with their captivating, weird, hilarious and at times absurd comedy never before seen on TV. They&#39;re not asking permission, they&#39;ve rewritten the rulebook.
       </p><p>
-        LateNite produced the Michael Shanks content.</p></span>
+        LateNite produced the Michael Shanks content.</p>
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/slot2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/slot4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/slot5.jpg" id="img4" data-hystmodal="#myModal5">
+      </div></span>
       <sub>
         <hr>CAST
         <hr>
@@ -54,7 +50,33 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
     </article>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/slot2.jpg" id="img2">
+        </div>
+    </div>
+</div>
 
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/slot4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/slot5.jpg" id="img5">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
-  

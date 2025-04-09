@@ -6,25 +6,24 @@ subtitle: Series
 type: filter_option2
 customExcerpt: "In the future, what if there was irrefutable proof that God was real? Or when aliens finally invaded Earth, what if they came for our jet-skis? And what would happen if it was discovered that the fabric of reality could be hacked to spawn infinite ducks?"
 ---
+
 {% include relBase.html %}
-<section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{relBase}}img/gallery/wizards1.jpg" id="img1">
-        <img src="{{relBase}}img/gallery/wizards2.jpg" id="img2">
-        <img src="{{relBase}}img/gallery/wizards3.jpg" id="img3">
-        <img src="{{relBase}}img/gallery/wizards4.jpg" id="img4">
-        <img src="{{relBase}}img/gallery/wizards5.jpg" id="img5">
-      </div>
-    </div>
+
+ <div id="heroImage">
+        <img src="{{relBase}}img/gallery/wizards1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
       <h1>The Wizards of Aus</h1><p>Fed up with the Magical Realm&#39;s obsession with large-scale fantasy warfare, Jack the Wizard decides to migrate to the sanest place he can think of: Melbourne&#39;s Western suburbs.</p>
 <p>
         After accidentally causing a magical catastrophe, his existence (and that of his fellow magical immigrants) is revealed to the Australian public. Fearing a backlash against himself and his kind, Jack swears off using magic in a bid to better assimilate into human life.  </p>
         <p>
-        But of course, fitting in was never going to be easy when people tend to get a bit &#39;explode-y&#39; whenever you sneeze...</p></span>
+        But of course, fitting in was never going to be easy when people tend to get a bit &#39;explode-y&#39; whenever you sneeze...</p>
+        <div id="gallery">
+        <img src="{{relBase}}img/gallery/wizards2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{relBase}}img/gallery/wizards3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{relBase}}img/gallery/wizards4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{relBase}}img/gallery/wizards5.jpg" id="img5" data-hystmodal="#myModal5">
+      </div></span>
       <sub>
         <hr>CAST
         <hr>
@@ -83,4 +82,41 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
     </div>
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards5.jpg" id="img5">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>

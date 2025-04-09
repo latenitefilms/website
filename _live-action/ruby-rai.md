@@ -9,19 +9,16 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
 
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/rubyrai1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4">
-      </div>
-    </div>
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/rubyrai1.jpg"></div>
+ <section id="details">
     <article><span id="main-detail">
-      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>&nbsp;<br>     
+      <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img2" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4" data-hystmodal="#myModal4">
+      </div>
 </span>
       <sub>
         <hr>CAST
@@ -180,4 +177,32 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
 
   </section>
 
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>

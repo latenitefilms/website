@@ -6,22 +6,18 @@ subtitle: Music Video
 type: filter_option3
 customExcerpt: So, after many years of keeping things to myself I&#39;m very pleased to be releasing my first record - "Broken Bones". - Guy Pearce
 ---
+
 {% include relBase.html %}
 
-  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/brokenbones2.png" id="img1">
-        <img src="{{ relBase }}img/gallery/brokenbones4.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3">
-      </div>
-    </div>
-
-
+ <div id="heroImage">
+        <img src="{{ relBase }}img/gallery/brokenbones2.png"></div>
+ <section id="details">
     <article><span id="main-detail">
-      <h1>Guy Pearce - Broken Bones</h1><p>So, after many years of keeping things to myself I&#39;m very pleased to be releasing my first record - "Broken Bones". - Guy Pearce</p></span>
+      <h1>Guy Pearce - Broken Bones</h1><p>So, after many years of keeping things to myself I&#39;m very pleased to be releasing my first record - "Broken Bones". - Guy Pearce</p>      
+<div id="gallery">
+        <img src="{{ relBase }}img/gallery/brokenbones4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3" data-hystmodal="#myModal3">
+      </div></span>
       <sub>
         <hr>CAST
         <hr>
@@ -64,7 +60,23 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
     </div>
   </section>
 
-
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/brokenbones4.jpg" id="img4">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
-  

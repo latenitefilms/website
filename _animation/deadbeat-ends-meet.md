@@ -6,25 +6,24 @@ subtitle: Series
 type: filter_option1
 customExcerpt: "Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst reckoning with the cost of living and the pitfalls of the gig economy"
 ---
+
 {% include relBase.html %}
+
+<div id="heroImage"><img src="{{ relBase }}img/gallery/dbem1.jpg"></div>
  <section id="details">
-    <div id="carousel">
-      <div id="carousel_controls"><span><a href="#" id="carousel_backward">&larr;</a> <a href="#"
-            id="carousel_forward">&rarr;</a></span><span id="pagecount">(1/3)</span></div>
-      <div id="carousel_img">
-        <img src="{{ relBase }}img/gallery/dbem1.jpg" id="img1">
-        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
-        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
-        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
-        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
-        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
-      </div>
-    </div>
     <article><span id="main-detail">
       <h1>Deadbeat Ends Meet</h1>
       <p>Deadbeat Ends Meet follows housemates Milo (a frill neck lizard) and Indy (a dingo) as they navigate their ambitions and identities whilst
 reckoning with the cost of living and the pitfalls of the gig economy.</p>
-</span>   <sub>
+    <div id="gallery">
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5" data-hystmodal="#myModal5">
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6" data-hystmodal="#myModal6">
+        </div>
+        </span>  
+         <sub>
         <hr>CAST
         <hr>
         <table><tr><td>Indy</td><td>Charlotte Nicdao</td></tr>
@@ -93,5 +92,52 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
       </ul>
     </div>
   </section>
+
+<div class="hystmodal" id="myModal2" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem2.jpg" id="img2">
+        </div>
+    </div>
+</div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem3.jpg" id="img3">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal4" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal5" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
+        </div>
+    </div>
+</div>
 
   <div id="gradient"></div>
