@@ -26,26 +26,7 @@ img: og/about.png
           <td><img class="headshot" src="{{ relBase }}img/headshot/nic.jpg"></td>
           <td>
             <h3>NICOLETTE MINSTER / Writer & Producer</h3>
-            <p>Nicolette Minster is a Melbourne based comedian,
-              writer and producer. As a writer, Nicolette&#39;s credits
-              include Erinsborough High (Channel 5 UK), The Legend
-              of Burnout Barry (ABC), The Wonder Gang (ABC) and
-              Larry the Wonderpup (WTFN/Seven Network). Nicolette
-              has acted as script producer on animated comedy series
-              The Future of Everything and Deadbeat Ends Meet. She
-              has contributed in development rooms for Lingo
-              Pictures, Fremantle, Werner Productions, CJZ, Seven
-              Studios, LateNite, Sticky Pictures, and Mamamia!.
-              Nicolette co-wrote the psychological thriller feature
-              &quot;Girl at the Window&quot; starring Radha Mitchell, directed
-              by Mark Hartley and produced by Tony Ginane. Her
-              original dark comedy series &quot;V&quot; was selected for
-              Screen Australia&#39;s Pitcher Perfect event and is
-              currently in development, also supported by Screen
-              Australia. As a producer, Nicolette&#39;s latest project,
-              the animated comedy series The Future of Everything,
-              premiered in competition at both Adelaide and Austin
-              Film Festivals before being released on Grouse House TV.
+            <p>Nicolette Minster is a writer and producer whose television credits include Erinsborough High (Channel 5 UK), Kinne Tonight (10 Network), Sammy J (ABC), The Legend of Burnout Barry (ABC), The Wonder Gang (ABC) and Larry the Wonderpup (WTFN/Seven Network). She has contributed in development rooms for Lingo Pictures, Fremantle, Werner Productions, CJZ, Seven Studios and Sticky Pictures. Nicolette co-wrote the psychological thriller feature "Girl at the Window" starring Radha Mitchell, directed by Mark Hartley and produced by Tony Ginane. As a producer, Nicolette's credits include the animated comedy series The Future of Everything (Grouse House) and Ruby Rai P.I. (ABC).
             </p>
           </td>
         </tr>
