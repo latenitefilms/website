@@ -24,6 +24,8 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <img src="{{relBase}}img/gallery/wizards3.jpg" id="img2" data-hystmodal="#myModal3">
         <img src="{{relBase}}img/gallery/wizards4.jpg" id="img2" data-hystmodal="#myModal4">
         <img src="{{relBase}}img/gallery/wizards5.jpg" id="img5" data-hystmodal="#myModal5">
+        <img src="{{relBase}}img/gallery/wizards6.jpg" id="img5" data-hystmodal="#myModal6">
+        <img src="{{relBase}}img/gallery/wizards7.jpg" id="img5" data-hystmodal="#myModal7">
       </div></span>
       <sub>
         <hr>CAST
