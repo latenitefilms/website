@@ -15,9 +15,9 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
     <article><span id="main-detail">
       <h1>Ruby Rai P.I.</h1><p>Ruby Rai is a down-and-out Private Investigator... which is exactly how she likes it. But it’s not easy being your best hard-boiled self when inept co- workers, meddlesome family, and the endless weirdos (clients and ex lovers) of the big city are waiting to thwart your every turn...</p>
 <div id="gallery">
-        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4" data-hystmodal="#myModal4">
+        {% for i in (2..7) %}
+        <img src="{{ relBase }}img/gallery/rubyrai{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
 </span>
       <sub>
@@ -177,32 +177,16 @@ customExcerpt: Ruby Rai is a down-and-out Private Investigator... which is exact
 
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rubyrai2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/rubyrai{{ i }}.jpg">
         </div>
     </div>
 </div>
+{% endfor %}
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rubyrai3.jpg" id="img3">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/rubyrai4.jpg" id="img4">
-        </div>
-    </div>
-</div>
   <div id="gradient"></div>
