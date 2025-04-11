@@ -16,11 +16,9 @@ customExcerpt:
       <h1>Weird Times in Hillside</h1>
       <p>Matt, Amber and Jake are three teenagers growing up in ‘weird times.’ The dead are rising, magic is returning, and mythical creatures walk the Earth. Unfortunately for them, none of these things are happening dramatically enough to disrupt the flow of life in their outer suburban town.</p>
       <div id="gallery">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img2" data-hystmodal="#myModal5">
-        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6" data-hystmodal="#myModal6">
+              {% for i in (2..7) %}
+              <img src="{{ relBase }}img/gallery/WeirdTimes_00{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+              {% endfor %}
       </div>
 </span>   <sub>
         <hr>CAST
@@ -85,50 +83,16 @@ customExcerpt:
     </div>
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_002.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/WeirdTimes_00{{ i }}.jpg">
         </div>
     </div>
 </div>
+{% endfor %}
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_003.jpg" id="img3">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_004.jpg" id="img4">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal5" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_005.jpg" id="img5">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal6" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/WeirdTimes_006.jpg" id="img6">
-        </div>
-    </div>
-</div>
   <div id="gradient"></div>
