@@ -32,6 +32,8 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
             <img src="{{ relBase }}img/gallery/lambsofgod3.jpg" id="img3" data-hystmodal="#myModal3">
             <img src="{{ relBase }}img/gallery/lambsofgod4.jpg" id="img4" data-hystmodal="#myModal4">
             <img src="{{ relBase }}img/gallery/lambsofgod5.jpg" id="img5" data-hystmodal="#myModal5">
+            <img src="{{ relBase }}img/gallery/lambsofgod6.jpg" id="img5" data-hystmodal="#myModal6">
+            <img src="{{ relBase }}img/gallery/lambsofgod7.jpg" id="img5" data-hystmodal="#myModal7">
         </div>
       </span>
       <sub>
@@ -130,6 +132,24 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
         <img src="{{ relBase }}img/gallery/lambsofgod5.jpg" id="img5">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/lambsofgod6.jpg" id="img6">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal7" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/lambsofgod7.jpg" id="img7">
         </div>
     </div>
 </div>
