@@ -136,4 +136,22 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         </div>
     </div>
 </div>
+<div class="hystmodal" id="myModal6" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards6.jpg" id="img6">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal7" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/wizards7.jpg" id="img7">
+        </div>
+    </div>
+</div>
   <div id="gradient"></div>
