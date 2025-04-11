@@ -21,6 +21,7 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
         <img src="{{ relBase }}img/gallery/dbem4.jpg" id="img4" data-hystmodal="#myModal4">
         <img src="{{ relBase }}img/gallery/dbem5.jpg" id="img5" data-hystmodal="#myModal5">
         <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6" data-hystmodal="#myModal6">
+        <img src="{{ relBase }}img/gallery/dbem7.jpg" id="img7" data-hystmodal="#myModal7">
         </div>
         </span>  
          <sub>
@@ -136,6 +137,15 @@ reckoning with the cost of living and the pitfalls of the gig economy.</p>
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
         <img src="{{ relBase }}img/gallery/dbem6.jpg" id="img6">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal7" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/dbem7.jpg" id="img7">
         </div>
     </div>
 </div>
