@@ -30,6 +30,7 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
         <img src="{{ relBase }}img/gallery/tfoe4.jpg" id="img2" data-hystmodal="#myModal4">
         <img src="{{ relBase }}img/gallery/tfoe5.jpg" id="img2" data-hystmodal="#myModal5">
         <img src="{{ relBase }}img/gallery/tfoe6.jpg" id="img6" data-hystmodal="#myModal6">
+        <img src="{{ relBase }}img/gallery/tfoe13.jpg" id="img13" data-hystmodal="#myModal13">
       </div>
 </span>   <sub>
         <hr>CAST
@@ -135,6 +136,15 @@ customExcerpt: "In the future, what if there was irrefutable proof that God was 
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
         <img src="{{ relBase }}img/gallery/tfoe6.jpg" id="img6">
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="myModal13" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/tfoe13.jpg" id="img13">
         </div>
     </div>
 </div>
