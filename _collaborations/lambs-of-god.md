@@ -33,11 +33,6 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
         </p>
         <p>LateNite produced the Melbourne based &#39;Fairy Tale Unit&#39; which was directed by regular
             collaborator Michael Shanks.</p>
-        <iframe
-            src="https://customer-2n8dqn7i3032pr6x.cloudflarestream.com/fb943ae8831839d710fa34bccc3bdd57/iframe?poster=https%3A%2F%2Fcustomer-2n8dqn7i3032pr6x.cloudflarestream.com%2Ffb943ae8831839d710fa34bccc3bdd57%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1m9s%26height%3D600&title=Lambs+of+God+-+Melbourne+Fairytale+Unit&share-link=https%3A%2F%2Flatenitefilms.com%2Fcollaborations%2Flambs-of-god%2F&channel-link=https%3A%2F%2Flatenitefilms.com%2Fcollaborations%2Flambs-of-god%2F&letterboxColor=transparent"
-            style="width:100%;"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"
-            id="stream-player"></iframe>
       </span>
       <sub>
           <hr>CAST
