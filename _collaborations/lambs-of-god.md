@@ -27,6 +27,12 @@ customExcerpt: gothic tale about three nuns, each a generation apart, Sisters Ip
         </p>
         <p>LateNite produced the Melbourne based &#39;Fairy Tale Unit&#39; which was directed by regular
             collaborator Michael Shanks.</p>
+             <div id="gallery">
+            <img src="{{ relBase }}img/gallery/lambsofgod2.jpg" id="img2" data-hystmodal="#myModal2">
+            <img src="{{ relBase }}img/gallery/lambsofgod3.jpg" id="img3" data-hystmodal="#myModal3">
+            <img src="{{ relBase }}img/gallery/lambsofgod4.jpg" id="img4" data-hystmodal="#myModal4">
+            <img src="{{ relBase }}img/gallery/lambsofgod5.jpg" id="img5" data-hystmodal="#myModal5">
+        </div>
       </span>
       <sub>
           <hr>CAST
