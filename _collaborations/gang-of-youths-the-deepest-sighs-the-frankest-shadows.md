@@ -18,8 +18,9 @@ customExcerpt: The Deepest Sighs, The Frankest Shadows is the fourth and final s
         <p>The single take music video was nominated for an ARIA award. </p>
 
 <div id="gallery">
-        <img src="{{ relBase }}img/gallery/sighs2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/sighs3.jpg" id="img3" data-hystmodal="#myModal3">
+        {% for i in (2..7) %}
+        <img src="{{ relBase }}img/gallery/sigh{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
         </span>
       <sub>
@@ -69,23 +70,16 @@ Visual Effects</td><td>Toby Angwin<br>Michael Shanks <br>Chris Hocking</td></tr>
     </div>
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/sighs2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/sigh{{ i }}.jpg">
         </div>
     </div>
 </div>
+{% endfor %}
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/sighs3.jpg" id="img3">
-        </div>
-    </div>
-</div>
   <div id="gradient"></div>
