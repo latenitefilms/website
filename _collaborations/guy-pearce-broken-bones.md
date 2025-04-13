@@ -16,9 +16,8 @@ customExcerpt: So, after many years of keeping things to myself I&#39;m very ple
       <h1>Guy Pearce - Broken Bones</h1><p>So, after many years of keeping things to myself I&#39;m very pleased to be releasing my first record - "Broken Bones". - Guy Pearce</p>      
 <div id="gallery">
         <img src="{{ relBase }}img/gallery/brokenbones4.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/brokenbones1.jpg" data-hystmodal="#myModal1">
-        {% for i in (5..7) %}
+        <img src="{{ relBase }}img/gallery/brokenbones1.png" data-hystmodal="#myModal1">
+        {% for i in (5..8) %}
         <img src="{{ relBase }}img/gallery/brokenbones{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
         {% endfor %}
       </div></span>
@@ -64,15 +63,6 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
     </div>
   </section>
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3">
-        </div>
-    </div>
-</div>
 <div class="hystmodal" id="myModal4" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
@@ -87,7 +77,7 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/brokenbones1.jpg" id="img41">
+        <img src="{{ relBase }}img/gallery/brokenbones1.png" id="img1">
         </div>
     </div>
 </div>
