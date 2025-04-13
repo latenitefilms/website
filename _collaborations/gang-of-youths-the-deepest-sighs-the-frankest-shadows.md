@@ -19,7 +19,7 @@ customExcerpt: The Deepest Sighs, The Frankest Shadows is the fourth and final s
 
 <div id="gallery">
         {% for i in (2..7) %}
-        <img src="{{ relBase }}img/gallery/sigh{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        <img src="{{ relBase }}img/gallery/sighs{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
         {% endfor %}
       </div>
         </span>
@@ -76,7 +76,7 @@ Visual Effects</td><td>Toby Angwin<br>Michael Shanks <br>Chris Hocking</td></tr>
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- Your modal HTML markup -->
-            <img src="{{ relBase }}img/gallery/sigh{{ i }}.jpg">
+            <img src="{{ relBase }}img/gallery/sighs{{ i }}.jpg">
         </div>
     </div>
 </div>
