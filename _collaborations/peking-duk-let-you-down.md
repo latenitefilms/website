@@ -20,10 +20,9 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
       </p><p>
         This action heavy music video was nominated for an Australian Directors Guild award.</p>        
 <div id="gallery">
-        <img src="{{ relBase }}img/gallery/letyoudown2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/letyoudown3.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/letyoudown4.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5" data-hystmodal="#myModal5">
+        {% for i in (2..7) %}
+        <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
       </span>
       <sub>
@@ -80,42 +79,16 @@ customExcerpt: A stunt performers dream, the clip for Let You Down from Australi
     </div>
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/letyoudown2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg">
         </div>
     </div>
 </div>
-
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/letyoudown3.jpg" id="img3">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/letyoudown4.jpg" id="img4">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal5" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/letyoudown5.jpg" id="img5">
-        </div>
-    </div>
-</div>
+{% endfor %}
 
   <div id="gradient"></div>
