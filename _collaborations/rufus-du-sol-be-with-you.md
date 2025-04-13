@@ -16,7 +16,7 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
     <article><span id="main-detail">
       <h1>R&uuml;f&uuml;s Du Sol - Be With You</h1><p>R&uuml;f&uuml;s Du Sol - Be With You</p>
       <div id="gallery">
-        {% for i in (5..8) %}
+        {% for i in (2..7) %}
         <img src="{{ relBase }}img/gallery/bewithyou{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
         {% endfor %}
       </div></span>
