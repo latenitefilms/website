@@ -18,6 +18,10 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
       <div id="gallery">
         <img src="{{ relBase }}img/gallery/liry2.jpg" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/liry1.jpg" id="img3" data-hystmodal="#myModal1">
+        <img src="{{ relBase }}img/gallery/liry3.jpg" data-hystmodal="#myModal3">
+        {% for i in (5..7) %}
+        <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
       </span>
       <sub>
@@ -80,5 +84,27 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         </div>
     </div>
 </div>
+
+<div class="hystmodal" id="myModal3" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/liry3.jpg">
+        </div>
+    </div>
+</div>
+
+{% for i in (5..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg">
+        </div>
+    </div>
+</div>
+{% endfor %}
 
   <div id="gradient"></div>
