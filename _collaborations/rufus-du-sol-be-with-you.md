@@ -16,10 +16,9 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
     <article><span id="main-detail">
       <h1>R&uuml;f&uuml;s Du Sol - Be With You</h1><p>R&uuml;f&uuml;s Du Sol - Be With You</p>
       <div id="gallery">
-        <img src="{{ relBase }}img/gallery/bewithyou2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/bewithyou3.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/bewithyou4.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/bewithyou5.jpg" id="img5" data-hystmodal="#myModal5">
+        {% for i in (5..8) %}
+        <img src="{{ relBase }}img/gallery/bewithyou{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div></span>
       <sub>
         <!--<hr>CAST
@@ -63,42 +62,16 @@ customExcerpt: R&uuml;f&uuml;s Du Sol - Be With You
     </div>
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/bewithyou2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/bewithyou{{ i }}.jpg">
         </div>
     </div>
 </div>
-
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/bewithyou3.jpg" id="img3">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/bewithyou4.jpg" id="img4">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal5" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/bewithyou5.jpg" id="img5">
-        </div>
-    </div>
-</div>
+{% endfor %}
 
   <div id="gradient"></div>
