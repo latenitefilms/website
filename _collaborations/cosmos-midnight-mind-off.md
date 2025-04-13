@@ -16,9 +16,12 @@ customExcerpt: Music Video for Cosmo's Midnight.
     <article><span id="main-detail">
       <h1>Cosmos Midnight - Mind Off</h1><p>Music Video for Cosmo&#39;s Midnight</p>
       <div id="gallery">
-        <img src="{{ relBase }}img/gallery/mindoff3.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/mindoff2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/mindoff4.jpg" id="img4" data-hystmodal="#myModal4">
+        {% for i in (2..4) %}
+        <img src="{{ relBase }}img/gallery/mindoff{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
+        {% for i in (6..8) %}
+        <img src="{{ relBase }}img/gallery/mindoff{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div></span>
       <sub>
         <hr>CAST
@@ -75,33 +78,28 @@ Colourist</td><td>Chris Tomkins</td></tr></table><br>
     </div>
   </section>
 
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..4) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/mindoff2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/mindoff{{ i }}.jpg">
         </div>
     </div>
 </div>
+{% endfor %}
 
-<div class="hystmodal" id="myModal3" aria-hidden="true">
+{% for i in (4..8) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/mindoff3.jpg" id="img3">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/mindoff{{ i }}.jpg">
         </div>
     </div>
 </div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/mindoff4.jpg" id="img4">
-        </div>
-    </div>
-</div>
+{% endfor %}
 
   <div id="gradient"></div>
