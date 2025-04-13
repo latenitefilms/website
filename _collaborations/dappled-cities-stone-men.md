@@ -9,6 +9,7 @@ customExcerpt: Official video for "Stone Men" by Dappled Cities taken from their
 
 {% include relBase.html %}
 
+<style> #gallery img {aspect-ratio: 2;}</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/stonemen3.jpg"></div>
  <section id="details">
