@@ -20,6 +20,9 @@ customExcerpt: The Swell follows a woman's journey to the bottom of the ocean in
         <div id="gallery">
         <img src="{{ relBase }}img/gallery/swell1.jpg" id="img2" data-hystmodal="#myModal1">
         <img src="{{ relBase }}img/gallery/swell2.jpg" id="img3" data-hystmodal="#myModal2">
+        {% for i in (4..7) %}
+        <img src="{{ relBase }}img/gallery/swell{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
          </span>
       <sub>
@@ -99,5 +102,16 @@ Natalia Tjahjono<br>
         </div>
     </div>
 </div>
+{% for i in (4..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/swell{{ i }}.jpg">
+        </div>
+    </div>
+</div>
+{% endfor %}
 
   <div id="gradient"></div>
