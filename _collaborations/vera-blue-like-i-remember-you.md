@@ -19,7 +19,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         <img src="{{ relBase }}img/gallery/liry2.jpg" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/liry1.jpg" id="img3" data-hystmodal="#myModal1">
         {% for i in (5..7) %}
-        <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        <img src="{{ relBase }}img/gallery/liry{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
         {% endfor %}
       </div>
       </span>
@@ -90,7 +90,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- Your modal HTML markup -->
-            <img src="{{ relBase }}img/gallery/letyoudown{{ i }}.jpg">
+            <img src="{{ relBase }}img/gallery/liry{{ i }}.jpg">
         </div>
     </div>
 </div>
