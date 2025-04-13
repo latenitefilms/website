@@ -16,10 +16,9 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
     <article><span id="main-detail">
       <h1>Guy Pearce - Storm</h1><p>From gale force winds to lurid multi-coloured lightning, it follows Guy on a private exodus; traversing a swelling storm of surreal destruction. With a unique fusion of real-time and high speed cinematography, Storm aims to dazzle the eye with dreamlike, distinctive imagery.</p><p>Storm is the debut single from actor/musician Guy Pearce.</p>
       <div id="gallery">
-        <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2" data-hystmodal="#myModal2">
-        <img src="{{ relBase }}img/gallery/storm3.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/storm4.jpg" id="img2" data-hystmodal="#myModal4">
-        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5" data-hystmodal="#myModal5">
+        {% for i in (2..7) %}
+        <img src="{{ relBase }}img/gallery/storm{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
       </span>
       <sub>
@@ -66,43 +65,15 @@ customExcerpt: From gale force winds to lurid multi-coloured lightning, it follo
       </ul>
     </div>
   </section>
-
-<div class="hystmodal" id="myModal2" aria-hidden="true">
+{% for i in (2..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/storm2.jpg" id="img2">
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/storm{{ i }}.jpg">
         </div>
     </div>
 </div>
-
-<div class="hystmodal" id="myModal3" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/storm3.jpg" id="img3">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal4" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/storm4.jpg" id="img4">
-        </div>
-    </div>
-</div>
-<div class="hystmodal" id="myModal5" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
-            <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/storm5.jpg" id="img5">
-        </div>
-    </div>
-</div>
-
+{% endfor %}
   <div id="gradient"></div>
