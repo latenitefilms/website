@@ -18,7 +18,7 @@ customExcerpt: Like I Remember You is Vera Blue&#39;s exclusive new single produ
       <div id="gallery">
         <img src="{{ relBase }}img/gallery/liry2.jpg" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/liry1.jpg" id="img3" data-hystmodal="#myModal1">
-        {% for i in (5..7) %}
+        {% for i in (5..8) %}
         <img src="{{ relBase }}img/gallery/liry{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
         {% endfor %}
       </div>
