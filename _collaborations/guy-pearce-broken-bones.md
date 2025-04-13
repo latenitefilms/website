@@ -82,7 +82,7 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
     </div>
 </div>
 
-{% for i in (5..7) %}
+{% for i in (5..8) %}
 <div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
