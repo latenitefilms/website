@@ -17,6 +17,10 @@ customExcerpt: So, after many years of keeping things to myself I&#39;m very ple
 <div id="gallery">
         <img src="{{ relBase }}img/gallery/brokenbones4.jpg" id="img2" data-hystmodal="#myModal4">
         <img src="{{ relBase }}img/gallery/brokenbones3.jpg" id="img3" data-hystmodal="#myModal3">
+        <img src="{{ relBase }}img/gallery/brokenbones1.jpg" data-hystmodal="#myModal1">
+        {% for i in (5..7) %}
+        <img src="{{ relBase }}img/gallery/brokenbones{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div></span>
       <sub>
         <hr>CAST
@@ -78,5 +82,26 @@ Additional Visual Effects</td><td>David Fromholtz</td></tr></table>
         </div>
     </div>
 </div>
+<div class="hystmodal" id="myModal1" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- You modal HTML markup -->
+        <img src="{{ relBase }}img/gallery/brokenbones1.jpg" id="img41">
+        </div>
+    </div>
+</div>
+
+{% for i in (5..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/brokenbones{{ i }}.jpg">
+        </div>
+    </div>
+</div>
+{% endfor %}
 
   <div id="gradient"></div>
