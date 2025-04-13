@@ -17,6 +17,9 @@ customExcerpt: Official video for "Stone Men" by Dappled Cities taken from their
       <div id="gallery">
         <img src="{{ relBase }}img/gallery/stonemen2.png" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/stonemen1.png" id="img3" data-hystmodal="#myModal1">
+        {% for i in (4..7) %}
+        <img src="{{ relBase }}img/gallery/stonemen{{ i }}.jpg" data-hystmodal="#myModal{{ i }}">
+        {% endfor %}
       </div>
       </span>
       <sub>
@@ -83,4 +86,16 @@ Colourist</td><td>Jared Daperis</td></tr></table><br>
         </div>
     </div>
 </div>
+
+{% for i in (4..7) %}
+<div class="hystmodal" id="myModal{{ i }}" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+            <!-- Your modal HTML markup -->
+            <img src="{{ relBase }}img/gallery/stonemen{{ i }}.jpg">
+        </div>
+    </div>
+</div>
+{% endfor %}
   <div id="gradient"></div>
