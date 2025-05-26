@@ -2,7 +2,7 @@
 title: The Legend of Burnout Barry
 layout: project-details
 img: projects/barry.jpg
-subtitle: Television
+subtitle: Series
 type: filter_option2 filter_option3
 customExcerpt: Wheely, Brent and Shay are an inseparable trio of teenagers, hell bent on having a good time and pushing the limits of what's possible. When speed demon and record holder Josh "Wheely" Wilson learns that there might be someone in town faster than him, he sets about finding an elusive legend by the name of Burnout Barry - to challenge him to a race. But when his obsession with being the record holder becomes more important than his friends, Wheely risks losing more than just the title.
 ---
