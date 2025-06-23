@@ -44,7 +44,7 @@ img: og/about.png
             <h3>KEVIN LUK / Editor</h3>
             <p>
               Kevin Luk has been working with LateNite for the last
-              four years as an editor, visual effects artist and
+              five years as an editor, visual effects artist and
               all round swiss army knife. His work as an editor has
               included the Guy Pearce music video What Makes You
               Think, the YouTube and Screen Australia funded short
