@@ -1641,7 +1641,7 @@ hr.margin_bottom {
 }
 
 #lightoff:checked~#details .instagram {
-  filter: none !important;
+  filter: none;
 }
 
 #lightoff:checked~#details .instagram:hover {
