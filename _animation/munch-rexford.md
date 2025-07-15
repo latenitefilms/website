@@ -56,7 +56,7 @@ With his caddy/best-friend by his side (a horrid creature called Peter) and a wh
         <br><br>-->
         <hr>LINKS
         <hr>
-        <!--<a href="https://www.imdb.com/title/tt34748315/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>--><a href="https://ltnt.tv/munch-lion" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="instagram"></a><a href="https://ltnt.tv/munch-whale" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="instagram"></a>
+        <!--<a href="https://www.imdb.com/title/tt34748315/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a>--><a href="https://ltnt.tv/munch-lion" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a><a href="https://ltnt.tv/munch-whale" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
       </sub>
     </article>
     <div id="related">

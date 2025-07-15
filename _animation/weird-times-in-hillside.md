@@ -43,8 +43,8 @@ customExcerpt:
         <a href="https://ltnt.tv/dbem" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
         <br><br>-->
         <hr>LINKS
-        <hr><a href="https://ltnt.tv/weird-witch" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="youtube"></a>
-        <a href="https://ltnt.tv/weird-gap" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="youtube"></a>
+        <hr><a href="https://ltnt.tv/weird-witch" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="instagram"></a>
+        <a href="https://ltnt.tv/weird-gap" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="instagram"></a>
       </sub>
     </article>
     <div id="related">
