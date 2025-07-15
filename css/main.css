@@ -1610,6 +1610,11 @@ hr.margin_bottom {
   filter: grayscale();
 }
 
+#details .instagram {
+  filter: invert();
+}
+
+
 #details img.project-abc {
   filter: grayscale();
 }
@@ -1635,6 +1640,10 @@ hr.margin_bottom {
   filter: grayscale() invert() contrast(3);
 }
 
+#lightoff:checked~#details .instagram:hover {
+  filter: invert();
+}
+
 #lightoff:checked~#details img.project-abc {
   filter: invert();
 }
@@ -1643,7 +1652,7 @@ hr.margin_bottom {
   filter: grayscale() contrast(5);
 }
 
-#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover {
+#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover, .instagram:hover{
   filter: none !important;
 }
 
