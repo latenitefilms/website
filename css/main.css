@@ -1614,6 +1614,10 @@ hr.margin_bottom {
   filter: invert();
 }
 
+#details .instagram:hover {
+  filter: none;
+}
+
 
 #details img.project-abc {
   filter: grayscale();
