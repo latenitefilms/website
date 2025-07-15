@@ -1640,6 +1640,10 @@ hr.margin_bottom {
   filter: grayscale() invert() contrast(3);
 }
 
+#lightoff:checked~#details .instagram {
+  filter: none !important;
+}
+
 #lightoff:checked~#details .instagram:hover {
   filter: invert();
 }
@@ -1652,7 +1656,7 @@ hr.margin_bottom {
   filter: grayscale() contrast(5);
 }
 
-#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover, .instagram:hover{
+#details .imdb:hover, #details:hover .youtube:hover, #details img.project-vimeo:hover{
   filter: none !important;
 }
 
