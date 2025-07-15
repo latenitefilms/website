@@ -1599,7 +1599,7 @@ hr.margin_bottom {
   text-transform: capitalize;
 }
 
-#details .imdb, #details .youtube, #details img.project-vimeo, #details img.project-abc {
+#details .imdb, #details .youtube, #details img.project-vimeo, #details img.project-abc , #details .instagram{
   height: 4.5em;
   width: auto;
   filter: grayscale() invert();
