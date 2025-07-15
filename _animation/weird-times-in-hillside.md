@@ -41,10 +41,10 @@ customExcerpt:
         <hr>WATCH
         <hr>
         <a href="https://ltnt.tv/dbem" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>
-        <br><br>
+        <br><br>-->
         <hr>LINKS
-        <hr>
-        <a href="https://www.imdb.com/title/tt34748315/" target="_blank"><img src="{{ relBase }}img/social/imdb.svg" class="imdb"></a><a href="https://www.youtube.com/watch?v=eDtyB863J9Q" target="_blank"><img src="{{ relBase }}img/social/youtube.svg" class="youtube"></a>-->
+        <hr><a href="https://ltnt.tv/weird-witch" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="youtube"></a>
+        <a href="https://ltnt.tv/weird-gap" target="_blank"><img src="{{ relBase }}img/social/instagram.svg" class="youtube"></a>
       </sub>
     </article>
     <div id="related">
