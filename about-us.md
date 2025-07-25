@@ -39,6 +39,15 @@ img: og/about.png
           </td>
         </tr>
         <tr>
+          <td><img class="headshot" src="{{ relBase }}img/headshot/greaney.jpg"></td>
+          <td>
+            <h3>MIKE GREANEY / Head of Animation</h3>
+            <p>Mike Greaney is an award-winning writer and cartoonist based in Melbourne. Across his 15-odd years in the art mines he’s made animated videos for Green Day and Neil Young, directed on series for Adult Swim, screened short films at festivals across the world and his comics have racked up millions of likes, comments and shares on social media. He is currently developing shows with people he’s not sure he’s allowed to talk about right now.
+He’s very nice and chill and some say funny and this is definitely not him writing in the third person.
+            </p>
+          </td>
+        </tr>
+        <tr>
           <td><img class="headshot" src="{{ relBase }}img/headshot/kevin.jpg"></td>
           <td>
             <h3>KEVIN LUK / Editor</h3>
