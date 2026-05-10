@@ -39,6 +39,14 @@ img: og/about.png
           </td>
         </tr>
         <tr>
+          <td><img class="headshot" src="{{ relBase }}img/headshot/CaitlinBerwickHeadshot.jpg"></td>
+          <td>
+            <h3>CAITLIN BERWICK / Associate Producer</h3>
+            <p>Caitlin is an emerging writer and producer who participated in the AFTRS’ Talent Camp Program and the VSFF Mentorship Program, before joining Tasmanian based Archipelago Productions, assisting on Bay of Fires Season One and Two. Caitlin re-located to Melbourne in 2024, joining Werner Film Productions on Knee High Spies while also note-taking for rooms with CJZ Productions, Princess Pictures and various Screen Agencies. Caitlin most recently produced content for Melbourne International Comedy Festival and is thrilled to be joining LateNite Films as an Associate Producer.
+            </p>
+          </td>
+        </tr>
+        <tr>
           <td><img class="headshot" src="{{ relBase }}img/headshot/greaney.jpg"></td>
           <td>
             <h3>MIKE GREANEY / Head of Animation</h3>
