@@ -31,10 +31,12 @@
         .projects #lighton~header {
                 grid-column-start: 1;
                 grid-row-start: 1;
+        }
+        #lightswitch{
                 color: #000;
         }
 
-        .projects #lighton~header .lighton:before {
+        .projects #lighton:checked~header .lighton:before, .projects #lighton:checked~header .lightoff:before  {
                 background: #000;
         }
 
@@ -47,6 +49,10 @@
         .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:after,
         .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:before {
                 background-color: #000;
+        }
+
+        .projects #lighton~header input#overlay-input[type=checkbox]:checked~#overlay-button{
+                background-color: #fff;
         }
 
         .projects #lighton~header #logo svg:nth-child(4) path {
