@@ -1,7 +1,7 @@
 ---
 title: It’s Andrew!
 layout: project-details
-img: projects/itsandrew3.jpg
+img: gallery/itsandrew3.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt: 
