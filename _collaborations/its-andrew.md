@@ -9,7 +9,7 @@ customExcerpt:
 
 {% include relBase.html %}
 
-<style> #gallery img {aspect-ratio: 16/9;}</style>
+<!--<style> #gallery img {aspect-ratio: 16/9;}</style>-->
  <div id="heroImage">
             <img src="{{ relBase }}img/gallery/itsandrew3.jpg"></div>
  <section id="details">
@@ -35,8 +35,8 @@ customExcerpt:
         <tr><td>Spark</td><td>Macy Kilgour</td></tr>
         <tr><td>Dazzle</td><td>Maya Brennan</td></tr>
         <tr><td colspan="2"><br><hr>PRODUCTION COMPANY
-          <hr></td></tr><tr><td>Pirate Size Productions/td></tr><tr><td>
-        Mainframe Entertainment</td></tr><tr><td>
+          <hr></td></tr><tr><td colspan="2">Pirate Size Productions/td></tr><tr><td colspan="2">
+        Mainframe Entertainment</td></tr><tr><td colspan="2">
           Infinite Studios</td></tr>
           <tr><td colspan="2"><br><hr>CREW
           <hr></td></tr><tr><td>Created by</td><td>Dan Nixon & Alyssa Smedley</td></tr><tr><td>
