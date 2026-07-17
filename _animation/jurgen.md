@@ -93,7 +93,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_002.jpg" id="img2">
+        <img src="{{ relBase }}img/gallery/jurgen4.jpg" id="img2">
         </div>
     </div>
 </div>
@@ -103,7 +103,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_003.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/jurgen2.jpg" id="img3">
         </div>
     </div>
 </div>
@@ -112,7 +112,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_004.jpg" id="img4">
+        <img src="{{ relBase }}img/gallery/jurgen3.jpg" id="img4">
         </div>
     </div>
 </div>
@@ -121,7 +121,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_005.jpg" id="img5">
+        <img src="{{ relBase }}img/gallery/jurgen5.jpg" id="img5">
         </div>
     </div>
 </div>
@@ -130,7 +130,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_006.jpg" id="img6">
+        <img src="{{ relBase }}img/gallery/jurgen6.jpg" id="img6">
         </div>
     </div>
 </div>
@@ -139,7 +139,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/Munch_007.jpg" id="img7">
+        <img src="{{ relBase }}img/gallery/jurgen7.jpg" id="img7">
         </div>
     </div>
 </div>
