@@ -9,7 +9,36 @@ customExcerpt: An original Foxtel series, The Slot presents emerging and experim
 
 {% include relBase.html %}
 
-<style> #gallery img {aspect-ratio: 4/3;}</style>
+<style> #gallery img {aspect-ratio: 4/3;}
+  .projects #lighton~header #logo svg:nth-child(4) path {
+  fill: #000;
+}
+
+.projects #lighton~header #logo svg:nth-child(1), .projects #lighton~header #logo svg:nth-child(2), .projects #lighton~header #logo svg:nth-child(3) {
+  mix-blend-mode: darken;
+}
+
+.projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span, .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:after, .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:before {
+  background-color: #000;
+}
+
+.projects header {
+  transition: background-color 0.2s;
+}
+
+.projects #lighton~section .checkbox-circle label:before {
+  background-color: #fff;
+}
+
+.projects #lighton~header .lighton:before {
+  background: #000;
+}
+
+.projects #lighton~header .checkbox-circle label:before, .projects #lighton~section .checkbox-circle label:before {
+  border-color: #000;
+}
+
+</style>
  <div id="heroImage">
         <img src="{{ relBase }}img/gallery/slot1.jpg"></div>
  <section id="details">
