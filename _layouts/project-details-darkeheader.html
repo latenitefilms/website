@@ -36,7 +36,7 @@
                 color: #000;
         }
 
-        .projects #lighton:checked~header .lighton:before, .projects #lighton:checked~header .lightoff:before  {
+        .projects #lighton:checked~header .lighton:before, .projects #lighton~header .lightoff:before  {
                 background: #000;
         }
 
@@ -51,7 +51,9 @@
                 background-color: #000;
         }
 
-        .projects #lighton~header input#overlay-input[type=checkbox]:checked~#overlay-button{
+        .projects #lighton~header input#overlay-input[type=checkbox]:checked~#overlay-button span,
+        .projects #lighton~header input#overlay-input[type=checkbox]:checked~#overlay-button span:after,
+        .projects #lighton~header input#overlay-input[type=checkbox]:checked~#overlay-button span:before {
                 background-color: #fff;
         }
 
