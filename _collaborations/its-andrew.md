@@ -1,7 +1,7 @@
 ---
 title: It’s Andrew!
 layout: project-details
-img: projects/itsandrew1.jpg
+img: projects/itsandrew3.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt: 
@@ -11,7 +11,7 @@ customExcerpt:
 
 <style> #gallery img {aspect-ratio: 16/9;}</style>
  <div id="heroImage">
-            <img src="{{ relBase }}img/gallery/itsandrew1.jpg"></div>
+            <img src="{{ relBase }}img/gallery/itsandrew3.jpg"></div>
  <section id="details">
     <article>
       <span id="main-detail">
@@ -20,7 +20,7 @@ customExcerpt:
         </p>
              <div id="gallery">
             <img src="{{ relBase }}img/gallery/itsandrew2.jpg" id="img2" data-hystmodal="#myModal2">
-            <img src="{{ relBase }}img/gallery/itsandrew3.jpg" id="img3" data-hystmodal="#myModal3">
+            <img src="{{ relBase }}img/gallery/itsandrew1.jpg" id="img3" data-hystmodal="#myModal3">
             <img src="{{ relBase }}img/gallery/itsandrew4.jpg" id="img4" data-hystmodal="#myModal4">
             <img src="{{ relBase }}img/gallery/itsandrew5.jpg" id="img5" data-hystmodal="#myModal5">
             <img src="{{ relBase }}img/gallery/itsandrew6.jpg" id="img5" data-hystmodal="#myModal6">
@@ -74,7 +74,7 @@ customExcerpt:
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
             <!-- You modal HTML markup -->
-        <img src="{{ relBase }}img/gallery/itsandrew3.jpg" id="img3">
+        <img src="{{ relBase }}img/gallery/itsandrew1.jpg" id="img3">
         </div>
     </div>
 </div>
