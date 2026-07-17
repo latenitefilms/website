@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% include relBase.html %}
+{% include head.html %}
+<style>
+        div#heroImage {
+                grid-row-start: 1;
+                grid-column-start: 1;
+        }
+
+        div#gallery {
+                display: grid;
+                grid-template-columns: calc(33.3% - 1.3rem) calc(33.3% - 1.3rem) calc(33.3% - 1.3rem);
+                grid-gap: 2rem;
+                margin: 5rem 0;
+        }
+
+        div#gallery img,
+        div#heroImage img {
+                width: 100%;
+                object-fit: cover;
+        }
+
+        section#details article {
+                grid-gap: 0;
+                width: 80rem;
+                margin: auto;
+        }
+
+
+        .projects header,
+        .projects #lighton~header {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                color: #000;
+        }
+
+        .projects #lighton~header .lighton:before {
+                background: #000;
+        }
+
+        .projects #lighton~header .checkbox-circle label:before,
+        .projects #lighton~section .checkbox-circle label:before {
+                border-color: #000;
+        }
+
+        .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span,
+        .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:after,
+        .projects #lighton~header input#overlay-input[type=checkbox]~#overlay-button span:before {
+                background-color: #000;
+        }
+
+        .projects #lighton~header #logo svg:nth-child(4) path {
+                fill: #000;
+        }
+
+        .projects #lighton~header #logo svg:nth-child(1),
+        .projects #lighton~header #logo svg:nth-child(2),
+        .projects #lighton~header #logo svg:nth-child(3) {
+                mix-blend-mode: darken;
+        }
+</style>
+
+<body class="projects">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+        <script type="text/javascript" src="{{ relBase }}hystmodal-0.4/hystmodal.min.js"></script>
+        <script>
+                const myModal1 = new HystModal({
+                        linkAttributeName: "data-hystmodal",
+                        //settings (optional). see API
+                        backscroll: false,
+                });
+        </script>
+</body>
+
+</html>
