@@ -35,7 +35,7 @@ customExcerpt:
         <tr><td>Spark</td><td>Macy Kilgour</td></tr>
         <tr><td>Dazzle</td><td>Maya Brennan</td></tr>
         <tr><td colspan="2"><br><hr>PRODUCTION COMPANY
-          <hr></td></tr><tr><td colspan="2">Pirate Size Productions/td></tr><tr><td colspan="2">
+          <hr></td></tr><tr><td colspan="2">Pirate Size Productions</td></tr><tr><td colspan="2">
         Mainframe Entertainment</td></tr><tr><td colspan="2">
           Infinite Studios</td></tr>
           <tr><td colspan="2"><br><hr>CREW
