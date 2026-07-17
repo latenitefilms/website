@@ -1,7 +1,7 @@
 ---
 title: Jürgen
 layout: project-details
-img: gallery/jurgen3.jpg
+img: gallery/jurgen0.jpg
 subtitle: Series
 type: filter_option1
 customExcerpt:
@@ -10,16 +10,16 @@ customExcerpt:
 {% include relBase.html %}
 
 <div id="heroImage">
-        <img src="{{ relBase }}img/gallery/Munch_001.jpg"></div>
+        <img src="{{ relBase }}img/gallery/jurgen3.jpg"></div>
  <section id="details">
     <article><span id="main-detail">
       <h1>Jürgen</h1>
       <p>A 300 year old German elf moves to a small town and befriends a group of misfit teens, desperate for the complete ‘coming of age’ experience. Jürgen is a show about discovering who you are, and humiliating yourself in the process.</p>
 
 <div id="gallery">
-        <img src="{{ relBase }}img/gallery/jurgen1.jpg" id="img2" data-hystmodal="#myModal2">
+        <img src="{{ relBase }}img/gallery/jurgen4.jpg" id="img2" data-hystmodal="#myModal2">
         <img src="{{ relBase }}img/gallery/jurgen2.jpg" id="img2" data-hystmodal="#myModal3">
-        <img src="{{ relBase }}img/gallery/jurgen4.jpg" id="img2" data-hystmodal="#myModal4">
+        <img src="{{ relBase }}img/gallery/jurgen1.jpg" id="img2" data-hystmodal="#myModal4">
         <img src="{{ relBase }}img/gallery/jurgen6.jpg" id="img2" data-hystmodal="#myModal5">
         <img src="{{ relBase }}img/gallery/jurgen5.jpg" id="img6" data-hystmodal="#myModal6">
         <img src="{{ relBase }}img/gallery/jurgen7.jpg" id="img6" data-hystmodal="#myModal7">
