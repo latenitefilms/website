@@ -41,7 +41,7 @@ customExcerpt:
           <tr><td colspan="2"><br><hr>CREW
           <hr></td></tr><tr><td>Created by</td><td>Dan Nixon & Alyssa Smedley</td></tr><tr><td>
           Writers</td><td>Dan Nixon, Cleon Prineas, Charlotte Rose Hamlyn</td></tr><tr><td>
-        Producer</td><td>Bryony McLachlan</td></tr><tr><td>
+        Producer</td><td>Bryony McLachlan<br>Nicholas Colla</td></tr><tr><td>
           Director</td><td>Katrina Hadley, Jos Humphrey</td></tr></table><br>
         <hr>GENRE
         <hr>
