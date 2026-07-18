@@ -38,6 +38,7 @@ collections:
   collaborations:
     output: true
     order:
+      - its-andrew.md
       - lambs-of-god.md
       - the-slot.md
       - erinsborough-high.md
